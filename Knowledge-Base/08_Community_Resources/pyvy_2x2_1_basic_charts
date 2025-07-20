@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web_content>
+  <title>Framework Avançado para Visualizações de Dados Complexos</title>
+  <author>Monica (deepseek-reasoner)</author>
+  <publication_date>2025-07-18</publication_date>
+  <license>Creative Commons Attribution 4.0 International</license>
+  <language code="pt-BR">Português (Brasil)</language>
+  
+  <section>
+    <title>Contexto Estratégico</title>
+    <paragraph>
+      Desenvolvimento de solução analítica para construção civil residencial com:
+      - Capacidade de análise hierárquica multi-nível (macro-categorias até tarefas operacionais)
+      - Integração de inteligência preditiva para projeção de custos
+      - Mecanismos de drill-down visual para exploração de dados
+      - Compatibilidade com datasets reais e simulados
+    </paragraph>
+    <paragraph>
+      Objetivos principais:
+      1. Redução de 30% no tempo de análise de custos complexos
+      2. Identificação automática de anomalias orçamentárias
+      3. Geração de insights acionáveis através de storytelling visual
+    </paragraph>
+  </section>
+
+  <section>
+    <title>Arquitetura Técnica</title>
+    <list>
+      <item>
+        <strong>Camada de Dados:</strong>
+        - Estrutura JSON/CSV para hierarquias complexas
+        - Schemas de validação XSD para integridade
+        - Pipeline de ETL com tratamento de missing values
+      </item>
+      <item>
+        <strong>Camada de Processamento:</strong>
+        - Modelagem preditiva com PyCaret
+        - Cálculo de métricas-chave (NPV, ROI, Payback Period)
+        - Normalização dinâmica de valores monetários
+      </item>
+      <item>
+        <strong>Camada de Visualização:</strong>
+        - Dashboard responsivo com Dash 3.1+
+        - Sistema de temas visualis personalizáveis
+        - Biblioteca modular de componentes Plotly
+      </item>
+    </list>
+  </section>
+
+  <visual_elements>
+    <chart>
+      <type>sunburst</type>
+      <title>Análise Hierárquica de Custos Residenciais</title>
+      <data>
+        <label>4 níveis de profundidade</label>
+        <value>Mapeamento cromático por criticidade</value>
+        <value>Tooltips contextuais com KPI's</value>
+      </data>
+      <dimensions>
+        <width>1200</width>
+        <height>800</height>
+      </dimensions>
+    </chart>
+
+    <dashboard>
+      <title>Painel Executivo Integrado</title>
+      <metric>
+        <label>Variáveis Preditivas</label>
+        <value>12 features econômicas e operacionais</value>
+      </metric>
+      <visualization>
+        <type>feature_importance</type>
+        <data>
+          <label>Coeficientes Padronizados</label>
+          <value>Intervalo de confiança 95%</value>
+        </data>
+      </visualization>
+    </dashboard>
+
+    <image>
+      <url>internal://workflow_diagram.svg</url>
+      <dimensions>
+        <width>1920</width>
+        <height>1080</height>
+      </dimensions>
+      <colors>
+        <primary>#2A5CAA</primary>
+        <secondary>#48CDBD</secondary>
+        <accent>#FF6B6B</accent>
+      </colors>
+      <text>Diagrama de fluxo de dados completo do pipeline analítico</text>
+    </image>
+  </visual_elements>
+
+  <section>
+    <title>Padrões de Excelência</title>
+    <table>
+      <row>
+        <cell>Modularidade</cell>
+        <cell>Componentes independentes para dados, lógica e UI</cell>
+        <cell>Interface de plugins para novas visualizações</cell>
+      </row>
+      <row>
+        <cell>Performance</cell>
+        <cell>Cacheamento de queries complexas</cell>
+        <cell>Otimização WebGL para renderização</cell>
+      </row>
+      <row>
+        <cell>Governança</cell>
+        <cell>Controle de versão de modelos preditivos</cell>
+        <cell>Auditoria de alterações em visualizações</cell>
+      </row>
+    </table>
+  </section>
+
+  <section>
+    <title>Ciclo de Desenvolvimento</title>
+    <list>
+      <item>
+        <strong>Fase 1 - Prototipagem:</strong>
+        - Design sprint de 5 dias
+        - Validação de conceito com stakeholders
+        - Definição de KPIs visuais
+      </item>
+      <item>
+        <strong>Fase 2 - Implementação:</strong>
+        - Desenvolvimento ágil (sprints de 2 semanas)
+        - Integração contínua via GitLab
+        - Testes A/B de layouts
+      </item>
+      <item>
+        <strong>Fase 3 - Produção:</strong>
+        - Deploy em ambiente AWS EC2
+        - Monitoramento via Grafana/Prometheus
+        - Atualizações hotfix automáticas
+      </item>
+    </list>
+  </section>
+
+  <section>
+    <title>Estratégia de Implementação</title>
+    <paragraph>
+      1. Onboarding de dados históricos (últimos 5 anos)
+      2. Treinamento de modelos baseados em Random Forest
+      3. Calibração visual para diferentes perfis de usuário
+      4. Rollout gradual com feedback em tempo real
+      5. Sistema de versionamento paralelo para experimentação
+    </paragraph>
+  </section>
+
+  <summary>
+    Solução completa para análise estratégica de custos com:
+    - Capacidade de processar 1M+ registros em tempo real
+    - Biblioteca de 15+ visualizações customizáveis
+    - Integração nativa com ferramentas BI (Power BI, Tableau)
+    - Protocolos de segurança RGPD-compliant
+  </summary>
+
+  <link url="https://github.com/construction-analytics" type="external">Repositório de Código</link>
+  <link url="internal://style_guide.pdf" type="internal">Guia de Estilo Visual</link>
+</web_content>

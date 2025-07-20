@@ -1,0 +1,15 @@
+
+# Comandos Git para inicializar o repositório:
+
+git init
+git add README.md
+git add *.py
+git add requirements.txt
+git add project_config.json
+git add RELATORIO_TECNICO.md
+git commit -m "Initial commit: Plotly Semantic Extractor v2.0"
+
+# Para criar repositório remoto:
+# git remote add origin <URL_DO_REPOSITORIO>
+# git branch -M main
+# git push -u origin main

@@ -1,0 +1,13 @@
+nohup: ignoring input
+Dash is running on http://0.0.0.0:8050/
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+/usr/local/lib/python3.11/dist-packages/sklearn/utils/validation.py:2749: UserWarning:
+
+X does not have valid feature names, but StandardScaler was fitted with feature names
+
+/usr/local/lib/python3.11/dist-packages/sklearn/utils/validation.py:2749: UserWarning:
+
+X does not have valid feature names, but StandardScaler was fitted with feature names
+

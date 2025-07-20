@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web_content>
+  <title>Análise e Generalização de Dashboards Complexos com Plotly e IA</title>
+  <language code="pt-BR">Português (Brasil)</language>
+  <summary>Este documento detalha um processo iterativo para construir dashboards complexos e interativos usando Plotly e Dash, com insights extraídos de um caso de sucesso de um gráfico Sunburst. Ele aborda boas práticas, correção de erros, métodos de aplicação de código com assistente de IA, manipulação de arquivos e estratégias para generalizar esses aprendizados para diversos tipos de visualizações, incluindo análise preditiva e hospedagem online.</summary>
+
+  <section>
+    <title>Análise dos Screenshots e Projeto Sunburst — Insights e Recomendações</title>
+    <section>
+      <title>Boas Práticas Observadas</title>
+      <list>
+        <item>Uso de Gráfico Sunburst para Hierarquia Complexa</item>
+        <item>Mapeamento de Cores por Categoria (pillar)</item>
+        <item>Configuração Detalhada do Layout do Gráfico</item>
+        <item>Separação de Dados em Estrutura Tabular (DataFrame)</item>
+        <item>Uso de Plotly Express para Visualização Interativa</item>
+      </list>
+    </section>
+    <section>
+      <title>Erros e Pontos de Melhoria</title>
+      <list>
+        <item>Texto Explicativo Dentro da Célula de Código</item>
+        <item>Falta de Comentários no Código</item>
+        <item>Organização do Notebook</item>
+        <item>Manter Sessão Ativa no Colab</item>
+        <item>Padronização do Estilo do Código</item>
+        <item>Tratamento de Dados Faltantes ou Inválidos</item>
+      </list>
+    </section>
+    <section>
+      <title>Métodos para Aplicar Códigos e Trabalhar com Assistente IA</title>
+      <paragraph>Divida o projeto em blocos pequenos e claros: Importação de bibliotecas, Definição e limpeza de dados, Criação do gráfico, Configuração de layout, Interatividade (Dash callbacks, filtros). Use o assistente IA para: Gerar exemplos de código para cada etapa, Corrigir erros de sintaxe e lógica, Sugerir melhorias e boas práticas, Ajudar a interpretar mensagens de erro, Auxiliar na organização do notebook. Teste iterativamente: Execute blocos pequenos, valide resultados e depois avance.</paragraph>
+    </section>
+    <section>
+      <title>Como Trabalhar com Arquivos</title>
+      <list>
+        <item>Carregamento e Salvamento: Use pandas.read_csv(), to_csv(), read_excel(), etc., para importar/exportar dados.</item>
+        <item>Organização: Mantenha arquivos em pastas específicas e com nomes claros para facilitar o acesso.</item>
+        <item>Versionamento: Salve versões intermediárias para evitar perda de dados.</item>
+        <item>Manipulação: Use pandas para filtrar, agrupar, agregar e preparar dados para visualização.</item>
+      </list>
+    </section>
+    <section>
+      <title>Como Receber as Respostas que o Projeto Pede</title>
+      <list>
+        <item>Defina claramente as perguntas de análise: Exemplo: Qual categoria tem maior custo? Como os custos se distribuem hierarquicamente?</item>
+        <item>Use filtros e interatividade para explorar os dados: Dash ou widgets interativos permitem responder perguntas dinâmicas.</item>
+        <item>Documente as descobertas: Use células Markdown para registrar insights e interpretações dos gráficos.</item>
+        <item>Automatize relatórios: Gere gráficos e tabelas que respondam diretamente às questões do projeto.</item>
+      </list>
+    </section>
+    <section>
+      <title>Resumo Final</title>
+      <table>
+        <row>
+          <cell>Aspecto</cell>
+          <cell>O que funcionou bem</cell>
+          <cell>Pontos de melhoria</cell>
+          <cell>Recomendações para uso com IA e código</cell>
+        </row>
+        <row>
+          <cell>Visualização</cell>
+          <cell>Gráfico sunburst hierárquico claro e interativo</cell>
+          <cell>Texto não comentado gerando erro de sintaxe</cell>
+          <cell>Separe texto e código, comente linhas explicativas</cell>
+        </row>
+        <row>
+          <cell>Organização do código</cell>
+          <cell>Uso de pandas e plotly para dados e gráficos</cell>
+          <cell>Código misturado com texto e funções</cell>
+          <cell>Divida em células específicas, siga padrão PEP8</cell>
+        </row>
+        <row>
+          <cell>Interatividade</cell>
+          <cell>Uso de filtros e callbacks no Dash (planejado)</cell>
+          <cell>Código incompleto ou sem tratamento de erros</cell>
+          <cell>Teste funções isoladamente, use IA para debug</cell>
+        </row>
+        <row>
+          <cell>Manutenção da sessão</cell>
+          <cell>Código para manter sessão ativa presente</cell>
+          <cell>Não ativado ou comentado</cell>
+          <cell>Utilize funções para evitar desconexão no Colab</cell>
+        </row>
+        <row>
+          <cell>Uso do assistente IA</cell>
+          <cell>Auxílio para gerar código e corrigir erros</cell>
+          <cell>Falta de integração contínua no fluxo</cell>
+          <cell>Use IA iterativamente para cada etapa, peça exemplos</cell>
+        </row>
+        <row>
+          <cell>Manipulação de arquivos</cell>
+          <cell>Uso de pandas para dados estruturados</cell>
+          <cell>Não detalhado no screenshot</cell>
+          <cell>Organize arquivos, faça backups e trate dados antes</cell>
+        </row>
+        <row>
+          <cell>Documentação</cell>
+          <cell>Alguns comentários e títulos configurados</cell>
+          <cell>Pouca documentação explicativa</cell>
+          <cell>Adicione Markdown para explicações e insights</cell>
+        </row>
+      </table>
+    </section>
+  </section>
+
+  <section>
+    <title>📊 Análise e Insights dos Screenshots — Projeto Gráfico Sunburst Plotly + IA</title>
+    <section>
+      <title>Contexto do Projeto e Mudança de Escopo</title>
+      <list>
+        <item>Houve um problema no sistema relacionado ao arquivo upload.py que causou perda das tasks antigas.</item>
+        <item>A task atual é focada em criar um gráfico Sunburst interativo hospedado online, e não mais um dashboard completo.</item>
+        <item>O método de entrega mudou: agora é publicar o arquivo HTML do gráfico online e enviar o link, não mais enviar o arquivo via upload.py.</item>
+        <item>Você está pivotando completamente a estratégia, focando exclusivamente no gráfico Sunburst e sua hospedagem.</item>
+      </list>
+    </section>
+    <section>
+      <title>Objetivo e Escopo do Gráfico Sunburst</title>
+      <list>
+        <item>Criar um gráfico Sunburst interativo que represente hierarquia de dados complexa, inspirado na “roda de sabores” enviada.</item>
+        <item>O gráfico deve representar a hierarquia de custos de um projeto de construção civil.</item>
+        <item>Estrutura hierárquica de 3 níveis: Nível 1 (centro): Macro-categorias (ex: Materials, Labor, Equipment); Nível 2 (anel intermediário): Subcategorias (ex: Concrete, Steel, Finishes); Nível 3 (anel externo): Componentes (ex: Cement, Aggregate, Admixtures)</item>
+      </list>
+    </section>
+    <section>
+      <title>Código e Dados Hierárquicos</title>
+      <list>
+        <item>Você tem um script data_gen.py que gera um arquivo CSV com os dados hierárquicos para o gráfico.</item>
+        <item>Os dados são realistas, com custos associados a cada item, subcategoria e categoria.</item>
+        <item>O script cria um DataFrame pandas e salva o CSV construction_cost_breakdown.csv.</item>
+      </list>
+      <paragraph>Exemplo de dados:
+        <![CDATA[
+data = [
+  {"category": "Labor", "sub_category": "Site Management", "item": "Project Manager", "cost": 150000},
+  {"category": "Materials", "sub_category": "Concrete", "item": "Cement", "cost": 75000},
+  {"category": "Equipment", "sub_category": "Heavy Machinery", "item": "Crane Rental", "cost": 100000},
+  # ...
+]
+        ]]>
+      </paragraph>
+    </section>
+    <section>
+      <title>Criação do Gráfico Sunburst (viz.py)</title>
+      <list>
+        <item>O gráfico é criado usando Plotly, com foco em: Visualização hierárquica dos custos totais. Uso de plotly.express.sunburst ou plotly.graph_objects. Cada segmento do gráfico representa um custo proporcional.</item>
+        <item>O gráfico é exportado para um arquivo HTML interativo (dashboard.html ou similar).</item>
+        <item>O gráfico inclui: Labels claros. Hierarquia visual coerente. Cores para diferenciar categorias e subcategorias.</item>
+      </list>
+    </section>
+    <section>
+      <title>Hospedagem e Entrega</title>
+      <list>
+        <item>O foco atual é hospedar o arquivo HTML do gráfico online para submissão.</item>
+        <item>GitHub Pages é uma opção recomendada, pois permite hospedar páginas estáticas gratuitamente.</item>
+        <item>O método antigo de upload via script upload.py foi descartado.</item>
+        <item>O fluxo agora é: Gerar o gráfico e exportar HTML completo com dependências embutidas. Subir o arquivo HTML no GitHub Pages (ou outro host estático). Enviar o link público para submissão.</item>
+      </list>
+    </section>
+    <section>
+      <title>Exemplos e Referências de Prompt</title>
+      <list>
+        <item>Você tem exemplos de prompts para IA que ajudam a gerar gráficos complexos baseados em histórias e dados reais.</item>
+        <item>Exemplos incluem: séries temporais, mapas de calor, treemaps, gráficos de barras, etc.</item>
+        <item>Isso ajuda a formular prompts claros e ricos para IA, garantindo qualidade e fidelidade ao escopo.</item>
+      </list>
+    </section>
+    <section>
+      <title>Visualização e Design</title>
+      <list>
+        <item>Imagem do gráfico Sunburst gerado mostra hierarquia clara e cores distintas.</item>
+        <item>O gráfico possui legenda de custo com escala de cores (ex: de 50k a 250k).</item>
+        <item>O design segue princípios de clareza, estética e storytelling.</item>
+      </list>
+    </section>
+    <section>
+      <title>🚀 Recomendações e Próximos Passos</title>
+      <list>
+        <item>Finalize o script de geração do gráfico Sunburst (viz.py): Garanta que o gráfico seja exportado com full_html=True para incluir todas as dependências. Teste a interatividade localmente abrindo o HTML no navegador.</item>
+        <item>Configure o repositório GitHub para hospedagem: Crie um repositório dedicado para o projeto. Suba o arquivo HTML gerado na branch gh-pages (ou configure GitHub Pages pela interface). Verifique se o link público do GitHub Pages está acessível e funcional.</item>
+        <item>Atualize seu prompt para IA (Gemini Pro) para refletir o novo escopo: Foque em geração de gráfico Sunburst específico para hierarquia de custos. Peça para gerar código Python que exporte HTML completo pronto para hospedagem. Inclua detalhes sobre níveis hierárquicos, cores, legendas e interatividade.</item>
+        <item>Automatize o fluxo: Crie um script que gere os dados, crie o gráfico e atualize o repositório GitHub automaticamente (via GitHub Actions, por exemplo). Isso facilitará atualizações futuras do gráfico.</item>
+        <item>Valide o gráfico final com o guia de avaliação: Clareza da hierarquia. Proporcionalidade dos custos. Interatividade e responsividade. Estética e uso de cores.</item>
+      </list>
+    </section>
+  </section>
+
+  <section>
+    <title>📋 Análise e Síntese dos Materiais Enviados</title>
+    <section>
+      <title>Gráfico Sunburst — Visualização Hierárquica de Custos</title>
+      <list>
+        <item>Visual muito claro, organizado por cores para cada categoria principal (verde, laranja, vermelho, azul).</item>
+        <item>Hierarquia em 3 níveis: Categoria > Subcategoria > Item.</item>
+        <item>Legendas e valores exibidos em cada segmento, facilitando interpretação.</item>
+        <item>Uso eficaz de cores para segmentar visualmente grandes grupos e subgrupos.</item>
+        <item>Título claro: "Residential Construction: Hierarchical Cost Explorer".</item>
+        <item>Visual interativo (via Plotly Dash), com tooltips descritivos e filtros dinâmicos.</item>
+      </list>
+    </section>
+    <section>
+      <title>Contexto do Projeto e Avaliação</title>
+      <list>
+        <item>Projeto vinculado a um processo de avaliação para seleção de especialistas Python em visualização de dados.</item>
+        <item>Avaliação envolve criação de dashboards complexos com pelo menos 3 diagramas, análise preditiva, mapas e storytelling.</item>
+        <item>Uso de ferramentas: Plotly, Dash, ML simples (ex: regressão logística para análise preditiva).</item>
+        <item>Workflow iterativo com documentação detalhada, explicando decisões, desafios e aprendizados.</item>
+        <item>Erros e limitações reconhecidos (ex: dificuldade com esquemas de cores no plotly.express).</item>
+      </list>
+    </section>
+    <section>
+      <title>Metodologia Aplicada no Projeto</title>
+      <section>
+        <title>Desenvolvimento da Visualização</title>
+        <list>
+          <item>Escolha do dataset adequado para o dashboard complexo.</item>
+          <item>Processamento e preparação dos dados, incluindo engenharia de features para análise preditiva.</item>
+          <item>Desenvolvimento iterativo do código Python/Dash para o dashboard.</item>
+          <item>Implementação de interatividade (dropdowns dinâmicos, tooltips informativos).</item>
+          <item>Integração de múltiplos gráficos e mapas para contar uma história coerente.</item>
+          <item>Revisão e refinamento constante para clareza, impacto visual e usabilidade.</item>
+        </list>
+      </section>
+      <section>
+        <title>Experimento de ML</title>
+        <list>
+          <item>Uso do histórico de conversas como dataset não estruturado.</item>
+          <item>Transformação dos dados para formato estruturado adequado para ML.</item>
+          <item>Definição de tarefa simples (classificação/regressão).</item>
+          <item>Treinamento e avaliação do modelo (ex: regressão logística).</item>
+          <item>Integração dos insights do ML na visualização para enriquecer a análise.</item>
+        </list>
+      </section>
+    </section>
+    <section>
+      <title>Lições e Insights Gerais</title>
+      <list>
+        <item>Importância de seguir rigorosamente as diretrizes do projeto (documentação, padrões, requisitos).</item>
+        <item>Necessidade de modularidade e flexibilidade no código para suportar múltiplos tipos de gráficos e datasets.</item>
+        <item>Valor da documentação clara para uso futuro e replicação do template.</item>
+        <item>Benefício do storytelling visual para guiar o usuário na compreensão dos dados.</item>
+        <item>Reconhecimento das limitações técnicas e busca por soluções alternativas (ex: plotly.graph_objects para cores avançadas).</item>
+        <item>Uso da IA para planejar e organizar o fluxo de trabalho, mas com supervisão humana para validação.</item>
+      </list>
+    </section>
+    <section>
+      <title>Próximos Passos e Recomendações para Generalização</title>
+      <section>
+        <title>A. Criar Template Genérico para Dashboards</title>
+        <list>
+          <item>Estrutura modular em Python/Dash para fácil adaptação a diferentes datasets e tipos de gráficos.</item>
+          <item>Placeholders para: Gráficos complexos (sunburst, treemap, barras aninhadas, linhas, mapas). Análise preditiva (incluindo resultados ML). Componentes interativos (filtros, dropdowns, tooltips).</item>
+          <item>Padronização de callbacks para interatividade consistente.</item>
+          <item>Suporte a múltiplas fontes de dados.</item>
+        </list>
+      </section>
+      <section>
+        <title>B. Documentação e Exemplos</title>
+        <list>
+          <item>Documentar como integrar novos datasets.</item>
+          <item>Exemplos simples para demonstrar uso do template.</item>
+          <item>Guia para customização visual (cores, legendas, estilos).</item>
+        </list>
+      </section>
+      <section>
+        <title>C. Planejamento de Dashboards Complexos</title>
+        <list>
+          <item>Definir narrativa clara e objetivos de negócio.</item>
+          <item>Selecionar datasets que suportem múltiplos tipos de visualizações.</item>
+          <item>Incluir pelo menos 3 tipos de gráficos complexos.</item>
+          <item>Planejar integração de mapas e análises preditivas.</item>
+          <item>Definir filtros e interatividade necessários.</item>
+        </list>
+      </section>
+      <section>
+        <title>D. Refinamento Visual e Funcional</title>
+        <list>
+          <item>Explorar plotly.graph_objects para controle avançado de cores e estilos.</item>
+          <item>Adicionar indicadores visuais para alertas (ex: segmentos fora do orçamento).</item>
+          <item>Melhorar tooltips com informações adicionais.</item>
+          <item>Testar responsividade e usabilidade.</item>
+        </list>
+      </section>
+      <section>
+        <title>E. Integração de ML</title>
+        <list>
+          <item>Modelos para previsão e análise de dados históricos.</item>
+          <item>Exibição dinâmica dos resultados no dashboard.</item>
+          <item>Análise de comportamento do usuário para otimizar visualizações.</item>
+        </list>
+      </section>
+    </section>
+  </section>
+
+  <section>
+    <title>Guia Mestre para Reproduzir Qualidade e Complexidade Visual em Diversos Gráficos Complexos</title>
+    <section>
+      <title>Entendimento e Análise do Caso Sunburst</title>
+      <section>
+        <title>Pontos-Chave a Extrair</title>
+        <list>
+          <item>Estrutura de dados hierárquica: Como organizar os dados para múltiplos níveis (categoria, subcategoria, item).</item>
+          <item>Preparação dos dados: Criação de CSV estruturado, uso de DataFrames, garantia de integridade e coerência.</item>
+          <item>Visualização com Plotly: Uso de plotly.express e plotly.graph_objects para controle estético e interatividade.</item>
+          <item>Design visual: Uso de cores, legendas, tooltips e escalas proporcionais para comunicar significado.</item>
+          <item>Interatividade: Dropdowns, filtros dinâmicos, tooltips informativos.</item>
+          <item>Workflow de desenvolvimento: Iterativo, com documentação, testes e refinamentos constantes.</item>
+          <item>Deploy e entrega: Exportação para HTML standalone, hospedagem (ex: GitHub Pages) para acessibilidade e submissão.</item>
+        </list>
+      </section>
+    </section>
+    <section>
+      <title>Generalização para Outros Tipos de Gráficos Complexos</title>
+      <section>
+        <title>Passos para Replicação</title>
+        <list>
+          <item>Definir a narrativa e o objetivo do gráfico: Qual história o gráfico deve contar? Quais insights o usuário deve obter?</item>
+          <item>Analisar a estrutura dos dados: Hierarquia? Séries temporais? Categorias múltiplas? Dados geográficos? Numéricos? Textuais?</item>
+          <item>Preparar e estruturar os dados: Criar dataset limpo e organizado. Garantir formatos compatíveis com a biblioteca de visualização.</item>
+          <item>Escolher a biblioteca e método de visualização: Plotly Express para protótipos rápidos. Plotly Graph Objects para customização avançada. Outras bibliotecas (Seaborn, Matplotlib, Bokeh) conforme o caso.</item>
+          <item>Desenvolver o gráfico com atenção ao design: Cores coerentes e acessíveis. Legendas e labels claras. Escalas proporcionais e intuitivas. Elementos visuais que reforcem a história (ex: destaques, padrões).</item>
+          <item>Adicionar interatividade: Filtros, dropdowns, zoom, hover tooltips. Callbacks para atualizar visualizações relacionadas.</item>
+          <item>Testar e refinar: Verificar usabilidade, clareza e performance. Ajustar layout e elementos visuais.</item>
+          <item>Documentar todo o processo: Código comentado. Guia de uso para adaptação futura. Exemplos de datasets.</item>
+          <item>Preparar para deploy: Exportar para HTML standalone. Hospedar em plataformas acessíveis. Garantir responsividade e compatibilidade.</item>
+        </list>
+      </section>
+    </section>
+    <section>
+      <title>Checklist para Aplicação Prática</title>
+      <table>
+        <row>
+          <cell>Etapa</cell>
+          <cell>O que verificar</cell>
+        </row>
+        <row>
+          <cell>Narrativa clara</cell>
+          <cell>Objetivo definido, história para contar</cell>
+        </row>
+        <row>
+          <cell>Dados organizados</cell>
+          <cell>Estrutura adequada, dados limpos e coerentes</cell>
+        </row>
+        <row>
+          <cell>Escolha da visualização</cell>
+          <cell>Tipo de gráfico adequado ao dado e à narrativa</cell>
+        </row>
+        <row>
+          <cell>Design visual</cell>
+          <cell>Cores, legendas, escalas e elementos visuais</cell>
+        </row>
+        <row>
+          <cell>Interatividade</cell>
+          <cell>Filtros, tooltips, callbacks implementados</cell>
+        </row>
+        <row>
+          <cell>Testes</cell>
+          <cell>Usabilidade e performance validadas</cell>
+        </row>
+        <row>
+          <cell>Documentação</cell>
+          <cell>Código e uso documentados claramente</cell>
+        </row>
+        <row>
+          <cell>Deploy</cell>
+          <cell>Exportação e hospedagem funcionais</cell>
+        </row>
+      </table>
+    </section>
+    <section>
+      <title>Exemplos de Aplicação para Outros Gráficos</title>
+      <list>
+        <item>Treemap: Visualizar hierarquias com retângulos aninhados, aplicando a mesma lógica de dados hierárquicos do sunburst.</item>
+        <item>Gráficos de barras empilhadas: Para mostrar composição e comparação entre categorias.</item>
+        <item>Gráficos de linha múltiplas séries: Para séries temporais com múltiplas categorias.</item>
+        <item>Mapas interativos: Para dados geográficos com camadas e filtros.</item>
+        <item>Diagramas de rede: Para relações complexas entre entidades.</item>
+      </list>
+    </section>
+  </section>
+
+  <section>
+    <title>Guia Mestre para Replicação e Generalização de Dashboards Complexos com Visualizações Avançadas</title>
+    <section>
+      <title>Visão Geral do Projeto</title>
+      <list>
+        <item>Objetivo inicial: Criar gráfico Sunburst interativo para hierarquia de custos.</item>
+        <item>Mudança de escopo: De dashboard completo para foco no gráfico Sunburst e entrega via HTML hospedado.</item>
+        <item>Componentes do projeto: Preparação de dados hierárquicos. Desenvolvimento do gráfico com Plotly/Dash. Integração de interatividade (dropdowns, tooltips). Aplicação de análise preditiva simples (ex: regressão logística). Storytelling visual para guiar o usuário. Documentação e deploy online.</item>
+      </list>
+    </section>
+    <section>
+      <title>Metodologia Recomendada para Replicação e Generalização</title>
+      <section>
+        <title>Etapas Fundamentais</title>
+        <table>
+          <row>
+            <cell>Etapa</cell>
+            <cell>Descrição</cell>
+          </row>
+          <row>
+            <cell>Análise da documentação</cell>
+            <cell>Estudar guidelines, padrões, exemplos, requisitos de interatividade e deploy.</cell>
+          </row>
+          <row>
+            <cell>Design do template genérico</cell>
+            <cell>Criar uma estrutura modular em Python/Dash com placeholders para múltiplos gráficos e filtros.</cell>
+          </row>
+          <row>
+            <cell>Desenvolvimento do código base</cell>
+            <cell>Implementar funcionalidades básicas: carregamento de dados, filtros, callbacks, layout flexível.</cell>
+          </row>
+          <row>
+            <cell>Criação de datasets de exemplo</cell>
+            <cell>Construir datasets simples para demonstrar o funcionamento do template com diferentes gráficos.</cell>
+          </row>
+          <row>
+            <cell>Documentação clara</cell>
+            <cell>Explicar uso do template, integração de dados, customização e adição de novos gráficos/filtros.</cell>
+          </row>
+          <row>
+            <cell>Planejamento do dashboard específico</cell>
+            <cell>Selecionar dataset, definir narrativa, escolher gráficos (mínimo 3 tipos), planejar análises preditivas e mapas.</cell>
+          </row>
+          <row>
+            <cell>Preparação dos dados</cell>
+            <cell>Processar e formatar dados para suportar as visualizações planejadas e análises preditivas.</cell>
+          </row>
+          <row>
+            <cell>Desenvolvimento iterativo</cell>
+            <cell>Codificar o dashboard específico, implementar e refinar gráficos, interatividade e storytelling.</cell>
+          </row>
+          <row>
+            <cell>Revisão e refinamento</cell>
+            <cell>Testar funcionalidades, validar dados, melhorar usabilidade e impacto visual.</cell>
+          </row>
+          <row>
+            <cell>Documentação final do dashboard</cell>
+            <cell>Detalhar dados usados, visualizações, análises, narrativa e aprendizados.</cell>
+          </row>
+          <row>
+            <cell>Entrega e deploy</cell>
+            <cell>Exportar para HTML standalone, hospedar (ex: GitHub Pages) e disponibilizar link para submissão.</cell>
+          </row>
+        </table>
+      </section>
+    </section>
+    <section>
+      <title>Como Adaptar para Outros Tipos de Gráficos</title>
+      <list>
+        <item>Estrutura modular: Use o template para carregar dados e criar gráficos variados (treemap, barras empilhadas, linhas múltiplas, mapas interativos, diagramas de rede).</item>
+        <item>Dados hierárquicos e relacionais: Organize dados para suportar hierarquias, séries temporais, categorias múltiplas e relações.</item>
+        <item>Interatividade consistente: Dropdowns, filtros, tooltips, zoom e callbacks padronizados para qualquer gráfico.</item>
+        <item>Storytelling visual: Layout e textos que conectam as visualizações em uma narrativa fluida.</item>
+        <item>Análise preditiva integrada: Modelos simples aplicados a dados relevantes, com resultados exibidos dinamicamente.</item>
+        <item>Deploy simplificado: Exportar e hospedar dashboards completos e acessíveis.</item>
+      </list>
+    </section>
+  </section>
+
+  <section>
+    <title>Resumo do Projeto: Dashboard Complexo com Análise Preditiva (Dash + Plotly)</title>
+    <section>
+      <title>Objetivo</title>
+      <paragraph>Criar um dashboard interativo para análise de instalações residenciais inteligentes, integrando: Visualizações hierárquicas (sunburst), Distribuição geográfica (mapa), Relações entre variáveis (scatter plot), Análise preditiva (importância de features via regressão linear).</paragraph>
+    </section>
+    <section>
+      <title>Estrutura do Código</title>
+      <section>
+        <title>1. Preparação dos Dados</title>
+        <list>
+          <item>Dataset simulado com colunas: Region, City, Installation_Type, Installation_Cost, Number_of_Devices, Customer_Satisfaction, Latitude, Longitude, Annual_Energy_Savings.</item>
+          <item>One-hot encoding aplicado para variáveis categóricas no modelo preditivo.</item>
+          <item>Variáveis independentes (features) e dependente (target) definidas para regressão.</item>
+        </list>
+      </section>
+      <section>
+        <title>2. Modelo Preditivo</title>
+        <list>
+          <item>Modelo de regressão linear treinado para prever Annual_Energy_Savings a partir das features.</item>
+          <item>Extração da importância das features pelos coeficientes absolutos do modelo.</item>
+          <item>Ordenação das features por importância para visualização.</item>
+        </list>
+      </section>
+      <section>
+        <title>3. Layout do Dashboard (Dash)</title>
+        <list>
+          <item>Dropdowns para filtros: Região, Cidade, Tipo de Instalação.</item>
+          <item>Placeholders para gráficos: Sunburst (hierarquia), Scatter plot (custo x economia), Mapa (distribuição geográfica), Gráfico de barras (importância das features preditivas).</item>
+          <item>Estilo inline para disposição lado a lado.</item>
+        </list>
+      </section>
+      <section>
+        <title>4. Callbacks</title>
+        <list>
+          <item>Atualização dinâmica das opções do dropdown Cidade conforme Região selecionada.</item>
+          <item>Atualização dos gráficos com base nos filtros aplicados.</item>
+          <item>Tooltips customizados para clareza nas informações.</item>
+          <item>Retorno simultâneo de todas as figuras para atualização eficiente.</item>
+        </list>
+      </section>
+      <section>
+        <title>5. Execução</title>
+        <list>
+          <item>O app é executado inline no Colab com app.run(debug=True, jupyter_mode='inline').</item>
+          <item>Uso da versão Dash 3.1.1 conforme indicado.</item>
+        </list>
+      </section>
+    </section>
+    <section>
+      <title>Visualizações e Interatividade</title>
+      <list>
+        <item>Sunburst: mostra a decomposição hierárquica das instalações por Região, Cidade e Tipo, com valores baseados no custo ou número de dispositivos.</item>
+        <item>Mapa: pontos geográficos dimensionados pelo custo da instalação e coloridos por região.</item>
+        <item>Scatter Plot: relação entre custo da instalação e economia anual, colorido por tipo de instalação, com tooltip detalhado.</item>
+        <item>Feature Importance (Bar Chart): importância das variáveis na previsão da economia anual, ordenadas em gráfico de barras.</item>
+      </list>
+    </section>
+    <section>
+      <title>Próximos Passos Sugeridos</title>
+      <list>
+        <item>Refinar visualizações (cores, tooltips, layout responsivo).</item>
+        <item>Validar performance do modelo preditivo com validação cruzada.</item>
+        <item>Modularizar código para facilitar manutenção e reutilização.</item>
+        <item>Exportar dashboard para HTML para uso externo
