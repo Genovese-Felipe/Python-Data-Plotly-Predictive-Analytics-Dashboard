@@ -62,13 +62,33 @@
 **Estimativa:** 5 semanas
 **Dependencies:** API REST, autenticação
 **Status:** Conceitual
+**Design Inspiration:** Construction project monitoring dashboard
 
 #### **Features Planejadas:**
 - [ ] Chat interface com histórico
 - [ ] Visualização da Knowledge-Base
-- [ ] Dashboard de métricas pessoais
+- [ ] Dashboard de métricas pessoais (inspirado no design BoldBI)
 - [ ] Editor de código integrado
 - [ ] Preview de resultados Plotly/Dash
+- [ ] KPI cards estilo profissional (accuracy, response time, satisfaction)
+
+#### **Design System Planejado:**
+```python
+design_tokens = {
+    "colors": {
+        "primary": "#1f77b4",     # Azul profissional
+        "secondary": "#ff7f0e",   # Laranja destaque  
+        "success": "#2ca02c",     # Verde positivo
+        "warning": "#d62728"      # Vermelho alerta
+    },
+    "layout": {
+        "top_kpis": "Cards de métricas principais",
+        "main_content": "Visualização central",
+        "sidebar": "Navegação e filtros",
+        "responsive": "Mobile-first approach"
+    }
+}
+```
 
 ### **5. 🔌 API REST Completa**
 **Epic:** Integração com sistemas externos
