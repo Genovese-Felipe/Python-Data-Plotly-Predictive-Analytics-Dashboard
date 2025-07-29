@@ -1,4 +1,4 @@
-# 🚀 PULL REQUEST: "Almost There" - Dashboard Funcional
+# 🚀 PULL REQUEST: "Almost There" - Dashboard Functional
 
 ## 📋 Resumo das Implementações
 
