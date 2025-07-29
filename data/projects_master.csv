@@ -1,0 +1,31 @@
+project_id,project_name,project_type,project_head,start_date,end_date,total_budget,duration_days
+Project_1,Construction Project 1,Engineering & Non-Residential,Maria Garcia,2022-01-01 00:00:00.000000000,2025-07-30 00:00:00.000000000,794143,1306
+Project_2,Construction Project 2,Engineering & Non-Residential,Sarah Johnson,2022-01-26 04:08:16.551724138,2024-12-01 04:08:16.551724138,166640,1040
+Project_3,Construction Project 3,Engineering & Non-Residential,Maria Garcia,2022-02-20 08:16:33.103448276,2026-03-05 08:16:33.103448276,422619,1474
+Project_4,Construction Project 4,Commercial Building,Maria Garcia,2022-03-17 12:24:49.655172414,2025-10-17 12:24:49.655172414,204282,1310
+Project_5,Construction Project 5,Infrastructure,Sarah Johnson,2022-04-11 16:33:06.206896552,2025-10-07 16:33:06.206896552,876793,1275
+Project_6,Construction Project 6,Engineering & Non-Residential,Sarah Johnson,2022-05-06 20:41:22.758620690,2025-09-11 20:41:22.758620690,660968,1224
+Project_7,Construction Project 7,Commercial Building,John Smith,2022-06-01 00:49:39.310344828,2023-03-29 00:49:39.310344828,397808,301
+Project_8,Construction Project 8,Commercial Building,Michael Brown,2022-06-26 04:57:55.862068966,2024-04-02 04:57:55.862068966,157203,646
+Project_9,Construction Project 9,Engineering & Non-Residential,Michael Brown,2022-07-21 09:06:12.413793104,2026-06-08 09:06:12.413793104,379884,1418
+Project_10,Construction Project 10,Commercial Building,Maria Garcia,2022-08-15 13:14:28.965517240,2024-01-07 13:14:28.965517240,392665,510
+Project_11,Construction Project 11,Engineering & Non-Residential,Michael Brown,2022-09-09 17:22:45.517241380,2023-06-03 17:22:45.517241380,756646,267
+Project_12,Construction Project 12,Engineering & Non-Residential,Maria Garcia,2022-10-04 21:31:02.068965520,2026-04-29 21:31:02.068965520,673802,1303
+Project_13,Construction Project 13,Infrastructure,John Smith,2022-10-30 01:39:18.620689656,2025-09-15 01:39:18.620689656,898491,1051
+Project_14,Construction Project 14,Infrastructure,Sarah Johnson,2022-11-24 05:47:35.172413792,2023-09-30 05:47:35.172413792,524993,310
+Project_15,Construction Project 15,Infrastructure,Sarah Johnson,2022-12-19 09:55:51.724137932,2025-07-25 09:55:51.724137932,207635,949
+Project_16,Construction Project 16,Engineering & Non-Residential,Sarah Johnson,2023-01-13 14:04:08.275862072,2024-06-19 14:04:08.275862072,741920,523
+Project_17,Construction Project 17,Engineering & Non-Residential,Michael Brown,2023-02-07 18:12:24.827586208,2025-10-19 18:12:24.827586208,784707,985
+Project_18,Construction Project 18,Commercial Building,John Smith,2023-03-04 22:20:41.379310344,2024-09-19 22:20:41.379310344,605149,565
+Project_19,Construction Project 19,Commercial Building,Michael Brown,2023-03-30 02:28:57.931034480,2027-01-23 02:28:57.931034480,793870,1395
+Project_20,Construction Project 20,Engineering & Non-Residential,Michael Brown,2023-04-24 06:37:14.482758624,2026-06-02 06:37:14.482758624,544416,1135
+Project_21,Construction Project 21,Commercial Building,John Smith,2023-05-19 10:45:31.034482760,2024-08-17 10:45:31.034482760,570460,456
+Project_22,Construction Project 22,Engineering & Non-Residential,John Smith,2023-06-13 14:53:47.586206896,2027-03-08 14:53:47.586206896,484787,1364
+Project_23,Construction Project 23,Infrastructure,John Smith,2023-07-08 19:02:04.137931040,2025-04-07 19:02:04.137931040,122877,639
+Project_24,Construction Project 24,Engineering & Non-Residential,John Smith,2023-08-02 23:10:20.689655176,2024-02-19 23:10:20.689655176,197102,201
+Project_25,Construction Project 25,Commercial Building,Sarah Johnson,2023-08-28 03:18:37.241379312,2024-11-02 03:18:37.241379312,128286,432
+Project_26,Construction Project 26,Engineering & Non-Residential,David Wilson,2023-09-22 07:26:53.793103448,2026-04-06 07:26:53.793103448,672769,927
+Project_27,Construction Project 27,Commercial Building,David Wilson,2023-10-17 11:35:10.344827584,2026-08-18 11:35:10.344827584,382920,1036
+Project_28,Construction Project 28,Commercial Building,John Smith,2023-11-11 15:43:26.896551728,2025-08-26 15:43:26.896551728,557714,654
+Project_29,Construction Project 29,Engineering & Non-Residential,David Wilson,2023-12-06 19:51:43.448275864,2027-05-21 19:51:43.448275864,916810,1262
+Project_30,Construction Project 30,Infrastructure,David Wilson,2024-01-01 00:00:00.000000000,2025-11-21 00:00:00.000000000,324363,690
