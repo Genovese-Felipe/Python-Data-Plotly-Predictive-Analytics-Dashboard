@@ -221,7 +221,7 @@ class ContentExtractor:
                 code_content = f.read()
             
             # Basic code analysis
-            lines = code_content.split('\\n')
+            lines = code_content.split('\n')
             
             # Extract comments and docstrings
             comments = []
