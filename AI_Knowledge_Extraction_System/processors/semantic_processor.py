@@ -340,10 +340,7 @@ class SemanticProcessor:
         words = re.findall(r'\b\w+\b', text, re.IGNORECASE)
         
         # Filter words
-        stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by',
-                     'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'do', 'does',
-                     'did', 'will', 'would', 'could', 'should', 'this', 'that', 'these', 'those', 'i', 'you',
-                     'he', 'she', 'it', 'we', 'they', 'me', 'him', 'her', 'us', 'them'}
+        stop_words = STOP_WORDS
         
         filtered_words = [word for word in words if word not in stop_words and len(word) > 3]
         
