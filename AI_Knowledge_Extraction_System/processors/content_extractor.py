@@ -247,7 +247,7 @@ class ContentExtractor:
                         else:
                             comment_buffer.append(stripped)
                             docstrings.append({"lines": f"{line_num - len(comment_buffer) + 1}-{line_num}", 
-                                             "content": '\\n'.join(comment_buffer)})
+                                             "content": '\n'.join(comment_buffer)})
                             in_multiline_comment = False
                             comment_buffer = []
                     elif in_multiline_comment:
