@@ -1,6 +1,6 @@
-# 💡 Practical Examples - Exemplos Completos e Funcionais
+# 💡 Practical Examples - Exemplos Completos de IA e Python Coding
 
-Esta pasta contém **projetos completos** que você pode executar, estudar e adaptar para seus próprios dashboards.
+Esta pasta contém **projetos completos de IA e Python coding** que você pode executar, estudar e adaptar para seus próprios dashboards inteligentes com machine learning.
 
 ## 📂 **Projetos Disponíveis**
 
@@ -36,7 +36,7 @@ Esta pasta contém **projetos completos** que você pode executar, estudar e ada
   └── assets/                   # Recursos estáticos
   ```
 
-### **� MOVED_Plotly_Documentation.md**
+### **📄 MOVED_Plotly_Documentation.md**
 - **Nota explicativa** sobre reorganização da documentação oficial
 - **Plotly_Documentation foi movida** para `03_Technical_Documentation/`
 - Melhor categorização: documentação técnica ≠ exemplos práticos
