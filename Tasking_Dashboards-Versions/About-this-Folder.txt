@@ -1,0 +1,1 @@
+This folder contains versions, proposals, corrections, improvements, and variant versions for tasks related to the project on Python data visualization using Plotly charts and dashboards.
