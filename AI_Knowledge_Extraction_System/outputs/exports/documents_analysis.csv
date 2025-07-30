@@ -1,0 +1,79 @@
+filename,file_type,file_size,domain,content_type,difficulty_level,word_count,char_count,complexity_score,keywords,topics
+00_TROUBLESHOOTING.md,.md,19251,data_visualization,tutorial,intermediate,2180,18889,0.416164653162564,print; python; data; self; import,data_visualization; web_development; python; machine_learning; data_analysis
+00_AI_STRATEGY_EXECUTIVE_SUMMARY.md,.md,6199,data_visualization,reference,intermediate,785,5939,0.46493148040918736,para; sistema; performance; inteligente; erros,data_visualization; python; machine_learning
+00_QUICK_START.md,.md,14561,data_visualization,tutorial,intermediate,1431,14358,0.3810996876086908,self; html; para; vendas; import,data_visualization; web_development; python; machine_learning; data_analysis
+README.md,.md,6888,data_visualization,tutorial,intermediate,877,6658,0.46701609838035335,para; python; guias; quando; usar,data_visualization; web_development; python; machine_learning; data_analysis
+REORGANIZATION_PLOTLY_DOCS_COMPLETED.md,.md,3850,data_visualization,tutorial,intermediate,419,3581,0.43168467110497,para; documentacao; problema; oficial; navegacao,data_visualization
+00_SHOWCASE.md,.md,7724,data_visualization,example,advanced,1025,7426,0.6857375790424571,para; casos; dashboard; performance; dados,data_visualization; web_development; python; machine_learning; data_analysis
+00_SETUP.md,.md,16771,data_visualization,tutorial,intermediate,1906,16070,0.411742602115255,python; para; print; import; dash,data_visualization; web_development; python; machine_learning; data_analysis
+ORGANIZATION_STATUS_FINAL.md,.md,2916,data_visualization,tutorial,advanced,356,2798,0.6386454431960049,arquivos; navegacao; para; status; problemas,data_visualization; machine_learning; data_analysis
+FINAL_PROBLEMS_REPORT.md,.md,5744,data_visualization,tutorial,intermediate,600,5510,0.4758458049886622,pdfs; pandas; documentation; arquivos; organizados,data_visualization; web_development; python; data_analysis
+PENDING_MOVE_PLOTLY_DOCS.md,.md,1479,data_visualization,example,intermediate,157,1429,0.5090619571511291,mover; pasta; plotly_documentation; conteudo; navegar,data_visualization; python; data_analysis
+AI_TRANSFORMATION_SUMMARY.md,.md,8396,data_visualization,tutorial,expert,1034,8328,0.8688254121764759,python; production; complete; coding; development,data_visualization; web_development; python; machine_learning; data_analysis
+00_DOMAIN_SPECIFIC_AI.py,.py,42662,data_visualization,example,intermediate,2970,42380,0.48804926391741615,self; return; para; class; analise,data_visualization; python; machine_learning; data_analysis
+00_AI_DEVELOPMENT_ROADMAP.md,.md,2535,data_visualization,documentation,intermediate,389,2477,0.5685089974293059,para; resposta; capacidade; base; usuario,data_visualization; python; machine_learning; data_analysis
+00_NAVIGATION_INDEX.md,.md,6797,data_visualization,tutorial,intermediate,790,6532,0.42202360588436544,dados; para; 02_practical_examples; 06_specialized_charts; 04_data_generation,data_visualization; web_development; python; machine_learning; data_analysis
+00_AI_OPTIMIZATION_GUIDE.md,.md,9890,data_visualization,tutorial,intermediate,974,9644,0.5407972886445431,self; para; sistema; python; class,data_visualization; python; machine_learning; data_analysis
+CORRECTION_PLAN.md,.md,6052,data_visualization,tutorial,intermediate,558,5784,0.4711230585424134,pdfs; organizados; 03_technical_documentationpandas_numpy_docs; pandas; arquivos,data_visualization; web_development; python; data_analysis
+00_AI_IMPLEMENTATION_CODE.py,.py,37754,python_programming,example,intermediate,2840,37494,0.43639282019802433,self; return; import; query; para,data_visualization; python; machine_learning; data_analysis
+00_LEARNING_PATHS.md,.md,11122,data_visualization,tutorial,expert,1602,10455,1.0,para; python; trilha; dashboard; 30min,data_visualization; web_development; python; machine_learning; data_analysis
+advanced_dashboard_guide.md,.md,30856,data_visualization,tutorial,intermediate,2600,30711,0.44285061849758334,self; return; html; risk; import,data_visualization; web_development; python; machine_learning; data_analysis
+plotly_dash_best_practices (3).md,.md,10254,data_visualization,code,intermediate,1309,9832,0.39762541380188443,python; dados; para; codigo; import,data_visualization; web_development; python; machine_learning; data_analysis
+complete_error_analysis (1).md,.md,7665,data_visualization,reference,intermediate,922,7458,0.4134396665390668,erro; python; dados; solucao; value,data_visualization; web_development; python; machine_learning; data_analysis
+README.md,.md,2174,data_visualization,tutorial,intermediate,271,2116,0.4958034874466392,para; executive; desenvolvimento; guias; projetos,data_visualization; data_analysis
+Executive Guide_ Building Professional Plotly Dash.md,.md,7746,data_visualization,tutorial,intermediate,734,7681,0.4152652070908202,https; data; plotly; synthetic; dash,data_visualization; web_development; python; machine_learning; data_analysis
+effective_prompt_engineering (2).md,.md,6718,data_visualization,example,advanced,960,6519,0.6776357323232323,dados; para; dashboard; prompts; crie,data_visualization; web_development; python; machine_learning
+README.md,.md,3434,data_visualization,example,intermediate,446,3305,0.458672067119919,para; exemplos; python; dashboard; dados,data_visualization; python; machine_learning; data_analysis
+MOVED_Plotly_Documentation.md,.md,2197,data_visualization,example,advanced,239,2028,0.6344351464435146,documentacao; para; local; oficial; readme,data_visualization
+app.py,.py,11054,data_visualization,example,intermediate,790,10994,0.48135058436951583,classname; html; data; chart; sales_df,data_visualization; web_development; python; data_analysis
+charts.py,.py,8939,data_visualization,code,intermediate,669,8901,0.46709811115640715,total_revenue; sales_df; receita; vendas; append,data_visualization; python; data_analysis
+data_generator.py,.py,9059,data_analysis,code,intermediate,735,9015,0.41690373118944546,dados; random; population; round; print,data_visualization; web_development; python; data_analysis
+main.py,.py,1371,python_programming,reference,intermediate,106,1371,0.42190775681341725,path; static_folder_path; import; dirname; join,data_visualization; web_development; python; machine_learning; data_analysis
+dashboard_plan.md,.md,2309,data_visualization,documentation,intermediate,337,2250,0.3836130154507316,para; graficos; dados; mapas; dashboard,data_visualization; web_development; python
+Dashboard Analytics - Visualização de Dados Interativa.md,.md,5714,data_visualization,example,advanced,625,4750,0.6297866666666666,grafico; filtros; dashboard; dados; react,data_visualization; web_development
+Dash.md,.md,8240,data_visualization,documentation,intermediate,972,7226,0.512914328469884,dados; para; vendas; python; tempo,data_visualization; web_development; python; machine_learning; data_analysis
+__init__.py,.py,0,,,,0,0,0.0,,
+USAGE_GUIDE.md,.md,7077,data_visualization,reference,intermediate,1010,6851,0.4691261983341191,para; confianca; predicao; especie; especies,data_visualization; web_development; python; machine_learning; data_analysis
+app.py,.py,351,data_visualization,code,intermediate,33,351,0.35841750841750836,import; dash; path; from; create_layout,data_visualization; web_development; python
+README.md,.md,2485,data_visualization,example,intermediate,305,2305,0.42775956284153005,para; dashboard; analise; preditiva; python,data_visualization; web_development; python; machine_learning; data_analysis
+DOCUMENTATION.md,.md,14132,python_programming,example,intermediate,1887,13660,0.520967327257368,para; dados; modelo; sistema; analise,data_visualization; python; machine_learning; data_analysis
+__init__.py,.py,0,,,,0,0,0.0,,
+__init__.py,.py,0,,,,0,0,0.0,,
+train_model.py,.py,1005,python_programming,code,intermediate,79,1001,0.47837552742616035,import; model; path; scaler; from,python; machine_learning; data_analysis
+__init__.py,.py,0,,,,0,0,0.0,,
+data_preprocessing.py,.py,793,python_programming,code,intermediate,72,792,0.4231481481481481,x_train; x_test; scaler; shape; import,python; machine_learning; data_analysis
+data_exploration.py,.py,953,python_programming,code,intermediate,75,938,0.4337936507936508,print; target_names; import; perform_eda; fig_scatter,data_visualization; web_development; python; data_analysis
+__init__.py,.py,0,,,,0,0,0.0,,
+dashboard_layout.py,.py,4899,data_visualization,code,intermediate,297,4878,0.4354558658480227,html; width; sepal; length; petal,data_visualization; web_development; python; machine_learning; data_analysis
+__init__.py,.py,0,,,,0,0,0.0,,
+load_data.py,.py,473,python_programming,code,intermediate,42,473,0.38392857142857145,iris; target; df_iris; import; load_iris,python; machine_learning; data_analysis
+README.md,.md,4924,data_visualization,documentation,advanced,641,4809,0.6789222003662755,para; design; visual; cores; dashboard,data_visualization; web_development; python; data_analysis
+README.md,.md,4305,python_programming,example,intermediate,567,4147,0.49787558120891456,dados; para; geracao; datas; numpy,data_visualization; python; machine_learning; data_analysis
+README.md,.md,6498,data_visualization,tutorial,intermediate,753,6271,0.4319241552309281,para; pandas; python; documentacao; performance,data_visualization; web_development; python; machine_learning; data_analysis
+README.md,.md,1310,data_visualization,tutorial,intermediate,163,1236,0.450426039536469,recursos; para; avancados; guias; dados,data_visualization; machine_learning; data_analysis
+README.md,.md,5069,data_visualization,tutorial,intermediate,598,4910,0.38589156838584754,callbacks; dash; python; documentacao; html,data_visualization; web_development; python; machine_learning; data_analysis
+SETUP_COMPLETO_FELIPE_OTIMIZADO.md,.md,17029,data_visualization,tutorial,intermediate,1883,15462,0.3939692553075453,github; python; para; code; dashboard,data_visualization; web_development; python; machine_learning; data_analysis
+GUIA_COMPLETO_FELIPE_DASHBOARD_EXPERT.md,.md,13591,data_visualization,tutorial,intermediate,1627,12590,0.5176819165709093,para; multi; dados; dashboard; codigo,data_visualization; web_development; python; data_analysis
+registro_projeto_conversa.md,.md,8630,data_visualization,tutorial,intermediate,1105,8207,0.4203813833225598,para; guias; registro; exemplos; scripts,data_visualization; web_development; python
+relatorio_completo.md,.md,4551,data_visualization,tutorial,intermediate,498,4311,0.404529657089898,para; guias; guia; chart; example,data_visualization; web_development; python
+analyze_monica_guide.py,.py,7124,web_development,tutorial,intermediate,640,6814,0.5013654891304348,print; content; files; technology_mentions; text,web_development; python; data_analysis
+register_project.py,.py,6922,python_programming,tutorial,intermediate,670,6530,0.3830785466606362,print; para; backup_dir; zip_path; backup,data_visualization; python; data_analysis
+semantic_plotly_extractor.py,.py,12354,data_visualization,tutorial,intermediate,932,11985,0.40901768608454864,self; subelement; para; return; plotly,data_visualization; python; machine_learning; data_analysis
+README.md,.md,5343,data_visualization,tutorial,intermediate,589,4952,0.46439008077378197,estrutura; plotly; graficos; python; semantico,data_visualization; web_development; python; data_analysis
+advanced_pedagogical_extractor.py,.py,19716,data_visualization,tutorial,intermediate,1464,19098,0.4364018966404469,self; subelement; content; scores; print,data_visualization; python; machine_learning; data_analysis
+RELATORIO_TECNICO.md,.md,8399,python_programming,tutorial,intermediate,995,7707,0.46501201660476305,para; estrutura; graficos; plotly; semantica,data_visualization; web_development; python; machine_learning; data_analysis
+monica_webdev_extractor.py,.py,16991,web_development,tutorial,intermediate,1221,16437,0.4490607084357084,self; subelement; filename; content; desenvolvimento,data_visualization; web_development; python; machine_learning; data_analysis
+extract_test_pyvy.py,.py,4174,python_programming,tutorial,intermediate,355,4044,0.39778682511737085,arquivo; item; import; print; content,web_development; python; data_analysis
+analyze_guide.py,.py,5971,data_visualization,tutorial,intermediate,496,5679,0.45055913978494627,print; charts; exemplos; category_stats; cat_name,data_visualization; python; data_analysis
+RESUMO_EXECUTIVO.md,.md,1789,documentation,tutorial,intermediate,209,1657,0.4411577071019796,inteligente; estruturado; para; documentacao; semantica,data_visualization; python; data_analysis
+analyze_pedagogical_guide.py,.py,6316,python_programming,tutorial,intermediate,539,5957,0.47442795299938156,print; find; root; count; part,data_visualization; python; machine_learning; data_analysis
+Revisão e Sugestões para Estrutura do Guia Plotly Python.md,.md,7776,data_visualization,reference,intermediate,1070,7556,0.4296121894720026,para; como; plotly; dados; barras,data_visualization; web_development; python; data_analysis
+Prompt Pipeline MMMU em 4 Etapas.md,.md,8089,python_programming,tutorial,intermediate,900,7831,0.39937106918238996,etapa; para; documentos; json; start,python; machine_learning; data_analysis
+Etapa 4 Conclusão - XML Unificado Gerado.md,.md,1376,data_visualization,tutorial,advanced,186,1336,0.6424219150025602,para; gerado; arquivo; exemplos; suporte,data_visualization; web_development; python; machine_learning; data_analysis
+pyvy_2x.md,.md,28485,data_visualization,tutorial,intermediate,2639,27490,0.4672060958894814,cite; section; item; plotly; chart,data_visualization; web_development; python; machine_learning; data_analysis
+README.md,.md,1450,documentation,tutorial,intermediate,174,1363,0.3678400383141763,para; troubleshooting; praticas; desenvolvimento; codigo,data_analysis
+README.md,.md,1221,data_analysis,tutorial,intermediate,155,1147,0.318213399503722,pandas; para; desenvolvimento; numpy; data,data_visualization; data_analysis
+README.md,.md,8911,data_visualization,tutorial,intermediate,894,8768,0.43747564407880496,import; modelo; python; dash; from,data_visualization; web_development; python; machine_learning; data_analysis
+README.md,.md,6240,data_visualization,code,intermediate,695,6050,0.45818399825594075,python; sunburst; plotly; mapas; para,data_visualization; web_development; python; machine_learning; data_analysis
+pyvy_2xA.md,.md,52232,data_visualization,tutorial,intermediate,5670,50723,0.5431291653617718,para; cite_start; cite; item; dados,data_visualization; web_development; python; machine_learning; data_analysis
+README.md,.md,6162,data_visualization,tutorial,intermediate,824,6008,0.5326606833747272,para; comunidade; recursos; plotly; dash,data_visualization; python; machine_learning

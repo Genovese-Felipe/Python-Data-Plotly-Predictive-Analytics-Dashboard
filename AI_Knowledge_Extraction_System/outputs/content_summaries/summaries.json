@@ -1,0 +1,1210 @@
+{
+  "document_summaries": {
+    "0a1bd497cdb662f80c6d5c5e9e82266e": {
+      "filename": "00_TROUBLESHOOTING.md",
+      "summary": "# 🔧 TROUBLESHOOTING GUIDE - IA & Python Coding\n\nEste é seu **guia de emergência especializado em IA e Python coding** para quando algo der errado. Organizado por sintomas específicos com soluções testadas e validadas para **desenvolvimento de IA**.\n\n---\n\n## 🚨 **PROBLEMAS CRÍTICOS DE IA - Ação Imediata**\n\n### **💥 \"Dashboard com IA não carrega - página em branco\"**\n\n#### **Sintomas:**\n- Navegador mostra página branca\n- Console mostra erros Python relacionados a IA/ML\n- `app.run_server()` falha com...",
+      "word_count": 2180,
+      "reading_time": 10,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "67ecb0ea7a56591586deddd45614e765": {
+      "filename": "00_AI_STRATEGY_EXECUTIVE_SUMMARY.md",
+      "summary": "# 🚀 Executive Summary: AI Optimization Strategy\n## Transformando a Knowledge-Base em Sistema de IA Inteligente\n\n### 🎯 **VISÃO GERAL**\n\nA implementação dessas estratégias transformará a IA de um **sistema reativo** para um **sistema proativo e adaptativo** que:\n\n- **Aprende continuamente** com cada interação\n- **Previne erros** antes que aconteçam  \n- **Personaliza respostas** para cada usuário\n- **Otimiza performance** automaticamente\n- **Especializa-se** no domínio Plotly/Dash\n\n---\n\n## 📊 **PRIN...",
+      "word_count": 785,
+      "reading_time": 3,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning"
+      ]
+    },
+    "11646f5eb4172149a0a88f0c85b3589c": {
+      "filename": "00_QUICK_START.md",
+      "summary": "# 🎯 QUICK START GUIDE - IA & Python Coding\n\nEste guia vai te levar do **zero ao dashboard com IA funcional** em 1-2 horas seguindo o caminho mais direto e testado para **desenvolvimento de IA com Python**.\n\n---\n\n## ⚡ **SETUP RÁPIDO IA & PYTHON (15 minutos)**\n\n### **1. Dependências Essenciais para IA**\n```bash\n# Bibliotecas básicas\npip install dash plotly pandas numpy\n\n# IA e Machine Learning\npip install scikit-learn transformers sentence-transformers\n\n# Processamento de dados avançado\npip instal...",
+      "word_count": 1431,
+      "reading_time": 7,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "4363095f16cab09c7cc395f4d2ef6ee4": {
+      "filename": "README.md",
+      "summary": "# 🤖 AI & Python Coding Knowledge-Base - Guias Completos para IA e Programação Python\n\nEsta biblioteca de conhecimento foi projetada como **guias completos para IA e Python coding**, organizados em **8 categorias principais** + **5 guias de navegação** para facilitar o aprendizado e desenvolvimento de soluções inteligentes com Python, dashboards Plotly/Dash e Machine Learning.\n\n---\n\n## 🧭 **NAVEGAÇÃO RÁPIDA - Guias de IA e Python Coding**\n\n| Arquivo | Quando Usar | Tempo |\n|---------|-------------...",
+      "word_count": 877,
+      "reading_time": 4,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "ae1919150e5c333000b8e19dff9a5540": {
+      "filename": "REORGANIZATION_PLOTLY_DOCS_COMPLETED.md",
+      "summary": "# ✅ REORGANIZAÇÃO DA PLOTLY DOCUMENTATION - COMPLETADA\n\n## 🎯 **Problema Identificado e Resolvido**\n\n### **❌ Situação Anterior:**\n- `Plotly_Documentation/` estava em `02_Practical_Examples/`\n- **Categorização incorreta:** Documentação oficial misturada com exemplos práticos\n- **Navegação confusa:** Difícil encontrar referência técnica específica\n- **Estrutura inadequada:** 100+ PDFs sem organização clara\n\n### **✅ Solução Implementada:**\n\n#### **1. Movida Para Local Correto**\n```\nDE: 02_Practical_...",
+      "word_count": 419,
+      "reading_time": 2,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization"
+      ]
+    },
+    "294e108b1ca1bf9055fc31fc690be6bb": {
+      "filename": "00_SHOWCASE.md",
+      "summary": "# 🏆 SHOWCASE - Galeria de Dashboards e Casos de Sucesso\n\nEsta seção apresenta **casos reais de sucesso**, templates testados, e inspiração visual para seus próprios projetos.\n\n---\n\n## 🌟 **DASHBOARDS DESTAQUE**\n\n### **📊 Dashboard Financeiro Empresarial**\n**Baseado em:** `02_Practical_Examples/Dashboard Design.../EX1/`\n\n#### **Características:**\n- **KPIs principais:** Receita, Margem, Crescimento\n- **Visualizações:** Line charts (tendência), Sunburst (categorias), Mapas (regional)\n- **Interativida...",
+      "word_count": 1025,
+      "reading_time": 5,
+      "domain": "data_visualization",
+      "difficulty": "advanced",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "eb7aa45f718976f788c5b043629555d2": {
+      "filename": "00_SETUP.md",
+      "summary": "# ⚙️ SETUP IA & PYTHON CODING - Configuração Completa de Ambiente\n\nEste guia garante que você tenha **todo o ambiente de IA e Python configurado corretamente** antes de começar o desenvolvimento. Evite 90% dos problemas seguindo este setup otimizado para **desenvolvimento de IA**.\n\n---\n\n## 🐍 **PYTHON ENVIRONMENT PARA IA**\n\n### **Versão Recomendada para IA**\n```bash\n# Python 3.8+ (recomendado 3.9+ para melhor compatibilidade com IA)\npython --version\n# Deve mostrar: Python 3.9.x ou superior (ideal...",
+      "word_count": 1906,
+      "reading_time": 9,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "d3426cf88a7139c3e80c71410c98f111": {
+      "filename": "ORGANIZATION_STATUS_FINAL.md",
+      "summary": "# ✅ KNOWLEDGE-BASE ORGANIZATION - STATUS FINAL\n\n## 🎯 **ORGANIZAÇÃO COMPLETADA COM SUCESSO**\n\n### 📊 **Estatísticas de Reorganização**\n- **8 categorias principais** criadas e organizadas\n- **60+ recursos** redistribuídos por tema e uso\n- **15 arquivos de navegação** criados\n- **100% dos problemas identificados** corrigidos\n\n### 🗂️ **Estrutura Final Implementada**\n\n#### **📁 Categorias Principais (8)**\n1. **01_Executive_Guides/** - Metodologia e estratégia\n2. **02_Practical_Examples/** - Código exec...",
+      "word_count": 356,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "advanced",
+      "key_topics": [
+        "data_visualization",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "513ddd08160accb6ed5bc44873ed4336": {
+      "filename": "FINAL_PROBLEMS_REPORT.md",
+      "summary": "# 🔧 RELATÓRIO FINAL - Problemas na Knowledge-Base\n\n## ✅ **STATUS ATUAL: 85% ORGANIZADO CORRETAMENTE**\n\n### **PASTAS PERFEITAMENTE ORGANIZADAS:**\n- ✅ **01_Executive_Guides/** - 6 arquivos corretos\n- ✅ **04_Data_Generation/** - 9 PDFs bem organizados  \n- ✅ **05_Design_and_UX/** - 3 PDFs corretos\n- ✅ **06_Specialized_Charts/** - 8 PDFs bem organizados\n- ✅ **07_Machine_Learning/** - 5 PDFs corretos\n- ✅ **08_Community_Resources/** - 9 arquivos bem organizados\n- ✅ **Arquivos 00_*** na raiz** - Sistema...",
+      "word_count": 600,
+      "reading_time": 3,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "2b78317a9bc8b4ba5f69a93ac539b65d": {
+      "filename": "PENDING_MOVE_PLOTLY_DOCS.md",
+      "summary": "# 🚨 AÇÃO NECESSÁRIA: Mover Plotly_Documentation\n\n## ❗ **Situação Detectada:**\nA pasta `Plotly_Documentation/` ainda existe em `02_Practical_Examples/` com todo o conteúdo original.\n\n## 🎯 **Ação Necessária:**\nVocê precisa **mover fisicamente** o conteúdo usando comandos de terminal:\n\n### **Comando Para Executar:**\n```bash\n# Navegar até a pasta\ncd \"/workspaces/Python-Data-Plotly-Predictive-Analytics-Dashboard/Knowledge-Base\"\n\n# Mover todo o conteúdo\nmv \"02_Practical_Examples/Plotly_Documentation/\"...",
+      "word_count": 157,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "1aa0370081b7081323123632fa571fd8": {
+      "filename": "AI_TRANSFORMATION_SUMMARY.md",
+      "summary": "# 🤖 Knowledge-Base AI Transformation Summary\n\n## 📊 Complete Transformation into AI & Python Coding Guides\n\nThis document summarizes the comprehensive transformation of the Knowledge-Base folder into specialized **AI and Python coding guides**.\n\n---\n\n## 🎯 **Transformation Overview**\n\n### **Before Transformation:**\n- Generic dashboard and Plotly/Dash documentation\n- Basic Python examples without AI integration\n- Standard web development approaches\n- Limited machine learning content\n\n### **After Tr...",
+      "word_count": 1034,
+      "reading_time": 5,
+      "domain": "data_visualization",
+      "difficulty": "expert",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "f186eb1828d06b7fff52acb71a8b6b65": {
+      "filename": "00_DOMAIN_SPECIFIC_AI.py",
+      "summary": "# 🎨 Domain-Specific AI para Python Coding e Dashboards\n## Estratégias Especializadas de IA para Plotly/Dash e Análise de Dados\n\n\"\"\"\nEste módulo contém implementações de IA específicas para diferentes domínios\nde aplicação em dashboards e análise de dados com Python.\n\nDomínios cobertos:\n1. 🎯 Plotly/Dash Ecosystem Optimization\n2. 📈 Financial Data Analytics AI\n3. 🏥 Healthcare Dashboard AI  \n4. 🛒 E-commerce Analytics AI\n5. 🏭 Industrial IoT Dashboard AI\n6. 📊 Business Intelligence AI\n\"\"\"\n\nimport numpy...",
+      "word_count": 2970,
+      "reading_time": 14,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "155cba78e971a15d943597bed002d8bb": {
+      "filename": "00_AI_DEVELOPMENT_ROADMAP.md",
+      "summary": "# Roteiro de Desenvolvimento da IA - Rumo à Proatividade e Autonomia\n\nEste documento descreve as estratégias e funcionalidades a serem implementadas para evoluir a capacidade da IA, transformando-a de uma ferramenta reativa para um parceiro de desenvolvimento proativo, autônomo e colaborativo.\n\n## 1. Síntese e Criação Proativa de Conhecimento\n\n-   **[ ] Análise de Lacunas e Geração de Conteúdo (Gap Analysis)**: Implementar a capacidade da IA de analisar a Base de Conhecimentos, identificar tópic...",
+      "word_count": 389,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "62669ffe16ef598d25ecfbe1618566df": {
+      "filename": "00_NAVIGATION_INDEX.md",
+      "summary": "# 🧭 NAVIGATION INDEX - Índice d### **📖 \"Preciso consultar sintaxe/API oficial\"**\n```\n1. 📚 Documentação principal: 03_Technical_Documentation/Official_Plotly_Dash_Docs/\n2. 🔍 Busca específica: Use README.md da pasta para navegar\n3. ⚡ Quick reference: Cheat sheets incluídos\n4. 🐛 Troubleshooting: FAQs e Error Handlers oficiais\n```\n\n### **📊 \"Preciso de um gráfico específico\"**\n```\n1. 🌞 Sunburst/Hierárquico: 06_Specialized_Charts/\n2. 🗺️ Mapas: 06_Specialized_Charts/\n3. 📈 Gráficos básicos: 02_Practical...",
+      "word_count": 790,
+      "reading_time": 3,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "40efda254999ca2aac65a7c4aaa56d56": {
+      "filename": "00_AI_OPTIMIZATION_GUIDE.md",
+      "summary": "# 🧠 AI Knowledge Processing Optimization Guide\n## Estratégias para Maximizar Aprendizado e Minimizar Erros\n\n### 📚 **1. ESTRUTURAÇÃO DE CONHECIMENTO PARA IA**\n\n#### **🎯 Indexação Semântica Inteligente**\n```markdown\nTÉCNICAS RECOMENDADAS:\n• Criar embeddings para cada documento da Knowledge-Base\n• Implementar busca vetorial semântica\n• Usar RAG (Retrieval-Augmented Generation) para contexto dinâmico\n• Aplicar clustering de documentos por similaridade temática\n```\n\n#### **🔍 Sistema de Metadados Enri...",
+      "word_count": 974,
+      "reading_time": 4,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "b0180ef27d44d7dafc4a10b9077c7239": {
+      "filename": "CORRECTION_PLAN.md",
+      "summary": "# 🔧 RELATÓRIO FINAL DE PROBLEMAS - Knowledge-Base\n\n## ✅ **PASTAS CORRETAMENTE ORGANIZADAS:**\n- ✅ **01_Executive_Guides/** - 6 arquivos, bem organizados\n- ✅ **04_Data_Generation/** - 9 PDFs, bem organizados  \n- ✅ **05_Design_and_UX/** - 3 PDFs, bem organizados\n- ✅ **06_Specialized_Charts/** - 8 PDFs, bem organizados\n- ✅ **07_Machine_Learning/** - 5 PDFs, bem organizados\n- ✅ **08_Community_Resources/** - 9 arquivos, bem organizados\n- ✅ **Arquivos 00_*** na raiz** - 6 arquivos de navegação, correto...",
+      "word_count": 558,
+      "reading_time": 2,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "7cf5ff98d244488a9c19f08274ee76f8": {
+      "filename": "00_AI_IMPLEMENTATION_CODE.py",
+      "summary": "# 🤖 Guia Completo de Implementação de IA e Python Coding\n## Código Prático e Estratégias Executáveis para Desenvolvimento de IA\n\n\"\"\"\nEste módulo contém implementações práticas de IA e guias de Python coding\npara desenvolvimento de dashboards inteligentes e análise preditiva.\n\nCategorias de implementação:\n1. 🔧 Sistema de Embeddings para Knowledge-Base\n2. 🧠 RAG (Retrieval-Augmented Generation) \n3. 🎯 Análise Preditiva com ML\n4. 📊 Dashboards Inteligentes\n5. 🔍 Processamento de Linguagem Natural\n6. 🚀 ...",
+      "word_count": 2840,
+      "reading_time": 14,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "625adde4da81a3ab58f7747ec8c08940": {
+      "filename": "00_LEARNING_PATHS.md",
+      "summary": "# 📚 TRILHAS DE APRENDIZADO IA E PYTHON CODING - Guias Estruturados\n\nEscolha sua trilha baseada no seu nível de experiência em **IA e Python coding**. Cada trilha foi testada e validada para máxima eficiência de aprendizado em desenvolvimento de soluções inteligentes.\n\n---\n\n## 🎯 **ESCOLHA SUA TRILHA DE IA E PYTHON**\n\n### **🌟 Para quem escolher cada trilha:**\n\n| Trilha | Você tem... | Você quer... | Tempo |\n|--------|-------------|--------------|-------|\n| **🚀 Express IA** | Python + ML básico | D...",
+      "word_count": 1602,
+      "reading_time": 8,
+      "domain": "data_visualization",
+      "difficulty": "expert",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "e9987c37855d2508717344e21ae88f0c": {
+      "filename": "advanced_dashboard_guide.md",
+      "summary": "# Advanced Python Dashboard Development: Best Practices & Real-World Applications Guide\n\n## Executive Overview\n\nThis comprehensive guide explores advanced techniques, industry best practices, and real-world applications for creating enterprise-grade Python dashboards. Building upon foundational knowledge, this document focuses on performance optimization, scalability patterns, and production-ready implementations that have been successfully deployed across various industries.\n\n---\n\n## 🏭 Enterpri...",
+      "word_count": 2600,
+      "reading_time": 13,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "e8382a8946c46b902c62049ce4bf3f4d": {
+      "filename": "plotly_dash_best_practices (3).md",
+      "summary": "# 🤖 **Guia de Instruções para Modelos de IA - Desenvolvimento Plotly/Dash**\n\n> **Manual completo para evitar erros comuns no desenvolvimento de dashboards Plotly/Dash**\n\n---\n\n## 🎯 **OBJETIVO DESTE DOCUMENTO**\n\nEste guia foi criado após uma sessão intensiva de debugging onde múltiplos problemas foram identificados e resolvidos. Use estas instruções para evitar os mesmos erros e acelerar o desenvolvimento de dashboards funcionais.\n\n---\n\n## 📋 **PROTOCOLO DE DESENVOLVIMENTO RECOMENDADO**\n\n### **1. S...",
+      "word_count": 1309,
+      "reading_time": 6,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "60520d69a7f660c421bf5e0ef81fddad": {
+      "filename": "complete_error_analysis (1).md",
+      "summary": "# 🔴 **Relatório Completo de Erros e Lições Aprendidas**\n\n> **Documentação detalhada de todos os problemas encontrados e como foram resolvidos**\n\n---\n\n## 📋 **Resumo Executivo**\n\nDurante o desenvolvimento deste projeto, enfrentamos múltiplos desafios técnicos que transformaram um aplicativo Dash não-funcional em três dashboards robustos. Este documento serve como guia para evitar os mesmos erros no futuro.\n\n---\n\n## 🔥 **ERRO CRÍTICO #1: App Principal Não Funcional**\n\n### **Problema Inicial**\n```bas...",
+      "word_count": 922,
+      "reading_time": 4,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "47c1ff0f2eb9b614a6ee460a28d54ce9": {
+      "filename": "README.md",
+      "summary": "# 🎯 Executive Guides - Guias Estratégicos e Metodológicos\n\nEsta pasta contém os **guias mestres** para desenvolvimento de dashboards profissionais com Plotly/Dash.\n\n## 📋 **Arquivos Principais**\n\n### **🚀 Executive Guide_ Building Professional Plotly Dash.md**\n- **Pipeline completo de 8 etapas** testado e validado\n- Workflow do conceito até a entrega final\n- Templates de prompt engineering\n- Checklist de qualidade antes do upload\n- **COMECE AQUI se for novo no projeto**\n\n### **🏗️ advanced_dashboar...",
+      "word_count": 271,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "data_analysis"
+      ]
+    },
+    "d429ce9c5b14b1e6666a934544a641b1": {
+      "filename": "Executive Guide_ Building Professional Plotly Dash.md",
+      "summary": "<img src=\"https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png\" class=\"logo\" width=\"120\"/>\n\n# Executive Guide: Building Professional Plotly Dash Dashboards with Synthetic Data\n\nThis report provides a ready-to-use, eight-step workflow—complete with tested Python scripts, prompting tips, and quality checkpoints—to help beginners produce expert-level interactive dashboards. The included LaTeX file delivers a printable PDF handbook for future reference.\n\n## 1  Overview of the Eight-Step ...",
+      "word_count": 734,
+      "reading_time": 3,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "d6f9034e3440464e66ecd98135ba8761": {
+      "filename": "effective_prompt_engineering (2).md",
+      "summary": "# 🤖 **Guia de Prompt Engineering para Desenvolvimento de Dashboards**\n\n> **Como solicitar desenvolvimento de dashboards Plotly/Dash para obter resultados funcionais**\n\n---\n\n## 🎯 **PROMPTS EFETIVOS**\n\n### **✅ PROMPT BOM - Desenvolvimento Incremental:**\n```\n\"Crie um dashboard Dash simples com gráfico Sunburst usando estes dados reais:\n[dados específicos]\n\nRequisitos:\n1. APENAS 1 gráfico Sunburst funcional\n2. Interface minimalista \n3. Testar em cada etapa\n4. Executar na porta 8052\n5. Garantir que f...",
+      "word_count": 960,
+      "reading_time": 4,
+      "domain": "data_visualization",
+      "difficulty": "advanced",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning"
+      ]
+    },
+    "7db9854ff60a6df11c484e4c00142b0a": {
+      "filename": "README.md",
+      "summary": "# 💡 Practical Examples - Exemplos Completos de IA e Python Coding\n\nEsta pasta contém **projetos completos de IA e Python coding** que você pode executar, estudar e adaptar para seus próprios dashboards inteligentes com machine learning.\n\n## 📂 **Projetos Disponíveis**\n\n### **🌍 Dashboard Design with Storytelling and Map Integration EX1/**\n- **Dashboard empresarial completo** com mapas interativos\n- Integração de múltiplas visualizações\n- Geração de dados sintéticos realistas\n- Sistema de callbacks...",
+      "word_count": 446,
+      "reading_time": 2,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "897e18fa479d919bc7447cb06d0af66f": {
+      "filename": "MOVED_Plotly_Documentation.md",
+      "summary": "# 📍 MOVED: Plotly Documentation Reorganizada\n\n## 🚚 **Documentação Movida Para Local Correto**\n\nA pasta `Plotly_Documentation` foi **reorganizada** de:\n```\n❌ 02_Practical_Examples/Plotly_Documentation/\n```\n\nPara:\n```\n✅ 03_Technical_Documentation/Official_Plotly_Dash_Docs/\n```\n\n## 🎯 **Por que foi movida?**\n\n### **❌ Problema Original:**\n- Estava categorizada como \"Practical Examples\" \n- Mas contém **documentação oficial técnica**\n- Misturava referência com código funcional\n- Dificultava busca por s...",
+      "word_count": 239,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "advanced",
+      "key_topics": [
+        "data_visualization"
+      ]
+    },
+    "ac3d8b204aac5ed94a63804b4179fa58": {
+      "filename": "app.py",
+      "summary": "import dash\nfrom dash import dcc, html, Input, Output, callback\nimport plotly.express as px\nimport plotly.graph_objects as go\nimport pandas as pd\nimport numpy as np\nfrom datetime import datetime, timedelta\nimport json\nimport os\n\n# Importar funções de gráficos\nfrom charts import (\n    create_sunburst_chart, \n    create_bubble_chart, \n    create_area_chart, \n    create_stacked_bar_chart, \n    create_flow_chart, \n    create_map_chart\n)\n\n# Carregar dados\n@callback(\n    Output('data-store', 'data'),\n...",
+      "word_count": 790,
+      "reading_time": 3,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "b7b858470cb8e98562a8851ef3ea37ed": {
+      "filename": "charts.py",
+      "summary": "import plotly.express as px\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\nimport pandas as pd\nimport numpy as np\n\ndef create_sunburst_chart(sales_df, department_filter='all'):\n    \"\"\"Cria gráfico Sunburst hierárquico de vendas por categoria\"\"\"\n    \n    # Filtrar dados se necessário\n    if department_filter != 'all':\n        # Mapear departamentos para categorias\n        dept_mapping = {\n            'sales': ['Eletrônicos', 'Roupas'],\n            'marketing': ['Casa ...",
+      "word_count": 669,
+      "reading_time": 3,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "ca3e97b367e38bfdaf02789787c77a53": {
+      "filename": "data_generator.py",
+      "summary": "import pandas as pd\nimport numpy as np\nfrom datetime import datetime, timedelta\nimport random\n\ndef generate_sales_data():\n    \"\"\"Gera dados de vendas simulados realistas\"\"\"\n    \n    # Configurar seed para reprodutibilidade\n    np.random.seed(42)\n    random.seed(42)\n    \n    # Datas dos últimos 12 meses\n    end_date = datetime.now()\n    start_date = end_date - timedelta(days=365)\n    date_range = pd.date_range(start=start_date, end=end_date, freq='D')\n    \n    # Categorias e subcategorias\n    cat...",
+      "word_count": 735,
+      "reading_time": 3,
+      "domain": "data_analysis",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "f4655f611304a349aeca96cb4ff29a9a": {
+      "filename": "main.py",
+      "summary": "import os\nimport sys\n# DON'T CHANGE THIS !!!\nsys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))\n\nfrom flask import Flask, send_from_directory\nfrom src.models.user import db\nfrom src.routes.user import user_bp\n\napp = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'static'))\napp.config['SECRET_KEY'] = 'asdf#FGSgvasgf$5$WGT'\n\napp.register_blueprint(user_bp, url_prefix='/api')\n\n# uncomment if you need to use database\napp.config['SQLALCHEMY_DATABASE_URI'] = f\"sqlite...",
+      "word_count": 106,
+      "reading_time": 1,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "56afca8c55bc15e7425958136d04036a": {
+      "filename": "dashboard_plan.md",
+      "summary": "# Plano do Dashboard de Visualização de Dados\n\n## 1. Layout e Estrutura\n- **Grade CSS:** Utilizar uma grade CSS de 12 colunas com largura total (100vw) e sem margens laterais.\n- **Responsividade:** Cartões de gráficos devem se ajustar automaticamente ao seu intervalo de colunas e tamanho do visor.\n- **Divisão principal:** O dashboard será dividido em seções lógicas para agrupar visualizações relacionadas.\n\n## 2. Posicionamento dos Gráficos e Mapas\n- **Gráficos Complexos (2-3):**\n  - **Sunburst:*...",
+      "word_count": 337,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python"
+      ]
+    },
+    "08c67c410610dbaf75c933be097e030d": {
+      "filename": "Dashboard Analytics - Visualização de Dados Interativa.md",
+      "summary": "# Dashboard Analytics - Visualização de Dados Interativa\n\nUm dashboard moderno e responsivo para análise de dados empresariais, desenvolvido com React, TypeScript e bibliotecas de visualização avançadas.\n\n## 🚀 Funcionalidades\n\n### Visualizações Implementadas\n- **Gráfico Sunburst**: Hierarquia de vendas por categoria e subcategoria\n- **Gráfico Bubble**: Análise de performance por produto (volume, margem, satisfação)\n- **Gráfico de Área**: Tendências de receita ao longo do tempo\n- **Gráfico Stacke...",
+      "word_count": 625,
+      "reading_time": 3,
+      "domain": "data_visualization",
+      "difficulty": "advanced",
+      "key_topics": [
+        "data_visualization",
+        "web_development"
+      ]
+    },
+    "4a85b91c158c953d6113c15aa5f74163": {
+      "filename": "Dash.md",
+      "summary": "# Dashboard Analytics - Visualização de Dados com Python/Dash\n\nUm dashboard interativo e responsivo desenvolvido com Python, Pandas, Numpy e Plotly/Dash para análise de dados empresariais em tempo real.\n\n## 🚀 Funcionalidades Implementadas\n\n### Visualizações Complexas\n- **Gráfico Sunburst**: Hierarquia de vendas por categoria e subcategoria\n- **Gráfico Bubble**: Análise multivariável de performance de produtos\n- **Gráfico de Área**: Tendências de receita com comparação de metas\n- **Gráfico Stacke...",
+      "word_count": 972,
+      "reading_time": 4,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "d41d8cd98f00b204e9800998ecf8427e": {
+      "filename": "__init__.py",
+      "summary": "",
+      "word_count": 0,
+      "reading_time": 0,
+      "domain": "",
+      "difficulty": "",
+      "key_topics": []
+    },
+    "f6ec86740d4ff63fc490bee889428937": {
+      "filename": "USAGE_GUIDE.md",
+      "summary": "# Guia de Uso - Dashboard de Análise Preditiva\n\n## Introdução\n\nEste guia fornece instruções detalhadas sobre como utilizar o Dashboard de Análise Preditiva desenvolvido com Python, Plotly e Dash. O sistema permite explorar dados, visualizar padrões e realizar predições interativas em tempo real.\n\n## Pré-requisitos\n\n### Requisitos de Sistema\n- Python 3.11 ou superior\n- Navegador web moderno (Chrome, Firefox, Safari, Edge)\n- Conexão com internet (para carregamento de bibliotecas JavaScript)\n\n### D...",
+      "word_count": 1010,
+      "reading_time": 5,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "dada11637467317504e2240212d041cd": {
+      "filename": "app.py",
+      "summary": "import dash\nfrom dash import dcc, html\nimport sys\nimport os\n\nsys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))\nfrom components.dashboard_layout import create_layout\n\napp = dash.Dash(__name__)\nserver = app.server\n\napp.layout = create_layout()\n\nif __name__ == '__main__':\n    app.run(debug=True, host='0.0.0.0', port=8050)\n\n",
+      "word_count": 33,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python"
+      ]
+    },
+    "1eebe9e1a06aac8f98a7e69520dd03ab": {
+      "filename": "README.md",
+      "summary": "# Dashboard de Análise Preditiva com Python, Plotly e Dash\n\n## Visão Geral\n\nEste projeto implementa um sistema completo de análise preditiva utilizando Python, Plotly e Dash. O sistema inclui preparação de dados, modelagem de machine learning e um dashboard interativo para visualização e predições em tempo real.\n\n## Estrutura do Projeto\n\n```\npredictive_analytics_dash/\n├── app.py                      # Aplicação principal Dash\n├── requirements.txt            # Dependências do projeto\n├── data/\n│ ...",
+      "word_count": 305,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "d169e4e0a6a22eda69491aa9781d7162": {
+      "filename": "DOCUMENTATION.md",
+      "summary": "# Documentação Técnica - Sistema de Análise Preditiva\n\n**Autor:** Manus AI  \n**Data:** 19 de Julho de 2025  \n**Versão:** 1.0\n\n## Introdução\n\nA análise preditiva representa uma das aplicações mais poderosas da ciência de dados moderna, permitindo que organizações antecipem tendências, identifiquem padrões e tomem decisões baseadas em evidências. Este documento apresenta um sistema completo de análise preditiva desenvolvido com Python, Plotly e Dash, demonstrando desde a preparação dos dados até a...",
+      "word_count": 1887,
+      "reading_time": 9,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "7882c7d18c664acf027be3feac1102e2": {
+      "filename": "train_model.py",
+      "summary": "import pandas as pd\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.metrics import accuracy_score, classification_report\nimport joblib\nimport sys\nimport os\n\nsys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))\nfrom utils.data_preprocessing import preprocess_data\n\ndef train_predictive_model(df):\n    X_train, X_test, y_train, y_test, scaler = preprocess_data(df)\n\n    model = LogisticRegression(max_iter=200)\n    model.fit(X_train, y_train)\n\n    y_pred = m...",
+      "word_count": 79,
+      "reading_time": 1,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "f048a70a9e12de506d56fd153a2c1ae0": {
+      "filename": "data_preprocessing.py",
+      "summary": "import pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.preprocessing import StandardScaler\n\ndef preprocess_data(df):\n    X = df.drop([\"target\", \"target_names\"], axis=1)\n    y = df[\"target\"]\n\n    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n\n    scaler = StandardScaler()\n    X_train_scaled = scaler.fit_transform(X_train)\n    X_test_scaled = scaler.transform(X_test)\n\n    return X_train_scaled, X_test_scaled, y_train, y_tes...",
+      "word_count": 72,
+      "reading_time": 1,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "898b618bea31de7b1fb8f7ad01488094": {
+      "filename": "data_exploration.py",
+      "summary": "import pandas as pd\nimport plotly.express as px\n\ndef perform_eda(df):\n    print(\"Informações do DataFrame:\")\n    df.info()\n    print(\"\\nEstatísticas Descritivas:\")\n    print(df.describe())\n    print(\"\\nContagem de valores para a coluna target_names:\")\n    print(df[\"target_names\"].value_counts())\n\n    # Visualizações\n    fig_scatter = px.scatter(df, x=\"sepal length (cm)\", y=\"sepal width (cm)\", color=\"target_names\",\n                             title=\"Comprimento vs Largura da Sépala por Espécie\")...",
+      "word_count": 75,
+      "reading_time": 1,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "35caa145014a68aad3c47e3ebf8c319d": {
+      "filename": "dashboard_layout.py",
+      "summary": "import dash\nfrom dash import dcc, html, Input, Output, callback\nimport plotly.express as px\nimport pandas as pd\nimport joblib\nimport numpy as np\n\n# Carregar dados e modelo\ndf_iris = pd.read_csv(\"iris.csv\")\nmodel = joblib.load(\"models/logistic_regression_model.pkl\")\nscaler = joblib.load(\"models/scaler.pkl\")\n\ndef create_layout():\n    return html.Div([\n        html.H1(\"Dashboard de Análise Preditiva - Iris Dataset\", \n                style={'textAlign': 'center', 'marginBottom': 30}),\n        \n     ...",
+      "word_count": 297,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "d3746b007dfe53f749421b0a12845e31": {
+      "filename": "load_data.py",
+      "summary": "from sklearn.datasets import load_iris\nimport pandas as pd\n\ndef load_iris_dataset():\n    iris = load_iris()\n    df = pd.DataFrame(data=iris.data, columns=iris.feature_names)\n    df['target'] = iris.target\n    df['target_names'] = df['target'].apply(lambda x: iris.target_names[x])\n    return df\n\nif __name__ == '__main__':\n    df_iris = load_iris_dataset()\n    print(df_iris.head())\n    df_iris.to_csv('iris.csv', index=False)\n    print('Dataset Iris salvo em iris.csv')\n\n\n",
+      "word_count": 42,
+      "reading_time": 1,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "f89b60fa153950a9c5e8c45a70ae69d8": {
+      "filename": "README.md",
+      "summary": "# 🎨 Design and UX - Design e Experiência do Usuário\n\nEsta pasta contém **recursos especializados** para criar dashboards visualmente atraentes, profissionais e com excelente experiência do usuário.\n\n## 🎨 **Recursos de Design**\n\n### **🌈 Paletas de Cores Profissionais**\n- `Best Color Palettes for Scientific Figures and Data Visualizations.pdf`\n  - **Paletas científicas** testadas e validadas\n  - Cores para **acessibilidade** (daltonismo)\n  - Combinações para diferentes tipos de gráficos\n  - **Cont...",
+      "word_count": 641,
+      "reading_time": 3,
+      "domain": "data_visualization",
+      "difficulty": "advanced",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "48fead24630a0bfc91f3305f938c2ff5": {
+      "filename": "README.md",
+      "summary": "# 🔢 Data Generation - Geração de Dados Sintéticos\n\nEsta pasta contém **recursos especializados** para criar datasets sintéticos realistas que alimentem seus dashboards com dados convincentes.\n\n## 📋 **Recursos Disponíveis**\n\n### **📅 Geração de Datas e Séries Temporais**\n- `Gerando datas sintéticas com NumPy e pandas para d.pdf`\n- `Geração de Datas Sintéticas com NumPy & Pandas par.pdf`\n- `Geração de Datas Sintéticas com NumPy + Pandas par.pdf` \n- `Geração de datas sintéticas com NumPy & Pandas pa...",
+      "word_count": 567,
+      "reading_time": 2,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "b8b1ae6de71c17c3ffa6b8a3a171b3de": {
+      "filename": "README.md",
+      "summary": "# 📖 Technical Documentation - Referências Técnicas\n\nEsta pasta contém **documentação técnica detalhada** sobre sintaxe, APIs, métodos e referências para consulta durante o desenvolvimento.\n\n## 📚 **Documentação Oficial**\n\n### **🎨 Official_Plotly_Dash_Docs/ - Documentação Completa Reorganizada**\n- **📖 pyvy_1x/** - 100+ PDFs da documentação oficial core\n  - API References completas de todos os componentes\n  - Tutoriais oficiais passo-a-passo\n  - Guias de instalação, deployment e performance\n  - Com...",
+      "word_count": 753,
+      "reading_time": 3,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "0f320cc5912954c20f768fb0b474687a": {
+      "filename": "README.md",
+      "summary": "# 🚀 Advanced Features - Recursos Avançados\n\n## 📖 Conteúdo\nGuias e recursos para implementação de funcionalidades avançadas em dashboards Plotly/Dash.\n\n## 📁 Arquivos Disponíveis\n\n### **📋 Guias Técnicos Avançados**\n- **advanced_dashboard_guide.md**\n  - Implementações complexas e padrões arquiteturais\n  - Estruturas de dados otimizadas\n  - Performance e escalabilidade\n  - Integração com APIs externas\n\n### **🎓 Recursos Educacionais**\n- **advanced_pedagogical_plotly_guide.xml**\n  - Material pedagógic...",
+      "word_count": 163,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "dfc03ec30d6fbaeb7e44ed945d480fd5": {
+      "filename": "README.md",
+      "summary": "# 📚 Official Plotly & Dash Documentation\n\nEsta pasta contém a **documentação oficial completa** do Plotly e Dash, organizada por versões e categorias para referência técnica durante desenvolvimento.\n\n## 📂 **Estrutura da Documentação**\n\n### **📖 pyvy_1x/ - Documentação Core Dash**\n**Documentação fundamental e oficial do Dash**\n- API References completas\n- Tutoriais passo-a-passo oficiais\n- Guias de migração entre versões\n- Componentes principais (Core, HTML, DataTable)\n- Callbacks avançados e padr...",
+      "word_count": 598,
+      "reading_time": 2,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "c90274bdad05d174dac6a7e24370143e": {
+      "filename": "SETUP_COMPLETO_FELIPE_OTIMIZADO.md",
+      "summary": "# Setup Completo Felipe Genovese - Análise & Otimização\n## Hardware, Software, Produtividade & Integração GitHub\n\n---\n\n## 1. 🔍 Análise Detalhada do Setup Atual\n\n### **Hardware - EXCELENTE PARA DATA SCIENCE**\n\n#### ✅ **Pontos Fortes**\n```\nCPU: AMD Ryzen 5 3500X (6-Core, 3.6GHz)\n├── Excelente para processamento paralelo (pandas, plotly)\n├── Multi-core ideal para Jupyter notebooks simultâneos\n└── Performance sólida para dashboards complexos\n\nGPU: NVIDIA GeForce GTX 1660 SUPER (6GB VRAM)\n├── Suporte...",
+      "word_count": 1883,
+      "reading_time": 9,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "8c75a14f20a025beed8fd16bb5cd096e": {
+      "filename": "GUIA_COMPLETO_FELIPE_DASHBOARD_EXPERT.md",
+      "summary": "# Guia Completo para Felipe Genovese\n## Como Dominar Visualização de Dados com IA: Do Iniciante ao Expert\n\n---\n\n## 🎯 Visão Geral do Projeto\n\nVocê tem uma excelente base de documentações Plotly/Python organizadas em guias XML. Agora vamos transformar isso em um sistema profissional de desenvolvimento de dashboards usando IA como copiloto inteligente.\n\n### **Seu Objetivo**: \nCriar dashboards altamente complexos com múltiplos gráficos, camadas, filtros e interações usando documentações + IA, entreg...",
+      "word_count": 1627,
+      "reading_time": 8,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "49c332cca81a9803d648fd9ca5fbfe60": {
+      "filename": "registro_projeto_conversa.md",
+      "summary": "# Registro Completo do Projeto e da Conversa\n\n## Histórico do Projeto\n\nEste projeto teve como objetivo transformar documentos técnicos e educacionais em guias XML estruturados para uso em assistentes IA, ensino, automação e dashboards.\n\n**Etapas realizadas:**\n- Extração de conteúdo dos PDFs da pasta Input (Plotly) e Exec_Monica (Webdev/IA)\n- Criação de diferentes extratores: básico, semântico, pedagógico e especializado Monica\n- Geração de guias XML com estruturas hierárquicas e pedagógicas\n- An...",
+      "word_count": 1105,
+      "reading_time": 5,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python"
+      ]
+    },
+    "beedcd2facea2d2b57b29312e08bc552": {
+      "filename": "relatorio_completo.md",
+      "summary": "Histórico do Projeto\nEste projeto teve como objetivo transformar documentos técnicos e educacionais em guias XML estruturados para uso em assistentes IA, ensino, automação e dashboards.\n\nEtapas realizadas:\n\nExtração de conteúdo dos PDFs da pasta Input (Plotly) e Exec_Monica (Webdev/IA)\nCriação de diferentes extratores: básico, semântico, pedagógico e especializado Monica\nGeração de guias XML com estruturas hierárquicas e pedagógicas\nAnálise dos guias para estatísticas, exemplos e organização\nCon...",
+      "word_count": 498,
+      "reading_time": 2,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python"
+      ]
+    },
+    "5ac9fca8c9d5b17e546c18db57b7b32d": {
+      "filename": "analyze_monica_guide.py",
+      "summary": "import xml.etree.ElementTree as ET\nfrom collections import defaultdict\nimport re\n\ndef analyze_monica_guide():\n    \"\"\"Analisa o guia de desenvolvimento web da Monica\"\"\"\n    \n    print(\"🌐 ANÁLISE DO GUIA MONICA - DESENVOLVIMENTO WEB\")\n    print(\"=\" * 60)\n    \n    # Carregar XML\n    tree = ET.parse('monica_webdev_guide.xml')\n    root = tree.getroot()\n    \n    # Extrair metadados\n    metadata = root.find('metadata')\n    title = metadata.find('title').text\n    description = metadata.find('description...",
+      "word_count": 640,
+      "reading_time": 3,
+      "domain": "web_development",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "35502b78aa21a01fd9a1d8af5acdc2a4": {
+      "filename": "register_project.py",
+      "summary": "import os\nimport shutil\nimport json\nfrom datetime import datetime\nimport zipfile\n\ndef create_project_backup():\n    \"\"\"Cria backup completo do projeto com versionamento\"\"\"\n    \n    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')\n    backup_name = f\"plotly_semantic_extractor_v2.0_{timestamp}\"\n    backup_dir = f\"backups/{backup_name}\"\n    \n    print(\"🔄 CRIANDO BACKUP DO PROJETO PLOTLY SEMANTIC EXTRACTOR\")\n    print(\"=\" * 60)\n    \n    # Criar diretório de backup\n    os.makedirs(backup_dir, exis...",
+      "word_count": 670,
+      "reading_time": 3,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "20364fc9614ac3be2b69e427b43bb079": {
+      "filename": "semantic_plotly_extractor.py",
+      "summary": "import os\nimport xml.etree.ElementTree as ET\nfrom datetime import datetime\nimport re\ntry:\n    import PyPDF2\nexcept ImportError:\n    print(\"PyPDF2 não está instalado. Instalando...\")\n    import subprocess\n    import sys\n    subprocess.check_call([sys.executable, \"-m\", \"pip\", \"install\", \"PyPDF2\"])\n    import PyPDF2\n\nclass SemanticPlotlyExtractor:\n    def __init__(self):\n        self.root = ET.Element('plotly_guide')\n        self.root.set('generated_on', datetime.now().strftime('%Y-%m-%d %H:%M:%S')...",
+      "word_count": 932,
+      "reading_time": 4,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "27929aeb0406a1374be48c69dc155270": {
+      "filename": "README.md",
+      "summary": "# 📊 Plotly Python Semantic Guide Extractor\n\n## 🎯 Objetivo\nExtrator semântico que converte documentação Plotly em PDF/TXT/MD para uma estrutura XML hierárquica e inteligente, organizando o conhecimento por categorias funcionais e extraindo automaticamente exemplos de código.\n\n## 🚀 Principais Características\n\n### ✨ Estrutura Semântica\n- **Categorização Inteligente**: Organiza automaticamente gráficos por tipo (Básicos, Estatísticos, Científicos, etc.)\n- **Extração de Código**: Identifica e isola e...",
+      "word_count": 589,
+      "reading_time": 2,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "207825ed9b48f0a37b8003e59bb2d9fb": {
+      "filename": "advanced_pedagogical_extractor.py",
+      "summary": "import os\nimport xml.etree.ElementTree as ET\nfrom datetime import datetime\nimport re\nfrom collections import defaultdict\ntry:\n    import PyPDF2\nexcept ImportError:\n    print(\"PyPDF2 não está instalado. Instalando...\")\n    import subprocess\n    import sys\n    subprocess.check_call([sys.executable, \"-m\", \"pip\", \"install\", \"PyPDF2\"])\n    import PyPDF2\n\nclass AdvancedSemanticPlotlyExtractor:\n    def __init__(self):\n        self.root = ET.Element('advanced_plotly_guide')\n        self.root.set('genera...",
+      "word_count": 1464,
+      "reading_time": 7,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "4ff8db9bb191ce16d22dcc32a5f588c9": {
+      "filename": "RELATORIO_TECNICO.md",
+      "summary": "# 📊 RELATÓRIO TÉCNICO: EVOLUÇÃO ESTRUTURAL DO EXTRATOR PLOTLY\n\n**Data**: 18 de Julho de 2025  \n**Projeto**: Plotly Python Semantic Guide Extractor  \n**Versão**: 2.0  \n\n---\n\n## 🎯 RESUMO EXECUTIVO\n\nO projeto evoluiu de uma extração simples de arquivos PDF para um sistema semântico inteligente que organiza automaticamente documentação Plotly em uma estrutura hierárquica e categorizada. A transformação resultou em um ganho de **95% em eficiência de processamento** e **100% em organização semântica**...",
+      "word_count": 995,
+      "reading_time": 4,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "3e9ce70c988c05b9a98a5e213dd744c0": {
+      "filename": "monica_webdev_extractor.py",
+      "summary": "import os\nimport xml.etree.ElementTree as ET\nfrom datetime import datetime\nimport re\nfrom collections import defaultdict\ntry:\n    import PyPDF2\nexcept ImportError:\n    print(\"PyPDF2 não está instalado. Instalando...\")\n    import subprocess\n    import sys\n    subprocess.check_call([sys.executable, \"-m\", \"pip\", \"install\", \"PyPDF2\"])\n    import PyPDF2\n\nclass MonicaWebDevExtractor:\n    def __init__(self):\n        self.root = ET.Element('monica_webdev_guide')\n        self.root.set('generated_on', dat...",
+      "word_count": 1221,
+      "reading_time": 6,
+      "domain": "web_development",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "0f5ee913a8d860c97a80172645fb6657": {
+      "filename": "extract_test_pyvy.py",
+      "summary": "import os\nimport xml.etree.ElementTree as ET\nfrom datetime import datetime\ntry:\n    import PyPDF2\nexcept ImportError:\n    print(\"PyPDF2 não está instalado. Instalando...\")\n    import subprocess\n    import sys\n    subprocess.check_call([sys.executable, \"-m\", \"pip\", \"install\", \"PyPDF2\"])\n    import PyPDF2\n\ndef read_file_content(file_path, filename):\n    \"\"\"Lê o conteúdo de um arquivo baseado na sua extensão\"\"\"\n    try:\n        if filename.lower().endswith('.pdf'):\n            # Ler arquivo PDF\n   ...",
+      "word_count": 355,
+      "reading_time": 1,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "f4251dea5df584ed8f2b3494775aaef5": {
+      "filename": "analyze_guide.py",
+      "summary": "import xml.etree.ElementTree as ET\nfrom collections import defaultdict\nimport re\n\ndef analyze_semantic_guide(xml_file):\n    \"\"\"Analisa a estrutura semântica do guia Plotly\"\"\"\n    \n    print(\"🔍 ANÁLISE DO GUIA SEMÂNTICO PLOTLY PYTHON\")\n    print(\"=\" * 60)\n    \n    # Parsear o XML\n    tree = ET.parse(xml_file)\n    root = tree.getroot()\n    \n    # Extrair metadados\n    metadata = root.find('metadata')\n    title = metadata.find('title').text\n    description = metadata.find('description').text\n    \n ...",
+      "word_count": 496,
+      "reading_time": 2,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "f96bacdf8b4a0a6d229c7f26f083d64f": {
+      "filename": "RESUMO_EXECUTIVO.md",
+      "summary": "\n# 📊 RESUMO EXECUTIVO - PLOTLY SEMANTIC EXTRACTOR\n\n**Data de Conclusão**: 18/07/2025 09:20\n**Versão Final**: 2.0\n**Status**: ✅ CONCLUÍDO COM SUCESSO\n\n## 🎯 OBJETIVO ALCANÇADO\nTransformação de documentação Plotly PDF/TXT/MD em estrutura XML semântica \ninteligente com categorização automática e extração de código.\n\n## 📈 RESULTADOS QUANTITATIVOS\n- ✅ **204 arquivos** processados automaticamente\n- ✅ **912 exemplos de código** extraídos e estruturados  \n- ✅ **7 categorias semânticas** criadas intellige...",
+      "word_count": 209,
+      "reading_time": 1,
+      "domain": "documentation",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "dc13b7b714a239e022969106de75b1bc": {
+      "filename": "analyze_pedagogical_guide.py",
+      "summary": "import xml.etree.ElementTree as ET\nfrom collections import defaultdict\n\ndef analyze_pedagogical_guide():\n    \"\"\"Analisa o guia pedagógico avançado criado\"\"\"\n    \n    print(\"🎓 ANÁLISE DO GUIA PEDAGÓGICO AVANÇADO PLOTLY\")\n    print(\"=\" * 60)\n    \n    # Carregar XML\n    tree = ET.parse('advanced_pedagogical_plotly_guide.xml')\n    root = tree.getroot()\n    \n    # Extrair metadados\n    metadata = root.find('metadata')\n    title = metadata.find('title').text\n    approach = metadata.find('pedagogical_a...",
+      "word_count": 539,
+      "reading_time": 2,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "f44399c008a6736e3f53fb606dfa4e2b": {
+      "filename": "Revisão e Sugestões para Estrutura do Guia Plotly Python.md",
+      "summary": "### **Revisão e Sugestões para Estrutura do Guia Plotly Python**\n\nA estrutura que você propôs é excelente. Ela segue uma progressão de aprendizado lógica, começando pelos fundamentos e avançando para conceitos cada vez mais complexos. Esta é a organização ideal para um guia técnico, servindo tanto para iniciantes que seguem o conteúdo de forma sequencial quanto para usuários experientes que buscam referências específicas.\n\nAbaixo, apresento sua estrutura consolidada e substancialmente expandida,...",
+      "word_count": 1070,
+      "reading_time": 5,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "data_analysis"
+      ]
+    },
+    "e90a1b4d1c9c58af7eea5799b3ede1ff": {
+      "filename": "Prompt Pipeline MMMU em 4 Etapas.md",
+      "summary": "# Prompt pipeline MMMU em 4 etapas.\n---\n\n```text\nSISTEMA: Você é o “MMMU Processor”, responsável por executar _em 3 etapas_ o processamento de um conjunto de documentos (PDFs, DOCs, textos colados etc.) e entregar como saída:\n\n  1. Guia de Referência (quick_guide.md)  \n  2. Base de Conhecimento Preventiva/Corretiva (faq.md + common_issues)  \n  3. Dataset para ML/AI Training (training_data.jsonl + vector_index)  \n  4. Relatórios de Cross-Verification (cross_verification_log.csv)\n\n----------------...",
+      "word_count": 900,
+      "reading_time": 4,
+      "domain": "python_programming",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "c54cebb42b1e69bb2ac60d933d782463": {
+      "filename": "Etapa 4 Conclusão - XML Unificado Gerado.md",
+      "summary": "# ETAPA 4 CONCLUÍDA — XML UNIFICADO GERADO\n\nA etapa 4 do processo foi concluída com sucesso, resultando na geração do arquivo XML unificado que consolida todo o conhecimento estruturado sobre os temas abordados.\n\n## Resumo do Resultado\n\n- Arquivo gerado: **dash_dashboard_guide_v2.xml** (para o tema Dash Web Applications)  \n- Arquivo gerado: **datasci_knowledge_suite_v2.xml** (para o tema Python Data Science)  \n- Conteúdo consolidado inclui:  \n  - Tópicos detalhados com títulos, resumos, conteúdo...",
+      "word_count": 186,
+      "reading_time": 1,
+      "domain": "data_visualization",
+      "difficulty": "advanced",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "b49dadce043e6457ad5273f3ebfaec9d": {
+      "filename": "pyvy_2x.md",
+      "summary": "<web_content>\n  <title>Plotly Python Graphing Library</title>\n  <author>Plotly</author>\n  <publication_date>2025-07-16</publication_date>\n  <license>Plotly.py is free and open source[cite: 12]. Copyright © 2025 Plotly. All rights reserved. [cite: 232]</license>\n  <summary>Este documento apresenta a biblioteca de gráficos Python da Plotly, uma ferramenta de código aberto que permite a criação de gráficos interativos e com qualidade de publicação[cite: 11, 12]. Ele detalha uma vasta gama de tipos ...",
+      "word_count": 2639,
+      "reading_time": 13,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "b7f843cf380a2ac87cb41c2f903fe210": {
+      "filename": "README.md",
+      "summary": "# ⚙️ Configuration Guides - Configuração e Troubleshooting\n\n## 📖 Conteúdo\nGuias de configuração, troubleshooting e boas práticas para desenvolvimento otimizado.\n\n## 📁 Arquivos Disponíveis\n\n### **🔍 Análise e Debug**\n- **complete_error_analysis (1).md**\n  - Estratégias sistemáticas de debugging\n  - Análise de erros mais comuns\n  - Soluções passo-a-passo\n  - Prevenção de problemas recorrentes\n\n### **🤖 Desenvolvimento Assistido por IA**\n- **effective_prompt_engineering (2).md**\n  - Técnicas avançada...",
+      "word_count": 174,
+      "reading_time": 1,
+      "domain": "documentation",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_analysis"
+      ]
+    },
+    "305d16fb78edd97b3526affeaa3fb849": {
+      "filename": "README.md",
+      "summary": "# 📚 API References - Referências de APIs\n\n## 📖 Conteúdo\nDocumentação técnica de APIs e bibliotecas essenciais para desenvolvimento de dashboards.\n\n## 📁 Arquivos Disponíveis\n\n### **🐼 Pandas & NumPy**\n- **Guide to NumPy, pandas, and Data Visualization – Dataquest.pdf**\n  - Guia completo de manipulação de dados\n  - Integração com visualização\n  - Exemplos práticos e casos de uso\n\n### **📊 Data Analysis Libraries**\n- **NumPy and pandas for Data Analysis – Dataquest.pdf**\n  - Análise de dados avançada...",
+      "word_count": 155,
+      "reading_time": 1,
+      "domain": "data_analysis",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "data_analysis"
+      ]
+    },
+    "24895879698ea7ff4bed1ff29309def7": {
+      "filename": "README.md",
+      "summary": "# 🤖 Machine Learning - Análise Preditiva Integrada\n\nEsta pasta contém **recursos especializados** para integrar machine learning e análise preditiva em dashboards Plotly/Dash.\n\n## 🧠 **Recursos Disponíveis**\n\n### **📚 Guias Fundamentais**\n- `Predictive Analytics with Python Plotly Dash_ A Co.pdf`\n- `Predictive Analytics with Python, Plotly, and Dash.pdf`\n- **Integração completa** ML + Dashboard\n- **Workflows testados** de ponta a ponta\n\n### **📊 Análise de Séries Temporais**\n- `gabri-al_sarima_dash...",
+      "word_count": 894,
+      "reading_time": 4,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "8930916940a2618f9dcc900001e618f2": {
+      "filename": "README.md",
+      "summary": "# 📊 Specialized Charts - Gráficos Avançados e Especializados\n\nEsta pasta contém **recursos específicos** para implementar visualizações complexas e especializadas que vão além dos gráficos básicos.\n\n## 🌞 **Sunburst Charts - Gráficos Hierárquicos**\n\n### **Recursos Disponíveis:**\n- `How to Wrap Text in Plotly's Sunburst Diagram.pdf`\n- `Multi-Level Sunburst Charts using Plotly and Pytho.pdf`\n- `Multiple leaves on Sunburst Chart - 📊 Plotly Python.pdf`\n- `multi-level sunburst chart using plotly and p...",
+      "word_count": 695,
+      "reading_time": 3,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "639e65a43854b9afdbd6c6c360386fc7": {
+      "filename": "pyvy_2xA.md",
+      "summary": "<web_content>\n  <title>EVALUATION ONLY - Labeling Instructions</title>\n  <author>Alignerr</author>\n  <publication_date>2025-07-12</publication_date>\n  <license>Internal Evaluation Use Only</license>\n  <section>\n    <title>Objective</title>\n    <paragraph>\n      This is a Python evaluation focused on data visualization and storytelling. The main task is to recreate a visual similar to a reference image, telling the same story using a dummy dataset. This involves creating Python scripts for data g...",
+      "word_count": 5670,
+      "reading_time": 28,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "web_development",
+        "python",
+        "machine_learning",
+        "data_analysis"
+      ]
+    },
+    "43b1da65a9ba16a663fff669e1df269d": {
+      "filename": "README.md",
+      "summary": "# 👥 Community Resources - Recursos da Comunidade\n\nEsta pasta contém **recursos educacionais** e **contribuições da comunidade** Plotly/Dash, incluindo guias colaborativos e casos de uso reais.\n\n## 📚 **Recursos Educacionais**\n\n### **🎓 Guias da Comunidade**\n- `📌 Must-Read_ Education Community Essential Guide – Updated Monthly! (🐰 April Edition) · community · Discussion #152919 6.pdf`\n  - **Guia essencial** atualizado mensalmente\n  - **Roadmap de aprendizado** estruturado\n  - **Recursos curados** p...",
+      "word_count": 824,
+      "reading_time": 4,
+      "domain": "data_visualization",
+      "difficulty": "intermediate",
+      "key_topics": [
+        "data_visualization",
+        "python",
+        "machine_learning"
+      ]
+    }
+  },
+  "cluster_summaries": {
+    "2": {
+      "document_count": 27,
+      "top_keywords": {
+        "para": 19,
+        "python": 18,
+        "dashboard": 16,
+        "import": 14,
+        "dados": 13,
+        "dash": 10,
+        "data": 9,
+        "plotly": 7,
+        "html": 7,
+        "return": 6
+      },
+      "top_topics": {
+        "python": 26,
+        "data_visualization": 25,
+        "data_analysis": 24,
+        "web_development": 23,
+        "machine_learning": 22
+      },
+      "document_files": [
+        "00_TROUBLESHOOTING.md",
+        "00_SHOWCASE.md",
+        "00_SETUP.md",
+        "AI_TRANSFORMATION_SUMMARY.md",
+        "00_LEARNING_PATHS.md",
+        "plotly_dash_best_practices (3).md",
+        "complete_error_analysis (1).md",
+        "Executive Guide_ Building Professional Plotly Dash.md",
+        "effective_prompt_engineering (2).md",
+        "README.md",
+        "app.py",
+        "main.py",
+        "Dashboard Analytics - Visualização de Dados Interativa.md",
+        "Dash.md",
+        "USAGE_GUIDE.md",
+        "app.py",
+        "README.md",
+        "train_model.py",
+        "dashboard_layout.py",
+        "load_data.py",
+        "README.md",
+        "README.md",
+        "SETUP_COMPLETO_FELIPE_OTIMIZADO.md",
+        "GUIA_COMPLETO_FELIPE_DASHBOARD_EXPERT.md",
+        "pyvy_2x.md",
+        "README.md",
+        "README.md"
+      ]
+    },
+    "4": {
+      "document_count": 13,
+      "top_keywords": {
+        "para": 12,
+        "estrutura": 6,
+        "plotly": 6,
+        "exemplos": 5,
+        "sistema": 4,
+        "codigo": 4,
+        "conhecimento": 4,
+        "graficos": 4,
+        "dados": 4,
+        "python": 4
+      },
+      "top_topics": {
+        "python": 13,
+        "data_visualization": 12,
+        "data_analysis": 9,
+        "web_development": 8,
+        "machine_learning": 7
+      },
+      "document_files": [
+        "00_AI_STRATEGY_EXECUTIVE_SUMMARY.md",
+        "00_AI_DEVELOPMENT_ROADMAP.md",
+        "dashboard_plan.md",
+        "DOCUMENTATION.md",
+        "registro_projeto_conversa.md",
+        "relatorio_completo.md",
+        "README.md",
+        "RELATORIO_TECNICO.md",
+        "RESUMO_EXECUTIVO.md",
+        "Revisão e Sugestões para Estrutura do Guia Plotly Python.md",
+        "Prompt Pipeline MMMU em 4 Etapas.md",
+        "Etapa 4 Conclusão - XML Unificado Gerado.md",
+        "pyvy_2xA.md"
+      ]
+    },
+    "0": {
+      "document_count": 8,
+      "top_keywords": {
+        "self": 8,
+        "return": 8,
+        "para": 6,
+        "import": 6,
+        "data": 5,
+        "python": 4,
+        "class": 4,
+        "from": 3,
+        "subelement": 3,
+        "text": 3
+      },
+      "top_topics": {
+        "data_visualization": 8,
+        "python": 8,
+        "machine_learning": 8,
+        "data_analysis": 8,
+        "web_development": 3
+      },
+      "document_files": [
+        "00_QUICK_START.md",
+        "00_DOMAIN_SPECIFIC_AI.py",
+        "00_AI_OPTIMIZATION_GUIDE.md",
+        "00_AI_IMPLEMENTATION_CODE.py",
+        "advanced_dashboard_guide.md",
+        "semantic_plotly_extractor.py",
+        "advanced_pedagogical_extractor.py",
+        "monica_webdev_extractor.py"
+      ]
+    },
+    "1": {
+      "document_count": 15,
+      "top_keywords": {
+        "para": 13,
+        "dash": 7,
+        "desenvolvimento": 6,
+        "readme": 6,
+        "codigo": 5,
+        "documentacao": 5,
+        "referencia": 5,
+        "arquivos": 5,
+        "documentation": 5,
+        "python": 4
+      },
+      "top_topics": {
+        "data_visualization": 14,
+        "data_analysis": 12,
+        "python": 8,
+        "machine_learning": 7,
+        "web_development": 6
+      },
+      "document_files": [
+        "README.md",
+        "REORGANIZATION_PLOTLY_DOCS_COMPLETED.md",
+        "ORGANIZATION_STATUS_FINAL.md",
+        "FINAL_PROBLEMS_REPORT.md",
+        "PENDING_MOVE_PLOTLY_DOCS.md",
+        "00_NAVIGATION_INDEX.md",
+        "CORRECTION_PLAN.md",
+        "README.md",
+        "MOVED_Plotly_Documentation.md",
+        "README.md",
+        "README.md",
+        "README.md",
+        "README.md",
+        "README.md",
+        "README.md"
+      ]
+    },
+    "3": {
+      "document_count": 9,
+      "top_keywords": {
+        "print": 8,
+        "import": 6,
+        "root": 4,
+        "para": 3,
+        "text": 3,
+        "find": 3,
+        "count": 3,
+        "vendas": 2,
+        "dados": 2,
+        "color": 2
+      },
+      "top_topics": {
+        "python": 9,
+        "data_analysis": 9,
+        "data_visualization": 6,
+        "web_development": 4,
+        "machine_learning": 2
+      },
+      "document_files": [
+        "charts.py",
+        "data_generator.py",
+        "data_preprocessing.py",
+        "data_exploration.py",
+        "analyze_monica_guide.py",
+        "register_project.py",
+        "extract_test_pyvy.py",
+        "analyze_guide.py",
+        "analyze_pedagogical_guide.py"
+      ]
+    }
+  },
+  "topic_summaries": {},
+  "creation_timestamp": "2025-07-30T03:08:17.327410"
+}

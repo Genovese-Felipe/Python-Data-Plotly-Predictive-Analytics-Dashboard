@@ -1,0 +1,77 @@
+{
+  "processing_info": {
+    "start_time": "2025-07-30T03:02:07.236645",
+    "end_time": "2025-07-30T03:02:07.241872",
+    "processing_duration": "0:00:00.005227",
+    "system_version": "1.0.0"
+  },
+  "content_statistics": {
+    "total_documents": 0,
+    "file_type_distribution": {},
+    "content_size_stats": {},
+    "domain_distribution": {}
+  },
+  "extraction_statistics": {
+    "total_files": 0,
+    "successful_extractions": 0,
+    "failed_extractions": 0,
+    "total_content_size": 0
+  },
+  "semantic_statistics": {
+    "total_documents_processed": 0,
+    "knowledge_graph_stats": {
+      "nodes": 0,
+      "edges": 0,
+      "density": 0
+    },
+    "clustering_stats": {},
+    "topic_modeling_stats": {},
+    "processing_timestamp": "2025-07-30T03:02:07.241890"
+  },
+  "output_locations": {
+    "processed_content": "processed_documents",
+    "embeddings": "vector_embeddings",
+    "knowledge_graph": "knowledge_graphs",
+    "metadata": "metadata_catalog",
+    "indexes": "search_indexes",
+    "summaries": "content_summaries",
+    "ai_ready": "ai_training_data"
+  },
+  "processing_log": [
+    {
+      "timestamp": "2025-07-30T03:02:07.237726",
+      "level": "INFO",
+      "message": "Content extraction completed. 0 documents processed successfully."
+    },
+    {
+      "timestamp": "2025-07-30T03:02:07.237942",
+      "level": "INFO",
+      "message": "Generating document embeddings..."
+    },
+    {
+      "timestamp": "2025-07-30T03:02:07.237959",
+      "level": "INFO",
+      "message": "Generated embeddings for 0 documents"
+    },
+    {
+      "timestamp": "2025-07-30T03:02:07.237969",
+      "level": "INFO",
+      "message": "Building knowledge graph..."
+    },
+    {
+      "timestamp": "2025-07-30T03:02:07.238010",
+      "level": "INFO",
+      "message": "Knowledge graph built with 0 nodes and 0 edges"
+    },
+    {
+      "timestamp": "2025-07-30T03:02:07.238027",
+      "level": "INFO",
+      "message": "Performing document clustering..."
+    },
+    {
+      "timestamp": "2025-07-30T03:02:07.238048",
+      "level": "INFO",
+      "message": "Extracting topics..."
+    }
+  ]
+}
