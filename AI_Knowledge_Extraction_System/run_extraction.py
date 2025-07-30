@@ -64,12 +64,12 @@ def main():
             print("  • summary_report.json - Complete processing summary")
             
         else:
-            print("\\n❌ EXTRACTION FAILED")
+            print("\n❌ EXTRACTION FAILED")
             print(f"Error: {summary.get('error', 'Unknown error')}")
             return 1
             
     except Exception as e:
-        print(f"\\n💥 CRITICAL ERROR: {str(e)}")
+        print(f"\n💥 CRITICAL ERROR: {str(e)}")
         import traceback
         traceback.print_exc()
         return 1
