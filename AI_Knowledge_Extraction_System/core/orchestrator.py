@@ -59,35 +59,35 @@ class KnowledgeExtractionOrchestrator:
         
         try:
             # Step 1: Discover and catalog files
-            print("\\n📂 Discovering files in Knowledge-Base...")
+            print("\n📂 Discovering files in Knowledge-Base...")
             file_catalog = self._discover_files()
             print(f"Found {len(file_catalog)} files to process")
             
             # Step 2: Extract content from all files
-            print("\\n📄 Extracting content from files...")
+            print("\n📄 Extracting content from files...")
             self._extract_all_content(file_catalog)
             
             # Step 3: Process semantics for extracted content
-            print("\\n🧠 Processing semantic analysis...")
+            print("\n🧠 Processing semantic analysis...")
             self._process_semantics()
             
             # Step 4: Generate embeddings and knowledge graph
-            print("\\n🕸️ Building knowledge graph and embeddings...")
+            print("\n🕸️ Building knowledge graph and embeddings...")
             self._build_knowledge_structures()
             
             # Step 5: Perform clustering and topic modeling
-            print("\\n🔍 Performing clustering and topic modeling...")
+            print("\n🔍 Performing clustering and topic modeling...")
             self._perform_advanced_analysis()
             
             # Step 6: Generate AI-ready outputs
-            print("\\n📊 Generating AI-ready knowledge artifacts...")
+            print("\n📊 Generating AI-ready knowledge artifacts...")
             outputs = self._generate_outputs()
             
             # Step 7: Create summary report
-            print("\\n📋 Creating summary report...")
+            print("\n📋 Creating summary report...")
             summary = self._create_summary_report()
             
-            print(f"\\n✅ Knowledge extraction completed successfully!")
+            print(f"\n✅ Knowledge extraction completed successfully!")
             print(f"⏱️ Total processing time: {datetime.now() - self.start_time}")
             print(f"📁 Outputs saved to: {self.output_dir}")
             
