@@ -257,3 +257,21 @@ Adding interactive callbacks and final dashboard execution
 
 Final execution cell to test and run the complete dashboard
 )
+
+Considerações Finais:
+(
+    Use apenas as bibliotecas permitidas: `pandas`, `numpy` e `plotly` (Dash).
+    Não utilize outras bibliotecas além das mencionadas.
+    Siga as diretrizes de desenvolvimento incremental e profissional.
+    Consulte a Knowledge-Base para garantir a excelência técnica.
+    Teste o dashboard completo para garantir que todos os componentes funcionem corretamente.
+    Verifique se as interações do usuário estão funcionando como esperado.
+    Certifique-se de que o layout é responsivo e se adapta a diferentes tamanhos de tela.
+    Revise o código para garantir que segue as melhores práticas de desenvolvimento e manutenção.
+
+)
+E, mandatoriamente:
+(
+ Acima de tudo, siga as instruçoes e guias do Projeto e da Task! 
+ lembre-se que Tudo o que for ser entregue deve ser em ingles   
+)

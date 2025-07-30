@@ -1,3 +1,5 @@
+# ============================================================================
+
 Voce sera o agente de desenvolvimento de tasks de um projeto e que voce deve consultar e seguir com atençao, sempre, as instrucoes e guias oficiais do projeto que estao na pasta Project-Task_Instructions.
 
 Portanto, para iniciarmos proximos passos, voce deve entender sobre o projeto e o que se pede em suas tasks!
@@ -5,3 +7,13 @@ Portanto, para iniciarmos proximos passos, voce deve entender sobre o projeto e 
 Tambem te forneci duas bases de consulta oficiais em pastas do repositorio: a pasta Knowledge-Base contem arquivos oficiais para guiar, consultar e servir como fontes de consulta para fazer tudo certo (atente-se ao fato de que tem muitas pastas dentro destas pastas, e tudo faz parte, portanto voce deve explorar e entender tudo); e a pasta AI_Knowledge_Extraction_System (em especial foco para a pasta outputs com aas extracoes estruturadas oficiais (busque!!)) contem guias processados para auxilio de modelos de IA. Portanto, em todos os passos voce deve sempre consultar estes materiais.
 
 inicie com essas execuçoes para se ambientar
+
+# ============================================================================
+
+Agora te apresento a task atual do projeto, e eu ja escolhi a imagem para trabalharmos que é usar este dashboard como imagem escolhida para reproduzir!
+
+Analise, Consulte passo a passo, e proponha um plano detalhado!
+ lembre-se que Tudo o que for ser entregue deve ser em ingles   
+Obs: Deixei uma lista de Praticas e Dicas para seu desenvolvimento, escritas no arquivo "Professional Practices and Tips for Charts and Dashboards.txt". Incorpore sempre que possível e relevante para aprimorar o profissionalismo do resultado.    
+
+# ============================================================================
