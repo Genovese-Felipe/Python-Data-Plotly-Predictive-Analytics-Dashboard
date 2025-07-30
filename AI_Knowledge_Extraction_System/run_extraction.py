@@ -29,7 +29,7 @@ def main():
         summary = orchestrator.run_full_extraction()
         
         if summary.get("status") != "failed":
-            print("\\n" + "=" * 80)
+            print("\n" + "=" * 80)
             print("🎉 EXTRACTION COMPLETED SUCCESSFULLY!")
             print("=" * 80)
             
