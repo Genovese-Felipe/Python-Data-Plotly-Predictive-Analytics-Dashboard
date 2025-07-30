@@ -32,3 +32,6 @@ Thumbs.db
 
 # Jupyter notebook checkpoints
 .ipynb_checkpoints/
+
+# Test output files
+outputs/test_chart.html

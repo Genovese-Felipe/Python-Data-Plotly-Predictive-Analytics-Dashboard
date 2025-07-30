@@ -10,7 +10,7 @@ import os
 def main():
     try:
         # Mudar para o diretório do projeto
-        os.chdir('/workspaces/Python-Data-Plotly-Predictive-Analytics-Dashboard')
+        os.chdir('/home/runner/work/Python-Data-Plotly-Predictive-Analytics-Dashboard/Python-Data-Plotly-Predictive-Analytics-Dashboard')
         
         # Executar o dashboard
         print("🚀 Iniciando dashboard com layout de 4 linhas...")

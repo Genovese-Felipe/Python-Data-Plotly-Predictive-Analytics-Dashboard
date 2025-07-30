@@ -1,4 +1,92 @@
-# Python-Data-Plotly-Predictive-Analytics-Dashboard
+# Python Data Plotly Predictive Analytics Dashboard
+
+![Dashboard Preview](https://img.shields.io/badge/Status-Ready%20to%20Use-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Plotly](https://img.shields.io/badge/Plotly-Dash-orange)
+
+## 📊 Visão Geral
+
+Dashboard interativo profissional para monitoramento de projetos de construção, desenvolvido com Python, Plotly e Dash. O sistema oferece análise preditiva de dados, visualizações em tempo real e interface responsiva para gestão completa de projetos.
+
+## 🚀 Início Rápido (Quick Start)
+
+### 1. Clone o Repositório
+```bash
+git clone https://github.com/Genovese-Felipe/Python-Data-Plotly-Predictive-Analytics-Dashboard.git
+cd Python-Data-Plotly-Predictive-Analytics-Dashboard
+```
+
+### 2. Setup Automático
+```bash
+python setup.py
+```
+
+### 3. Execute o Dashboard
+```bash
+python run.py
+```
+
+### 4. Acesse no Navegador
+Abra: **http://localhost:8050**
+
+## 🎯 Funcionalidades
+
+### 📈 Dashboard Interativo
+- **4 Linhas de Layout**: Estrutura organizada e profissional
+- **Filtros Dinâmicos**: Filtragem por tipo de projeto, responsável, status
+- **Visualizações em Tempo Real**: Gráficos que se atualizam automaticamente
+- **Design Responsivo**: Adaptável a diferentes dispositivos
+
+### 📊 Tipos de Visualização
+- **Gráficos de Rosca**: Progresso de trabalho por categoria
+- **Gráficos de Pizza**: Distribuição de projetos por estágio
+- **Medidores (Gauges)**: KPIs de performance e utilização
+- **Gráficos de Barras**: Variação orçamentária e recursos
+- **Cartões de Informação**: Métricas principais
+
+### 🎨 Interface Profissional
+- **Paleta de Cores Moderna**: Esquema profissional e acessível
+- **Tipografia Consistente**: Títulos em negrito, legendas claras
+- **Organização Visual**: Containers, sombras e hierarquia visual
+- **Tooltips Informativos**: Informações detalhadas ao passar o mouse
+
+## 📋 Detalhes Técnicos
+
+### 🛠️ Tecnologias Utilizadas
+- **Python 3.8+**: Linguagem principal
+- **Plotly Dash**: Framework para dashboards interativos
+- **Pandas**: Manipulação e análise de dados
+- **NumPy**: Computação numérica
+- **Dash Bootstrap Components**: Componentes de interface
+
+### 📁 Estrutura do Projeto
+```
+├── data/                  # Dados CSV gerados
+│   ├── projects_master.csv      # Dados principais dos projetos
+│   ├── project_status.csv       # Status e progresso
+│   ├── project_stages.csv       # Estágios de desenvolvimento
+│   ├── budget_variance.csv      # Variações orçamentárias
+│   ├── resources.csv            # Recursos utilizados
+│   └── workload.csv             # Carga de trabalho
+├── scripts/               # Scripts Python
+│   ├── data_gen_new.py          # Geração de dados sintéticos
+│   ├── viz_new.py               # Dashboard principal
+│   └── ...
+├── outputs/               # Saídas geradas
+│   ├── dashboard.html           # Dashboard exportado
+│   └── test_chart.html          # Gráfico de teste
+├── requirements.txt       # Dependências Python
+├── setup.py              # Configuração automática
+├── run.py                # Execução simples
+├── test_setup.py         # Testes de validação
+└── COMO_CLONAR.md        # Guia detalhado em português
+```
+
+## 📖 Instruções Detalhadas
+
+Para instruções completas de clonagem e configuração, consulte: **[COMO_CLONAR.md](COMO_CLONAR.md)**
+
+---
 
 ## Find and Analyze the Dashboard/Graph
 Python &amp; Plotly Data Visualization and storytelling: given a type of plot (dashboard, Sankey diagram, etc.), Recreate a similar visual that tells the same story using a dummy dataset, Python scripts for data generation and visualization that would naturally produce the visual you created.
