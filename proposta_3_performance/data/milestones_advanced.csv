@@ -1,0 +1,806 @@
+project_id,milestone_name,milestone_type,planned_date,actual_date,status,importance_score
+ADV-0001,Initiation - AI/ML Implementation Project 001,Initiation,2024-04-23,2024-05-02,Completed,2
+ADV-0001,Planning Complete - AI/ML Implementation Project 001,Planning Complete,2024-08-16,2024-08-23,Completed,5
+ADV-0001,Design Approved - AI/ML Implementation Project 001,Design Approved,2024-12-10,2024-12-12,Completed,4
+ADV-0001,Development Complete - AI/ML Implementation Project 001,Development Complete,2025-04-05,2025-04-10,Completed,3
+ADV-0001,Testing Complete - AI/ML Implementation Project 001,Testing Complete,2025-07-30,2025-08-06,Completed,2
+ADV-0002,Initiation - Cloud Migration Project 002,Initiation,2023-07-28,2023-07-24,Completed,5
+ADV-0002,Planning Complete - Cloud Migration Project 002,Planning Complete,2024-01-27,2024-02-05,Completed,4
+ADV-0002,Design Approved - Cloud Migration Project 002,Design Approved,2024-07-28,2024-08-09,Completed,3
+ADV-0002,Development Complete - Cloud Migration Project 002,Development Complete,2025-01-27,2025-02-02,Completed,5
+ADV-0002,Testing Complete - Cloud Migration Project 002,Testing Complete,2025-07-30,2025-08-04,Completed,5
+ADV-0003,Initiation - Data Analytics Project 003,Initiation,2023-06-13,2023-06-08,Completed,3
+ADV-0003,Planning Complete - Data Analytics Project 003,Planning Complete,2023-10-20,2023-11-02,Completed,5
+ADV-0003,Design Approved - Data Analytics Project 003,Design Approved,2024-02-27,2024-02-28,Completed,4
+ADV-0003,Development Complete - Data Analytics Project 003,Development Complete,2024-07-05,2024-07-14,Completed,1
+ADV-0003,Testing Complete - Data Analytics Project 003,Testing Complete,2024-11-12,2024-11-11,Completed,2
+ADV-0003,Deployment - Data Analytics Project 003,Deployment,2025-03-21,2025-03-31,Completed,1
+ADV-0003,Go-Live - Data Analytics Project 003,Go-Live,2025-07-29,2025-08-04,Completed,5
+ADV-0004,Initiation - Cloud Migration Project 004,Initiation,2024-06-14,2024-06-11,Completed,1
+ADV-0004,Planning Complete - Cloud Migration Project 004,Planning Complete,2024-10-29,2024-10-27,Completed,3
+ADV-0004,Design Approved - Cloud Migration Project 004,Design Approved,2025-03-15,2025-03-19,Completed,2
+ADV-0004,Development Complete - Cloud Migration Project 004,Development Complete,2025-07-30,2025-08-04,Completed,1
+ADV-0005,Initiation - Cloud Migration Project 005,Initiation,2023-10-19,2023-10-23,Completed,5
+ADV-0005,Planning Complete - Cloud Migration Project 005,Planning Complete,2024-02-04,2024-02-12,Completed,3
+ADV-0005,Design Approved - Cloud Migration Project 005,Design Approved,2024-05-22,2024-05-18,Completed,1
+ADV-0005,Development Complete - Cloud Migration Project 005,Development Complete,2024-09-08,2024-09-18,Completed,5
+ADV-0005,Testing Complete - Cloud Migration Project 005,Testing Complete,2024-12-25,2024-12-28,Completed,4
+ADV-0005,Deployment - Cloud Migration Project 005,Deployment,2025-04-12,2025-04-10,Completed,2
+ADV-0005,Go-Live - Cloud Migration Project 005,Go-Live,2025-07-30,2025-08-05,Completed,1
+ADV-0006,Initiation - Digital Transformation Project 006,Initiation,2023-10-04,2023-10-12,Completed,1
+ADV-0006,Planning Complete - Digital Transformation Project 006,Planning Complete,2024-01-22,2024-01-18,Completed,5
+ADV-0006,Design Approved - Digital Transformation Project 006,Design Approved,2024-05-12,2024-05-26,Completed,3
+ADV-0006,Development Complete - Digital Transformation Project 006,Development Complete,2024-08-31,2024-09-10,Completed,3
+ADV-0006,Testing Complete - Digital Transformation Project 006,Testing Complete,2024-12-20,2024-12-20,Completed,3
+ADV-0006,Deployment - Digital Transformation Project 006,Deployment,2025-04-10,2025-04-09,Completed,2
+ADV-0006,Go-Live - Digital Transformation Project 006,Go-Live,2025-07-30,2025-07-28,Completed,5
+ADV-0007,Initiation - Data Analytics Project 007,Initiation,2023-09-23,2023-09-21,Completed,4
+ADV-0007,Planning Complete - Data Analytics Project 007,Planning Complete,2024-01-13,2024-01-17,Completed,3
+ADV-0007,Design Approved - Data Analytics Project 007,Design Approved,2024-05-05,2024-05-04,Completed,5
+ADV-0007,Development Complete - Data Analytics Project 007,Development Complete,2024-08-26,2024-08-28,Completed,5
+ADV-0007,Testing Complete - Data Analytics Project 007,Testing Complete,2024-12-16,2024-12-20,Completed,4
+ADV-0007,Deployment - Data Analytics Project 007,Deployment,2025-04-08,2025-04-15,Completed,4
+ADV-0007,Go-Live - Data Analytics Project 007,Go-Live,2025-07-30,2025-08-10,Completed,4
+ADV-0008,Initiation - Data Analytics Project 008,Initiation,2023-08-11,2023-08-19,Completed,3
+ADV-0008,Planning Complete - Data Analytics Project 008,Planning Complete,2024-01-01,2023-12-31,Completed,2
+ADV-0008,Design Approved - Data Analytics Project 008,Design Approved,2024-05-24,2024-06-07,Completed,4
+ADV-0008,Development Complete - Data Analytics Project 008,Development Complete,2024-10-15,2024-10-11,Completed,2
+ADV-0008,Testing Complete - Data Analytics Project 008,Testing Complete,2025-03-08,2025-03-21,Completed,4
+ADV-0008,Deployment - Data Analytics Project 008,Deployment,2025-07-30,2025-08-12,Completed,1
+ADV-0009,Initiation - Data Analytics Project 009,Initiation,2024-06-12,2024-06-20,Completed,3
+ADV-0009,Planning Complete - Data Analytics Project 009,Planning Complete,2024-10-27,2024-11-03,Completed,4
+ADV-0009,Design Approved - Data Analytics Project 009,Design Approved,2025-03-13,2025-03-13,Completed,5
+ADV-0009,Development Complete - Data Analytics Project 009,Development Complete,2025-07-29,2025-07-27,Completed,3
+ADV-0010,Initiation - Cloud Migration Project 010,Initiation,2023-07-23,2023-08-02,Completed,5
+ADV-0010,Planning Complete - Cloud Migration Project 010,Planning Complete,2024-03-25,2024-03-23,Completed,1
+ADV-0010,Design Approved - Cloud Migration Project 010,Design Approved,2024-11-26,2024-11-21,Completed,2
+ADV-0010,Development Complete - Cloud Migration Project 010,Development Complete,2025-07-30,2025-08-13,Completed,1
+ADV-0011,Initiation - AI/ML Implementation Project 011,Initiation,2024-05-12,2024-05-21,Completed,3
+ADV-0011,Planning Complete - AI/ML Implementation Project 011,Planning Complete,2024-08-08,2024-08-15,Completed,1
+ADV-0011,Design Approved - AI/ML Implementation Project 011,Design Approved,2024-11-05,2024-11-16,Completed,4
+ADV-0011,Development Complete - AI/ML Implementation Project 011,Development Complete,2025-02-02,2025-02-16,Completed,3
+ADV-0011,Testing Complete - AI/ML Implementation Project 011,Testing Complete,2025-05-02,2025-05-11,Completed,4
+ADV-0011,Deployment - AI/ML Implementation Project 011,Deployment,2025-07-30,2025-08-04,Completed,1
+ADV-0012,Initiation - Data Analytics Project 012,Initiation,2024-06-14,2024-06-24,Completed,5
+ADV-0012,Planning Complete - Data Analytics Project 012,Planning Complete,2024-09-04,2024-09-18,Completed,5
+ADV-0012,Design Approved - Data Analytics Project 012,Design Approved,2024-11-25,2024-11-29,Completed,2
+ADV-0012,Development Complete - Data Analytics Project 012,Development Complete,2025-02-15,2025-02-12,Completed,5
+ADV-0012,Testing Complete - Data Analytics Project 012,Testing Complete,2025-05-08,2025-05-13,Completed,1
+ADV-0012,Deployment - Data Analytics Project 012,Deployment,2025-07-29,2025-08-05,Completed,1
+ADV-0013,Initiation - Cloud Migration Project 013,Initiation,2024-03-06,2024-03-13,Completed,3
+ADV-0013,Planning Complete - Cloud Migration Project 013,Planning Complete,2024-05-23,2024-06-05,Completed,2
+ADV-0013,Design Approved - Cloud Migration Project 013,Design Approved,2024-08-10,2024-08-07,Completed,2
+ADV-0013,Development Complete - Cloud Migration Project 013,Development Complete,2024-10-28,2024-11-10,Completed,5
+ADV-0014,Initiation - Digital Transformation Project 014,Initiation,2023-07-15,2023-07-14,Completed,4
+ADV-0014,Planning Complete - Digital Transformation Project 014,Planning Complete,2023-12-11,2023-12-22,Completed,5
+ADV-0014,Design Approved - Digital Transformation Project 014,Design Approved,2024-05-08,2024-05-12,Completed,5
+ADV-0014,Development Complete - Digital Transformation Project 014,Development Complete,2024-10-04,2024-10-02,Completed,2
+ADV-0014,Testing Complete - Digital Transformation Project 014,Testing Complete,2025-03-02,2025-02-28,Completed,2
+ADV-0014,Deployment - Digital Transformation Project 014,Deployment,2025-07-30,2025-07-27,Completed,1
+ADV-0015,Initiation - AI/ML Implementation Project 015,Initiation,2024-03-29,2024-03-27,Completed,1
+ADV-0015,Planning Complete - AI/ML Implementation Project 015,Planning Complete,2024-04-25,2024-05-03,Completed,4
+ADV-0015,Design Approved - AI/ML Implementation Project 015,Design Approved,2024-05-22,2024-05-28,Completed,4
+ADV-0015,Development Complete - AI/ML Implementation Project 015,Development Complete,2024-06-19,2024-07-03,Completed,1
+ADV-0015,Testing Complete - AI/ML Implementation Project 015,Testing Complete,2024-07-16,2024-07-14,Completed,5
+ADV-0015,Deployment - AI/ML Implementation Project 015,Deployment,2024-08-12,2024-08-18,Completed,2
+ADV-0015,Go-Live - AI/ML Implementation Project 015,Go-Live,2024-09-09,2024-09-10,Completed,3
+ADV-0016,Initiation - Digital Transformation Project 016,Initiation,2024-01-03,2024-01-11,Completed,2
+ADV-0016,Planning Complete - Digital Transformation Project 016,Planning Complete,2024-05-25,2024-06-04,Completed,2
+ADV-0016,Design Approved - Digital Transformation Project 016,Design Approved,2024-10-16,2024-10-23,Completed,4
+ADV-0016,Development Complete - Digital Transformation Project 016,Development Complete,2025-03-08,2025-03-11,Completed,5
+ADV-0016,Testing Complete - Digital Transformation Project 016,Testing Complete,2025-07-30,2025-07-28,Completed,3
+ADV-0017,Initiation - AI/ML Implementation Project 017,Initiation,2023-06-17,2023-07-01,Completed,2
+ADV-0017,Planning Complete - AI/ML Implementation Project 017,Planning Complete,2023-10-24,2023-10-29,Completed,1
+ADV-0017,Design Approved - AI/ML Implementation Project 017,Design Approved,2024-03-01,2024-02-28,Completed,2
+ADV-0017,Development Complete - AI/ML Implementation Project 017,Development Complete,2024-07-08,2024-07-03,Completed,3
+ADV-0017,Testing Complete - AI/ML Implementation Project 017,Testing Complete,2024-11-14,2024-11-15,Completed,2
+ADV-0017,Deployment - AI/ML Implementation Project 017,Deployment,2025-03-23,2025-03-28,Completed,4
+ADV-0017,Go-Live - AI/ML Implementation Project 017,Go-Live,2025-07-30,2025-08-08,Completed,5
+ADV-0018,Initiation - Cloud Migration Project 018,Initiation,2023-06-16,2023-06-20,Completed,2
+ADV-0018,Planning Complete - Cloud Migration Project 018,Planning Complete,2023-10-17,2023-10-23,Completed,1
+ADV-0018,Design Approved - Cloud Migration Project 018,Design Approved,2024-02-17,2024-02-16,Completed,2
+ADV-0018,Development Complete - Cloud Migration Project 018,Development Complete,2024-06-20,2024-07-02,Completed,5
+ADV-0019,Initiation - Software Development Project 019,Initiation,2023-07-18,2023-07-15,Completed,2
+ADV-0019,Planning Complete - Software Development Project 019,Planning Complete,2023-12-13,2023-12-12,Completed,1
+ADV-0019,Design Approved - Software Development Project 019,Design Approved,2024-05-10,2024-05-23,Completed,3
+ADV-0019,Development Complete - Software Development Project 019,Development Complete,2024-10-05,2024-10-11,Completed,1
+ADV-0019,Testing Complete - Software Development Project 019,Testing Complete,2025-03-03,2025-03-06,Completed,1
+ADV-0019,Deployment - Software Development Project 019,Deployment,2025-07-30,2025-08-11,Completed,5
+ADV-0020,Initiation - AI/ML Implementation Project 020,Initiation,2023-09-20,2023-09-18,Completed,2
+ADV-0020,Planning Complete - AI/ML Implementation Project 020,Planning Complete,2024-03-07,2024-03-08,Completed,1
+ADV-0020,Design Approved - AI/ML Implementation Project 020,Design Approved,2024-08-24,2024-09-04,Completed,5
+ADV-0020,Development Complete - AI/ML Implementation Project 020,Development Complete,2025-02-10,2025-02-06,Completed,4
+ADV-0020,Testing Complete - AI/ML Implementation Project 020,Testing Complete,2025-07-30,2025-08-04,Completed,1
+ADV-0021,Initiation - Digital Transformation Project 021,Initiation,2023-09-28,2023-09-29,Completed,1
+ADV-0021,Planning Complete - Digital Transformation Project 021,Planning Complete,2024-02-11,2024-02-22,Completed,2
+ADV-0021,Design Approved - Digital Transformation Project 021,Design Approved,2024-06-27,2024-06-27,Completed,2
+ADV-0021,Development Complete - Digital Transformation Project 021,Development Complete,2024-11-11,2024-11-06,Completed,2
+ADV-0022,Initiation - Cloud Migration Project 022,Initiation,2024-02-14,2024-02-13,Completed,2
+ADV-0022,Planning Complete - Cloud Migration Project 022,Planning Complete,2024-05-30,2024-06-09,Completed,1
+ADV-0022,Design Approved - Cloud Migration Project 022,Design Approved,2024-09-13,2024-09-09,Completed,2
+ADV-0022,Development Complete - Cloud Migration Project 022,Development Complete,2024-12-29,2024-12-25,Completed,3
+ADV-0022,Testing Complete - Cloud Migration Project 022,Testing Complete,2025-04-14,2025-04-15,Completed,4
+ADV-0022,Deployment - Cloud Migration Project 022,Deployment,2025-07-30,2025-08-08,Completed,4
+ADV-0023,Initiation - AI/ML Implementation Project 023,Initiation,2024-04-04,2024-04-08,Completed,3
+ADV-0023,Planning Complete - AI/ML Implementation Project 023,Planning Complete,2024-07-17,2024-07-30,Completed,1
+ADV-0023,Design Approved - AI/ML Implementation Project 023,Design Approved,2024-10-29,2024-10-30,Completed,5
+ADV-0023,Development Complete - AI/ML Implementation Project 023,Development Complete,2025-02-10,2025-02-24,Completed,2
+ADV-0023,Testing Complete - AI/ML Implementation Project 023,Testing Complete,2025-05-26,2025-05-24,Completed,4
+ADV-0024,Initiation - Software Development Project 024,Initiation,2023-06-14,2023-06-23,Completed,5
+ADV-0024,Planning Complete - Software Development Project 024,Planning Complete,2023-12-25,2024-01-03,Completed,4
+ADV-0024,Design Approved - Software Development Project 024,Design Approved,2024-07-06,2024-07-14,Completed,3
+ADV-0024,Development Complete - Software Development Project 024,Development Complete,2025-01-16,2025-01-19,Completed,2
+ADV-0024,Testing Complete - Software Development Project 024,Testing Complete,2025-07-29,2025-08-09,Completed,2
+ADV-0025,Initiation - Software Development Project 025,Initiation,2024-03-14,2024-03-11,Completed,4
+ADV-0025,Planning Complete - Software Development Project 025,Planning Complete,2024-03-30,2024-03-25,Completed,2
+ADV-0025,Design Approved - Software Development Project 025,Design Approved,2024-04-15,2024-04-29,Completed,3
+ADV-0025,Development Complete - Software Development Project 025,Development Complete,2024-05-02,2024-05-02,Completed,4
+ADV-0025,Testing Complete - Software Development Project 025,Testing Complete,2024-05-18,2024-05-30,Completed,3
+ADV-0025,Deployment - Software Development Project 025,Deployment,2024-06-04,2024-06-17,Completed,5
+ADV-0026,Initiation - Data Analytics Project 026,Initiation,2023-09-10,2023-09-23,Completed,3
+ADV-0026,Planning Complete - Data Analytics Project 026,Planning Complete,2024-02-29,2024-03-06,Completed,2
+ADV-0026,Design Approved - Data Analytics Project 026,Design Approved,2024-08-19,2024-08-21,Completed,4
+ADV-0026,Development Complete - Data Analytics Project 026,Development Complete,2025-02-07,2025-02-10,Completed,4
+ADV-0026,Testing Complete - Data Analytics Project 026,Testing Complete,2025-07-30,2025-07-29,Completed,5
+ADV-0027,Initiation - Data Analytics Project 027,Initiation,2024-06-01,2024-06-03,Completed,1
+ADV-0027,Planning Complete - Data Analytics Project 027,Planning Complete,2024-10-20,2024-10-29,Completed,2
+ADV-0027,Design Approved - Data Analytics Project 027,Design Approved,2025-03-10,2025-03-14,Completed,4
+ADV-0027,Development Complete - Data Analytics Project 027,Development Complete,2025-07-30,2025-08-13,Completed,4
+ADV-0028,Initiation - Digital Transformation Project 028,Initiation,2024-04-28,2024-04-24,Completed,3
+ADV-0028,Planning Complete - Digital Transformation Project 028,Planning Complete,2024-06-19,2024-06-26,Completed,3
+ADV-0028,Design Approved - Digital Transformation Project 028,Design Approved,2024-08-10,2024-08-22,Completed,3
+ADV-0028,Development Complete - Digital Transformation Project 028,Development Complete,2024-10-01,2024-10-03,Completed,1
+ADV-0028,Testing Complete - Digital Transformation Project 028,Testing Complete,2024-11-22,2024-11-17,Completed,5
+ADV-0028,Deployment - Digital Transformation Project 028,Deployment,2025-01-14,2025-01-24,Completed,3
+ADV-0029,Initiation - AI/ML Implementation Project 029,Initiation,2024-05-25,2024-05-24,Completed,4
+ADV-0029,Planning Complete - AI/ML Implementation Project 029,Planning Complete,2024-08-04,2024-08-04,Completed,3
+ADV-0029,Design Approved - AI/ML Implementation Project 029,Design Approved,2024-10-15,2024-10-18,Completed,4
+ADV-0029,Development Complete - AI/ML Implementation Project 029,Development Complete,2024-12-26,2024-12-31,Completed,1
+ADV-0029,Testing Complete - AI/ML Implementation Project 029,Testing Complete,2025-03-08,2025-03-15,Completed,5
+ADV-0029,Deployment - AI/ML Implementation Project 029,Deployment,2025-05-19,2025-05-26,Completed,2
+ADV-0029,Go-Live - AI/ML Implementation Project 029,Go-Live,2025-07-30,2025-07-28,Completed,4
+ADV-0030,Initiation - AI/ML Implementation Project 030,Initiation,2024-03-06,2024-03-06,Completed,2
+ADV-0030,Planning Complete - AI/ML Implementation Project 030,Planning Complete,2024-05-13,2024-05-12,Completed,1
+ADV-0030,Design Approved - AI/ML Implementation Project 030,Design Approved,2024-07-20,2024-07-17,Completed,1
+ADV-0030,Development Complete - AI/ML Implementation Project 030,Development Complete,2024-09-26,2024-09-24,Completed,1
+ADV-0031,Initiation - Data Analytics Project 031,Initiation,2024-01-01,2024-01-15,Completed,2
+ADV-0031,Planning Complete - Data Analytics Project 031,Planning Complete,2024-07-11,2024-07-10,Completed,3
+ADV-0031,Design Approved - Data Analytics Project 031,Design Approved,2025-01-19,2025-01-22,Completed,4
+ADV-0031,Development Complete - Data Analytics Project 031,Development Complete,2025-07-30,2025-07-30,Completed,2
+ADV-0032,Initiation - AI/ML Implementation Project 032,Initiation,2023-09-21,2023-09-21,Completed,3
+ADV-0032,Planning Complete - AI/ML Implementation Project 032,Planning Complete,2024-02-03,2024-02-09,Completed,1
+ADV-0032,Design Approved - AI/ML Implementation Project 032,Design Approved,2024-06-18,2024-06-23,Completed,2
+ADV-0032,Development Complete - AI/ML Implementation Project 032,Development Complete,2024-10-31,2024-11-09,Completed,4
+ADV-0032,Testing Complete - AI/ML Implementation Project 032,Testing Complete,2025-03-16,2025-03-22,Completed,1
+ADV-0032,Deployment - AI/ML Implementation Project 032,Deployment,2025-07-30,2025-07-26,Completed,3
+ADV-0033,Initiation - AI/ML Implementation Project 033,Initiation,2024-01-16,2024-01-22,Completed,4
+ADV-0033,Planning Complete - AI/ML Implementation Project 033,Planning Complete,2024-05-07,2024-05-17,Completed,5
+ADV-0033,Design Approved - AI/ML Implementation Project 033,Design Approved,2024-08-27,2024-08-22,Completed,5
+ADV-0033,Development Complete - AI/ML Implementation Project 033,Development Complete,2024-12-17,2024-12-14,Completed,4
+ADV-0033,Testing Complete - AI/ML Implementation Project 033,Testing Complete,2025-04-08,2025-04-04,Completed,1
+ADV-0033,Deployment - AI/ML Implementation Project 033,Deployment,2025-07-30,2025-08-12,Completed,2
+ADV-0034,Initiation - Software Development Project 034,Initiation,2024-03-28,2024-04-02,Completed,1
+ADV-0034,Planning Complete - Software Development Project 034,Planning Complete,2024-07-28,2024-08-07,Completed,1
+ADV-0034,Design Approved - Software Development Project 034,Design Approved,2024-11-27,2024-11-26,Completed,4
+ADV-0034,Development Complete - Software Development Project 034,Development Complete,2025-03-29,2025-04-03,Completed,3
+ADV-0034,Testing Complete - Software Development Project 034,Testing Complete,2025-07-30,2025-07-27,Completed,1
+ADV-0035,Initiation - Data Analytics Project 035,Initiation,2023-10-21,2023-11-04,Completed,5
+ADV-0035,Planning Complete - Data Analytics Project 035,Planning Complete,2024-05-23,2024-06-02,Completed,2
+ADV-0035,Design Approved - Data Analytics Project 035,Design Approved,2024-12-25,2024-12-21,Completed,3
+ADV-0035,Development Complete - Data Analytics Project 035,Development Complete,2025-07-29,2025-07-31,Completed,4
+ADV-0036,Initiation - Cloud Migration Project 036,Initiation,2023-06-04,2023-06-13,Completed,1
+ADV-0036,Planning Complete - Cloud Migration Project 036,Planning Complete,2023-08-01,2023-08-15,Completed,4
+ADV-0036,Design Approved - Cloud Migration Project 036,Design Approved,2023-09-28,2023-09-23,Completed,3
+ADV-0036,Development Complete - Cloud Migration Project 036,Development Complete,2023-11-25,2023-11-23,Completed,2
+ADV-0036,Testing Complete - Cloud Migration Project 036,Testing Complete,2024-01-22,2024-01-31,Completed,5
+ADV-0037,Initiation - Data Analytics Project 037,Initiation,2024-06-23,2024-06-20,Completed,1
+ADV-0037,Planning Complete - Data Analytics Project 037,Planning Complete,2024-09-19,2024-09-27,Completed,4
+ADV-0037,Design Approved - Data Analytics Project 037,Design Approved,2024-12-16,2024-12-24,Completed,4
+ADV-0037,Development Complete - Data Analytics Project 037,Development Complete,2025-03-14,2025-03-20,Completed,1
+ADV-0038,Initiation - Cloud Migration Project 038,Initiation,2023-08-21,2023-08-22,Completed,1
+ADV-0038,Planning Complete - Cloud Migration Project 038,Planning Complete,2023-12-05,2023-12-02,Completed,4
+ADV-0038,Design Approved - Cloud Migration Project 038,Design Approved,2024-03-20,2024-03-27,Completed,2
+ADV-0038,Development Complete - Cloud Migration Project 038,Development Complete,2024-07-05,2024-07-18,Completed,1
+ADV-0039,Initiation - Software Development Project 039,Initiation,2024-05-23,2024-05-23,Completed,3
+ADV-0039,Planning Complete - Software Development Project 039,Planning Complete,2024-08-03,2024-07-30,Completed,4
+ADV-0039,Design Approved - Software Development Project 039,Design Approved,2024-10-14,2024-10-16,Completed,3
+ADV-0039,Development Complete - Software Development Project 039,Development Complete,2024-12-25,2025-01-07,Completed,3
+ADV-0039,Testing Complete - Software Development Project 039,Testing Complete,2025-03-07,2025-03-21,Completed,1
+ADV-0039,Deployment - Software Development Project 039,Deployment,2025-05-18,2025-05-20,Completed,2
+ADV-0039,Go-Live - Software Development Project 039,Go-Live,2025-07-30,2025-07-30,Completed,1
+ADV-0040,Initiation - Digital Transformation Project 040,Initiation,2024-01-03,2024-01-16,Completed,3
+ADV-0040,Planning Complete - Digital Transformation Project 040,Planning Complete,2024-07-12,2024-07-09,Completed,2
+ADV-0040,Design Approved - Digital Transformation Project 040,Design Approved,2025-01-19,2025-02-01,Completed,1
+ADV-0040,Development Complete - Digital Transformation Project 040,Development Complete,2025-07-29,2025-08-12,Completed,5
+ADV-0041,Initiation - AI/ML Implementation Project 041,Initiation,2023-11-22,2023-11-23,Completed,1
+ADV-0041,Planning Complete - AI/ML Implementation Project 041,Planning Complete,2024-04-24,2024-05-07,Completed,4
+ADV-0041,Design Approved - AI/ML Implementation Project 041,Design Approved,2024-09-25,2024-10-03,Completed,5
+ADV-0041,Development Complete - AI/ML Implementation Project 041,Development Complete,2025-02-26,2025-02-24,Completed,1
+ADV-0041,Testing Complete - AI/ML Implementation Project 041,Testing Complete,2025-07-30,2025-08-02,Completed,1
+ADV-0042,Initiation - Software Development Project 042,Initiation,2023-10-21,2023-11-04,Completed,1
+ADV-0042,Planning Complete - Software Development Project 042,Planning Complete,2024-03-31,2024-04-08,Completed,3
+ADV-0042,Design Approved - Software Development Project 042,Design Approved,2024-09-09,2024-09-06,Completed,1
+ADV-0042,Development Complete - Software Development Project 042,Development Complete,2025-02-18,2025-02-26,Completed,1
+ADV-0042,Testing Complete - Software Development Project 042,Testing Complete,2025-07-30,2025-07-28,Completed,3
+ADV-0043,Initiation - AI/ML Implementation Project 043,Initiation,2023-08-19,2023-08-17,Completed,4
+ADV-0043,Planning Complete - AI/ML Implementation Project 043,Planning Complete,2023-12-15,2023-12-17,Completed,2
+ADV-0043,Design Approved - AI/ML Implementation Project 043,Design Approved,2024-04-12,2024-04-15,Completed,5
+ADV-0043,Development Complete - AI/ML Implementation Project 043,Development Complete,2024-08-08,2024-08-16,Completed,1
+ADV-0043,Testing Complete - AI/ML Implementation Project 043,Testing Complete,2024-12-05,2024-12-15,Completed,5
+ADV-0043,Deployment - AI/ML Implementation Project 043,Deployment,2025-04-02,2025-04-13,Completed,4
+ADV-0043,Go-Live - AI/ML Implementation Project 043,Go-Live,2025-07-30,2025-07-27,Completed,3
+ADV-0044,Initiation - Digital Transformation Project 044,Initiation,2023-09-19,2023-09-27,Completed,2
+ADV-0044,Planning Complete - Digital Transformation Project 044,Planning Complete,2024-03-07,2024-03-06,Completed,4
+ADV-0044,Design Approved - Digital Transformation Project 044,Design Approved,2024-08-24,2024-08-23,Completed,3
+ADV-0044,Development Complete - Digital Transformation Project 044,Development Complete,2025-02-10,2025-02-16,Completed,1
+ADV-0044,Testing Complete - Digital Transformation Project 044,Testing Complete,2025-07-30,2025-08-02,Completed,5
+ADV-0045,Initiation - Digital Transformation Project 045,Initiation,2024-06-25,2024-06-28,Completed,4
+ADV-0045,Planning Complete - Digital Transformation Project 045,Planning Complete,2024-09-13,2024-09-10,Completed,1
+ADV-0045,Design Approved - Digital Transformation Project 045,Design Approved,2024-12-02,2024-11-28,Completed,1
+ADV-0045,Development Complete - Digital Transformation Project 045,Development Complete,2025-02-20,2025-02-22,Completed,5
+ADV-0045,Testing Complete - Digital Transformation Project 045,Testing Complete,2025-05-11,2025-05-20,Completed,4
+ADV-0045,Deployment - Digital Transformation Project 045,Deployment,2025-07-30,2025-08-05,Completed,1
+ADV-0046,Initiation - Software Development Project 046,Initiation,2023-11-20,2023-12-03,Completed,2
+ADV-0046,Planning Complete - Software Development Project 046,Planning Complete,2024-03-02,2024-03-16,Completed,5
+ADV-0046,Design Approved - Software Development Project 046,Design Approved,2024-06-13,2024-06-15,Completed,5
+ADV-0046,Development Complete - Software Development Project 046,Development Complete,2024-09-24,2024-10-07,Completed,4
+ADV-0046,Testing Complete - Software Development Project 046,Testing Complete,2025-01-05,2025-01-18,Completed,4
+ADV-0046,Deployment - Software Development Project 046,Deployment,2025-04-18,2025-04-19,Completed,4
+ADV-0046,Go-Live - Software Development Project 046,Go-Live,2025-07-30,2025-07-28,Completed,4
+ADV-0047,Initiation - Digital Transformation Project 047,Initiation,2023-07-23,2023-07-30,Completed,3
+ADV-0047,Planning Complete - Digital Transformation Project 047,Planning Complete,2024-01-23,2024-01-29,Completed,2
+ADV-0047,Design Approved - Digital Transformation Project 047,Design Approved,2024-07-25,2024-07-21,Completed,3
+ADV-0047,Development Complete - Digital Transformation Project 047,Development Complete,2025-01-25,2025-01-28,Completed,1
+ADV-0047,Testing Complete - Digital Transformation Project 047,Testing Complete,2025-07-29,2025-07-31,Completed,1
+ADV-0048,Initiation - Cloud Migration Project 048,Initiation,2023-07-18,2023-07-30,Completed,1
+ADV-0048,Planning Complete - Cloud Migration Project 048,Planning Complete,2024-01-19,2024-01-25,Completed,2
+ADV-0048,Design Approved - Cloud Migration Project 048,Design Approved,2024-07-23,2024-07-25,Completed,3
+ADV-0048,Development Complete - Cloud Migration Project 048,Development Complete,2025-01-25,2025-01-29,Completed,1
+ADV-0048,Testing Complete - Cloud Migration Project 048,Testing Complete,2025-07-30,2025-08-06,Completed,1
+ADV-0049,Initiation - Digital Transformation Project 049,Initiation,2023-12-12,2023-12-09,Completed,3
+ADV-0049,Planning Complete - Digital Transformation Project 049,Planning Complete,2024-04-09,2024-04-19,Completed,5
+ADV-0049,Design Approved - Digital Transformation Project 049,Design Approved,2024-08-06,2024-08-20,Completed,1
+ADV-0049,Development Complete - Digital Transformation Project 049,Development Complete,2024-12-03,2024-12-10,Completed,5
+ADV-0049,Testing Complete - Digital Transformation Project 049,Testing Complete,2025-04-01,2025-04-01,Completed,1
+ADV-0049,Deployment - Digital Transformation Project 049,Deployment,2025-07-29,2025-08-06,Completed,1
+ADV-0050,Initiation - AI/ML Implementation Project 050,Initiation,2023-07-20,2023-07-22,Completed,3
+ADV-0050,Planning Complete - AI/ML Implementation Project 050,Planning Complete,2023-11-20,2023-12-04,Completed,4
+ADV-0050,Design Approved - AI/ML Implementation Project 050,Design Approved,2024-03-22,2024-03-17,Completed,2
+ADV-0050,Development Complete - AI/ML Implementation Project 050,Development Complete,2024-07-24,2024-07-25,Completed,5
+ADV-0050,Testing Complete - AI/ML Implementation Project 050,Testing Complete,2024-11-24,2024-12-05,Completed,2
+ADV-0050,Deployment - AI/ML Implementation Project 050,Deployment,2025-03-27,2025-04-01,Completed,1
+ADV-0050,Go-Live - AI/ML Implementation Project 050,Go-Live,2025-07-29,2025-08-01,Completed,5
+ADV-0051,Initiation - AI/ML Implementation Project 051,Initiation,2023-12-01,2023-12-12,Completed,1
+ADV-0051,Planning Complete - AI/ML Implementation Project 051,Planning Complete,2024-02-26,2024-03-08,Completed,5
+ADV-0051,Design Approved - AI/ML Implementation Project 051,Design Approved,2024-05-24,2024-06-06,Completed,3
+ADV-0051,Development Complete - AI/ML Implementation Project 051,Development Complete,2024-08-19,2024-08-20,Completed,1
+ADV-0051,Testing Complete - AI/ML Implementation Project 051,Testing Complete,2024-11-15,2024-11-16,Completed,5
+ADV-0051,Deployment - AI/ML Implementation Project 051,Deployment,2025-02-11,2025-02-16,Completed,3
+ADV-0052,Initiation - AI/ML Implementation Project 052,Initiation,2023-11-24,2023-11-29,Completed,5
+ADV-0052,Planning Complete - AI/ML Implementation Project 052,Planning Complete,2024-03-05,2024-03-13,Completed,5
+ADV-0052,Design Approved - AI/ML Implementation Project 052,Design Approved,2024-06-15,2024-06-10,Completed,4
+ADV-0052,Development Complete - AI/ML Implementation Project 052,Development Complete,2024-09-26,2024-10-09,Completed,4
+ADV-0052,Testing Complete - AI/ML Implementation Project 052,Testing Complete,2025-01-06,2025-01-08,Completed,5
+ADV-0052,Deployment - AI/ML Implementation Project 052,Deployment,2025-04-18,2025-04-25,Completed,4
+ADV-0052,Go-Live - AI/ML Implementation Project 052,Go-Live,2025-07-30,2025-08-09,Completed,1
+ADV-0053,Initiation - AI/ML Implementation Project 053,Initiation,2024-04-05,2024-04-12,Completed,2
+ADV-0053,Planning Complete - AI/ML Implementation Project 053,Planning Complete,2024-06-24,2024-06-25,Completed,4
+ADV-0053,Design Approved - AI/ML Implementation Project 053,Design Approved,2024-09-12,2024-09-11,Completed,1
+ADV-0053,Development Complete - AI/ML Implementation Project 053,Development Complete,2024-12-01,2024-12-09,Completed,5
+ADV-0053,Testing Complete - AI/ML Implementation Project 053,Testing Complete,2025-02-19,2025-02-28,Completed,1
+ADV-0053,Deployment - AI/ML Implementation Project 053,Deployment,2025-05-10,2025-05-19,Completed,4
+ADV-0053,Go-Live - AI/ML Implementation Project 053,Go-Live,2025-07-29,2025-08-10,Completed,2
+ADV-0054,Initiation - Cloud Migration Project 054,Initiation,2023-10-14,2023-10-10,Completed,4
+ADV-0054,Planning Complete - Cloud Migration Project 054,Planning Complete,2024-05-19,2024-05-14,Completed,4
+ADV-0054,Design Approved - Cloud Migration Project 054,Design Approved,2024-12-23,2025-01-04,Completed,5
+ADV-0054,Development Complete - Cloud Migration Project 054,Development Complete,2025-07-30,2025-08-12,Completed,4
+ADV-0055,Initiation - Data Analytics Project 055,Initiation,2023-06-23,2023-06-25,Completed,4
+ADV-0055,Planning Complete - Data Analytics Project 055,Planning Complete,2023-09-04,2023-09-15,Completed,1
+ADV-0055,Design Approved - Data Analytics Project 055,Design Approved,2023-11-17,2023-11-23,Completed,2
+ADV-0055,Development Complete - Data Analytics Project 055,Development Complete,2024-01-30,2024-02-12,Completed,1
+ADV-0055,Testing Complete - Data Analytics Project 055,Testing Complete,2024-04-13,2024-04-14,Completed,2
+ADV-0056,Initiation - Software Development Project 056,Initiation,2024-06-08,2024-06-11,Completed,2
+ADV-0056,Planning Complete - Software Development Project 056,Planning Complete,2024-09-28,2024-09-24,Completed,3
+ADV-0056,Design Approved - Software Development Project 056,Design Approved,2025-01-18,2025-01-23,Completed,5
+ADV-0056,Development Complete - Software Development Project 056,Development Complete,2025-05-10,2025-05-14,Completed,2
+ADV-0056,Testing Complete - Software Development Project 056,Testing Complete,2025-08-30,,Pending,3
+ADV-0057,Initiation - AI/ML Implementation Project 057,Initiation,2024-01-22,2024-01-25,Completed,1
+ADV-0057,Planning Complete - AI/ML Implementation Project 057,Planning Complete,2024-04-24,2024-04-25,Completed,4
+ADV-0057,Design Approved - AI/ML Implementation Project 057,Design Approved,2024-07-27,2024-07-24,Completed,4
+ADV-0057,Development Complete - AI/ML Implementation Project 057,Development Complete,2024-10-29,2024-10-29,Completed,3
+ADV-0058,Initiation - Digital Transformation Project 058,Initiation,2024-03-01,2024-02-26,Completed,5
+ADV-0058,Planning Complete - Digital Transformation Project 058,Planning Complete,2024-05-02,2024-05-02,Completed,3
+ADV-0058,Design Approved - Digital Transformation Project 058,Design Approved,2024-07-03,2024-07-13,Completed,2
+ADV-0058,Development Complete - Digital Transformation Project 058,Development Complete,2024-09-03,2024-09-14,Completed,1
+ADV-0058,Testing Complete - Digital Transformation Project 058,Testing Complete,2024-11-04,2024-11-10,Completed,3
+ADV-0058,Deployment - Digital Transformation Project 058,Deployment,2025-01-05,2025-01-10,Completed,1
+ADV-0059,Initiation - AI/ML Implementation Project 059,Initiation,2023-08-03,2023-08-10,Completed,2
+ADV-0059,Planning Complete - AI/ML Implementation Project 059,Planning Complete,2024-04-01,2024-03-31,Completed,5
+ADV-0059,Design Approved - AI/ML Implementation Project 059,Design Approved,2024-11-29,2024-12-10,Completed,1
+ADV-0059,Development Complete - AI/ML Implementation Project 059,Development Complete,2025-07-30,2025-07-30,Completed,4
+ADV-0060,Initiation - Digital Transformation Project 060,Initiation,2023-12-11,2023-12-16,Completed,2
+ADV-0060,Planning Complete - Digital Transformation Project 060,Planning Complete,2024-05-08,2024-05-06,Completed,3
+ADV-0060,Design Approved - Digital Transformation Project 060,Design Approved,2024-10-04,2024-10-11,Completed,1
+ADV-0060,Development Complete - Digital Transformation Project 060,Development Complete,2025-03-02,2025-03-02,Completed,2
+ADV-0060,Testing Complete - Digital Transformation Project 060,Testing Complete,2025-07-30,2025-08-05,Completed,2
+ADV-0061,Initiation - Digital Transformation Project 061,Initiation,2023-07-11,2023-07-08,Completed,3
+ADV-0061,Planning Complete - Digital Transformation Project 061,Planning Complete,2024-01-14,2024-01-20,Completed,1
+ADV-0061,Design Approved - Digital Transformation Project 061,Design Approved,2024-07-20,2024-07-22,Completed,3
+ADV-0061,Development Complete - Digital Transformation Project 061,Development Complete,2025-01-23,2025-02-02,Completed,2
+ADV-0061,Testing Complete - Digital Transformation Project 061,Testing Complete,2025-07-30,2025-07-28,Completed,4
+ADV-0062,Initiation - AI/ML Implementation Project 062,Initiation,2024-03-09,2024-03-04,Completed,2
+ADV-0062,Planning Complete - AI/ML Implementation Project 062,Planning Complete,2024-07-07,2024-07-06,Completed,4
+ADV-0062,Design Approved - AI/ML Implementation Project 062,Design Approved,2024-11-05,2024-11-04,Completed,1
+ADV-0062,Development Complete - AI/ML Implementation Project 062,Development Complete,2025-03-06,2025-03-01,Completed,4
+ADV-0063,Initiation - Cloud Migration Project 063,Initiation,2023-10-29,2023-11-11,Completed,5
+ADV-0063,Planning Complete - Cloud Migration Project 063,Planning Complete,2024-01-25,2024-01-29,Completed,4
+ADV-0063,Design Approved - Cloud Migration Project 063,Design Approved,2024-04-23,2024-05-05,Completed,4
+ADV-0063,Development Complete - Cloud Migration Project 063,Development Complete,2024-07-21,2024-07-18,Completed,3
+ADV-0064,Initiation - Digital Transformation Project 064,Initiation,2024-04-17,2024-04-26,Completed,3
+ADV-0064,Planning Complete - Digital Transformation Project 064,Planning Complete,2024-09-20,2024-09-25,Completed,1
+ADV-0064,Design Approved - Digital Transformation Project 064,Design Approved,2025-02-23,2025-03-06,Completed,5
+ADV-0064,Development Complete - Digital Transformation Project 064,Development Complete,2025-07-30,2025-08-01,Completed,2
+ADV-0065,Initiation - Digital Transformation Project 065,Initiation,2024-04-12,2024-04-22,Completed,4
+ADV-0065,Planning Complete - Digital Transformation Project 065,Planning Complete,2024-07-21,2024-07-27,Completed,1
+ADV-0065,Design Approved - Digital Transformation Project 065,Design Approved,2024-10-29,2024-10-27,Completed,1
+ADV-0065,Development Complete - Digital Transformation Project 065,Development Complete,2025-02-06,2025-02-13,Completed,2
+ADV-0065,Testing Complete - Digital Transformation Project 065,Testing Complete,2025-05-17,2025-05-16,Completed,3
+ADV-0066,Initiation - AI/ML Implementation Project 066,Initiation,2023-12-03,2023-11-30,Completed,3
+ADV-0066,Planning Complete - AI/ML Implementation Project 066,Planning Complete,2024-06-21,2024-06-28,Completed,4
+ADV-0066,Design Approved - AI/ML Implementation Project 066,Design Approved,2025-01-09,2025-01-17,Completed,3
+ADV-0066,Development Complete - AI/ML Implementation Project 066,Development Complete,2025-07-30,2025-08-03,Completed,3
+ADV-0067,Initiation - Digital Transformation Project 067,Initiation,2024-03-22,2024-04-03,Completed,3
+ADV-0067,Planning Complete - Digital Transformation Project 067,Planning Complete,2024-09-02,2024-09-11,Completed,5
+ADV-0067,Design Approved - Digital Transformation Project 067,Design Approved,2025-02-14,2025-02-18,Completed,5
+ADV-0067,Development Complete - Digital Transformation Project 067,Development Complete,2025-07-29,2025-07-28,Completed,2
+ADV-0068,Initiation - Digital Transformation Project 068,Initiation,2023-09-07,2023-09-06,Completed,3
+ADV-0068,Planning Complete - Digital Transformation Project 068,Planning Complete,2023-10-09,2023-10-09,Completed,4
+ADV-0068,Design Approved - Digital Transformation Project 068,Design Approved,2023-11-10,2023-11-22,Completed,4
+ADV-0068,Development Complete - Digital Transformation Project 068,Development Complete,2023-12-13,2023-12-16,Completed,1
+ADV-0068,Testing Complete - Digital Transformation Project 068,Testing Complete,2024-01-14,2024-01-21,Completed,3
+ADV-0068,Deployment - Digital Transformation Project 068,Deployment,2024-02-16,2024-02-25,Completed,4
+ADV-0069,Initiation - AI/ML Implementation Project 069,Initiation,2024-05-26,2024-06-06,Completed,5
+ADV-0069,Planning Complete - AI/ML Implementation Project 069,Planning Complete,2024-08-17,2024-08-27,Completed,4
+ADV-0069,Design Approved - AI/ML Implementation Project 069,Design Approved,2024-11-09,2024-11-08,Completed,5
+ADV-0069,Development Complete - AI/ML Implementation Project 069,Development Complete,2025-02-01,2025-02-04,Completed,1
+ADV-0070,Initiation - AI/ML Implementation Project 070,Initiation,2023-07-06,2023-07-13,Completed,2
+ADV-0070,Planning Complete - AI/ML Implementation Project 070,Planning Complete,2024-01-10,2024-01-17,Completed,5
+ADV-0070,Design Approved - AI/ML Implementation Project 070,Design Approved,2024-07-17,2024-07-30,Completed,3
+ADV-0070,Development Complete - AI/ML Implementation Project 070,Development Complete,2025-01-22,2025-01-26,Completed,2
+ADV-0070,Testing Complete - AI/ML Implementation Project 070,Testing Complete,2025-07-30,2025-08-06,Completed,3
+ADV-0071,Initiation - Software Development Project 071,Initiation,2023-06-24,2023-07-05,Completed,5
+ADV-0071,Planning Complete - Software Development Project 071,Planning Complete,2023-11-24,2023-12-02,Completed,4
+ADV-0071,Design Approved - Software Development Project 071,Design Approved,2024-04-25,2024-05-01,Completed,3
+ADV-0071,Development Complete - Software Development Project 071,Development Complete,2024-09-25,2024-09-26,Completed,4
+ADV-0071,Testing Complete - Software Development Project 071,Testing Complete,2025-02-25,2025-03-10,Completed,1
+ADV-0071,Deployment - Software Development Project 071,Deployment,2025-07-29,2025-07-26,Completed,5
+ADV-0072,Initiation - Cloud Migration Project 072,Initiation,2024-05-04,2024-05-13,Completed,2
+ADV-0072,Planning Complete - Cloud Migration Project 072,Planning Complete,2024-07-18,2024-07-23,Completed,4
+ADV-0072,Design Approved - Cloud Migration Project 072,Design Approved,2024-10-01,2024-10-14,Completed,5
+ADV-0072,Development Complete - Cloud Migration Project 072,Development Complete,2024-12-16,2024-12-27,Completed,3
+ADV-0072,Testing Complete - Cloud Migration Project 072,Testing Complete,2025-03-01,2025-03-13,Completed,1
+ADV-0072,Deployment - Cloud Migration Project 072,Deployment,2025-05-15,2025-05-28,Completed,5
+ADV-0072,Go-Live - Cloud Migration Project 072,Go-Live,2025-07-30,2025-07-31,Completed,5
+ADV-0073,Initiation - Cloud Migration Project 073,Initiation,2023-09-25,2023-09-27,Completed,4
+ADV-0073,Planning Complete - Cloud Migration Project 073,Planning Complete,2024-03-11,2024-03-10,Completed,1
+ADV-0073,Design Approved - Cloud Migration Project 073,Design Approved,2024-08-27,2024-08-26,Completed,4
+ADV-0073,Development Complete - Cloud Migration Project 073,Development Complete,2025-02-11,2025-02-24,Completed,3
+ADV-0073,Testing Complete - Cloud Migration Project 073,Testing Complete,2025-07-30,2025-07-26,Completed,3
+ADV-0074,Initiation - Digital Transformation Project 074,Initiation,2024-06-30,2024-07-07,Completed,4
+ADV-0074,Planning Complete - Digital Transformation Project 074,Planning Complete,2024-10-06,2024-10-11,Completed,4
+ADV-0074,Design Approved - Digital Transformation Project 074,Design Approved,2025-01-13,2025-01-12,Completed,1
+ADV-0074,Development Complete - Digital Transformation Project 074,Development Complete,2025-04-22,2025-05-06,Completed,1
+ADV-0074,Testing Complete - Digital Transformation Project 074,Testing Complete,2025-07-30,2025-08-07,Completed,2
+ADV-0075,Initiation - Cloud Migration Project 075,Initiation,2023-10-27,2023-11-02,Completed,1
+ADV-0075,Planning Complete - Cloud Migration Project 075,Planning Complete,2024-02-10,2024-02-23,Completed,3
+ADV-0075,Design Approved - Cloud Migration Project 075,Design Approved,2024-05-27,2024-06-06,Completed,4
+ADV-0075,Development Complete - Cloud Migration Project 075,Development Complete,2024-09-11,2024-09-17,Completed,4
+ADV-0075,Testing Complete - Cloud Migration Project 075,Testing Complete,2024-12-27,2024-12-27,Completed,2
+ADV-0075,Deployment - Cloud Migration Project 075,Deployment,2025-04-13,2025-04-11,Completed,3
+ADV-0075,Go-Live - Cloud Migration Project 075,Go-Live,2025-07-29,2025-07-24,Completed,3
+ADV-0076,Initiation - Digital Transformation Project 076,Initiation,2023-07-11,2023-07-16,Completed,1
+ADV-0076,Planning Complete - Digital Transformation Project 076,Planning Complete,2023-10-05,2023-10-18,Completed,2
+ADV-0076,Design Approved - Digital Transformation Project 076,Design Approved,2023-12-30,2024-01-10,Completed,3
+ADV-0076,Development Complete - Digital Transformation Project 076,Development Complete,2024-03-25,2024-04-02,Completed,3
+ADV-0076,Testing Complete - Digital Transformation Project 076,Testing Complete,2024-06-20,2024-07-02,Completed,4
+ADV-0077,Initiation - Software Development Project 077,Initiation,2023-09-28,2023-10-11,Completed,4
+ADV-0077,Planning Complete - Software Development Project 077,Planning Complete,2024-01-17,2024-01-18,Completed,5
+ADV-0077,Design Approved - Software Development Project 077,Design Approved,2024-05-08,2024-05-05,Completed,1
+ADV-0077,Development Complete - Software Development Project 077,Development Complete,2024-08-28,2024-08-30,Completed,4
+ADV-0077,Testing Complete - Software Development Project 077,Testing Complete,2024-12-18,2024-12-25,Completed,1
+ADV-0077,Deployment - Software Development Project 077,Deployment,2025-04-09,2025-04-20,Completed,1
+ADV-0077,Go-Live - Software Development Project 077,Go-Live,2025-07-30,2025-07-25,Completed,3
+ADV-0078,Initiation - AI/ML Implementation Project 078,Initiation,2023-07-22,2023-07-22,Completed,3
+ADV-0078,Planning Complete - AI/ML Implementation Project 078,Planning Complete,2023-11-22,2023-11-21,Completed,5
+ADV-0078,Design Approved - AI/ML Implementation Project 078,Design Approved,2024-03-24,2024-04-02,Completed,5
+ADV-0078,Development Complete - AI/ML Implementation Project 078,Development Complete,2024-07-25,2024-08-04,Completed,2
+ADV-0078,Testing Complete - AI/ML Implementation Project 078,Testing Complete,2024-11-25,2024-11-30,Completed,3
+ADV-0078,Deployment - AI/ML Implementation Project 078,Deployment,2025-03-28,2025-04-01,Completed,2
+ADV-0078,Go-Live - AI/ML Implementation Project 078,Go-Live,2025-07-30,2025-08-09,Completed,4
+ADV-0079,Initiation - AI/ML Implementation Project 079,Initiation,2023-12-12,2023-12-08,Completed,1
+ADV-0079,Planning Complete - AI/ML Implementation Project 079,Planning Complete,2024-05-09,2024-05-06,Completed,1
+ADV-0079,Design Approved - AI/ML Implementation Project 079,Design Approved,2024-10-05,2024-10-14,Completed,3
+ADV-0079,Development Complete - AI/ML Implementation Project 079,Development Complete,2025-03-03,2025-03-16,Completed,2
+ADV-0079,Testing Complete - AI/ML Implementation Project 079,Testing Complete,2025-07-30,2025-08-01,Completed,2
+ADV-0080,Initiation - AI/ML Implementation Project 080,Initiation,2023-10-21,2023-11-01,Completed,3
+ADV-0080,Planning Complete - AI/ML Implementation Project 080,Planning Complete,2024-05-24,2024-05-19,Completed,4
+ADV-0080,Design Approved - AI/ML Implementation Project 080,Design Approved,2024-12-26,2024-12-25,Completed,1
+ADV-0080,Development Complete - AI/ML Implementation Project 080,Development Complete,2025-07-30,2025-08-08,Completed,5
+ADV-0081,Initiation - Cloud Migration Project 081,Initiation,2024-01-19,2024-01-26,Completed,5
+ADV-0081,Planning Complete - Cloud Migration Project 081,Planning Complete,2024-07-23,2024-07-26,Completed,1
+ADV-0081,Design Approved - Cloud Migration Project 081,Design Approved,2025-01-25,2025-01-23,Completed,3
+ADV-0081,Development Complete - Cloud Migration Project 081,Development Complete,2025-07-30,2025-07-26,Completed,1
+ADV-0082,Initiation - Software Development Project 082,Initiation,2024-04-21,2024-04-17,Completed,4
+ADV-0082,Planning Complete - Software Development Project 082,Planning Complete,2024-07-07,2024-07-07,Completed,3
+ADV-0082,Design Approved - Software Development Project 082,Design Approved,2024-09-23,2024-09-20,Completed,3
+ADV-0082,Development Complete - Software Development Project 082,Development Complete,2024-12-09,2024-12-17,Completed,4
+ADV-0082,Testing Complete - Software Development Project 082,Testing Complete,2025-02-25,2025-03-04,Completed,5
+ADV-0082,Deployment - Software Development Project 082,Deployment,2025-05-13,2025-05-09,Completed,5
+ADV-0082,Go-Live - Software Development Project 082,Go-Live,2025-07-30,2025-08-12,Completed,3
+ADV-0083,Initiation - Cloud Migration Project 083,Initiation,2023-12-04,2023-12-04,Completed,2
+ADV-0083,Planning Complete - Cloud Migration Project 083,Planning Complete,2024-04-02,2024-04-04,Completed,1
+ADV-0083,Design Approved - Cloud Migration Project 083,Design Approved,2024-08-01,2024-07-28,Completed,2
+ADV-0083,Development Complete - Cloud Migration Project 083,Development Complete,2024-11-30,2024-12-10,Completed,4
+ADV-0083,Testing Complete - Cloud Migration Project 083,Testing Complete,2025-03-31,2025-03-27,Completed,2
+ADV-0083,Deployment - Cloud Migration Project 083,Deployment,2025-07-30,2025-08-06,Completed,4
+ADV-0084,Initiation - Cloud Migration Project 084,Initiation,2023-08-23,2023-08-19,Completed,3
+ADV-0084,Planning Complete - Cloud Migration Project 084,Planning Complete,2023-12-18,2023-12-20,Completed,3
+ADV-0084,Design Approved - Cloud Migration Project 084,Design Approved,2024-04-14,2024-04-15,Completed,5
+ADV-0084,Development Complete - Cloud Migration Project 084,Development Complete,2024-08-10,2024-08-11,Completed,1
+ADV-0084,Testing Complete - Cloud Migration Project 084,Testing Complete,2024-12-05,2024-12-16,Completed,1
+ADV-0084,Deployment - Cloud Migration Project 084,Deployment,2025-04-02,2025-04-09,Completed,5
+ADV-0084,Go-Live - Cloud Migration Project 084,Go-Live,2025-07-29,2025-08-11,Completed,5
+ADV-0085,Initiation - Software Development Project 085,Initiation,2023-12-07,2023-12-20,Completed,1
+ADV-0085,Planning Complete - Software Development Project 085,Planning Complete,2024-01-03,2024-01-14,Completed,2
+ADV-0085,Design Approved - Software Development Project 085,Design Approved,2024-01-31,2024-02-04,Completed,4
+ADV-0085,Development Complete - Software Development Project 085,Development Complete,2024-02-27,2024-02-29,Completed,4
+ADV-0085,Testing Complete - Software Development Project 085,Testing Complete,2024-03-26,2024-04-09,Completed,2
+ADV-0085,Deployment - Software Development Project 085,Deployment,2024-04-22,2024-04-30,Completed,2
+ADV-0085,Go-Live - Software Development Project 085,Go-Live,2024-05-20,2024-05-28,Completed,4
+ADV-0086,Initiation - Software Development Project 086,Initiation,2023-11-29,2023-12-08,Completed,4
+ADV-0086,Planning Complete - Software Development Project 086,Planning Complete,2024-03-09,2024-03-16,Completed,3
+ADV-0086,Design Approved - Software Development Project 086,Design Approved,2024-06-19,2024-06-21,Completed,2
+ADV-0086,Development Complete - Software Development Project 086,Development Complete,2024-09-28,2024-10-04,Completed,2
+ADV-0086,Testing Complete - Software Development Project 086,Testing Complete,2025-01-08,2025-01-20,Completed,2
+ADV-0086,Deployment - Software Development Project 086,Deployment,2025-04-19,2025-04-24,Completed,1
+ADV-0086,Go-Live - Software Development Project 086,Go-Live,2025-07-30,2025-08-05,Completed,1
+ADV-0087,Initiation - Software Development Project 087,Initiation,2023-09-16,2023-09-25,Completed,1
+ADV-0087,Planning Complete - Software Development Project 087,Planning Complete,2024-04-30,2024-05-11,Completed,2
+ADV-0087,Design Approved - Software Development Project 087,Design Approved,2024-12-14,2024-12-26,Completed,1
+ADV-0087,Development Complete - Software Development Project 087,Development Complete,2025-07-30,2025-08-11,Completed,1
+ADV-0088,Initiation - Software Development Project 088,Initiation,2024-05-09,2024-05-09,Completed,5
+ADV-0088,Planning Complete - Software Development Project 088,Planning Complete,2024-10-05,2024-10-11,Completed,1
+ADV-0088,Design Approved - Software Development Project 088,Design Approved,2025-03-03,2025-03-08,Completed,1
+ADV-0088,Development Complete - Software Development Project 088,Development Complete,2025-07-30,2025-07-25,Completed,3
+ADV-0089,Initiation - AI/ML Implementation Project 089,Initiation,2023-10-15,2023-10-28,Completed,1
+ADV-0089,Planning Complete - AI/ML Implementation Project 089,Planning Complete,2024-05-20,2024-05-16,Completed,4
+ADV-0089,Design Approved - AI/ML Implementation Project 089,Design Approved,2024-12-24,2024-12-22,Completed,4
+ADV-0089,Development Complete - AI/ML Implementation Project 089,Development Complete,2025-07-30,2025-08-11,Completed,3
+ADV-0090,Initiation - Data Analytics Project 090,Initiation,2024-05-25,2024-06-01,Completed,3
+ADV-0090,Planning Complete - Data Analytics Project 090,Planning Complete,2024-08-07,2024-08-18,Completed,4
+ADV-0090,Design Approved - Data Analytics Project 090,Design Approved,2024-10-21,2024-11-03,Completed,5
+ADV-0090,Development Complete - Data Analytics Project 090,Development Complete,2025-01-03,2025-01-14,Completed,2
+ADV-0090,Testing Complete - Data Analytics Project 090,Testing Complete,2025-03-19,2025-03-14,Completed,4
+ADV-0090,Deployment - Data Analytics Project 090,Deployment,2025-06-01,2025-06-05,Completed,5
+ADV-0090,Go-Live - Data Analytics Project 090,Go-Live,2025-08-15,,Pending,5
+ADV-0091,Initiation - Data Analytics Project 091,Initiation,2024-05-15,2024-05-20,Completed,5
+ADV-0091,Planning Complete - Data Analytics Project 091,Planning Complete,2024-08-11,2024-08-10,Completed,1
+ADV-0091,Design Approved - Data Analytics Project 091,Design Approved,2024-11-07,2024-11-13,Completed,3
+ADV-0091,Development Complete - Data Analytics Project 091,Development Complete,2025-02-03,2025-02-14,Completed,4
+ADV-0091,Testing Complete - Data Analytics Project 091,Testing Complete,2025-05-02,2025-05-11,Completed,1
+ADV-0091,Deployment - Data Analytics Project 091,Deployment,2025-07-30,2025-08-02,Completed,5
+ADV-0092,Initiation - Software Development Project 092,Initiation,2024-04-27,2024-05-11,Completed,3
+ADV-0092,Planning Complete - Software Development Project 092,Planning Complete,2024-09-27,2024-10-10,Completed,4
+ADV-0092,Design Approved - Software Development Project 092,Design Approved,2025-02-27,2025-02-26,Completed,2
+ADV-0092,Development Complete - Software Development Project 092,Development Complete,2025-07-30,2025-08-10,Completed,5
+ADV-0093,Initiation - Data Analytics Project 093,Initiation,2023-07-07,2023-07-17,Completed,4
+ADV-0093,Planning Complete - Data Analytics Project 093,Planning Complete,2024-01-11,2024-01-14,Completed,3
+ADV-0093,Design Approved - Data Analytics Project 093,Design Approved,2024-07-18,2024-07-27,Completed,2
+ADV-0093,Development Complete - Data Analytics Project 093,Development Complete,2025-01-22,2025-01-30,Completed,3
+ADV-0093,Testing Complete - Data Analytics Project 093,Testing Complete,2025-07-30,2025-08-05,Completed,1
+ADV-0094,Initiation - Data Analytics Project 094,Initiation,2024-04-07,2024-04-08,Completed,1
+ADV-0094,Planning Complete - Data Analytics Project 094,Planning Complete,2024-08-04,2024-08-11,Completed,2
+ADV-0094,Design Approved - Data Analytics Project 094,Design Approved,2024-12-02,2024-12-01,Completed,5
+ADV-0094,Development Complete - Data Analytics Project 094,Development Complete,2025-03-31,2025-03-29,Completed,2
+ADV-0094,Testing Complete - Data Analytics Project 094,Testing Complete,2025-07-29,2025-08-08,Completed,1
+ADV-0095,Initiation - Software Development Project 095,Initiation,2024-04-21,2024-04-24,Completed,3
+ADV-0095,Planning Complete - Software Development Project 095,Planning Complete,2024-08-15,2024-08-10,Completed,4
+ADV-0095,Design Approved - Software Development Project 095,Design Approved,2024-12-09,2024-12-16,Completed,5
+ADV-0095,Development Complete - Software Development Project 095,Development Complete,2025-04-04,2025-04-11,Completed,2
+ADV-0095,Testing Complete - Software Development Project 095,Testing Complete,2025-07-30,2025-08-02,Completed,4
+ADV-0096,Initiation - Data Analytics Project 096,Initiation,2023-08-27,2023-09-08,Completed,3
+ADV-0096,Planning Complete - Data Analytics Project 096,Planning Complete,2023-09-17,2023-09-17,Completed,4
+ADV-0096,Design Approved - Data Analytics Project 096,Design Approved,2023-10-08,2023-10-14,Completed,5
+ADV-0096,Development Complete - Data Analytics Project 096,Development Complete,2023-10-30,2023-11-01,Completed,1
+ADV-0096,Testing Complete - Data Analytics Project 096,Testing Complete,2023-11-20,2023-11-18,Completed,5
+ADV-0096,Deployment - Data Analytics Project 096,Deployment,2023-12-11,2023-12-16,Completed,3
+ADV-0096,Go-Live - Data Analytics Project 096,Go-Live,2024-01-02,2024-01-09,Completed,1
+ADV-0097,Initiation - Cloud Migration Project 097,Initiation,2024-02-29,2024-03-11,Completed,2
+ADV-0097,Planning Complete - Cloud Migration Project 097,Planning Complete,2024-07-07,2024-07-13,Completed,5
+ADV-0097,Design Approved - Cloud Migration Project 097,Design Approved,2024-11-13,2024-11-17,Completed,5
+ADV-0097,Development Complete - Cloud Migration Project 097,Development Complete,2025-03-22,2025-03-21,Completed,2
+ADV-0097,Testing Complete - Cloud Migration Project 097,Testing Complete,2025-07-30,2025-08-10,Completed,4
+ADV-0098,Initiation - Digital Transformation Project 098,Initiation,2024-06-08,2024-06-16,Completed,2
+ADV-0098,Planning Complete - Digital Transformation Project 098,Planning Complete,2024-08-16,2024-08-13,Completed,1
+ADV-0098,Design Approved - Digital Transformation Project 098,Design Approved,2024-10-25,2024-10-22,Completed,1
+ADV-0098,Development Complete - Digital Transformation Project 098,Development Complete,2025-01-02,2025-01-08,Completed,4
+ADV-0098,Testing Complete - Digital Transformation Project 098,Testing Complete,2025-03-13,2025-03-18,Completed,1
+ADV-0098,Deployment - Digital Transformation Project 098,Deployment,2025-05-21,2025-05-19,Completed,2
+ADV-0098,Go-Live - Digital Transformation Project 098,Go-Live,2025-07-30,2025-07-30,Completed,1
+ADV-0099,Initiation - Digital Transformation Project 099,Initiation,2023-10-04,2023-10-18,Completed,4
+ADV-0099,Planning Complete - Digital Transformation Project 099,Planning Complete,2024-03-18,2024-03-28,Completed,1
+ADV-0099,Design Approved - Digital Transformation Project 099,Design Approved,2024-08-31,2024-09-02,Completed,4
+ADV-0099,Development Complete - Digital Transformation Project 099,Development Complete,2025-02-13,2025-02-19,Completed,3
+ADV-0099,Testing Complete - Digital Transformation Project 099,Testing Complete,2025-07-30,2025-08-03,Completed,3
+ADV-0100,Initiation - Software Development Project 100,Initiation,2023-08-23,2023-09-01,Completed,1
+ADV-0100,Planning Complete - Software Development Project 100,Planning Complete,2024-01-11,2024-01-07,Completed,5
+ADV-0100,Design Approved - Software Development Project 100,Design Approved,2024-05-31,2024-05-31,Completed,5
+ADV-0100,Development Complete - Software Development Project 100,Development Complete,2024-10-20,2024-10-15,Completed,2
+ADV-0100,Testing Complete - Software Development Project 100,Testing Complete,2025-03-10,2025-03-11,Completed,4
+ADV-0100,Deployment - Software Development Project 100,Deployment,2025-07-30,2025-08-05,Completed,3
+ADV-0101,Initiation - AI/ML Implementation Project 101,Initiation,2024-01-23,2024-01-21,Completed,5
+ADV-0101,Planning Complete - AI/ML Implementation Project 101,Planning Complete,2024-02-22,2024-02-23,Completed,4
+ADV-0101,Design Approved - AI/ML Implementation Project 101,Design Approved,2024-03-24,2024-04-02,Completed,3
+ADV-0101,Development Complete - AI/ML Implementation Project 101,Development Complete,2024-04-24,2024-04-27,Completed,3
+ADV-0101,Testing Complete - AI/ML Implementation Project 101,Testing Complete,2024-05-25,2024-05-27,Completed,1
+ADV-0101,Deployment - AI/ML Implementation Project 101,Deployment,2024-06-25,2024-06-27,Completed,5
+ADV-0101,Go-Live - AI/ML Implementation Project 101,Go-Live,2024-07-26,2024-07-24,Completed,3
+ADV-0102,Initiation - Software Development Project 102,Initiation,2023-12-12,2023-12-15,Completed,5
+ADV-0102,Planning Complete - Software Development Project 102,Planning Complete,2024-05-09,2024-05-05,Completed,2
+ADV-0102,Design Approved - Software Development Project 102,Design Approved,2024-10-05,2024-10-12,Completed,4
+ADV-0102,Development Complete - Software Development Project 102,Development Complete,2025-03-03,2025-03-09,Completed,2
+ADV-0102,Testing Complete - Software Development Project 102,Testing Complete,2025-07-30,2025-07-28,Completed,2
+ADV-0103,Initiation - AI/ML Implementation Project 103,Initiation,2023-10-17,2023-10-19,Completed,1
+ADV-0103,Planning Complete - AI/ML Implementation Project 103,Planning Complete,2024-05-21,2024-05-20,Completed,4
+ADV-0103,Design Approved - AI/ML Implementation Project 103,Design Approved,2024-12-24,2025-01-05,Completed,3
+ADV-0103,Development Complete - AI/ML Implementation Project 103,Development Complete,2025-07-30,2025-08-08,Completed,4
+ADV-0104,Initiation - Digital Transformation Project 104,Initiation,2024-04-23,2024-04-26,Completed,1
+ADV-0104,Planning Complete - Digital Transformation Project 104,Planning Complete,2024-07-09,2024-07-15,Completed,2
+ADV-0104,Design Approved - Digital Transformation Project 104,Design Approved,2024-09-24,2024-09-28,Completed,3
+ADV-0104,Development Complete - Digital Transformation Project 104,Development Complete,2024-12-10,2024-12-17,Completed,3
+ADV-0104,Testing Complete - Digital Transformation Project 104,Testing Complete,2025-02-25,2025-03-02,Completed,5
+ADV-0104,Deployment - Digital Transformation Project 104,Deployment,2025-05-13,2025-05-15,Completed,4
+ADV-0104,Go-Live - Digital Transformation Project 104,Go-Live,2025-07-30,2025-08-08,Completed,4
+ADV-0105,Initiation - Software Development Project 105,Initiation,2024-05-18,2024-05-23,Completed,3
+ADV-0105,Planning Complete - Software Development Project 105,Planning Complete,2024-10-10,2024-10-05,Completed,1
+ADV-0105,Design Approved - Software Development Project 105,Design Approved,2025-03-05,2025-03-14,Completed,4
+ADV-0105,Development Complete - Software Development Project 105,Development Complete,2025-07-29,2025-07-29,Completed,4
+ADV-0106,Initiation - Cloud Migration Project 106,Initiation,2024-03-12,2024-03-21,Completed,1
+ADV-0106,Planning Complete - Cloud Migration Project 106,Planning Complete,2024-08-27,2024-09-04,Completed,2
+ADV-0106,Design Approved - Cloud Migration Project 106,Design Approved,2025-02-11,2025-02-22,Completed,2
+ADV-0106,Development Complete - Cloud Migration Project 106,Development Complete,2025-07-30,2025-07-29,Completed,4
+ADV-0107,Initiation - Data Analytics Project 107,Initiation,2023-09-21,2023-10-05,Completed,1
+ADV-0107,Planning Complete - Data Analytics Project 107,Planning Complete,2024-01-01,2024-01-06,Completed,1
+ADV-0107,Design Approved - Data Analytics Project 107,Design Approved,2024-04-13,2024-04-25,Completed,3
+ADV-0107,Development Complete - Data Analytics Project 107,Development Complete,2024-07-25,2024-07-21,Completed,5
+ADV-0108,Initiation - AI/ML Implementation Project 108,Initiation,2024-05-16,2024-05-24,Completed,5
+ADV-0108,Planning Complete - AI/ML Implementation Project 108,Planning Complete,2024-10-09,2024-10-09,Completed,2
+ADV-0108,Design Approved - AI/ML Implementation Project 108,Design Approved,2025-03-05,2025-03-13,Completed,2
+ADV-0108,Development Complete - AI/ML Implementation Project 108,Development Complete,2025-07-30,2025-08-07,Completed,5
+ADV-0109,Initiation - Data Analytics Project 109,Initiation,2023-11-14,2023-11-11,Completed,5
+ADV-0109,Planning Complete - Data Analytics Project 109,Planning Complete,2024-04-18,2024-04-20,Completed,4
+ADV-0109,Design Approved - Data Analytics Project 109,Design Approved,2024-09-21,2024-09-28,Completed,3
+ADV-0109,Development Complete - Data Analytics Project 109,Development Complete,2025-02-24,2025-03-02,Completed,1
+ADV-0109,Testing Complete - Data Analytics Project 109,Testing Complete,2025-07-30,2025-08-10,Completed,3
+ADV-0110,Initiation - Data Analytics Project 110,Initiation,2024-06-28,2024-07-05,Completed,2
+ADV-0110,Planning Complete - Data Analytics Project 110,Planning Complete,2024-10-04,2024-10-09,Completed,4
+ADV-0110,Design Approved - Data Analytics Project 110,Design Approved,2025-01-11,2025-01-17,Completed,1
+ADV-0110,Development Complete - Data Analytics Project 110,Development Complete,2025-04-20,2025-04-30,Completed,4
+ADV-0110,Testing Complete - Data Analytics Project 110,Testing Complete,2025-07-28,2025-07-25,Completed,4
+ADV-0111,Initiation - Software Development Project 111,Initiation,2024-07-02,2024-07-12,Completed,3
+ADV-0111,Planning Complete - Software Development Project 111,Planning Complete,2024-09-05,2024-09-11,Completed,3
+ADV-0111,Design Approved - Software Development Project 111,Design Approved,2024-11-09,2024-11-08,Completed,1
+ADV-0111,Development Complete - Software Development Project 111,Development Complete,2025-01-14,2025-01-26,Completed,3
+ADV-0111,Testing Complete - Software Development Project 111,Testing Complete,2025-03-20,2025-03-20,Completed,2
+ADV-0111,Deployment - Software Development Project 111,Deployment,2025-05-24,2025-05-24,Completed,4
+ADV-0111,Go-Live - Software Development Project 111,Go-Live,2025-07-29,2025-08-04,Completed,3
+ADV-0112,Initiation - Data Analytics Project 112,Initiation,2023-06-29,2023-06-25,Completed,1
+ADV-0112,Planning Complete - Data Analytics Project 112,Planning Complete,2023-11-03,2023-11-08,Completed,3
+ADV-0112,Design Approved - Data Analytics Project 112,Design Approved,2024-03-09,2024-03-19,Completed,2
+ADV-0112,Development Complete - Data Analytics Project 112,Development Complete,2024-07-14,2024-07-10,Completed,5
+ADV-0112,Testing Complete - Data Analytics Project 112,Testing Complete,2024-11-18,2024-11-22,Completed,4
+ADV-0112,Deployment - Data Analytics Project 112,Deployment,2025-03-25,2025-04-03,Completed,1
+ADV-0112,Go-Live - Data Analytics Project 112,Go-Live,2025-07-30,2025-08-04,Completed,1
+ADV-0113,Initiation - Cloud Migration Project 113,Initiation,2023-09-26,2023-10-10,Completed,2
+ADV-0113,Planning Complete - Cloud Migration Project 113,Planning Complete,2024-01-16,2024-01-22,Completed,1
+ADV-0113,Design Approved - Cloud Migration Project 113,Design Approved,2024-05-07,2024-05-06,Completed,2
+ADV-0113,Development Complete - Cloud Migration Project 113,Development Complete,2024-08-27,2024-08-25,Completed,5
+ADV-0113,Testing Complete - Cloud Migration Project 113,Testing Complete,2024-12-17,2024-12-21,Completed,3
+ADV-0113,Deployment - Cloud Migration Project 113,Deployment,2025-04-08,2025-04-12,Completed,4
+ADV-0113,Go-Live - Cloud Migration Project 113,Go-Live,2025-07-30,2025-08-01,Completed,2
+ADV-0114,Initiation - Data Analytics Project 114,Initiation,2023-06-17,2023-06-19,Completed,3
+ADV-0114,Planning Complete - Data Analytics Project 114,Planning Complete,2023-10-06,2023-10-05,Completed,3
+ADV-0114,Design Approved - Data Analytics Project 114,Design Approved,2024-01-26,2024-01-23,Completed,4
+ADV-0114,Development Complete - Data Analytics Project 114,Development Complete,2024-05-17,2024-05-24,Completed,5
+ADV-0114,Testing Complete - Data Analytics Project 114,Testing Complete,2024-09-06,2024-09-10,Completed,4
+ADV-0115,Initiation - Software Development Project 115,Initiation,2023-11-09,2023-11-12,Completed,3
+ADV-0115,Planning Complete - Software Development Project 115,Planning Complete,2024-02-21,2024-02-17,Completed,3
+ADV-0115,Design Approved - Software Development Project 115,Design Approved,2024-06-05,2024-05-31,Completed,1
+ADV-0115,Development Complete - Software Development Project 115,Development Complete,2024-09-18,2024-09-19,Completed,1
+ADV-0115,Testing Complete - Software Development Project 115,Testing Complete,2025-01-01,2024-12-29,Completed,4
+ADV-0115,Deployment - Software Development Project 115,Deployment,2025-04-16,2025-04-30,Completed,5
+ADV-0115,Go-Live - Software Development Project 115,Go-Live,2025-07-30,2025-07-27,Completed,3
+ADV-0116,Initiation - Cloud Migration Project 116,Initiation,2023-12-23,2024-01-03,Completed,3
+ADV-0116,Planning Complete - Cloud Migration Project 116,Planning Complete,2024-07-04,2024-07-12,Completed,1
+ADV-0116,Design Approved - Cloud Migration Project 116,Design Approved,2025-01-15,2025-01-27,Completed,5
+ADV-0116,Development Complete - Cloud Migration Project 116,Development Complete,2025-07-29,2025-08-12,Completed,5
+ADV-0117,Initiation - Digital Transformation Project 117,Initiation,2023-10-16,2023-10-30,Completed,5
+ADV-0117,Planning Complete - Digital Transformation Project 117,Planning Complete,2024-03-27,2024-04-08,Completed,4
+ADV-0117,Design Approved - Digital Transformation Project 117,Design Approved,2024-09-06,2024-09-01,Completed,2
+ADV-0117,Development Complete - Digital Transformation Project 117,Development Complete,2025-02-16,2025-02-11,Completed,2
+ADV-0117,Testing Complete - Digital Transformation Project 117,Testing Complete,2025-07-30,2025-08-06,Completed,4
+ADV-0118,Initiation - Data Analytics Project 118,Initiation,2023-07-04,2023-07-18,Completed,2
+ADV-0118,Planning Complete - Data Analytics Project 118,Planning Complete,2023-11-07,2023-11-12,Completed,1
+ADV-0118,Design Approved - Data Analytics Project 118,Design Approved,2024-03-12,2024-03-15,Completed,5
+ADV-0118,Development Complete - Data Analytics Project 118,Development Complete,2024-07-16,2024-07-11,Completed,1
+ADV-0118,Testing Complete - Data Analytics Project 118,Testing Complete,2024-11-19,2024-11-15,Completed,5
+ADV-0118,Deployment - Data Analytics Project 118,Deployment,2025-03-25,2025-03-28,Completed,5
+ADV-0118,Go-Live - Data Analytics Project 118,Go-Live,2025-07-30,2025-07-28,Completed,5
+ADV-0119,Initiation - Software Development Project 119,Initiation,2023-09-17,2023-09-22,Completed,3
+ADV-0119,Planning Complete - Software Development Project 119,Planning Complete,2024-05-01,2024-04-28,Completed,4
+ADV-0119,Design Approved - Software Development Project 119,Design Approved,2024-12-14,2024-12-27,Completed,3
+ADV-0119,Development Complete - Software Development Project 119,Development Complete,2025-07-30,2025-08-06,Completed,4
+ADV-0120,Initiation - Digital Transformation Project 120,Initiation,2024-03-17,2024-03-18,Completed,2
+ADV-0120,Planning Complete - Digital Transformation Project 120,Planning Complete,2024-06-08,2024-06-10,Completed,5
+ADV-0120,Design Approved - Digital Transformation Project 120,Design Approved,2024-08-30,2024-09-07,Completed,4
+ADV-0120,Development Complete - Digital Transformation Project 120,Development Complete,2024-11-22,2024-11-26,Completed,4
+ADV-0120,Testing Complete - Digital Transformation Project 120,Testing Complete,2025-02-13,2025-02-22,Completed,2
+ADV-0120,Deployment - Digital Transformation Project 120,Deployment,2025-05-07,2025-05-21,Completed,5
+ADV-0120,Go-Live - Digital Transformation Project 120,Go-Live,2025-07-30,2025-08-01,Completed,1
+ADV-0121,Initiation - Digital Transformation Project 121,Initiation,2024-06-02,2024-06-12,Completed,3
+ADV-0121,Planning Complete - Digital Transformation Project 121,Planning Complete,2024-08-25,2024-09-04,Completed,4
+ADV-0121,Design Approved - Digital Transformation Project 121,Design Approved,2024-11-17,2024-11-25,Completed,1
+ADV-0121,Development Complete - Digital Transformation Project 121,Development Complete,2025-02-10,2025-02-08,Completed,2
+ADV-0121,Testing Complete - Digital Transformation Project 121,Testing Complete,2025-05-05,2025-05-14,Completed,3
+ADV-0121,Deployment - Digital Transformation Project 121,Deployment,2025-07-29,2025-07-28,Completed,1
+ADV-0122,Initiation - AI/ML Implementation Project 122,Initiation,2023-11-09,2023-11-06,Completed,3
+ADV-0122,Planning Complete - AI/ML Implementation Project 122,Planning Complete,2024-02-21,2024-02-23,Completed,5
+ADV-0122,Design Approved - AI/ML Implementation Project 122,Design Approved,2024-06-05,2024-06-03,Completed,2
+ADV-0122,Development Complete - AI/ML Implementation Project 122,Development Complete,2024-09-18,2024-09-22,Completed,4
+ADV-0122,Testing Complete - AI/ML Implementation Project 122,Testing Complete,2025-01-01,2024-12-29,Completed,2
+ADV-0122,Deployment - AI/ML Implementation Project 122,Deployment,2025-04-16,2025-04-27,Completed,5
+ADV-0122,Go-Live - AI/ML Implementation Project 122,Go-Live,2025-07-30,2025-08-13,Completed,5
+ADV-0123,Initiation - Cloud Migration Project 123,Initiation,2023-09-17,2023-09-16,Completed,5
+ADV-0123,Planning Complete - Cloud Migration Project 123,Planning Complete,2024-01-31,2024-02-03,Completed,1
+ADV-0123,Design Approved - Cloud Migration Project 123,Design Approved,2024-06-15,2024-06-15,Completed,5
+ADV-0123,Development Complete - Cloud Migration Project 123,Development Complete,2024-10-29,2024-11-02,Completed,5
+ADV-0123,Testing Complete - Cloud Migration Project 123,Testing Complete,2025-03-14,2025-03-28,Completed,3
+ADV-0123,Deployment - Cloud Migration Project 123,Deployment,2025-07-29,2025-08-11,Completed,4
+ADV-0124,Initiation - Data Analytics Project 124,Initiation,2024-05-01,2024-05-07,Completed,3
+ADV-0124,Planning Complete - Data Analytics Project 124,Planning Complete,2024-07-15,2024-07-13,Completed,1
+ADV-0124,Design Approved - Data Analytics Project 124,Design Approved,2024-09-29,2024-09-28,Completed,5
+ADV-0124,Development Complete - Data Analytics Project 124,Development Complete,2024-12-14,2024-12-26,Completed,5
+ADV-0124,Testing Complete - Data Analytics Project 124,Testing Complete,2025-02-28,2025-03-10,Completed,3
+ADV-0124,Deployment - Data Analytics Project 124,Deployment,2025-05-15,2025-05-28,Completed,1
+ADV-0124,Go-Live - Data Analytics Project 124,Go-Live,2025-07-30,2025-08-09,Completed,3
+ADV-0125,Initiation - Software Development Project 125,Initiation,2024-02-11,2024-02-20,Completed,4
+ADV-0125,Planning Complete - Software Development Project 125,Planning Complete,2024-05-10,2024-05-11,Completed,5
+ADV-0125,Design Approved - Software Development Project 125,Design Approved,2024-08-07,2024-08-09,Completed,1
+ADV-0125,Development Complete - Software Development Project 125,Development Complete,2024-11-04,2024-11-14,Completed,3
+ADV-0125,Testing Complete - Software Development Project 125,Testing Complete,2025-02-01,2025-02-05,Completed,2
+ADV-0125,Deployment - Software Development Project 125,Deployment,2025-05-01,2025-04-27,Completed,1
+ADV-0125,Go-Live - Software Development Project 125,Go-Live,2025-07-29,2025-08-09,Completed,3
+ADV-0126,Initiation - AI/ML Implementation Project 126,Initiation,2023-12-20,2023-12-24,Completed,1
+ADV-0126,Planning Complete - AI/ML Implementation Project 126,Planning Complete,2024-05-15,2024-05-26,Completed,4
+ADV-0126,Design Approved - AI/ML Implementation Project 126,Design Approved,2024-10-09,2024-10-19,Completed,4
+ADV-0126,Development Complete - AI/ML Implementation Project 126,Development Complete,2025-03-05,2025-03-14,Completed,1
+ADV-0126,Testing Complete - AI/ML Implementation Project 126,Testing Complete,2025-07-30,2025-07-29,Completed,1
+ADV-0127,Initiation - Cloud Migration Project 127,Initiation,2024-04-25,2024-04-20,Completed,1
+ADV-0127,Planning Complete - Cloud Migration Project 127,Planning Complete,2024-08-18,2024-08-31,Completed,4
+ADV-0127,Design Approved - Cloud Migration Project 127,Design Approved,2024-12-11,2024-12-22,Completed,1
+ADV-0127,Development Complete - Cloud Migration Project 127,Development Complete,2025-04-05,2025-04-01,Completed,3
+ADV-0127,Testing Complete - Cloud Migration Project 127,Testing Complete,2025-07-29,2025-07-29,Completed,1
+ADV-0128,Initiation - AI/ML Implementation Project 128,Initiation,2024-01-21,2024-01-30,Completed,2
+ADV-0128,Planning Complete - AI/ML Implementation Project 128,Planning Complete,2024-05-11,2024-05-12,Completed,5
+ADV-0128,Design Approved - AI/ML Implementation Project 128,Design Approved,2024-08-30,2024-09-10,Completed,2
+ADV-0128,Development Complete - AI/ML Implementation Project 128,Development Complete,2024-12-19,2024-12-22,Completed,5
+ADV-0128,Testing Complete - AI/ML Implementation Project 128,Testing Complete,2025-04-09,2025-04-12,Completed,5
+ADV-0128,Deployment - AI/ML Implementation Project 128,Deployment,2025-07-29,2025-07-29,Completed,4
+ADV-0129,Initiation - Cloud Migration Project 129,Initiation,2023-08-13,2023-08-27,Completed,5
+ADV-0129,Planning Complete - Cloud Migration Project 129,Planning Complete,2024-02-08,2024-02-05,Completed,1
+ADV-0129,Design Approved - Cloud Migration Project 129,Design Approved,2024-08-05,2024-08-16,Completed,4
+ADV-0129,Development Complete - Cloud Migration Project 129,Development Complete,2025-01-31,2025-02-10,Completed,5
+ADV-0129,Testing Complete - Cloud Migration Project 129,Testing Complete,2025-07-30,2025-07-25,Completed,1
+ADV-0130,Initiation - Cloud Migration Project 130,Initiation,2023-10-14,2023-10-11,Completed,2
+ADV-0130,Planning Complete - Cloud Migration Project 130,Planning Complete,2024-05-19,2024-05-28,Completed,4
+ADV-0130,Design Approved - Cloud Migration Project 130,Design Approved,2024-12-23,2024-12-21,Completed,2
+ADV-0130,Development Complete - Cloud Migration Project 130,Development Complete,2025-07-30,2025-08-10,Completed,3
+ADV-0131,Initiation - Data Analytics Project 131,Initiation,2023-08-11,2023-08-16,Completed,4
+ADV-0131,Planning Complete - Data Analytics Project 131,Planning Complete,2023-10-26,2023-10-23,Completed,2
+ADV-0131,Design Approved - Data Analytics Project 131,Design Approved,2024-01-10,2024-01-05,Completed,2
+ADV-0131,Development Complete - Data Analytics Project 131,Development Complete,2024-03-27,2024-03-25,Completed,3
+ADV-0132,Initiation - Cloud Migration Project 132,Initiation,2023-10-05,2023-10-18,Completed,1
+ADV-0132,Planning Complete - Cloud Migration Project 132,Planning Complete,2024-02-14,2024-02-09,Completed,1
+ADV-0132,Design Approved - Cloud Migration Project 132,Design Approved,2024-06-26,2024-06-28,Completed,3
+ADV-0132,Development Complete - Cloud Migration Project 132,Development Complete,2024-11-05,2024-10-31,Completed,5
+ADV-0132,Testing Complete - Cloud Migration Project 132,Testing Complete,2025-03-18,2025-03-28,Completed,5
+ADV-0132,Deployment - Cloud Migration Project 132,Deployment,2025-07-29,2025-08-08,Completed,3
+ADV-0133,Initiation - AI/ML Implementation Project 133,Initiation,2024-06-16,2024-06-29,Completed,4
+ADV-0133,Planning Complete - AI/ML Implementation Project 133,Planning Complete,2024-10-30,2024-11-09,Completed,3
+ADV-0133,Design Approved - AI/ML Implementation Project 133,Design Approved,2025-03-15,2025-03-20,Completed,2
+ADV-0133,Development Complete - AI/ML Implementation Project 133,Development Complete,2025-07-30,2025-08-13,Completed,4
+ADV-0134,Initiation - Cloud Migration Project 134,Initiation,2024-03-14,2024-03-20,Completed,2
+ADV-0134,Planning Complete - Cloud Migration Project 134,Planning Complete,2024-08-28,2024-09-10,Completed,1
+ADV-0134,Design Approved - Cloud Migration Project 134,Design Approved,2025-02-12,2025-02-11,Completed,3
+ADV-0134,Development Complete - Cloud Migration Project 134,Development Complete,2025-07-30,2025-08-11,Completed,3
+ADV-0135,Initiation - Data Analytics Project 135,Initiation,2024-03-02,2024-03-15,Completed,2
+ADV-0135,Planning Complete - Data Analytics Project 135,Planning Complete,2024-03-12,2024-03-26,Completed,4
+ADV-0135,Design Approved - Data Analytics Project 135,Design Approved,2024-03-22,2024-03-17,Completed,1
+ADV-0135,Development Complete - Data Analytics Project 135,Development Complete,2024-04-01,2024-04-07,Completed,5
+ADV-0135,Testing Complete - Data Analytics Project 135,Testing Complete,2024-04-11,2024-04-16,Completed,5
+ADV-0135,Deployment - Data Analytics Project 135,Deployment,2024-04-21,2024-04-27,Completed,1
+ADV-0135,Go-Live - Data Analytics Project 135,Go-Live,2024-05-01,2024-05-01,Completed,1
+ADV-0136,Initiation - Data Analytics Project 136,Initiation,2023-10-13,2023-10-12,Completed,1
+ADV-0136,Planning Complete - Data Analytics Project 136,Planning Complete,2024-03-24,2024-04-01,Completed,5
+ADV-0136,Design Approved - Data Analytics Project 136,Design Approved,2024-09-04,2024-08-30,Completed,2
+ADV-0136,Development Complete - Data Analytics Project 136,Development Complete,2025-02-15,2025-02-25,Completed,1
+ADV-0136,Testing Complete - Data Analytics Project 136,Testing Complete,2025-07-29,2025-08-11,Completed,5
+ADV-0137,Initiation - AI/ML Implementation Project 137,Initiation,2024-06-17,2024-06-13,Completed,4
+ADV-0137,Planning Complete - AI/ML Implementation Project 137,Planning Complete,2024-10-31,2024-10-26,Completed,5
+ADV-0137,Design Approved - AI/ML Implementation Project 137,Design Approved,2025-03-16,2025-03-30,Completed,3
+ADV-0137,Development Complete - AI/ML Implementation Project 137,Development Complete,2025-07-30,2025-08-13,Completed,5
+ADV-0138,Initiation - Digital Transformation Project 138,Initiation,2024-03-26,2024-04-07,Completed,2
+ADV-0138,Planning Complete - Digital Transformation Project 138,Planning Complete,2024-09-05,2024-09-08,Completed,1
+ADV-0138,Design Approved - Digital Transformation Project 138,Design Approved,2025-02-16,2025-02-18,Completed,2
+ADV-0138,Development Complete - Digital Transformation Project 138,Development Complete,2025-07-30,2025-08-03,Completed,1
+ADV-0139,Initiation - Digital Transformation Project 139,Initiation,2024-01-06,2024-01-02,Completed,2
+ADV-0139,Planning Complete - Digital Transformation Project 139,Planning Complete,2024-05-27,2024-05-26,Completed,4
+ADV-0139,Design Approved - Digital Transformation Project 139,Design Approved,2024-10-17,2024-10-20,Completed,5
+ADV-0139,Development Complete - Digital Transformation Project 139,Development Complete,2025-03-08,2025-03-20,Completed,2
+ADV-0139,Testing Complete - Digital Transformation Project 139,Testing Complete,2025-07-29,2025-08-12,Completed,1
+ADV-0140,Initiation - Cloud Migration Project 140,Initiation,2024-03-25,2024-04-05,Completed,3
+ADV-0140,Planning Complete - Cloud Migration Project 140,Planning Complete,2024-04-29,2024-05-10,Completed,4
+ADV-0140,Design Approved - Cloud Migration Project 140,Design Approved,2024-06-03,2024-06-04,Completed,3
+ADV-0140,Development Complete - Cloud Migration Project 140,Development Complete,2024-07-08,2024-07-05,Completed,2
+ADV-0141,Initiation - Software Development Project 141,Initiation,2023-12-22,2023-12-18,Completed,1
+ADV-0141,Planning Complete - Software Development Project 141,Planning Complete,2024-01-22,2024-01-19,Completed,2
+ADV-0141,Design Approved - Software Development Project 141,Design Approved,2024-02-22,2024-02-26,Completed,2
+ADV-0141,Development Complete - Software Development Project 141,Development Complete,2024-03-24,2024-03-29,Completed,3
+ADV-0142,Initiation - Cloud Migration Project 142,Initiation,2023-12-03,2023-12-12,Completed,4
+ADV-0142,Planning Complete - Cloud Migration Project 142,Planning Complete,2024-05-02,2024-05-05,Completed,4
+ADV-0142,Design Approved - Cloud Migration Project 142,Design Approved,2024-09-30,2024-10-06,Completed,3
+ADV-0142,Development Complete - Cloud Migration Project 142,Development Complete,2025-02-28,2025-03-14,Completed,3
+ADV-0142,Testing Complete - Cloud Migration Project 142,Testing Complete,2025-07-30,2025-08-08,Completed,2
+ADV-0143,Initiation - AI/ML Implementation Project 143,Initiation,2023-09-21,2023-09-17,Completed,3
+ADV-0143,Planning Complete - AI/ML Implementation Project 143,Planning Complete,2024-01-12,2024-01-12,Completed,3
+ADV-0143,Design Approved - AI/ML Implementation Project 143,Design Approved,2024-05-04,2024-05-08,Completed,1
+ADV-0143,Development Complete - AI/ML Implementation Project 143,Development Complete,2024-08-25,2024-08-20,Completed,1
+ADV-0143,Testing Complete - AI/ML Implementation Project 143,Testing Complete,2024-12-16,2024-12-14,Completed,3
+ADV-0143,Deployment - AI/ML Implementation Project 143,Deployment,2025-04-08,2025-04-04,Completed,5
+ADV-0143,Go-Live - AI/ML Implementation Project 143,Go-Live,2025-07-30,2025-07-28,Completed,1
+ADV-0144,Initiation - AI/ML Implementation Project 144,Initiation,2023-08-10,2023-08-23,Completed,2
+ADV-0144,Planning Complete - AI/ML Implementation Project 144,Planning Complete,2023-12-08,2023-12-12,Completed,5
+ADV-0144,Design Approved - AI/ML Implementation Project 144,Design Approved,2024-04-06,2024-04-15,Completed,3
+ADV-0144,Development Complete - AI/ML Implementation Project 144,Development Complete,2024-08-04,2024-08-17,Completed,5
+ADV-0145,Initiation - AI/ML Implementation Project 145,Initiation,2024-02-16,2024-02-14,Completed,2
+ADV-0145,Planning Complete - AI/ML Implementation Project 145,Planning Complete,2024-03-20,2024-03-27,Completed,4
+ADV-0145,Design Approved - AI/ML Implementation Project 145,Design Approved,2024-04-22,2024-04-17,Completed,1
+ADV-0145,Development Complete - AI/ML Implementation Project 145,Development Complete,2024-05-25,2024-06-01,Completed,4
+ADV-0145,Testing Complete - AI/ML Implementation Project 145,Testing Complete,2024-06-27,2024-06-28,Completed,1
+ADV-0146,Initiation - AI/ML Implementation Project 146,Initiation,2024-02-08,2024-02-11,Completed,4
+ADV-0146,Planning Complete - AI/ML Implementation Project 146,Planning Complete,2024-08-05,2024-08-18,Completed,1
+ADV-0146,Design Approved - AI/ML Implementation Project 146,Design Approved,2025-01-31,2025-02-04,Completed,4
+ADV-0146,Development Complete - AI/ML Implementation Project 146,Development Complete,2025-07-29,2025-08-01,Completed,5
+ADV-0147,Initiation - AI/ML Implementation Project 147,Initiation,2023-07-17,2023-07-25,Completed,2
+ADV-0147,Planning Complete - AI/ML Implementation Project 147,Planning Complete,2023-10-27,2023-10-27,Completed,1
+ADV-0147,Design Approved - AI/ML Implementation Project 147,Design Approved,2024-02-07,2024-02-11,Completed,2
+ADV-0147,Development Complete - AI/ML Implementation Project 147,Development Complete,2024-05-20,2024-06-01,Completed,3
+ADV-0148,Initiation - Data Analytics Project 148,Initiation,2024-06-21,2024-07-05,Completed,3
+ADV-0148,Planning Complete - Data Analytics Project 148,Planning Complete,2024-07-08,2024-07-17,Completed,4
+ADV-0148,Design Approved - Data Analytics Project 148,Design Approved,2024-07-26,2024-07-29,Completed,3
+ADV-0148,Development Complete - Data Analytics Project 148,Development Complete,2024-08-13,2024-08-26,Completed,4
+ADV-0148,Testing Complete - Data Analytics Project 148,Testing Complete,2024-08-30,2024-09-10,Completed,3
+ADV-0148,Deployment - Data Analytics Project 148,Deployment,2024-09-17,2024-09-20,Completed,2
+ADV-0148,Go-Live - Data Analytics Project 148,Go-Live,2024-10-05,2024-10-17,Completed,4
+ADV-0149,Initiation - Digital Transformation Project 149,Initiation,2023-06-25,2023-07-02,Completed,1
+ADV-0149,Planning Complete - Digital Transformation Project 149,Planning Complete,2023-11-25,2023-12-04,Completed,4
+ADV-0149,Design Approved - Digital Transformation Project 149,Design Approved,2024-04-26,2024-05-05,Completed,1
+ADV-0149,Development Complete - Digital Transformation Project 149,Development Complete,2024-09-26,2024-10-04,Completed,5
+ADV-0149,Testing Complete - Digital Transformation Project 149,Testing Complete,2025-02-26,2025-03-03,Completed,2
+ADV-0149,Deployment - Digital Transformation Project 149,Deployment,2025-07-30,2025-08-01,Completed,3
+ADV-0150,Initiation - AI/ML Implementation Project 150,Initiation,2023-07-27,2023-08-08,Completed,3
+ADV-0150,Planning Complete - AI/ML Implementation Project 150,Planning Complete,2023-12-20,2023-12-15,Completed,3
+ADV-0150,Design Approved - AI/ML Implementation Project 150,Design Approved,2024-05-15,2024-05-25,Completed,2
+ADV-0150,Development Complete - AI/ML Implementation Project 150,Development Complete,2024-10-09,2024-10-19,Completed,2
+ADV-0150,Testing Complete - AI/ML Implementation Project 150,Testing Complete,2025-03-05,2025-03-17,Completed,3
+ADV-0150,Deployment - AI/ML Implementation Project 150,Deployment,2025-07-30,2025-07-28,Completed,3
