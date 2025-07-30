@@ -337,7 +337,7 @@ class SemanticProcessor:
         """Extract keywords using simple frequency and length filtering"""
         
         # Tokenize
-        words = re.findall(r'\b\w+\b', text.lower())
+        words = re.findall(r'\b\w+\b', text, re.IGNORECASE)
         
         # Filter words
         stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by',
