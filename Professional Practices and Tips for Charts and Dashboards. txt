@@ -1,0 +1,259 @@
+Adicione algumas dicas extras para melhorar suas consultas em cada momento:
+
+Dashboard Steps Fundamentals that you must follow:
+Part 1. Layout
+(
+    Making Your First Change
+More about HTML Components
+Reusable Components
+More about Visualization
+Markdown
+Core Components
+Help
+Summary 
+) 
+
+Part 2. Basic Callbacks
+(
+Simple Interactive Dash App
+Dash App Layout With Figure and Slider
+Dash App With Multiple Inputs
+Dash App With Multiple Outputs
+Dash App With Chained Callbacks
+Dash App With State
+Passing Components Into Callbacks Instead of IDs
+Summary
+)
+
+Part 3. Interactive Graphing and Crossfiltering
+(
+    Update Graphs on Hover
+Generic Crossfilter Recipe
+Current Limitations
+)
+
+Part 4. Sharing Data Between Callbacks
+(
+Understand, Why Share State?
+Dash is Stateless
+Why Global Variables Will Break Your App
+Storing Shared Data
+Example 1 - Storing Data in the Browser with dcc.Store
+Example 2 - Computing Aggregations Upfront
+Example 3 - Caching and Signaling
+Example 4 - User-Based Session Data on the Server
+)
+
+Exploring details for part 4 - Dashboards Callbacks:
+(
+Advanced Callbacks
+Clientside Callbacks
+Pattern-Matching Callbacks
+Partial Property Updates
+Background Callbacks
+Flexible Callback Signatures
+Duplicate Callback Outputs
+Determining Which Callback Input Changed
+Callback Error Handlers
+Callback Gotchas
+)
+
+Tips to Always Remember and Garantee in professional dashboards:
+
+Tip 1 - Open Source Component Libraries - Dash Core Components:
+(
+Overview
+Checklist
+Clipboard
+ConfirmDialog
+ConfirmDialogProvider
+DatePickerRange
+DatePickerSingle
+Download
+Dropdown
+Graph
+Geolocation
+Input
+Interval
+Link
+Loading
+Location
+Markdown
+RadioItems
+RangeSlider
+Slider
+Store
+Tab
+Tabs
+Textarea
+Tooltip
+Upload
+)
+
+Tip 2 - Always Breakdown the Code for Planning!
+
+Tip 3 - Dash in Jupyter Environments:
+(
+Display Modes
+Height and Width
+Turn Off Inline Callback Exceptions
+Troubleshooting
+Limitations
+)
+
+Tip 4 - several recommendations for improving Performance:
+(
+Memoization
+Graphs
+Clientside Callbacks
+Background Callbacks
+Partial Property Updates
+Data Serialization
+Sponsoring Performance Enhancements
+)
+
+Tip 5 - Interaction User-Components:
+  Atention and High Quality for Interaction! Components in Dash usually must update through user interaction like selecting a dropdown, dragging a slider, or hovering over points.
+
+Tip 6 - Remember to use and consulte your Knowledge Base about Source Graphing Library for Python!
+Plotly's Python graphing library makes interactive, publication-quality graphs, and it`s docummentation may have everything you need. So use it! And Cross-Validate with the other itens on your Dashboard.
+
+Tip 7 - Enhance the Experience using Advanced Effects such as Jupyter Widgets Interaction and Add Custom Controls! For example:
+(
+Plotly FigureWidget Overview
+Plotly FigureWidget Overview
+Jupyter Lab with FigureWidget
+Jupyter Lab with FigureWidget
+Interactive Data Analysis with FigureWidget ipywidgets
+Interactive Data Analysis with FigureWidget ipywidgets
+Click Events
+Custom Controls
+Custom Buttons
+Custom Buttons
+Sliders
+Sliders
+Dropdown Menus
+Dropdown Menus
+Range Slider and Selector
+Animation
+Random Walk
+Peak Finding
+Smoothing
+LaTeX
+Subplots
+Mixed Subplots
+Mixed Subplots
+Map Subplots
+Map Subplots
+Table and Chart Subplots
+Table and Chart Subplots
+Figure Factory Subplots
+Subplots
+Mixed Subplots
+Mixed Subplots
+Map Subplots
+Map Subplots
+Table and Chart Subplots
+Table and Chart Subplots
+Figure Factory Subplots
+)
+
+Tip 8 - Collors Matters! Use your Professional Strategies and Cience for the collor you will use in your Dashboard and Charts!
+
+Tip 9 - follow these best practices to avoid overlapping elements and ensure proper adaptation of text and numbers, especially during user interactions:
+(
+    Avoid Overlapping Elements:
+Always leave enough padding and margins between chart components (labels, axes, legends, tooltips, titles.
+Enable automatic text wrapping or truncation for longer text elements.
+Limit the number of data series or chart elements visible at one time if space is limited.
+
+Dynamic Text and Number Adaptation:
+Implement responsive design so text and numbers resize or reflow appropriately on different screen sizes and during zoom or filtering.
+Use adaptive font sizes, abbreviations (e.g., 1K, 1M), and axis tick formatting to keep numbers readable.
+Make sure tooltips and labels reposition dynamically, so they never cover important data points.
+
+Internationalization and Formatting:
+Use appropriate number formats for your audience (e.g., decimal and thousand separators).
+Ensure all dynamic text (such as legends, labels, and tooltips) adjusts smoothly to various languages and content lengths.
+
+Testing Interactions:
+Test all interactions (zoom, filter, resizing) to ensure texts/numbers are not clipped, overlapped, or hidden.
+Check chart readability for users with accessibility needs (e.g., color contrast, font size)
+)
+
+Final Tip - Adding CSS & JS and Overriding the Page-Load Template:
+(
+    Adding Your Own CSS and JavaScript to Dash Apps
+Example: Including Local CSS and JavaScript
+How Dash Loads Assets
+Excluding Assets from Automatic Loading
+Loading Javascript Module Files
+Hot Reloading
+Load Assets from a Folder Hosted on a CDN
+Embedding Images in Your Dash Apps
+Changing the Favicon
+Adding External CSS/JavaScript
+Controlling the Plotly.js Version Used by dcc.Graph
+Rendering LaTeX Inside dcc.Graph Figures
+Customizing Dash's Document or Browser Tab Title
+Update the Document Title Dynamically Based on the URL or Tab
+Customizing or Removing Dash's "Updating..." Message
+Customizing Dash's HTML Index Template
+Usage
+Customizing dash-renderer with Request Hooks
+Customizing Meta Tags
+Overriding Default Tags
+Adding Additional Tags
+Serving Dash's Component Libraries Locally or from a CDN
+Sample Dash CSS Stylesheet
+Syntax Highlighting With Markdown
+)
+
+Voce deve incorporar essas diretrizes fundamentais do Dash em seu processo de desenvolvimento. Algumas sugestoes de como aplicar:
+(
+criar um notebook de implementação seguindo todas essas boas práticas e consultar a Knowledge-Base para garantir excelência técnica.
+
+Using "Create New Jupyter Notebook"
+
+Agora vou criar o notebook seguindo todas as diretrizes fundamentais do Dash:
+
+Created Construction_Dashboard_Advanced.ipynb
+
+Creating comprehensive Dash fundamentals notebook with construction dashboard implementation
+
+Adding import libraries section with professional setup
+
+Adding comprehensive library imports following best practices
+
+Agora vou consultar a Knowledge-Base para garantir as melhores práticas:
+
+Read plotly_dash_best_practices (3).md, lines 1 to 100
+
+Vou continuar com o desenvolvimento seguindo as melhores práticas identificadas:
+
+Adding data generation section following incremental development best practices
+
+Implementing data generation with realistic construction project data following best practices
+
+Adding Part 1 Layout fundamentals section
+
+Implementing professional layout with reusable components following Tip 9 responsive design
+
+consultar mais detalhes da Knowledge-Base para implementar as visualizações:
+
+Adding visualization creation section with professional chart implementations
+
+Creating professional visualization functions following Plotly best practices
+
+Summarized conversation history
+
+Adding performance monitoring and workload visualization functions
+
+Creating the main dashboard layout with all components integrated
+
+Implementing the complete dashboard layout with all professional components
+
+Adding interactive callbacks and final dashboard execution
+
+Final execution cell to test and run the complete dashboard
+)

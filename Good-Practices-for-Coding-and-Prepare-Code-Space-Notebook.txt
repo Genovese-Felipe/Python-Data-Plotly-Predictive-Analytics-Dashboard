@@ -1,0 +1,12 @@
+Após ler e consultar diretrizes iniciais e fundamentais ao mu processo de desenvolvimento, recomenda-se incorporar tudo e criar um notebook de implementação seguindo todas essas boas práticas e consultar a Knowledge-Base para garantir excelência técnica. 
+1 - criar o notebook seguindo todas as diretrizes fundamentais para a task
+2 - Consultar a Knowledge-Base para garantir as melhores práticas
+3 - Executar nova consulta para mais detalhes da Knowledge-Base para implementar as visualizações: 
+4 - Summarized conversation history
+5 - Conclua e Execute para seguir proximas boas praticas de codificação e preparar o ambiente de código.
+
+Create a Virtual Environment and Install Required Libraries
+
+Installing the required libraries in a virtual environment is crucial for maintaining project dependencies and avoiding conflicts. 
+
+Restart the kernel to ensure all changes take effect.
