@@ -1,0 +1,34 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Generated outputs (large files)
+AI_Knowledge_Extraction_System/outputs/
+AI_Knowledge_Extraction_System/AI_Knowledge_Extraction_System/outputs/
+
+# Temporary cache
+.cache/
+.models_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
