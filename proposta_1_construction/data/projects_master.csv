@@ -1,0 +1,31 @@
+project_id,name,type,manager,start_date,budget,duration_days,planned_end_date
+PROJ-001,Construction Project 001,Industrial Facility,Manager A,2023-11-24,1762752,517,2025-04-24
+PROJ-002,Construction Project 002,Infrastructure,Manager B,2023-02-27,1896025,598,2024-10-17
+PROJ-003,Construction Project 003,Residential Complex,Manager C,2023-01-13,1807371,124,2023-05-17
+PROJ-004,Construction Project 004,Industrial Facility,Manager D,2023-05-21,1417040,295,2024-03-11
+PROJ-005,Construction Project 005,Industrial Facility,Manager E,2023-05-06,2753882,170,2023-10-23
+PROJ-006,Construction Project 006,Infrastructure,Manager F,2023-04-25,4030409,651,2025-02-04
+PROJ-007,Construction Project 007,Residential Complex,Manager G,2023-03-13,2000942,477,2024-07-02
+PROJ-008,Construction Project 008,Residential Complex,Manager H,2023-02-22,4760029,91,2023-05-24
+PROJ-009,Construction Project 009,Industrial Facility,Manager I,2023-12-13,3775709,479,2025-04-05
+PROJ-010,Construction Project 010,Commercial Building,Manager J,2023-10-07,584654,655,2025-07-23
+PROJ-011,Construction Project 011,Industrial Facility,Manager A,2023-02-14,2454354,195,2023-08-28
+PROJ-012,Construction Project 012,Industrial Facility,Manager B,2023-10-30,2916182,566,2025-05-18
+PROJ-013,Construction Project 013,Industrial Facility,Manager C,2023-08-05,3974675,491,2024-12-08
+PROJ-014,Construction Project 014,Industrial Facility,Manager D,2023-01-17,3152991,645,2024-10-23
+PROJ-015,Construction Project 015,Infrastructure,Manager E,2023-01-16,2928388,251,2023-09-24
+PROJ-016,Construction Project 016,Residential Complex,Manager F,2023-02-17,1028178,291,2023-12-05
+PROJ-017,Construction Project 017,Infrastructure,Manager G,2023-04-22,3163046,359,2024-04-15
+PROJ-018,Construction Project 018,Infrastructure,Manager H,2023-04-30,3086644,360,2024-04-24
+PROJ-019,Construction Project 019,Infrastructure,Manager I,2023-09-16,3070406,545,2025-03-14
+PROJ-020,Construction Project 020,Industrial Facility,Manager J,2023-11-05,3916664,551,2025-05-09
+PROJ-021,Construction Project 021,Commercial Building,Manager A,2023-01-14,3885659,341,2023-12-21
+PROJ-022,Construction Project 022,Residential Complex,Manager B,2023-10-15,3885357,385,2024-11-03
+PROJ-023,Construction Project 023,Commercial Building,Manager C,2023-04-12,3295513,427,2024-06-12
+PROJ-024,Construction Project 024,Infrastructure,Manager D,2023-11-29,1965689,142,2024-04-19
+PROJ-025,Construction Project 025,Infrastructure,Manager E,2023-12-26,568148,306,2024-10-27
+PROJ-026,Construction Project 026,Commercial Building,Manager F,2023-10-07,2325665,277,2024-07-10
+PROJ-027,Construction Project 027,Commercial Building,Manager G,2023-08-03,3245683,469,2024-11-14
+PROJ-028,Construction Project 028,Commercial Building,Manager H,2023-04-23,3897723,582,2024-11-25
+PROJ-029,Construction Project 029,Infrastructure,Manager I,2023-08-18,3503758,130,2023-12-26
+PROJ-030,Construction Project 030,Infrastructure,Manager J,2023-10-29,4556518,246,2024-07-01
