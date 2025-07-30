@@ -1,0 +1,588 @@
+{
+  "processing_info": {
+    "start_time": "2025-07-30T03:08:14.665100",
+    "end_time": "2025-07-30T03:08:17.339322",
+    "processing_duration": "0:00:02.674222",
+    "system_version": "1.0.0"
+  },
+  "content_statistics": {
+    "total_documents": 78,
+    "file_type_distribution": {
+      ".md": 52,
+      ".py": 26
+    },
+    "content_size_stats": {
+      "mean_word_count": 840.5128205128206,
+      "median_word_count": 655.0,
+      "total_words": 65560,
+      "max_word_count": 5670,
+      "min_word_count": 0
+    },
+    "domain_distribution": {
+      "data_visualization": 53,
+      "python_programming": 13,
+      "data_analysis": 2,
+      "unknown": 6,
+      "web_development": 2,
+      "documentation": 2
+    }
+  },
+  "extraction_statistics": {
+    "total_files": 0,
+    "successful_extractions": 78,
+    "failed_extractions": 0,
+    "total_content_size": 622233
+  },
+  "semantic_statistics": {
+    "total_documents_processed": 72,
+    "knowledge_graph_stats": {
+      "nodes": 410,
+      "edges": 732,
+      "density": 0.008730395372413382
+    },
+    "clustering_stats": {
+      "clusters": {
+        "2": [
+          "0a1bd497cdb662f80c6d5c5e9e82266e",
+          "294e108b1ca1bf9055fc31fc690be6bb",
+          "eb7aa45f718976f788c5b043629555d2",
+          "1aa0370081b7081323123632fa571fd8",
+          "625adde4da81a3ab58f7747ec8c08940",
+          "e8382a8946c46b902c62049ce4bf3f4d",
+          "60520d69a7f660c421bf5e0ef81fddad",
+          "d429ce9c5b14b1e6666a934544a641b1",
+          "d6f9034e3440464e66ecd98135ba8761",
+          "7db9854ff60a6df11c484e4c00142b0a",
+          "ac3d8b204aac5ed94a63804b4179fa58",
+          "f4655f611304a349aeca96cb4ff29a9a",
+          "08c67c410610dbaf75c933be097e030d",
+          "4a85b91c158c953d6113c15aa5f74163",
+          "f6ec86740d4ff63fc490bee889428937",
+          "dada11637467317504e2240212d041cd",
+          "1eebe9e1a06aac8f98a7e69520dd03ab",
+          "7882c7d18c664acf027be3feac1102e2",
+          "35caa145014a68aad3c47e3ebf8c319d",
+          "d3746b007dfe53f749421b0a12845e31",
+          "f89b60fa153950a9c5e8c45a70ae69d8",
+          "48fead24630a0bfc91f3305f938c2ff5",
+          "c90274bdad05d174dac6a7e24370143e",
+          "8c75a14f20a025beed8fd16bb5cd096e",
+          "b49dadce043e6457ad5273f3ebfaec9d",
+          "24895879698ea7ff4bed1ff29309def7",
+          "8930916940a2618f9dcc900001e618f2"
+        ],
+        "4": [
+          "67ecb0ea7a56591586deddd45614e765",
+          "155cba78e971a15d943597bed002d8bb",
+          "56afca8c55bc15e7425958136d04036a",
+          "d169e4e0a6a22eda69491aa9781d7162",
+          "49c332cca81a9803d648fd9ca5fbfe60",
+          "beedcd2facea2d2b57b29312e08bc552",
+          "27929aeb0406a1374be48c69dc155270",
+          "4ff8db9bb191ce16d22dcc32a5f588c9",
+          "f96bacdf8b4a0a6d229c7f26f083d64f",
+          "f44399c008a6736e3f53fb606dfa4e2b",
+          "e90a1b4d1c9c58af7eea5799b3ede1ff",
+          "c54cebb42b1e69bb2ac60d933d782463",
+          "639e65a43854b9afdbd6c6c360386fc7"
+        ],
+        "0": [
+          "11646f5eb4172149a0a88f0c85b3589c",
+          "f186eb1828d06b7fff52acb71a8b6b65",
+          "40efda254999ca2aac65a7c4aaa56d56",
+          "7cf5ff98d244488a9c19f08274ee76f8",
+          "e9987c37855d2508717344e21ae88f0c",
+          "20364fc9614ac3be2b69e427b43bb079",
+          "207825ed9b48f0a37b8003e59bb2d9fb",
+          "3e9ce70c988c05b9a98a5e213dd744c0"
+        ],
+        "1": [
+          "4363095f16cab09c7cc395f4d2ef6ee4",
+          "ae1919150e5c333000b8e19dff9a5540",
+          "d3426cf88a7139c3e80c71410c98f111",
+          "513ddd08160accb6ed5bc44873ed4336",
+          "2b78317a9bc8b4ba5f69a93ac539b65d",
+          "62669ffe16ef598d25ecfbe1618566df",
+          "b0180ef27d44d7dafc4a10b9077c7239",
+          "47c1ff0f2eb9b614a6ee460a28d54ce9",
+          "897e18fa479d919bc7447cb06d0af66f",
+          "b8b1ae6de71c17c3ffa6b8a3a171b3de",
+          "0f320cc5912954c20f768fb0b474687a",
+          "dfc03ec30d6fbaeb7e44ed945d480fd5",
+          "b7f843cf380a2ac87cb41c2f903fe210",
+          "305d16fb78edd97b3526affeaa3fb849",
+          "43b1da65a9ba16a663fff669e1df269d"
+        ],
+        "3": [
+          "b7b858470cb8e98562a8851ef3ea37ed",
+          "ca3e97b367e38bfdaf02789787c77a53",
+          "f048a70a9e12de506d56fd153a2c1ae0",
+          "898b618bea31de7b1fb8f7ad01488094",
+          "5ac9fca8c9d5b17e546c18db57b7b32d",
+          "35502b78aa21a01fd9a1d8af5acdc2a4",
+          "0f5ee913a8d860c97a80172645fb6657",
+          "f4251dea5df584ed8f2b3494775aaef5",
+          "dc13b7b714a239e022969106de75b1bc"
+        ]
+      },
+      "summaries": {
+        "2": {
+          "document_count": 27,
+          "top_keywords": {
+            "para": 19,
+            "python": 18,
+            "dashboard": 16,
+            "import": 14,
+            "dados": 13,
+            "dash": 10,
+            "data": 9,
+            "plotly": 7,
+            "html": 7,
+            "return": 6
+          },
+          "top_topics": {
+            "python": 26,
+            "data_visualization": 25,
+            "data_analysis": 24,
+            "web_development": 23,
+            "machine_learning": 22
+          },
+          "document_files": [
+            "00_TROUBLESHOOTING.md",
+            "00_SHOWCASE.md",
+            "00_SETUP.md",
+            "AI_TRANSFORMATION_SUMMARY.md",
+            "00_LEARNING_PATHS.md",
+            "plotly_dash_best_practices (3).md",
+            "complete_error_analysis (1).md",
+            "Executive Guide_ Building Professional Plotly Dash.md",
+            "effective_prompt_engineering (2).md",
+            "README.md",
+            "app.py",
+            "main.py",
+            "Dashboard Analytics - Visualização de Dados Interativa.md",
+            "Dash.md",
+            "USAGE_GUIDE.md",
+            "app.py",
+            "README.md",
+            "train_model.py",
+            "dashboard_layout.py",
+            "load_data.py",
+            "README.md",
+            "README.md",
+            "SETUP_COMPLETO_FELIPE_OTIMIZADO.md",
+            "GUIA_COMPLETO_FELIPE_DASHBOARD_EXPERT.md",
+            "pyvy_2x.md",
+            "README.md",
+            "README.md"
+          ]
+        },
+        "4": {
+          "document_count": 13,
+          "top_keywords": {
+            "para": 12,
+            "estrutura": 6,
+            "plotly": 6,
+            "exemplos": 5,
+            "sistema": 4,
+            "codigo": 4,
+            "conhecimento": 4,
+            "graficos": 4,
+            "dados": 4,
+            "python": 4
+          },
+          "top_topics": {
+            "python": 13,
+            "data_visualization": 12,
+            "data_analysis": 9,
+            "web_development": 8,
+            "machine_learning": 7
+          },
+          "document_files": [
+            "00_AI_STRATEGY_EXECUTIVE_SUMMARY.md",
+            "00_AI_DEVELOPMENT_ROADMAP.md",
+            "dashboard_plan.md",
+            "DOCUMENTATION.md",
+            "registro_projeto_conversa.md",
+            "relatorio_completo.md",
+            "README.md",
+            "RELATORIO_TECNICO.md",
+            "RESUMO_EXECUTIVO.md",
+            "Revisão e Sugestões para Estrutura do Guia Plotly Python.md",
+            "Prompt Pipeline MMMU em 4 Etapas.md",
+            "Etapa 4 Conclusão - XML Unificado Gerado.md",
+            "pyvy_2xA.md"
+          ]
+        },
+        "0": {
+          "document_count": 8,
+          "top_keywords": {
+            "self": 8,
+            "return": 8,
+            "para": 6,
+            "import": 6,
+            "data": 5,
+            "python": 4,
+            "class": 4,
+            "from": 3,
+            "subelement": 3,
+            "text": 3
+          },
+          "top_topics": {
+            "data_visualization": 8,
+            "python": 8,
+            "machine_learning": 8,
+            "data_analysis": 8,
+            "web_development": 3
+          },
+          "document_files": [
+            "00_QUICK_START.md",
+            "00_DOMAIN_SPECIFIC_AI.py",
+            "00_AI_OPTIMIZATION_GUIDE.md",
+            "00_AI_IMPLEMENTATION_CODE.py",
+            "advanced_dashboard_guide.md",
+            "semantic_plotly_extractor.py",
+            "advanced_pedagogical_extractor.py",
+            "monica_webdev_extractor.py"
+          ]
+        },
+        "1": {
+          "document_count": 15,
+          "top_keywords": {
+            "para": 13,
+            "dash": 7,
+            "desenvolvimento": 6,
+            "readme": 6,
+            "codigo": 5,
+            "documentacao": 5,
+            "referencia": 5,
+            "arquivos": 5,
+            "documentation": 5,
+            "python": 4
+          },
+          "top_topics": {
+            "data_visualization": 14,
+            "data_analysis": 12,
+            "python": 8,
+            "machine_learning": 7,
+            "web_development": 6
+          },
+          "document_files": [
+            "README.md",
+            "REORGANIZATION_PLOTLY_DOCS_COMPLETED.md",
+            "ORGANIZATION_STATUS_FINAL.md",
+            "FINAL_PROBLEMS_REPORT.md",
+            "PENDING_MOVE_PLOTLY_DOCS.md",
+            "00_NAVIGATION_INDEX.md",
+            "CORRECTION_PLAN.md",
+            "README.md",
+            "MOVED_Plotly_Documentation.md",
+            "README.md",
+            "README.md",
+            "README.md",
+            "README.md",
+            "README.md",
+            "README.md"
+          ]
+        },
+        "3": {
+          "document_count": 9,
+          "top_keywords": {
+            "print": 8,
+            "import": 6,
+            "root": 4,
+            "para": 3,
+            "text": 3,
+            "find": 3,
+            "count": 3,
+            "vendas": 2,
+            "dados": 2,
+            "color": 2
+          },
+          "top_topics": {
+            "python": 9,
+            "data_analysis": 9,
+            "data_visualization": 6,
+            "web_development": 4,
+            "machine_learning": 2
+          },
+          "document_files": [
+            "charts.py",
+            "data_generator.py",
+            "data_preprocessing.py",
+            "data_exploration.py",
+            "analyze_monica_guide.py",
+            "register_project.py",
+            "extract_test_pyvy.py",
+            "analyze_guide.py",
+            "analyze_pedagogical_guide.py"
+          ]
+        }
+      },
+      "n_clusters": 5
+    },
+    "topic_modeling_stats": {},
+    "processing_timestamp": "2025-07-30T03:08:17.339704"
+  },
+  "output_locations": {
+    "processed_content": "processed_documents",
+    "embeddings": "vector_embeddings",
+    "knowledge_graph": "knowledge_graphs",
+    "metadata": "metadata_catalog",
+    "indexes": "search_indexes",
+    "summaries": "content_summaries",
+    "ai_ready": "ai_training_data"
+  },
+  "processing_log": [
+    {
+      "timestamp": "2025-07-30T03:08:15.861563",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.871262",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/DOCUMENTATION.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.871389",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/assets/__init__.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.871490",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/models/__init__.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.871691",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/models/train_model.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.871813",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/utils/__init__.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.871994",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/utils/data_preprocessing.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.872189",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/utils/data_exploration.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.872289",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/components/__init__.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.872734",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/components/dashboard_layout.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.872873",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/data/__init__.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.873022",
+      "level": "INFO",
+      "message": "Successfully extracted: 02_Practical_Examples/predictive_analytics_dash_complete/predictive_analytics_dash/data/load_data.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.883084",
+      "level": "INFO",
+      "message": "Successfully extracted: 05_Design_and_UX/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.900967",
+      "level": "INFO",
+      "message": "Successfully extracted: 04_Data_Generation/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.914602",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.918383",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Advanced_Features/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.929420",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:15.986388",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/SETUP_COMPLETO_FELIPE_OTIMIZADO.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.023101",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/GUIA_COMPLETO_FELIPE_DASHBOARD_EXPERT.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.028910",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/registro_projeto_conversa.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.035308",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/relatorio_completo.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.036012",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/analyze_monica_guide.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.036669",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/register_project.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.037668",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/semantic_plotly_extractor.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.048138",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.049578",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/advanced_pedagogical_extractor.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.065241",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/RELATORIO_TECNICO.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.066511",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/monica_webdev_extractor.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.066986",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/extract_test_pyvy.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.067537",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/analyze_guide.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.071772",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/RESUMO_EXECUTIVO.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.072372",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/analyze_pedagogical_guide.py"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.081795",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x2/extract_test_pyvy.py/Revisão e Sugestões para Estrutura do Guia Plotly Python.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.094086",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_3x/Prompt Pipeline MMMU em 4 Etapas.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.096952",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_3x/Etapa 4 Conclusão - XML Unificado Gerado.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.118916",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Official_Plotly_Dash_Docs/Plotly_Documentation/pyvy_2x/pyvy_2x.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.123340",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/Configuration_Guides/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.126871",
+      "level": "INFO",
+      "message": "Successfully extracted: 03_Technical_Documentation/API_References/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.208970",
+      "level": "INFO",
+      "message": "Successfully extracted: 07_Machine_Learning/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.256340",
+      "level": "INFO",
+      "message": "Successfully extracted: 06_Specialized_Charts/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.293184",
+      "level": "INFO",
+      "message": "Successfully extracted: 08_Community_Resources/pyvy_2xA.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.307009",
+      "level": "INFO",
+      "message": "Successfully extracted: 08_Community_Resources/README.md"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.307188",
+      "level": "INFO",
+      "message": "Content extraction completed. 78 documents processed successfully."
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.577747",
+      "level": "INFO",
+      "message": "Generating document embeddings..."
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.685597",
+      "level": "INFO",
+      "message": "Generated embeddings for 72 documents"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.685633",
+      "level": "INFO",
+      "message": "Building knowledge graph..."
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.690435",
+      "level": "INFO",
+      "message": "Knowledge graph built with 410 nodes and 732 edges"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.690473",
+      "level": "INFO",
+      "message": "Performing document clustering..."
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.744620",
+      "level": "INFO",
+      "message": "Created 5 clusters"
+    },
+    {
+      "timestamp": "2025-07-30T03:08:16.744730",
+      "level": "INFO",
+      "message": "Extracting topics..."
+    }
+  ]
+}
