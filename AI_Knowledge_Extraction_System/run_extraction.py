@@ -39,23 +39,23 @@ def main():
             
             file_dist = content_stats.get("file_type_distribution", {})
             if file_dist:
-                print("\\n📁 File type distribution:")
+                print("\n📁 File type distribution:")
                 for file_type, count in file_dist.items():
                     print(f"  • {file_type}: {count} files")
             
             domain_dist = content_stats.get("domain_distribution", {})
             if domain_dist:
-                print("\\n🎯 Domain distribution:")
+                print("\n🎯 Domain distribution:")
                 for domain, count in domain_dist.items():
                     print(f"  • {domain}: {count} documents")
             
             processing_info = summary.get("processing_info", {})
             duration = processing_info.get("processing_duration")
             if duration:
-                print(f"\\n⏱️ Processing time: {duration}")
+                print(f"\n⏱️ Processing time: {duration}")
             
-            print(f"\\n📂 All outputs saved in: AI_Knowledge_Extraction_System/outputs/")
-            print("\\n🔍 Key output files:")
+            print(f"\n📂 All outputs saved in: AI_Knowledge_Extraction_System/outputs/")
+            print("\n🔍 Key output files:")
             print("  • documents.json - All processed content")
             print("  • embeddings.json - Vector embeddings for similarity search")
             print("  • knowledge_graph.json - Relationship graph between concepts")
