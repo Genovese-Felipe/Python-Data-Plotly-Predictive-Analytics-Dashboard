@@ -1,0 +1,26 @@
+project_id,project_name,project_type,status,start_date,end_date,budget_allocated,budget_spent,completion_percentage,project_manager,client,priority,team_size,location,contract_value
+PROJ_001,Infrastructure Project 1,Infrastructure,In Progress,2024-04-12,2025-02-06,610268,451217.16,88.0,Mike Brown,Tech Solutions,High,5,Site 1,643293.81
+PROJ_002,Commercial Project 2,Commercial,In Progress,2024-01-02,2024-11-20,303355,264938.67,100.0,Lisa Davis,Regional Authority,Medium,13,Site 2,342782.72
+PROJ_003,Commercial Project 3,Commercial,In Progress,2024-01-15,2024-08-21,284654,289528.15,85.2,Mike Brown,Green Development,Medium,11,Site 3,302590.14
+PROJ_004,Industrial Project 4,Industrial,In Progress,2024-05-11,2024-09-06,539629,593591.9,100.0,Mike Brown,Metro City,Medium,14,Site 4,579781.52
+PROJ_005,Commercial Project 5,Commercial,Completed,2024-01-08,2024-03-12,660337,581426.57,87.3,Lisa Davis,Metro City,Medium,4,Site 5,745540.31
+PROJ_006,Infrastructure Project 6,Infrastructure,Completed,2024-01-14,2024-12-12,987879,1015715.05,100.0,Lisa Davis,City Council,Low,4,Site 6,1143903.05
+PROJ_007,Industrial Project 7,Industrial,Planning,2024-01-24,2024-09-26,732315,728036.51,88.7,John Smith,City Council,Medium,10,Site 7,769739.54
+PROJ_008,Industrial Project 8,Industrial,Completed,2024-05-18,2024-09-05,313986,345384.6,100.0,Maria Garcia,Smart Homes Inc,Medium,14,Site 8,383885.78
+PROJ_009,Commercial Project 9,Commercial,Completed,2024-03-12,2025-01-03,551279,587866.8,100.0,Lisa Davis,Green Development,Medium,7,Site 9,685979.84
+PROJ_010,Residential Project 10,Residential,In Progress,2024-05-10,2025-02-20,198806,195588.42,88.8,John Smith,Green Development,High,9,Site 10,227647.59
+PROJ_011,Residential Project 11,Residential,Review,2024-04-05,2024-12-12,205878,181424.74,100.0,David Chen,Green Development,High,4,Site 11,241880.05
+PROJ_012,Industrial Project 12,Industrial,In Progress,2024-03-02,2024-08-12,1181691,1048604.44,100.0,Lisa Davis,Smart Homes Inc,Low,9,Site 12,1455093.75
+PROJ_013,Commercial Project 13,Commercial,Completed,2024-05-08,2025-03-16,337848,271217.91,100.0,John Smith,Urban Planning,Medium,12,Site 13,377552.92
+PROJ_014,Industrial Project 14,Industrial,Planning,2024-02-28,2024-09-04,893128,858773.36,100.0,Maria Garcia,Tech Solutions,Medium,9,Site 14,1026605.71
+PROJ_015,Residential Project 15,Residential,Planning,2024-04-22,2024-08-30,356951,357333.51,100.0,Mike Brown,ABC Corp,Medium,4,Site 15,412702.08
+PROJ_016,Industrial Project 16,Industrial,Completed,2024-06-08,2025-01-21,1019094,1042140.4,95.7,David Chen,ABC Corp,Medium,10,Site 16,1165904.81
+PROJ_017,Commercial Project 17,Commercial,Completed,2024-04-07,2024-11-20,758986,652945.8,100.0,Mike Brown,Green Development,Medium,13,Site 17,830367.27
+PROJ_018,Industrial Project 18,Industrial,Review,2024-03-30,2024-09-22,958271,803482.08,100.0,Maria Garcia,City Council,High,14,Site 18,1147091.81
+PROJ_019,Infrastructure Project 19,Infrastructure,Completed,2024-06-26,2024-12-23,1054594,1160053.4,93.7,John Smith,Metro City,Low,14,Site 19,1225078.29
+PROJ_020,Residential Project 20,Residential,On Hold,2024-06-08,2024-07-16,480002,491382.76,94.8,Sarah Johnson,City Council,Medium,3,Site 20,565637.39
+PROJ_021,Industrial Project 21,Industrial,In Progress,2024-03-15,2024-08-04,1091971,877593.97,100.0,David Chen,Regional Authority,High,4,Site 21,1252624.78
+PROJ_022,Residential Project 22,Residential,Planning,2024-06-11,2025-02-03,212296,184776.09,100.0,Lisa Davis,Urban Planning,High,10,Site 22,250493.69
+PROJ_023,Residential Project 23,Residential,In Progress,2024-05-14,2024-12-24,432415,374001.45,91.3,Lisa Davis,Future Builders,Low,5,Site 23,531182.61
+PROJ_024,Commercial Project 24,Commercial,In Progress,2024-01-27,2024-03-23,560032,577259.45,100.0,Mike Brown,Green Development,Medium,3,Site 24,592917.5
+PROJ_025,Commercial Project 25,Commercial,Review,2024-06-20,2025-02-24,505628,555729.42,100.0,Mike Brown,ABC Corp,Medium,5,Site 25,630046.02
