@@ -1,0 +1,301 @@
+date,project_id,team_member,hours_worked,task_type,productivity_score,overtime_hours,efficiency_rating
+2024-08-04,PROJ_025,Noah Kim,3.3,Safety Inspection,0.44,0.0,Good
+2024-04-21,PROJ_005,Jane Smith,5.5,Safety Inspection,0.73,0.0,Good
+2024-05-22,PROJ_001,Jack Anderson,6.9,Documentation,0.82,0.0,Good
+2024-05-02,PROJ_006,Jane Smith,7.2,Planning,0.89,0.0,Average
+2024-08-04,PROJ_023,Mia Johnson,5.5,Safety Inspection,0.64,0.0,Good
+2024-03-29,PROJ_021,Noah Kim,9.4,Coordination,1.0,1.4,Good
+2024-07-22,PROJ_025,Kate Moore,10.4,Safety Inspection,0.9,2.4,Excellent
+2024-03-26,PROJ_003,Mia Johnson,6.0,Construction,0.92,0.0,Good
+2024-07-04,PROJ_008,Noah Kim,10.3,Documentation,1.0,2.3,Good
+2024-05-22,PROJ_011,Kate Moore,6.2,Quality Control,1.0,0.0,Good
+2024-04-06,PROJ_021,Charlie Davis,4.7,Documentation,0.72,0.0,Needs Improvement
+2024-07-24,PROJ_004,Leo Garcia,7.8,Safety Inspection,0.79,0.0,Excellent
+2024-05-05,PROJ_014,Jack Anderson,3.0,Coordination,0.3,0.0,Average
+2024-01-22,PROJ_003,Jane Smith,6.5,Planning,0.95,0.0,Good
+2024-08-08,PROJ_004,Noah Kim,5.6,Documentation,0.69,0.0,Excellent
+2024-06-07,PROJ_013,Ivy Chen,7.8,Coordination,0.88,0.0,Good
+2024-08-02,PROJ_004,John Doe,8.5,Documentation,1.0,0.5,Excellent
+2024-06-25,PROJ_010,Eva Martinez,7.9,Coordination,1.0,0.0,Average
+2024-04-06,PROJ_009,Ivy Chen,5.1,Construction,0.71,0.0,Average
+2024-06-10,PROJ_008,Charlie Davis,6.1,Documentation,0.57,0.0,Good
+2024-10-03,PROJ_019,Jane Smith,7.0,Quality Control,1.0,0.0,Good
+2024-06-05,PROJ_001,Bob Wilson,6.8,Documentation,0.67,0.0,Average
+2024-06-03,PROJ_023,Jack Anderson,8.5,Planning,1.0,0.5,Good
+2024-07-03,PROJ_013,Bob Wilson,10.4,Material Handling,1.0,2.4,Good
+2024-02-25,PROJ_003,John Doe,4.0,Quality Control,0.75,0.0,Needs Improvement
+2024-03-17,PROJ_014,Frank Lee,2.9,Coordination,0.3,0.0,Excellent
+2024-08-26,PROJ_008,Henry Taylor,9.6,Material Handling,0.83,1.6,Excellent
+2024-06-05,PROJ_017,Eva Martinez,6.9,Planning,0.9,0.0,Good
+2024-04-28,PROJ_012,Frank Lee,0.9,Documentation,0.3,0.0,Good
+2024-05-11,PROJ_017,Grace Wang,1.6,Safety Inspection,0.3,0.0,Good
+2024-07-18,PROJ_004,Henry Taylor,10.6,Material Handling,1.0,2.6,Good
+2024-08-13,PROJ_025,Kate Moore,6.6,Documentation,0.72,0.0,Good
+2024-05-30,PROJ_013,Charlie Davis,9.9,Documentation,0.84,1.9,Average
+2024-05-05,PROJ_012,Eva Martinez,3.4,Safety Inspection,0.43,0.0,Excellent
+2024-02-24,PROJ_007,Eva Martinez,6.5,Documentation,0.83,0.0,Average
+2024-04-03,PROJ_014,Jane Smith,7.8,Construction,0.81,0.0,Excellent
+2024-08-31,PROJ_025,Mia Johnson,2.2,Material Handling,0.47,0.0,Average
+2024-05-23,PROJ_018,Noah Kim,8.1,Safety Inspection,1.0,0.1,Good
+2024-09-21,PROJ_020,Eva Martinez,2.9,Planning,0.3,0.0,Good
+2024-05-11,PROJ_024,Frank Lee,4.1,Documentation,0.55,0.0,Average
+2024-05-12,PROJ_015,Jane Smith,4.6,Construction,0.69,0.0,Good
+2024-05-17,PROJ_001,Eva Martinez,8.2,Safety Inspection,0.85,0.2,Excellent
+2024-04-22,PROJ_003,Charlie Davis,8.5,Planning,0.84,0.5,Excellent
+2024-03-09,PROJ_002,Kate Moore,3.4,Coordination,0.5,0.0,Average
+2024-06-25,PROJ_020,Leo Garcia,8.1,Quality Control,1.0,0.1,Good
+2024-08-04,PROJ_023,Jane Smith,3.1,Planning,0.56,0.0,Good
+2024-05-24,PROJ_011,Henry Taylor,5.0,Material Handling,0.64,0.0,Good
+2024-02-04,PROJ_003,Bob Wilson,3.3,Material Handling,0.36,0.0,Good
+2024-04-15,PROJ_001,Charlie Davis,6.9,Material Handling,0.68,0.0,Good
+2024-07-13,PROJ_020,Noah Kim,5.3,Coordination,0.3,0.0,Average
+2024-01-21,PROJ_003,Frank Lee,5.9,Coordination,0.44,0.0,Good
+2024-03-02,PROJ_005,Eva Martinez,9.4,Safety Inspection,0.91,1.4,Good
+2024-08-04,PROJ_010,John Doe,0.0,Coordination,0.3,0.0,Excellent
+2024-07-16,PROJ_018,Bob Wilson,6.3,Construction,0.79,0.0,Good
+2024-05-05,PROJ_021,Mia Johnson,5.2,Documentation,0.54,0.0,Average
+2024-08-28,PROJ_016,Alice Brown,7.3,Coordination,0.57,0.0,Good
+2024-04-25,PROJ_021,John Doe,7.3,Planning,0.82,0.0,Good
+2024-04-21,PROJ_001,Grace Wang,6.1,Coordination,0.75,0.0,Average
+2024-06-16,PROJ_023,John Doe,4.3,Material Handling,0.4,0.0,Average
+2024-08-09,PROJ_023,Grace Wang,4.8,Coordination,0.59,0.0,Excellent
+2024-06-25,PROJ_023,Bob Wilson,8.4,Construction,1.0,0.4,Needs Improvement
+2024-06-26,PROJ_021,Jack Anderson,8.9,Documentation,0.8,0.9,Average
+2024-05-17,PROJ_007,Charlie Davis,6.5,Coordination,0.75,0.0,Good
+2024-07-20,PROJ_008,Kate Moore,3.1,Construction,0.3,0.0,Good
+2024-06-11,PROJ_008,Henry Taylor,7.8,Planning,0.94,0.0,Good
+2024-04-08,PROJ_018,Grace Wang,7.8,Planning,0.88,0.0,Good
+2024-04-15,PROJ_021,Kate Moore,9.4,Planning,1.0,1.4,Excellent
+2024-05-08,PROJ_015,Kate Moore,8.9,Planning,0.84,0.9,Good
+2024-10-04,PROJ_022,Bob Wilson,5.1,Safety Inspection,0.56,0.0,Excellent
+2024-06-21,PROJ_021,Frank Lee,7.5,Construction,0.76,0.0,Good
+2024-05-09,PROJ_015,Mia Johnson,9.7,Safety Inspection,0.81,1.7,Average
+2024-02-15,PROJ_007,Eva Martinez,8.9,Safety Inspection,0.84,0.9,Needs Improvement
+2024-09-10,PROJ_022,Jack Anderson,8.8,Planning,1.0,0.8,Good
+2024-07-18,PROJ_019,Jack Anderson,7.0,Coordination,0.95,0.0,Good
+2024-01-29,PROJ_024,Leo Garcia,9.1,Safety Inspection,1.0,1.1,Average
+2024-05-16,PROJ_015,Ivy Chen,5.4,Planning,0.58,0.0,Excellent
+2024-07-28,PROJ_001,Ivy Chen,5.0,Planning,0.59,0.0,Good
+2024-05-30,PROJ_010,Jack Anderson,6.7,Planning,0.95,0.0,Good
+2024-05-16,PROJ_013,Ivy Chen,10.2,Planning,0.98,2.2,Excellent
+2024-06-23,PROJ_017,Bob Wilson,4.0,Material Handling,0.3,0.0,Good
+2024-04-18,PROJ_024,Grace Wang,6.3,Safety Inspection,1.0,0.0,Good
+2024-04-18,PROJ_005,Charlie Davis,7.4,Planning,1.0,0.0,Good
+2024-07-09,PROJ_004,Mia Johnson,6.9,Quality Control,0.78,0.0,Excellent
+2024-08-04,PROJ_016,Mia Johnson,9.1,Planning,1.0,1.1,Good
+2024-07-26,PROJ_019,Grace Wang,10.8,Coordination,0.85,2.8,Average
+2024-05-09,PROJ_006,Leo Garcia,8.6,Documentation,1.0,0.6,Excellent
+2024-05-31,PROJ_017,John Doe,10.2,Quality Control,0.9,2.2,Average
+2024-07-05,PROJ_015,John Doe,6.0,Construction,0.62,0.0,Good
+2024-09-27,PROJ_020,Noah Kim,9.6,Safety Inspection,1.0,1.6,Average
+2024-02-01,PROJ_007,Bob Wilson,6.6,Coordination,0.88,0.0,Average
+2024-09-27,PROJ_022,Bob Wilson,8.1,Coordination,1.0,0.1,Excellent
+2024-02-29,PROJ_003,Charlie Davis,8.3,Documentation,0.91,0.3,Average
+2024-07-12,PROJ_010,Alice Brown,6.0,Safety Inspection,0.59,0.0,Average
+2024-05-03,PROJ_018,Eva Martinez,7.9,Construction,1.0,0.0,Excellent
+2024-04-30,PROJ_012,Henry Taylor,7.3,Documentation,1.0,0.0,Excellent
+2024-05-13,PROJ_024,Mia Johnson,7.7,Planning,0.82,0.0,Good
+2024-09-13,PROJ_022,Kate Moore,6.6,Construction,1.0,0.0,Good
+2024-05-12,PROJ_024,John Doe,3.5,Quality Control,0.45,0.0,Good
+2024-07-12,PROJ_015,Grace Wang,6.3,Material Handling,0.84,0.0,Average
+2024-04-25,PROJ_021,Mia Johnson,10.5,Construction,1.0,2.5,Good
+2024-06-04,PROJ_021,Charlie Davis,8.8,Construction,1.0,0.8,Good
+2024-09-12,PROJ_025,Henry Taylor,6.9,Construction,0.63,0.0,Excellent
+2024-08-24,PROJ_004,John Doe,6.3,Construction,0.83,0.0,Needs Improvement
+2024-01-29,PROJ_002,Eva Martinez,7.1,Construction,0.84,0.0,Good
+2024-05-02,PROJ_006,Charlie Davis,8.2,Coordination,0.84,0.2,Average
+2024-08-03,PROJ_016,Bob Wilson,0.0,Coordination,0.3,0.0,Average
+2024-05-28,PROJ_012,Jack Anderson,11.0,Planning,0.95,3.0,Needs Improvement
+2024-08-27,PROJ_019,Charlie Davis,8.3,Documentation,0.68,0.3,Good
+2024-08-28,PROJ_004,Alice Brown,7.9,Documentation,1.0,0.0,Good
+2024-04-20,PROJ_009,John Doe,2.3,Planning,0.42,0.0,Good
+2024-02-21,PROJ_006,Jane Smith,7.9,Quality Control,1.0,0.0,Average
+2024-07-06,PROJ_019,Grace Wang,5.0,Documentation,0.64,0.0,Average
+2024-08-19,PROJ_004,Noah Kim,5.8,Material Handling,0.91,0.0,Average
+2024-08-07,PROJ_008,Kate Moore,8.8,Planning,1.0,0.8,Good
+2024-05-02,PROJ_003,Grace Wang,6.7,Safety Inspection,0.8,0.0,Excellent
+2024-08-08,PROJ_001,Alice Brown,8.7,Safety Inspection,0.86,0.7,Good
+2024-06-29,PROJ_022,Mia Johnson,4.8,Material Handling,0.63,0.0,Needs Improvement
+2024-09-03,PROJ_013,Jane Smith,8.4,Documentation,1.0,0.4,Needs Improvement
+2024-06-09,PROJ_023,Alice Brown,2.8,Construction,0.3,0.0,Average
+2024-04-15,PROJ_005,Alice Brown,8.4,Safety Inspection,1.0,0.4,Good
+2024-08-24,PROJ_019,Noah Kim,3.4,Documentation,0.38,0.0,Good
+2024-06-10,PROJ_021,Kate Moore,5.1,Safety Inspection,0.83,0.0,Excellent
+2024-04-11,PROJ_021,Henry Taylor,8.0,Quality Control,0.91,0.0,Good
+2024-05-31,PROJ_011,John Doe,7.4,Coordination,1.0,0.0,Average
+2024-07-21,PROJ_015,Jane Smith,0.8,Planning,0.3,0.0,Good
+2024-02-23,PROJ_024,Alice Brown,8.5,Documentation,0.86,0.5,Needs Improvement
+2024-08-08,PROJ_023,Ivy Chen,8.8,Construction,0.97,0.8,Good
+2024-06-23,PROJ_015,Alice Brown,2.8,Documentation,0.57,0.0,Good
+2024-06-18,PROJ_009,Jack Anderson,7.2,Material Handling,1.0,0.0,Excellent
+2024-04-30,PROJ_002,Charlie Davis,8.5,Safety Inspection,0.8,0.5,Good
+2024-05-21,PROJ_014,Mia Johnson,7.1,Planning,0.88,0.0,Needs Improvement
+2024-07-28,PROJ_022,Kate Moore,3.4,Documentation,0.51,0.0,Needs Improvement
+2024-04-30,PROJ_014,Henry Taylor,9.3,Documentation,1.0,1.3,Good
+2024-06-21,PROJ_020,Alice Brown,9.4,Construction,0.94,1.4,Good
+2024-08-09,PROJ_001,Charlie Davis,7.6,Quality Control,1.0,0.0,Good
+2024-05-31,PROJ_014,Kate Moore,7.2,Planning,0.8,0.0,Good
+2024-05-23,PROJ_014,John Doe,8.2,Safety Inspection,0.98,0.2,Good
+2024-06-07,PROJ_011,Charlie Davis,7.7,Coordination,1.0,0.0,Good
+2024-03-14,PROJ_005,Henry Taylor,10.1,Coordination,1.0,2.1,Excellent
+2024-04-04,PROJ_003,Bob Wilson,7.9,Planning,0.82,0.0,Excellent
+2024-09-22,PROJ_022,Henry Taylor,3.8,Coordination,0.46,0.0,Good
+2024-07-23,PROJ_023,Kate Moore,9.0,Coordination,0.95,1.0,Needs Improvement
+2024-05-06,PROJ_012,Henry Taylor,7.2,Construction,0.87,0.0,Good
+2024-01-19,PROJ_006,Jack Anderson,5.4,Quality Control,0.69,0.0,Good
+2024-06-07,PROJ_001,Grace Wang,7.3,Safety Inspection,0.88,0.0,Good
+2024-07-30,PROJ_013,Eva Martinez,4.9,Construction,0.62,0.0,Excellent
+2024-06-29,PROJ_008,Frank Lee,1.1,Coordination,0.3,0.0,Good
+2024-08-24,PROJ_010,John Doe,5.6,Coordination,0.61,0.0,Good
+2024-03-18,PROJ_007,Jack Anderson,9.3,Safety Inspection,1.0,1.3,Needs Improvement
+2024-06-22,PROJ_013,Bob Wilson,6.2,Documentation,0.71,0.0,Average
+2024-07-01,PROJ_021,Leo Garcia,6.3,Planning,0.55,0.0,Needs Improvement
+2024-01-15,PROJ_005,John Doe,9.3,Material Handling,1.0,1.3,Average
+2024-06-03,PROJ_018,Alice Brown,8.8,Planning,1.0,0.8,Excellent
+2024-05-19,PROJ_015,Kate Moore,5.2,Planning,0.79,0.0,Good
+2024-04-19,PROJ_009,Ivy Chen,8.2,Planning,1.0,0.2,Average
+2024-05-17,PROJ_013,Henry Taylor,6.4,Construction,0.63,0.0,Excellent
+2024-04-07,PROJ_003,Leo Garcia,4.0,Safety Inspection,0.7,0.0,Average
+2024-05-19,PROJ_008,Bob Wilson,5.5,Quality Control,0.69,0.0,Good
+2024-07-25,PROJ_013,Frank Lee,7.7,Construction,0.67,0.0,Excellent
+2024-05-07,PROJ_021,Leo Garcia,9.1,Material Handling,0.96,1.1,Good
+2024-02-12,PROJ_006,Bob Wilson,9.6,Quality Control,1.0,1.6,Average
+2024-06-01,PROJ_015,Ivy Chen,3.5,Quality Control,0.3,0.0,Good
+2024-06-12,PROJ_004,Kate Moore,7.0,Coordination,1.0,0.0,Good
+2024-03-03,PROJ_005,Jane Smith,10.2,Documentation,1.0,2.2,Excellent
+2024-07-25,PROJ_015,John Doe,4.8,Safety Inspection,0.67,0.0,Average
+2024-06-20,PROJ_008,Eva Martinez,10.0,Construction,1.0,2.0,Excellent
+2024-07-24,PROJ_017,Leo Garcia,9.7,Documentation,1.0,1.7,Excellent
+2024-06-24,PROJ_014,Bob Wilson,8.6,Planning,0.98,0.6,Good
+2024-08-16,PROJ_015,Leo Garcia,9.1,Coordination,1.0,1.1,Needs Improvement
+2024-02-11,PROJ_005,Kate Moore,3.4,Construction,0.46,0.0,Needs Improvement
+2024-07-05,PROJ_013,Leo Garcia,9.4,Safety Inspection,0.98,1.4,Good
+2024-04-21,PROJ_005,Eva Martinez,4.9,Coordination,0.87,0.0,Average
+2024-06-28,PROJ_019,Bob Wilson,11.3,Planning,0.84,3.3,Excellent
+2024-06-14,PROJ_014,Alice Brown,6.7,Quality Control,0.93,0.0,Excellent
+2024-05-04,PROJ_024,Alice Brown,3.0,Quality Control,0.42,0.0,Average
+2024-04-05,PROJ_003,Ivy Chen,7.5,Quality Control,1.0,0.0,Good
+2024-03-22,PROJ_021,Alice Brown,10.9,Safety Inspection,1.0,2.9,Good
+2024-06-20,PROJ_021,Kate Moore,7.1,Safety Inspection,0.93,0.0,Excellent
+2024-07-16,PROJ_011,Alice Brown,10.7,Construction,1.0,2.7,Average
+2024-05-10,PROJ_012,Kate Moore,7.5,Documentation,0.92,0.0,Average
+2024-03-08,PROJ_006,John Doe,6.2,Safety Inspection,0.56,0.0,Average
+2024-05-18,PROJ_015,Jane Smith,2.3,Construction,0.3,0.0,Average
+2024-05-28,PROJ_014,Noah Kim,12.0,Material Handling,1.0,4.0,Good
+2024-06-11,PROJ_013,Alice Brown,7.5,Coordination,0.91,0.0,Good
+2024-07-12,PROJ_017,Leo Garcia,7.8,Material Handling,0.95,0.0,Good
+2024-08-01,PROJ_023,Charlie Davis,9.5,Documentation,1.0,1.5,Average
+2024-03-01,PROJ_024,Frank Lee,8.7,Safety Inspection,1.0,0.7,Excellent
+2024-05-17,PROJ_001,Charlie Davis,8.8,Coordination,1.0,0.8,Average
+2024-03-07,PROJ_005,Alice Brown,9.1,Quality Control,1.0,1.1,Good
+2024-06-09,PROJ_008,Alice Brown,5.4,Safety Inspection,0.55,0.0,Excellent
+2024-07-12,PROJ_011,Leo Garcia,8.0,Coordination,1.0,0.0,Good
+2024-07-07,PROJ_013,Jane Smith,5.6,Planning,0.59,0.0,Good
+2024-03-13,PROJ_006,Grace Wang,8.5,Material Handling,1.0,0.5,Good
+2024-02-09,PROJ_002,Grace Wang,6.9,Safety Inspection,0.62,0.0,Good
+2024-09-11,PROJ_022,John Doe,6.9,Construction,1.0,0.0,Good
+2024-05-28,PROJ_013,Henry Taylor,8.4,Safety Inspection,0.94,0.4,Excellent
+2024-06-05,PROJ_023,Alice Brown,5.9,Safety Inspection,0.72,0.0,Excellent
+2024-04-12,PROJ_018,Charlie Davis,9.6,Material Handling,0.77,1.6,Good
+2024-07-26,PROJ_004,Kate Moore,7.7,Material Handling,0.99,0.0,Excellent
+2024-03-23,PROJ_002,Henry Taylor,4.9,Documentation,0.69,0.0,Good
+2024-09-22,PROJ_025,Jane Smith,5.6,Safety Inspection,0.79,0.0,Average
+2024-08-09,PROJ_023,Leo Garcia,7.1,Documentation,1.0,0.0,Excellent
+2024-07-27,PROJ_001,Kate Moore,2.3,Documentation,0.39,0.0,Average
+2024-06-11,PROJ_015,Grace Wang,7.3,Documentation,1.0,0.0,Good
+2024-06-03,PROJ_017,Kate Moore,7.8,Quality Control,0.99,0.0,Average
+2024-05-23,PROJ_023,Jack Anderson,7.2,Coordination,0.83,0.0,Excellent
+2024-05-13,PROJ_024,Henry Taylor,7.1,Safety Inspection,0.94,0.0,Good
+2024-08-29,PROJ_020,Frank Lee,6.8,Documentation,0.85,0.0,Average
+2024-03-01,PROJ_003,Bob Wilson,6.5,Documentation,0.86,0.0,Excellent
+2024-05-07,PROJ_007,Alice Brown,6.7,Material Handling,0.88,0.0,Average
+2024-05-23,PROJ_009,Eva Martinez,6.0,Construction,0.81,0.0,Average
+2024-06-27,PROJ_023,Grace Wang,8.9,Material Handling,0.99,0.9,Excellent
+2024-02-11,PROJ_003,John Doe,3.1,Documentation,0.34,0.0,Excellent
+2024-07-12,PROJ_011,Eva Martinez,10.9,Planning,1.0,2.9,Good
+2024-06-13,PROJ_015,Eva Martinez,8.8,Planning,0.84,0.8,Excellent
+2024-05-24,PROJ_004,Noah Kim,9.2,Safety Inspection,0.97,1.2,Good
+2024-10-04,PROJ_022,Alice Brown,4.0,Planning,0.5,0.0,Good
+2024-03-18,PROJ_006,Noah Kim,7.6,Construction,1.0,0.0,Good
+2024-03-28,PROJ_012,Noah Kim,6.9,Safety Inspection,0.75,0.0,Good
+2024-01-13,PROJ_005,Henry Taylor,4.3,Construction,0.3,0.0,Average
+2024-05-18,PROJ_007,Jack Anderson,2.5,Coordination,0.46,0.0,Good
+2024-05-02,PROJ_007,Henry Taylor,10.9,Coordination,1.0,2.9,Good
+2024-08-22,PROJ_004,Noah Kim,8.4,Documentation,0.98,0.4,Good
+2024-08-08,PROJ_004,Jack Anderson,5.5,Material Handling,1.0,0.0,Good
+2024-09-23,PROJ_022,Frank Lee,8.6,Planning,1.0,0.6,Average
+2024-06-29,PROJ_025,Leo Garcia,2.3,Coordination,0.3,0.0,Good
+2024-08-29,PROJ_004,John Doe,6.6,Construction,0.89,0.0,Average
+2024-04-10,PROJ_006,Noah Kim,6.5,Construction,0.85,0.0,Good
+2024-07-29,PROJ_017,Jane Smith,10.6,Safety Inspection,0.84,2.6,Good
+2024-07-26,PROJ_015,Charlie Davis,7.8,Safety Inspection,1.0,0.0,Good
+2024-08-11,PROJ_022,Leo Garcia,4.0,Material Handling,0.83,0.0,Excellent
+2024-04-15,PROJ_006,Kate Moore,5.2,Construction,0.79,0.0,Excellent
+2024-06-20,PROJ_011,Kate Moore,7.9,Safety Inspection,0.64,0.0,Excellent
+2024-08-17,PROJ_004,Jack Anderson,5.2,Planning,0.3,0.0,Good
+2024-03-12,PROJ_012,Frank Lee,7.9,Material Handling,1.0,0.0,Good
+2024-04-24,PROJ_018,John Doe,7.9,Quality Control,0.86,0.0,Good
+2024-08-12,PROJ_016,Ivy Chen,10.0,Safety Inspection,0.99,2.0,Average
+2024-07-24,PROJ_015,Jack Anderson,8.6,Documentation,1.0,0.6,Good
+2024-09-11,PROJ_022,Ivy Chen,9.8,Documentation,0.95,1.8,Good
+2024-06-21,PROJ_010,Jack Anderson,8.0,Safety Inspection,1.0,0.0,Good
+2024-09-20,PROJ_025,Ivy Chen,6.0,Documentation,1.0,0.0,Good
+2024-05-24,PROJ_024,Charlie Davis,7.6,Safety Inspection,0.75,0.0,Average
+2024-07-18,PROJ_017,Jane Smith,5.6,Coordination,0.42,0.0,Good
+2024-07-30,PROJ_020,Jane Smith,9.5,Construction,1.0,1.5,Excellent
+2024-05-27,PROJ_013,Jack Anderson,6.1,Construction,0.77,0.0,Excellent
+2024-04-28,PROJ_001,Henry Taylor,2.1,Coordination,0.33,0.0,Good
+2024-05-30,PROJ_011,Ivy Chen,6.7,Quality Control,0.92,0.0,Good
+2024-03-10,PROJ_007,Frank Lee,9.3,Planning,1.0,1.3,Average
+2024-07-23,PROJ_018,Bob Wilson,7.2,Material Handling,0.8,0.0,Excellent
+2024-05-28,PROJ_014,Grace Wang,6.8,Quality Control,0.46,0.0,Average
+2024-08-16,PROJ_004,Alice Brown,8.3,Quality Control,0.9,0.3,Good
+2024-07-02,PROJ_017,Charlie Davis,9.8,Safety Inspection,0.97,1.8,Good
+2024-08-18,PROJ_025,Ivy Chen,5.3,Material Handling,0.57,0.0,Good
+2024-05-14,PROJ_021,Eva Martinez,8.1,Material Handling,1.0,0.1,Excellent
+2024-04-08,PROJ_012,Henry Taylor,7.8,Coordination,1.0,0.0,Average
+2024-04-28,PROJ_018,Jack Anderson,6.7,Quality Control,1.0,0.0,Excellent
+2024-07-24,PROJ_016,Charlie Davis,6.5,Construction,0.73,0.0,Good
+2024-06-13,PROJ_023,John Doe,10.1,Quality Control,1.0,2.1,Good
+2024-06-27,PROJ_022,Henry Taylor,5.4,Quality Control,0.43,0.0,Average
+2024-05-05,PROJ_006,Alice Brown,5.6,Construction,1.0,0.0,Average
+2024-04-01,PROJ_024,Jack Anderson,12.0,Safety Inspection,1.0,4.0,Average
+2024-06-21,PROJ_023,Jane Smith,9.5,Quality Control,0.94,1.5,Excellent
+2024-03-24,PROJ_009,Charlie Davis,5.9,Quality Control,0.83,0.0,Excellent
+2024-06-21,PROJ_017,John Doe,6.3,Construction,0.68,0.0,Good
+2024-07-30,PROJ_015,Jane Smith,10.8,Construction,1.0,2.8,Excellent
+2024-07-12,PROJ_020,Alice Brown,9.3,Quality Control,0.99,1.3,Good
+2024-04-19,PROJ_006,Eva Martinez,8.7,Coordination,1.0,0.7,Needs Improvement
+2024-02-02,PROJ_003,Ivy Chen,8.1,Construction,0.85,0.1,Excellent
+2024-06-23,PROJ_004,Bob Wilson,3.4,Construction,0.53,0.0,Average
+2024-04-10,PROJ_007,Frank Lee,7.4,Quality Control,1.0,0.0,Good
+2024-08-26,PROJ_020,Kate Moore,10.9,Safety Inspection,0.94,2.9,Good
+2024-02-03,PROJ_005,Charlie Davis,3.2,Construction,0.5,0.0,Average
+2024-05-04,PROJ_005,Jane Smith,3.7,Construction,0.36,0.0,Good
+2024-03-13,PROJ_005,John Doe,6.1,Coordination,0.68,0.0,Average
+2024-04-11,PROJ_007,Eva Martinez,6.1,Coordination,0.81,0.0,Excellent
+2024-04-17,PROJ_024,Ivy Chen,7.5,Construction,0.93,0.0,Excellent
+2024-02-04,PROJ_005,Ivy Chen,3.5,Documentation,0.66,0.0,Good
+2024-06-21,PROJ_017,Jane Smith,7.1,Construction,0.91,0.0,Average
+2024-01-25,PROJ_002,Jack Anderson,6.9,Material Handling,0.9,0.0,Excellent
+2024-08-01,PROJ_015,Alice Brown,8.1,Documentation,0.98,0.1,Good
+2024-05-04,PROJ_003,Eva Martinez,2.6,Quality Control,0.63,0.0,Good
+2024-07-21,PROJ_010,Henry Taylor,5.5,Quality Control,0.82,0.0,Good
+2024-01-30,PROJ_002,Jack Anderson,10.3,Safety Inspection,1.0,2.3,Average
+2024-07-12,PROJ_021,Henry Taylor,6.5,Coordination,1.0,0.0,Good
+2024-05-21,PROJ_017,Alice Brown,9.1,Quality Control,0.77,1.1,Needs Improvement
+2024-07-22,PROJ_004,Eva Martinez,8.8,Safety Inspection,0.94,0.8,Excellent
+2024-04-25,PROJ_018,Jack Anderson,8.6,Coordination,0.87,0.6,Average
+2024-05-06,PROJ_015,Jack Anderson,7.8,Planning,0.98,0.0,Needs Improvement
+2024-05-19,PROJ_017,Alice Brown,6.7,Coordination,0.64,0.0,Excellent
+2024-08-01,PROJ_017,Noah Kim,9.0,Material Handling,1.0,1.0,Good
+2024-05-06,PROJ_014,Mia Johnson,8.9,Planning,0.85,0.9,Good
+2024-08-28,PROJ_016,Jane Smith,5.2,Safety Inspection,0.43,0.0,Good
+2024-07-08,PROJ_004,Bob Wilson,6.3,Planning,0.93,0.0,Good
+2024-09-10,PROJ_023,Leo Garcia,7.0,Safety Inspection,0.81,0.0,Average
+2024-05-15,PROJ_007,Ivy Chen,10.2,Quality Control,0.94,2.2,Good
+2024-02-22,PROJ_006,Charlie Davis,10.0,Material Handling,1.0,2.0,Excellent
+2024-03-04,PROJ_002,Henry Taylor,6.9,Coordination,0.78,0.0,Good
+2024-03-24,PROJ_007,Kate Moore,0.5,Material Handling,0.3,0.0,Good
+2024-04-01,PROJ_003,Eva Martinez,8.0,Safety Inspection,0.99,0.0,Excellent
+2024-04-29,PROJ_005,Frank Lee,7.8,Quality Control,1.0,0.0,Average
