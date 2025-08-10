@@ -1,0 +1,21 @@
+tool_name,use_case_category,use_case_name,difficulty_level,suitability_score,description
+Obsidian,Cotidiano,Diário Pessoal,Fácil,9.2,Ideal para reflexões e tracking diário
+Obsidian,Cotidiano,Listas de Tarefas,Médio,8.1,Sistema GTD robusto com plugins
+Obsidian,Avançado,Zettelkasten,Difícil,9.8,Sistema perfeito para método Zettelkasten
+Obsidian,Profissional,Base Conhecimento,Difícil,9.5,Documentação técnica interconectada
+Notion,Cotidiano,Agenda Pessoal,Fácil,8.8,Calendário e planejamento integrados
+Notion,Cotidiano,Controle Financeiro,Médio,9.1,Dashboards de gastos personalizáveis
+Notion,Avançado,CRM Pessoal,Médio,8.9,Gestão de contatos com automações
+Notion,Profissional,Gestão de Projetos,Médio,9.3,"Kanban, timelines e dashboards"
+Google Keep,Cotidiano,Notas Rápidas,Muito Fácil,9.7,Captura instantânea de pensamentos
+Google Keep,Cotidiano,Listas de Compras,Muito Fácil,9.5,Compartilhamento familiar simples
+Google Keep,Avançado,OCR de Documentos,Fácil,8.3,Extração de texto de imagens
+Google Keep,Profissional,Lembretes Campo,Fácil,7.8,Lembretes baseados em localização
+Roam Research,Cotidiano,Journaling,Difícil,8.2,Entradas diárias interconectadas
+Roam Research,Avançado,Análise Conceitual,Muito Difícil,9.6,Visualização de redes de ideias
+Roam Research,Avançado,Queries Dinâmicas,Muito Difícil,9.4,Busca e filtragem avançada
+Roam Research,Profissional,Pesquisa Qualitativa,Muito Difícil,9.7,Desenvolvimento de insights acadêmicos
+Evernote,Cotidiano,Web Clipping,Fácil,9.4,Salvamento de artigos e páginas
+Evernote,Cotidiano,Digitalização,Fácil,9.1,Scanner com OCR integrado
+Evernote,Avançado,Sistema GTD,Médio,8.0,Organização completa de tarefas
+Evernote,Profissional,Documentação,Médio,8.5,Procedimentos e políticas organizadas

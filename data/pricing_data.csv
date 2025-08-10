@@ -1,0 +1,6 @@
+tool_name,free_plan,free_plan_limits,basic_plan_price_usd,basic_plan_price_brl,professional_plan_price_usd,professional_plan_price_brl,enterprise_available,student_discount,annual_discount,value_proposition
+Obsidian,True,Ilimitado para uso pessoal,0.0,0,50.0,263,False,False,False,"Controle total dos dados, extremamente customizável"
+Notion,True,Até 1000 blocos,8.0,42,16.0,84,True,True,True,"All-in-one workspace, colaboração robusta"
+Google Keep,True,Ilimitado,0.0,0,0.0,0,True,False,False,Simplicidade e integração Google
+Roam Research,False,Sem plano gratuito,15.0,79,15.0,79,True,False,False,Sistema único de pensamento em rede
+Evernote,True,"60MB upload/mês, 2 dispositivos",7.99,42,9.99,52,True,True,True,"Captura robusta de conteúdo, OCR excelente"
