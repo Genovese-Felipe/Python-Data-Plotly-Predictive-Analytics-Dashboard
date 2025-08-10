@@ -15,7 +15,7 @@ import uuid
 import datetime
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, asdict
-from ..config.settings import get_config
+from Monica_AI_System.config.settings import get_config
 
 @dataclass
 class BotProfile:

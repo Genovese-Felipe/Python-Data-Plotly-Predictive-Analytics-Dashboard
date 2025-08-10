@@ -24,7 +24,7 @@ import hashlib
 from typing import Dict, List, Optional, Any, Union, Callable
 from dataclasses import dataclass
 from datetime import datetime, timedelta
-from ..config.settings import get_config
+from Monica_AI_System.config.settings import get_config
 
 @dataclass
 class APIResponse:
