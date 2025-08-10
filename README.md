@@ -1,5 +1,20 @@
 # Python-Data-Plotly-Predictive-Analytics-Dashboard
 
+## 🤖 NEW: Monica AI - Enhanced Knowledge Processing System
+
+**Latest Enhancement**: The repository now includes Monica AI, a comprehensive AI-powered knowledge processing system that combines local documentation with web search capabilities for intelligent analysis and recommendations.
+
+### Quick Start with Monica AI
+```bash
+cd AI_Knowledge_Extraction_System
+python run_monica_ai.py --test  # Test functionality
+python run_monica_ai.py         # Run comprehensive analysis
+```
+
+**Features**: Multi-query processing, web search integration, comprehensive knowledge synthesis, and actionable insights generation. [See detailed documentation](AI_Knowledge_Extraction_System/MONICA_AI_README.md)
+
+---
+
 ## Find and Analyze the Dashboard/Graph
 Python &amp; Plotly Data Visualization and storytelling: given a type of plot (dashboard, Sankey diagram, etc.), Recreate a similar visual that tells the same story using a dummy dataset, Python scripts for data generation and visualization that would naturally produce the visual you created.
 

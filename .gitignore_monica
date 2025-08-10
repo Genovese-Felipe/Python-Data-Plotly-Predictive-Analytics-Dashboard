@@ -1,0 +1,29 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Monica AI specific cache
+AI_Knowledge_Extraction_System/**/__pycache__/
+AI_Knowledge_Extraction_System/processors/__pycache__/
+AI_Knowledge_Extraction_System/core/__pycache__/
+AI_Knowledge_Extraction_System/config/__pycache__/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Logs
+*.log
