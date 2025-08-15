@@ -1,0 +1,72 @@
+title: "Python Data Plotly Analytics Dashboard"
+description: "Professional Analytics Dashboard with Interactive Visualizations using Python, Plotly and Dash"
+baseurl: "/Python-Data-Plotly-Predictive-Analytics-Dashboard"
+url: "https://genovese-felipe.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Theme
+theme: minima
+
+# Navigation
+header_pages:
+  - dashboards.md
+  - tutorials.md
+  - examples.md
+  - knowledge-base.md
+  - about.md
+
+# Collections
+collections:
+  dashboards:
+    output: true
+    permalink: /:collection/:name/
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+  examples:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "dashboards"
+    values:
+      layout: "dashboard"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "tutorial"
+
+# SEO
+google_analytics: # Add your Google Analytics ID here
+github_username: Genovese-Felipe
+
+# Social
+social:
+  links:
+    - https://github.com/Genovese-Felipe/Python-Data-Plotly-Predictive-Analytics-Dashboard
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
