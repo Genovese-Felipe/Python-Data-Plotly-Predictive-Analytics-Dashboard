@@ -1,0 +1,62 @@
+# Core Dashboard Dependencies
+dash>=2.10.0
+plotly>=5.15.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Data Processing and Analytics
+scikit-learn>=1.3.0
+scipy>=1.10.0
+
+# Monica AI System Dependencies
+# Core Libraries for Content Processing
+pdfplumber>=0.9.0
+PyPDF2>=3.0.1
+pillow>=9.5.0
+pytesseract>=0.3.10
+
+# Natural Language Processing
+spacy>=3.6.0
+nltk>=3.8.1
+sentence-transformers>=2.2.2
+transformers>=4.30.0
+
+# Vector Storage and Search
+chromadb>=0.4.0
+faiss-cpu>=1.7.4
+
+# Graph and Knowledge Management
+networkx>=3.1
+rdflib>=6.3.2
+
+# Metadata and Indexing
+python-magic>=0.4.27
+whoosh>=2.7.4
+
+# Image Processing and OCR
+opencv-python>=4.8.0
+easyocr>=1.7.0
+
+# Data Processing
+tqdm>=4.65.0
+beautifulsoup4>=4.12.0
+markdown>=3.4.3
+
+# Visualization Analysis
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# JSON and XML Processing
+lxml>=4.9.0
+xmltodict>=0.13.0
+
+# File Handling
+pathlib2>=2.3.7
+
+# Web scraping and API integration
+requests>=2.31.0
+aiohttp>=3.8.0
+
+# Development and Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
