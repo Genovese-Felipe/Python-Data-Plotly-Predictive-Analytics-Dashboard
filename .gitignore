@@ -1,21 +1,63 @@
-# Python cache files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
 # Generated outputs (large files)
 AI_Knowledge_Extraction_System/outputs/
 AI_Knowledge_Extraction_System/AI_Knowledge_Extraction_System/outputs/
 
-# Temporary cache
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
 .cache/
 .models_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
 
 # Virtual environments
-venv/
+.env
+.venv
 env/
+venv/
 ENV/
+env.bak/
+venv.bak/
+
+# Jekyll
+docs/_site/
+docs/.sass-cache/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+docs/Gemfile.lock
 
 # IDE files
 .vscode/
@@ -30,5 +72,10 @@ Thumbs.db
 # Log files
 *.log
 
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Node modules if using any JS tools
+node_modules/
