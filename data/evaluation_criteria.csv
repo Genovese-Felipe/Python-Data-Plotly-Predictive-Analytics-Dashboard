@@ -1,0 +1,8 @@
+criteria_id,criteria_name,weight_percentage,max_score,description
+ease_of_use,Facilidade de Uso,20,10,"Curva de aprendizado, interface intuitiva, onboarding, documentação"
+features,Funcionalidades,25,10,"Recursos disponíveis, flexibilidade, capacidades avançadas, extensibilidade"
+collaboration,Colaboração,15,10,"Compartilhamento, edição simultânea, controle de acesso, comentários"
+performance,Performance,15,10,"Velocidade, sincronização, estabilidade, escalabilidade"
+price_value,Preço/Valor,10,10,"Custo-benefício, planos disponíveis, limites gratuitos, transparência"
+mobile_experience,Experiência Mobile,10,10,"App nativo, funcionalidades móveis, sincronização, usabilidade touch"
+data_organization,Organização de Dados,5,10,"Estruturação, busca, categorização, backup/export"

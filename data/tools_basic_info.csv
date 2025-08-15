@@ -1,0 +1,6 @@
+tool_name,category,founded_year,company,primary_focus,target_users,free_tier,open_source,local_storage,web_clipper,mobile_app,offline_access,collaboration_native,api_available
+Obsidian,Knowledge Management,2020,Obsidian,Personal Knowledge Management,Researchers/Writers,True,False,True,True,True,True,False,True
+Notion,All-in-One Workspace,2016,Notion Labs,Team Collaboration,Teams/Organizations,True,False,False,True,True,True,True,True
+Google Keep,Quick Notes,2013,Google,Quick Capture,General Users,True,False,False,False,True,True,True,False
+Roam Research,Networked Thought,2019,Roam Research,Research & Analysis,Academics/Consultants,False,False,False,False,True,False,True,True
+Evernote,Digital Notebook,2008,Evernote Corporation,Document Organization,Professionals/Students,True,False,False,True,True,True,True,True
