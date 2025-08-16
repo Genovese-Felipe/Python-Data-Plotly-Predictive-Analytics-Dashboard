@@ -4,6 +4,10 @@ __pycache__/
 *$py.class
 *.so
 
+# Ensure all pycache directories are ignored
+*/__pycache__/
+**/__pycache__/
+
 # Distribution / packaging
 .Python
 build/
@@ -79,3 +83,6 @@ Thumbs.db
 
 # Node modules if using any JS tools
 node_modules/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/

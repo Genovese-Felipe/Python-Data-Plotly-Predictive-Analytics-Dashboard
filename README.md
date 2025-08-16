@@ -29,7 +29,7 @@ This repository contains a professional construction project management dashboar
 - 🏗️ **Construction-focused**: Tailored for project management needs
 
 ## Find and Analyze the Dashboard/Graph
-Python &amp; Plotly Data Visualization and storytelling: given a type of plot (dashboard, Sankey diagram, etc.), Recreate a similar visual that tells the same story using a dummy dataset, Python scripts for data generation and visualization that would naturally produce the visual you created.
+Python & Plotly Data Visualization and storytelling: given a type of plot (dashboard, Sankey diagram, etc.), Recreate a similar visual that tells the same story using a dummy dataset, Python scripts for data generation and visualization that would naturally produce the visual you created.
 
 The data row begins with searching the web for a reference image of a business-related dashboard or graph that matches the chart description you are given. For example, it may search for something such as “dashboard for business software”.
 
