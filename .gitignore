@@ -4,6 +4,10 @@ __pycache__/
 *$py.class
 *.so
 
+# Ensure all pycache directories are ignored
+*/__pycache__/
+**/__pycache__/
+
 # Generated outputs (large files)
 AI_Knowledge_Extraction_System/outputs/
 AI_Knowledge_Extraction_System/AI_Knowledge_Extraction_System/outputs/
