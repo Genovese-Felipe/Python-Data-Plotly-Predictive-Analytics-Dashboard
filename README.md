@@ -14,7 +14,7 @@ python run_monica_ai.py         # Run comprehensive analysis
 **Features**: Multi-query processing, web search integration, comprehensive knowledge synthesis, and actionable insights generation. [See detailed documentation](AI_Knowledge_Extraction_System/MONICA_AI_README.md)
 
 ---
-🌐 **Live Dashboard**: [View on GitHub Pages](https://genovese-felipe.github.io/Python-Data-Plotly-Predictive-Analytics-Dashboard/)
+🌐 **Live Site**: [View on GitHub Pages](https://genovese-felipe.github.io/Python-Data-Plotly-Predictive-Analytics-Dashboard/)
 
 ## 📊 Professional Construction Project Management Dashboard
 

@@ -4,29 +4,6 @@ __pycache__/
 *$py.class
 *.so
 
-# Ensure all pycache directories are ignored
-*/__pycache__/
-**/__pycache__/
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
 # Generated outputs (large files)
 AI_Knowledge_Extraction_System/outputs/
 AI_Knowledge_Extraction_System/AI_Knowledge_Extraction_System/outputs/
@@ -83,6 +60,3 @@ Thumbs.db
 
 # Node modules if using any JS tools
 node_modules/
-
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/

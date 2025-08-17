@@ -5,12 +5,6 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 
-# Import Monica AI Dashboard Integration (optional)
-try:
-    from Monica_AI_System.dashboard_integration import integrate_monica_with_dashboard
-    MONICA_AI_AVAILABLE = True
-except ImportError:
-    MONICA_AI_AVAILABLE = False
 # Generate simple data
 np.random.seed(42)
 projects = []
@@ -156,16 +150,3 @@ def update_dashboard(selected_types, selected_managers):
     sunburst_fig.update_layout(title="Project Hierarchy - Sunburst")
     
     return pie_fig, bar_fig, scatter_fig, sunburst_fig, filtered_df.to_dict('records')
-
-if __name__ == '__main__':
-    if MONICA_AI_AVAILABLE:
-        print("🚀 Starting Enhanced Dashboard with Monica AI System on http://localhost:8052")
-        print("📊 Features: Analytics Dashboard + Monica AI Bot System")
-        print("🤖 Monica AI includes: Bot Management, API Integration, Knowledge Base, Writing Assistant")
-        # Integrate Monica AI with the dashboard
-        app = integrate_monica_with_dashboard(app)
-    else:
-        print("🚀 Starting Dashboard on http://localhost:8052")
-        print("📊 Analytics Dashboard (Monica AI System not available)")
-    
-    app.run(debug=True, host='0.0.0.0', port=8052)
