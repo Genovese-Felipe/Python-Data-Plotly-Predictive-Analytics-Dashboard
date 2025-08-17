@@ -25,11 +25,19 @@ title: "Site Status"
 - Dashboards: ✅ Carregando
 - Assets: ✅ Disponíveis
 
-### 🛠️ Correções Aplicadas
+## 🛠️ Correções Aplicadas
 - Fixed concurrent deployment issue in GitHub Actions workflow
-- Updated workflow to cancel in-progress deployments automatically
+- Updated workflow to cancel in-progress deployments automatically  
 - Added deployment timeout and error handling improvements
 - Restored site functionality
+
+### 📋 Detalhes Técnicos
+**Problema Original**: O site desapareceu devido a falha na implantação do GitHub Pages causada por conflito de deployments concorrentes.
+
+**Solução**: Atualizamos o workflow `.github/workflows/pages.yml` para:
+1. `cancel-in-progress: true` - Cancela automaticamente deployments em conflito
+2. Timeout adequado e tratamento de erros melhorado  
+3. Verificação de integridade dos assets
 
 ---
 
