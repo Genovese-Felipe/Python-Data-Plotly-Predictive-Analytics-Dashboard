@@ -18,7 +18,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -129,9 +129,13 @@ jobs:
     - name: 🌐 Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-      
+      with:
+        timeout: 600000
+        error_count: 10
+        reporting_interval: 5000
+        
     - name: ✅ Deployment Summary
       run: |
         echo "🎉 Site deployed successfully!"
         echo "🌐 URL: ${{ steps.deployment.outputs.page_url }}"
-        echo "📊 Dashboard URL: ${{ steps.deployment.outputs.page_url }}assets/dashboards/"
+        echo "📊 Dashboard URL: ${{ steps.deployment.outputs.page_url }}dashboards/construction/"
