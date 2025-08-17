@@ -62,7 +62,7 @@ def update_charts(selected_types):
     # Completion Bar Chart
     bar_fig = px.bar(filtered_df, x='project_id', y='completion', 
                      title="Project Completion %", color='status')
-    bar_fig.update_xaxis(tickangle=45)
+    bar_fig.update_xaxes(tickangle=45)
     
     # Budget Scatter
     scatter_fig = px.scatter(filtered_df, x='completion', y='budget', 
@@ -103,4 +103,4 @@ def update_charts(selected_types):
 
 if __name__ == '__main__':
     print("🚀 Dashboard starting at http://localhost:8050")
-    app.run_server(debug=True, host='0.0.0.0', port=8050)
+    app.run(debug=True, host='0.0.0.0', port=8050)

@@ -155,11 +155,3 @@ def update_dashboard(selected_types, selected_managers):
     return pie_fig, bar_fig, scatter_fig, sunburst_fig, filtered_df.to_dict('records')
 
 if __name__ == '__main__':
-    print("🚀 Starting Enhanced Dashboard with Monica AI System on http://localhost:8052")
-    print("📊 Features: Analytics Dashboard + Monica AI Bot System")
-    print("🤖 Monica AI includes: Bot Management, API Integration, Knowledge Base, Writing Assistant")
-    
-    # Integrate Monica AI with the dashboard
-    app = integrate_monica_with_dashboard(app)
-    
-    app.run(debug=True, host='0.0.0.0', port=8052)

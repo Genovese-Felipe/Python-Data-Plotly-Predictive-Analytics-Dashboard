@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Comparativa - Ferramentas de Produtividade</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .chart-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        
+        .summary-table {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        
+        .metric-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin: 10px 0;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .metric-number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        
+        .table-responsive {
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .ranking-1 {
+            background-color: #d4edda !important;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-weight: bold;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="main-header">
+        <div class="container">
+            <h1 class="text-center mb-3">
+                <i class="fas fa-tools"></i> 
+                Análise Comparativa de Ferramentas de Produtividade
+            </h1>
+            <p class="text-center lead">
+                Estudo detalhado de 5 ferramentas líderes com base em 7 critérios de avaliação
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Key Metrics -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="metric-card">
+                    <i class="fas fa-trophy fa-2x text-warning mb-2"></i>
+                    <h4>Vencedor</h4>
+                    <div class="metric-number text-success">Notion</div>
+                    <small class="text-muted">83.3% de pontuação</small>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="metric-card">
+                    <i class="fas fa-chart-bar fa-2x text-info mb-2"></i>
+                    <h4>Ferramentas</h4>
+                    <div class="metric-number text-info">5</div>
+                    <small class="text-muted">Analisadas em detalhes</small>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="metric-card">
+                    <i class="fas fa-dollar-sign fa-2x text-warning mb-2"></i>
+                    <h4>Melhor Custo-Benefício</h4>
+                    <div class="metric-number text-warning">Google Keep</div>
+                    <small class="text-muted">Gratuito - 77.1%</small>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="metric-card">
+                    <i class="fas fa-lightbulb fa-2x text-danger mb-2"></i>
+                    <h4>Mais Inovador</h4>
+                    <div class="metric-number text-danger">Roam Research</div>
+                    <small class="text-muted">9.5 pontos</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Ranking Chart -->
+        <h2 class="section-title">
+            <i class="fas fa-medal"></i> Ranking Geral
+        </h2>
+        <div class="chart-container">
+            <div id="ranking-chart"></div>
+        </div>
+
+        <!-- Detailed Analysis -->
+        <h2 class="section-title">
+            <i class="fas fa-chart-radar"></i> Análise Detalhada por Critérios
+        </h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <div id="radar-chart"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <div id="heatmap-chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Analysis -->
+        <h2 class="section-title">
+            <i class="fas fa-money-bill-wave"></i> Análise de Preços
+        </h2>
+        <div class="chart-container">
+            <div id="pricing-chart"></div>
+        </div>
+
+        <!-- Summary Table -->
+        <h2 class="section-title">
+            <i class="fas fa-table"></i> Tabela Resumo Comparativa
+        </h2>
+        <div class="summary-table">
+            <div class="table-responsive">
+                <table border="1" class="dataframe table table-striped table-hover" id="summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ranking</th>
+      <th>Ferramenta</th>
+      <th>Categoria</th>
+      <th>Pontuação</th>
+      <th>Preço</th>
+      <th>Público-Alvo</th>
+      <th>Posição no Mercado</th>
+      <th>Perspectiva</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3º</td>
+      <td>Obsidian</td>
+      <td>Knowledge Management</td>
+      <td>75.9%</td>
+      <td>Gratuito</td>
+      <td>Researchers/Writers</td>
+      <td>Nicho Especializado</td>
+      <td>Muito Positivo</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1º</td>
+      <td>Notion</td>
+      <td>All-in-One Workspace</td>
+      <td>83.3%</td>
+      <td>Gratuito</td>
+      <td>Teams/Organizations</td>
+      <td>Líder Emergente</td>
+      <td>Positivo</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2º</td>
+      <td>Google Keep</td>
+      <td>Quick Notes</td>
+      <td>77.1%</td>
+      <td>Gratuito</td>
+      <td>General Users</td>
+      <td>Mainstream</td>
+      <td>Estável</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>5º</td>
+      <td>Roam Research</td>
+      <td>Networked Thought</td>
+      <td>64.2%</td>
+      <td>R$ 79/mês</td>
+      <td>Academics/Consultants</td>
+      <td>Nicho Acadêmico</td>
+      <td>Incerto</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4º</td>
+      <td>Evernote</td>
+      <td>Digital Notebook</td>
+      <td>69.0%</td>
+      <td>Gratuito</td>
+      <td>Professionals/Students</td>
+      <td>Líder Tradicional</td>
+      <td>Negativo</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+        </div>
+
+        <!-- Methodology -->
+        <h2 class="section-title">
+            <i class="fas fa-microscope"></i> Metodologia de Avaliação
+        </h2>
+        <div class="chart-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><i class="fas fa-star"></i> Critérios de Avaliação</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span><strong>Facilidade de Uso</strong></span>
+                            <span class="badge bg-primary">20%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span><strong>Funcionalidades</strong></span>
+                            <span class="badge bg-primary">25%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span><strong>Colaboração</strong></span>
+                            <span class="badge bg-primary">15%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span><strong>Performance</strong></span>
+                            <span class="badge bg-primary">15%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span><strong>Preço/Valor</strong></span>
+                            <span class="badge bg-primary">10%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span><strong>Experiência Mobile</strong></span>
+                            <span class="badge bg-primary">10%</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span><strong>Organização de Dados</strong></span>
+                            <span class="badge bg-primary">5%</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4><i class="fas fa-database"></i> Fontes de Dados</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <i class="fas fa-star text-warning me-2"></i>
+                            <strong>G2 Reviews</strong> - Avaliações empresariais
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-chart-line text-info me-2"></i>
+                            <strong>Capterra</strong> - Análises comparativas
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-rocket text-danger me-2"></i>
+                            <strong>Product Hunt</strong> - Feedback da comunidade tech
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-reddit text-primary me-2"></i>
+                            <strong>Reddit</strong> - Discussões de usuários
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-youtube text-danger me-2"></i>
+                            <strong>YouTube</strong> - Reviews técnicos
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-graduation-cap text-success me-2"></i>
+                            <strong>Papers Acadêmicos</strong> - Estudos científicos
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-info-circle"></i> Sobre esta Análise</h5>
+                    <p>
+                        Este dashboard foi criado com base em dados coletados de múltiplas fontes confiáveis,
+                        incluindo mais de 500 reviews por ferramenta, análise de funcionalidades e 
+                        pesquisa de mercado atualizada.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="fas fa-clock"></i> Informações Técnicas</h5>
+                    <p>
+                        <strong>Última atualização:</strong> 10/08/2025 04:51<br>
+                        <strong>Ferramentas analisadas:</strong> 5<br>
+                        <strong>Critérios de avaliação:</strong> 7<br>
+                        <strong>Total de pontuações:</strong> 35
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Charts -->
+    <script>
+        // Initialize all charts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ranking Chart
+            var rankingData = {"data": [{"hovertemplate": "<b>%{y}</b><br>Pontua\u00e7\u00e3o: %{x}%<br><extra></extra>", "marker": {"color": ["#0984e3", "#00b894", "#6c5ce7", "#fbbc04", "#000000"], "line": {"color": "white", "width": 2}}, "orientation": "h", "text": ["64.2%", "69.0%", "75.9%", "77.1%", "83.3%"], "textposition": "auto", "x": {"dtype": "f8", "bdata": "zczMzMwMUEAAAAAAAEBRQJqZmZmZ+VJAZmZmZmZGU0AzMzMzM9NUQA=="}, "y": ["Roam Research", "Evernote", "Obsidian", "Google Keep", "Notion"], "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "title": {"font": {"size": 24, "color": "#1f1f1f"}, "text": "<b>\ud83c\udfc6 Ranking Geral - Ferramentas de Produtividade</b>", "x": 0.5}, "font": {"size": 14}, "margin": {"l": 20, "r": 20, "t": 80, "b": 20}, "xaxis": {"title": {"text": "<b>Pontua\u00e7\u00e3o Geral (%)</b>"}, "range": [0, 100], "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray"}, "yaxis": {"title": {"text": "<b>Ferramentas</b>"}}, "plot_bgcolor": "white", "paper_bgcolor": "white", "height": 400, "showlegend": false}};
+            Plotly.newPlot('ranking-chart', rankingData.data, rankingData.layout, {responsive: true});
+            
+            // Radar Chart
+            var radarData = {"data": [{"fill": "toself", "fillcolor": "#00b894", "hovertemplate": "<b>%{fullData.name}</b><br>%{theta}: %{r:.1f}<extra></extra>", "line": {"color": "#00b894", "width": 2}, "name": "Evernote", "opacity": 0.3, "r": {"dtype": "f8", "bdata": "ZmZmZmZmGEAzMzMzMzMfQM3MzMzMzBxAZmZmZmZmHECamZmZmZkdQJqZmZmZmRtAMzMzMzMzF0A="}, "theta": ["Colabora\u00e7\u00e3o", "Experi\u00eancia Mobile", "Facilidade de Uso", "Funcionalidades", "Organiza\u00e7\u00e3o de Dados", "Performance", "Pre\u00e7o/Valor"], "type": "scatterpolar"}, {"fill": "toself", "fillcolor": "#fbbc04", "hovertemplate": "<b>%{fullData.name}</b><br>%{theta}: %{r:.1f}<extra></extra>", "line": {"color": "#fbbc04", "width": 2}, "name": "Google Keep", "opacity": 0.3, "r": {"dtype": "f8", "bdata": "zczMzMzMGkDNzMzMzMwiQJqZmZmZmSJAzczMzMzMFEAzMzMzMzMTQDMzMzMzMyJAAAAAAAAAJEA="}, "theta": ["Colabora\u00e7\u00e3o", "Experi\u00eancia Mobile", "Facilidade de Uso", "Funcionalidades", "Organiza\u00e7\u00e3o de Dados", "Performance", "Pre\u00e7o/Valor"], "type": "scatterpolar"}, {"fill": "toself", "fillcolor": "#000000", "hovertemplate": "<b>%{fullData.name}</b><br>%{theta}: %{r:.1f}<extra></extra>", "line": {"color": "#000000", "width": 2}, "name": "Notion", "opacity": 0.3, "r": {"dtype": "f8", "bdata": "ZmZmZmZmIkBmZmZmZmYgQDMzMzMzMx9AzczMzMzMIkDNzMzMzMwhQDMzMzMzMxtAAAAAAAAAHkA="}, "theta": ["Colabora\u00e7\u00e3o", "Experi\u00eancia Mobile", "Facilidade de Uso", "Funcionalidades", "Organiza\u00e7\u00e3o de Dados", "Performance", "Pre\u00e7o/Valor"], "type": "scatterpolar"}, {"fill": "toself", "fillcolor": "#6c5ce7", "hovertemplate": "<b>%{fullData.name}</b><br>%{theta}: %{r:.1f}<extra></extra>", "line": {"color": "#6c5ce7", "width": 2}, "name": "Obsidian", "opacity": 0.3, "r": {"dtype": "f8", "bdata": "MzMzMzMzEUBmZmZmZmYcQM3MzMzMzBhAMzMzMzMzIkCamZmZmZkiQGZmZmZmZiFAAAAAAAAAI0A="}, "theta": ["Colabora\u00e7\u00e3o", "Experi\u00eancia Mobile", "Facilidade de Uso", "Funcionalidades", "Organiza\u00e7\u00e3o de Dados", "Performance", "Pre\u00e7o/Valor"], "type": "scatterpolar"}, {"fill": "toself", "fillcolor": "#0984e3", "hovertemplate": "<b>%{fullData.name}</b><br>%{theta}: %{r:.1f}<extra></extra>", "line": {"color": "#0984e3", "width": 2}, "name": "Roam Research", "opacity": 0.3, "r": {"dtype": "f8", "bdata": "mpmZmZmZFUAzMzMzMzMXQJqZmZmZmRNAmpmZmZmZIUAzMzMzMzMjQDMzMzMzMxlAzczMzMzMEEA="}, "theta": ["Colabora\u00e7\u00e3o", "Experi\u00eancia Mobile", "Facilidade de Uso", "Funcionalidades", "Organiza\u00e7\u00e3o de Dados", "Performance", "Pre\u00e7o/Valor"], "type": "scatterpolar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "polar": {"radialaxis": {"visible": true, "range": [0, 10], "showticklabels": true, "tick0": 0, "dtick": 2}}, "title": {"font": {"size": 20, "color": "#1f1f1f"}, "text": "<b>\ud83d\udcca Compara\u00e7\u00e3o por Crit\u00e9rios</b>", "x": 0.5}, "font": {"size": 12}, "legend": {"orientation": "h", "yanchor": "bottom", "y": -0.2, "xanchor": "center", "x": 0.5}, "height": 500, "showlegend": true}};
+            Plotly.newPlot('radar-chart', radarData.data, radarData.layout, {responsive: true});
+            
+            // Heatmap Chart
+            var heatmapData = {"data": [{"colorbar": {"title": {"text": "Pontua\u00e7\u00e3o"}}, "colorscale": [[0.0, "rgb(165,0,38)"], [0.1, "rgb(215,48,39)"], [0.2, "rgb(244,109,67)"], [0.3, "rgb(253,174,97)"], [0.4, "rgb(254,224,139)"], [0.5, "rgb(255,255,191)"], [0.6, "rgb(217,239,139)"], [0.7, "rgb(166,217,106)"], [0.8, "rgb(102,189,99)"], [0.9, "rgb(26,152,80)"], [1.0, "rgb(0,104,55)"]], "hoverongaps": false, "hovertemplate": "<b>%{y}</b><br>%{x}: %{z:.1f}<extra></extra>", "x": ["Colabora\u00e7\u00e3o", "Experi\u00eancia Mobile", "Facilidade de Uso", "Funcionalidades", "Organiza\u00e7\u00e3o de Dados", "Performance", "Pre\u00e7o/Valor"], "y": ["Evernote", "Google Keep", "Notion", "Obsidian", "Roam Research"], "z": {"dtype": "f8", "bdata": "ZmZmZmZmGEAzMzMzMzMfQM3MzMzMzBxAZmZmZmZmHECamZmZmZkdQJqZmZmZmRtAMzMzMzMzF0DNzMzMzMwaQM3MzMzMzCJAmpmZmZmZIkDNzMzMzMwUQDMzMzMzMxNAMzMzMzMzIkAAAAAAAAAkQGZmZmZmZiJAZmZmZmZmIEAzMzMzMzMfQM3MzMzMzCJAzczMzMzMIUAzMzMzMzMbQAAAAAAAAB5AMzMzMzMzEUBmZmZmZmYcQM3MzMzMzBhAMzMzMzMzIkCamZmZmZkiQGZmZmZmZiFAAAAAAAAAI0CamZmZmZkVQDMzMzMzMxdAmpmZmZmZE0CamZmZmZkhQDMzMzMzMyNAMzMzMzMzGUDNzMzMzMwQQA==", "shape": "5, 7"}, "zmax": 10, "zmin": 0, "type": "heatmap"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "annotations": [{"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "6.1", "x": 0, "y": 0}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "7.8", "x": 1, "y": 0}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "7.2", "x": 2, "y": 0}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "7.1", "x": 3, "y": 0}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "7.4", "x": 4, "y": 0}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "6.9", "x": 5, "y": 0}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "5.8", "x": 6, "y": 0}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "6.7", "x": 0, "y": 1}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "9.4", "x": 1, "y": 1}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "9.3", "x": 2, "y": 1}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "5.2", "x": 3, "y": 1}, {"font": {"color": "white", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "4.8", "x": 4, "y": 1}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "9.1", "x": 5, "y": 1}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "10.0", "x": 6, "y": 1}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "9.2", "x": 0, "y": 2}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "8.2", "x": 1, "y": 2}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "7.8", "x": 2, "y": 2}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "9.4", "x": 3, "y": 2}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "8.9", "x": 4, "y": 2}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "6.8", "x": 5, "y": 2}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "7.5", "x": 6, "y": 2}, {"font": {"color": "white", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "4.3", "x": 0, "y": 3}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "7.1", "x": 1, "y": 3}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "6.2", "x": 2, "y": 3}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "9.1", "x": 3, "y": 3}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "9.3", "x": 4, "y": 3}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "8.7", "x": 5, "y": 3}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "9.5", "x": 6, "y": 3}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "5.4", "x": 0, "y": 4}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "5.8", "x": 1, "y": 4}, {"font": {"color": "white", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "4.9", "x": 2, "y": 4}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "8.8", "x": 3, "y": 4}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "9.6", "x": 4, "y": 4}, {"font": {"color": "black", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "6.3", "x": 5, "y": 4}, {"font": {"color": "white", "family": "Arial Black", "size": 12}, "showarrow": false, "text": "4.2", "x": 6, "y": 4}], "title": {"font": {"size": 20, "color": "#1f1f1f"}, "text": "<b>\ud83c\udfaf Mapa de Calor - Pontua\u00e7\u00f5es por Crit\u00e9rio</b>", "x": 0.5}, "font": {"size": 12}, "xaxis": {"title": {"text": "<b>Crit\u00e9rios de Avalia\u00e7\u00e3o</b>"}}, "yaxis": {"title": {"text": "<b>Ferramentas</b>"}}, "height": 400}};
+            Plotly.newPlot('heatmap-chart', heatmapData.data, heatmapData.layout, {responsive: true});
+            
+            // Pricing Chart
+            var pricingData = {"data": [{"marker": {"color": "#17becf"}, "name": "Plano B\u00e1sico", "text": ["R$ 42", "R$ 79", "R$ 42"], "textposition": "auto", "x": ["Notion", "Roam Research", "Evernote"], "y": {"dtype": "i1", "bdata": "Kk8q"}, "type": "bar"}, {"marker": {"color": "#ff7f0e"}, "name": "Plano Profissional", "text": ["R$ 84", "R$ 79", "R$ 52"], "textposition": "auto", "x": ["Notion", "Roam Research", "Evernote"], "y": {"dtype": "i1", "bdata": "VE80"}, "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "title": {"font": {"size": 20, "color": "#1f1f1f"}, "text": "<b>\ud83d\udcb0 Compara\u00e7\u00e3o de Pre\u00e7os (R$ / m\u00eas)</b>", "x": 0.5}, "font": {"size": 12}, "xaxis": {"title": {"text": "<b>Ferramentas</b>"}}, "yaxis": {"title": {"text": "<b>Pre\u00e7o Mensal (R$)</b>"}}, "barmode": "group", "height": 400, "showlegend": true}};
+            Plotly.newPlot('pricing-chart', pricingData.data, pricingData.layout, {responsive: true});
+            
+            // Style the summary table
+            var summaryTable = document.getElementById('summary-table');
+            if (summaryTable) {
+                var rows = summaryTable.getElementsByTagName('tr');
+                for (var i = 1; i < rows.length; i++) {
+                    var rankingCell = rows[i].getElementsByTagName('td')[0];
+                    if (rankingCell && rankingCell.textContent.trim() === '1º') {
+                        rows[i].classList.add('ranking-1');
+                    }
+                }
+            }
+        });
+        
+        // Add resize listener for responsive charts
+        window.addEventListener('resize', function() {
+            Plotly.Plots.resize('ranking-chart');
+            Plotly.Plots.resize('radar-chart');
+            Plotly.Plots.resize('heatmap-chart');
+            Plotly.Plots.resize('pricing-chart');
+        });
+    </script>
+</body>
+</html>
+    
