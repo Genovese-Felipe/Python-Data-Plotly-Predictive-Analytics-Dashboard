@@ -34,7 +34,7 @@ Dashboard profissional de analytics preditivo usando **Python**, **Plotly** e **
 ## 🎬 Dashboard Demo Interativo
 
 <div style="text-align: center; margin: 40px 0;">
-  <iframe src="../outputs/professional_construction_dashboard.html" 
+  <iframe src="dashboards/construction/" 
           width="100%" 
           height="600px" 
           frameborder="0" 
