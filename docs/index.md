@@ -45,6 +45,8 @@ Dashboard profissional de analytics preditivo usando **Python**, **Plotly** e **
   </p>
 </div>
 
+> **🔄 Status**: Site restaurado - Dashboards funcionando normalmente!
+
 ---
 
 ## 🏗️ Arquitetura e Funcionalidades
