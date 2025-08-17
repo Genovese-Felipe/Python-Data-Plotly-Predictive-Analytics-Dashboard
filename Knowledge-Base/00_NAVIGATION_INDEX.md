@@ -1,20 +1,4 @@
-# 🧭 NAVIGATION INDEX - Índice d### **📖 "Preciso consultar sintaxe/API oficial"**
-```
-1. 📚 Documentação principal: 03_Technical_Documentation/Official_Plotly_Dash_Docs/
-2. 🔍 Busca específica: Use README.md da pasta para navegar
-3. ⚡ Quick reference: Cheat sheets incluídos
-4. 🐛 Troubleshooting: FAQs e Error Handlers oficiais
-```
-
-### **📊 "Preciso de um gráfico específico"**
-```
-1. 🌞 Sunburst/Hierárquico: 06_Specialized_Charts/
-2. 🗺️ Mapas: 06_Specialized_Charts/
-3. 📈 Gráficos básicos: 02_Practical_Examples/
-4. 🤖 Com ML: 07_Machine_Learning/
-5. 📚 Sintaxe oficial: 03_Technical_Documentation/Official_Plotly_Dash_Docs/
-```ápida
-
+# 🧭 NAVIGATION INDEX - Índice de Navegação Rápida
 Este é seu **mapa de navegação** pela Knowledge-Base. Use este índice para encontrar rapidamente o que precisa sem se perder na estrutura.
 
 ---
@@ -45,9 +29,22 @@ Este é seu **mapa de navegação** pela Knowledge-Base. Use este índice para e
 4. 💡 Compare com exemplo funcionando: 02_Practical_Examples/
 ```
 
-### **� "Preciso consultar sintaxe/API oficial"**
+### **📖 "Preciso consultar sintaxe/API oficial"**
 ```
 1. 📚 Documentação principal: 03_Technical_Documentation/Official_Plotly_Dash_Docs/
+2. 🔍 Busca específica: Use README.md da pasta para navegar
+3. ⚡ Quick reference: Cheat sheets incluídos
+4. 🐛 Troubleshooting: FAQs e Error Handlers oficiais
+```
+
+### **📊 "Preciso de um gráfico específico"**
+```
+1. 🌞 Sunburst/Hierárquico: 06_Specialized_Charts/
+2. 🗺️ Mapas: 06_Specialized_Charts/
+3. 📈 Gráficos básicos: 02_Practical_Examples/
+4. 🤖 Com ML: 07_Machine_Learning/
+5. 📚 Sintaxe oficial: 03_Technical_Documentation/Official_Plotly_Dash_Docs/
+```
 2. 🔍 Busca específica: Use README.md da pasta para navegar
 3. ⚡ Quick reference: Cheat sheets incluídos
 4. 🐛 Troubleshooting: FAQs e Error Handlers oficiais
