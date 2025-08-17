@@ -60,7 +60,3 @@ Thumbs.db
 
 # Node modules if using any JS tools
 node_modules/
-
-# Backup files
-*.backup
-docs/*.backup
