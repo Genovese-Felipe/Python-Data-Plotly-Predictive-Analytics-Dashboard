@@ -5,6 +5,9 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 
+# Import Monica AI Dashboard Integration
+from Monica_AI_System.dashboard_integration import integrate_monica_with_dashboard
+
 # Generate simple data
 np.random.seed(42)
 projects = []
@@ -152,5 +155,3 @@ def update_dashboard(selected_types, selected_managers):
     return pie_fig, bar_fig, scatter_fig, sunburst_fig, filtered_df.to_dict('records')
 
 if __name__ == '__main__':
-    print("🚀 Starting Dashboard on http://localhost:8052")
-    app.run(debug=True, host='0.0.0.0', port=8052)
