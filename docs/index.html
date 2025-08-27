@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remixes Épicos — 100 páginas</title>
+    <meta name="description" content="Coleção de 100 páginas do Web App de Remixes Épicos com players de áudio avançados">
+    
+    <!-- External CDN Resources -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #ff1744;
+            --secondary-color: #3d5afe;
+            --accent-color: #00bcd4;
+            --background: #0a0a0a;
+            --surface: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #b3b3b3;
+            --border: #333333;
+            --success: #4caf50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .remix-card {
+            background: var(--surface);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .remix-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 23, 68, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .remix-card:hover::before {
+            left: 100%;
+        }
+
+        .remix-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(255, 23, 68, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .card-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        .theme-indicator {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .theme-gaga { background: linear-gradient(135deg, #ff1744, #e91e63); }
+        .theme-bowie { background: linear-gradient(135deg, #ff9800, #ff5722); }
+        .theme-queen { background: linear-gradient(135deg, #9c27b0, #673ab7); }
+
+        .instructions {
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid var(--border);
+            margin-bottom: 40px;
+        }
+
+        .instructions h2 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .instructions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .instruction-step {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .step-number {
+            background: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .step-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .step-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .code-block {
+            background: #000;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--success);
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+        }
+
+        .feature-icon {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .footer-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .instructions {
+                padding: 25px;
+            }
+
+            .instructions-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-music"></i> Remixes Épicos</h1>
+            <p class="subtitle">100 páginas do Web App de Remixes Épicos para GitHub Pages</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">100</div>
+                    <div class="stat-label">Páginas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Temas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Áudios</div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="instructions">
+                <h2><i class="fas fa-cogs"></i> Como Habilitar GitHub Pages</h2>
+                <div class="instructions-grid">
+                    <div class="instruction-step">
+                        <div class="step-number">1</div>
+                        <div class="step-title">Acessar Configurações</div>
+                        <div class="step-description">
+                            Vá para <strong>Settings</strong> do repositório no GitHub
+                        </div>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="step-number">2</div>
+                        <div class="step-title">Configurar Source</div>
+                        <div class="step-description">
+                            Na seção <strong>Pages</strong>, selecione <strong>Deploy from a branch</strong>
+                        </div>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="step-number">3</div>
+                        <div class="step-title">Definir Branch</div>
+                        <div class="step-description">
+                            Branch: <strong>main</strong> | Folder: <strong>/docs</strong>
+                        </div>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="step-number">4</div>
+                        <div class="step-title">Aguardar Deploy</div>
+                        <div class="step-description">
+                            O site estará disponível em alguns minutos na URL do GitHub Pages
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-block">
+URL esperada: https://genovese-felipe.github.io/Python-Data-Plotly-Predictive-Analytics-Dashboard/
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-play-circle"></i></div>
+                    <div>
+                        <strong>Player Completo</strong><br>
+                        <small>Controles de áudio, volume e busca</small>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-palette"></i></div>
+                    <div>
+                        <strong>3 Temas</strong><br>
+                        <small>Gaga, Bowie e Queen rotativos</small>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div>
+                        <strong>Visualizador</strong><br>
+                        <small>Visualização de áudio em tempo real</small>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-stethoscope"></i></div>
+                    <div>
+                        <strong>Diagnósticos</strong><br>
+                        <small>Logs técnicos e troubleshooting</small>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-keyboard"></i></div>
+                    <div>
+                        <strong>Atalhos</strong><br>
+                        <small>Controle por teclado (Espaço, setas)</small>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div>
+                        <strong>Responsivo</strong><br>
+                        <small>Funciona em desktop, tablet e mobile</small>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="text-align: center; margin: 40px 0; color: var(--accent-color);">
+                <i class="fas fa-list"></i> Todas as 100 Páginas
+            </h2>
+
+            <div class="grid">
+                <a href="remixes/remix-001.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #1</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #1
+                    </p>
+                </a>
+                <a href="remixes/remix-002.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #2</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #2
+                    </p>
+                </a>
+                <a href="remixes/remix-003.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #3</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #3
+                    </p>
+                </a>
+                <a href="remixes/remix-004.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #4</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #4
+                    </p>
+                </a>
+                <a href="remixes/remix-005.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #5</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #5
+                    </p>
+                </a>
+                <a href="remixes/remix-006.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #6</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #6
+                    </p>
+                </a>
+                <a href="remixes/remix-007.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #7</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #7
+                    </p>
+                </a>
+                <a href="remixes/remix-008.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #8</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #8
+                    </p>
+                </a>
+                <a href="remixes/remix-009.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #9</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #9
+                    </p>
+                </a>
+                <a href="remixes/remix-010.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #10</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #10
+                    </p>
+                </a>
+                <a href="remixes/remix-011.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #11</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #11
+                    </p>
+                </a>
+                <a href="remixes/remix-012.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #12</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #12
+                    </p>
+                </a>
+                <a href="remixes/remix-013.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #13</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #13
+                    </p>
+                </a>
+                <a href="remixes/remix-014.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #14</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #14
+                    </p>
+                </a>
+                <a href="remixes/remix-015.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #15</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #15
+                    </p>
+                </a>
+                <a href="remixes/remix-016.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #16</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #16
+                    </p>
+                </a>
+                <a href="remixes/remix-017.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #17</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #17
+                    </p>
+                </a>
+                <a href="remixes/remix-018.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #18</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #18
+                    </p>
+                </a>
+                <a href="remixes/remix-019.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #19</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #19
+                    </p>
+                </a>
+                <a href="remixes/remix-020.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #20</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #20
+                    </p>
+                </a>
+                <a href="remixes/remix-021.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #21</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #21
+                    </p>
+                </a>
+                <a href="remixes/remix-022.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #22</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #22
+                    </p>
+                </a>
+                <a href="remixes/remix-023.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #23</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #23
+                    </p>
+                </a>
+                <a href="remixes/remix-024.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #24</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #24
+                    </p>
+                </a>
+                <a href="remixes/remix-025.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #25</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #25
+                    </p>
+                </a>
+                <a href="remixes/remix-026.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #26</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #26
+                    </p>
+                </a>
+                <a href="remixes/remix-027.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #27</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #27
+                    </p>
+                </a>
+                <a href="remixes/remix-028.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #28</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #28
+                    </p>
+                </a>
+                <a href="remixes/remix-029.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #29</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #29
+                    </p>
+                </a>
+                <a href="remixes/remix-030.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #30</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #30
+                    </p>
+                </a>
+                <a href="remixes/remix-031.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #31</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #31
+                    </p>
+                </a>
+                <a href="remixes/remix-032.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #32</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #32
+                    </p>
+                </a>
+                <a href="remixes/remix-033.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #33</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #33
+                    </p>
+                </a>
+                <a href="remixes/remix-034.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #34</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #34
+                    </p>
+                </a>
+                <a href="remixes/remix-035.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #35</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #35
+                    </p>
+                </a>
+                <a href="remixes/remix-036.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #36</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #36
+                    </p>
+                </a>
+                <a href="remixes/remix-037.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #37</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #37
+                    </p>
+                </a>
+                <a href="remixes/remix-038.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #38</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #38
+                    </p>
+                </a>
+                <a href="remixes/remix-039.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #39</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #39
+                    </p>
+                </a>
+                <a href="remixes/remix-040.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #40</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #40
+                    </p>
+                </a>
+                <a href="remixes/remix-041.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #41</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #41
+                    </p>
+                </a>
+                <a href="remixes/remix-042.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #42</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #42
+                    </p>
+                </a>
+                <a href="remixes/remix-043.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #43</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #43
+                    </p>
+                </a>
+                <a href="remixes/remix-044.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #44</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #44
+                    </p>
+                </a>
+                <a href="remixes/remix-045.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #45</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #45
+                    </p>
+                </a>
+                <a href="remixes/remix-046.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #46</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #46
+                    </p>
+                </a>
+                <a href="remixes/remix-047.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #47</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #47
+                    </p>
+                </a>
+                <a href="remixes/remix-048.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #48</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #48
+                    </p>
+                </a>
+                <a href="remixes/remix-049.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #49</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #49
+                    </p>
+                </a>
+                <a href="remixes/remix-050.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #50</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #50
+                    </p>
+                </a>
+                <a href="remixes/remix-051.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #51</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #51
+                    </p>
+                </a>
+                <a href="remixes/remix-052.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #52</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #52
+                    </p>
+                </a>
+                <a href="remixes/remix-053.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #53</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #53
+                    </p>
+                </a>
+                <a href="remixes/remix-054.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #54</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #54
+                    </p>
+                </a>
+                <a href="remixes/remix-055.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #55</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #55
+                    </p>
+                </a>
+                <a href="remixes/remix-056.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #56</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #56
+                    </p>
+                </a>
+                <a href="remixes/remix-057.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #57</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #57
+                    </p>
+                </a>
+                <a href="remixes/remix-058.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #58</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #58
+                    </p>
+                </a>
+                <a href="remixes/remix-059.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #59</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #59
+                    </p>
+                </a>
+                <a href="remixes/remix-060.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #60</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #60
+                    </p>
+                </a>
+                <a href="remixes/remix-061.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #61</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #61
+                    </p>
+                </a>
+                <a href="remixes/remix-062.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #62</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #62
+                    </p>
+                </a>
+                <a href="remixes/remix-063.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #63</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #63
+                    </p>
+                </a>
+                <a href="remixes/remix-064.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #64</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #64
+                    </p>
+                </a>
+                <a href="remixes/remix-065.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #65</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #65
+                    </p>
+                </a>
+                <a href="remixes/remix-066.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #66</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #66
+                    </p>
+                </a>
+                <a href="remixes/remix-067.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #67</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #67
+                    </p>
+                </a>
+                <a href="remixes/remix-068.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #68</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #68
+                    </p>
+                </a>
+                <a href="remixes/remix-069.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #69</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #69
+                    </p>
+                </a>
+                <a href="remixes/remix-070.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #70</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #70
+                    </p>
+                </a>
+                <a href="remixes/remix-071.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #71</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #71
+                    </p>
+                </a>
+                <a href="remixes/remix-072.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #72</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #72
+                    </p>
+                </a>
+                <a href="remixes/remix-073.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #73</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #73
+                    </p>
+                </a>
+                <a href="remixes/remix-074.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #74</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #74
+                    </p>
+                </a>
+                <a href="remixes/remix-075.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #75</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #75
+                    </p>
+                </a>
+                <a href="remixes/remix-076.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #76</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #76
+                    </p>
+                </a>
+                <a href="remixes/remix-077.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #77</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #77
+                    </p>
+                </a>
+                <a href="remixes/remix-078.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #78</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #78
+                    </p>
+                </a>
+                <a href="remixes/remix-079.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #79</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #79
+                    </p>
+                </a>
+                <a href="remixes/remix-080.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #80</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #80
+                    </p>
+                </a>
+                <a href="remixes/remix-081.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #81</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #81
+                    </p>
+                </a>
+                <a href="remixes/remix-082.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #82</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #82
+                    </p>
+                </a>
+                <a href="remixes/remix-083.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #83</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #83
+                    </p>
+                </a>
+                <a href="remixes/remix-084.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #84</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #84
+                    </p>
+                </a>
+                <a href="remixes/remix-085.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #85</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #85
+                    </p>
+                </a>
+                <a href="remixes/remix-086.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #86</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #86
+                    </p>
+                </a>
+                <a href="remixes/remix-087.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #87</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #87
+                    </p>
+                </a>
+                <a href="remixes/remix-088.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #88</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #88
+                    </p>
+                </a>
+                <a href="remixes/remix-089.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #89</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #89
+                    </p>
+                </a>
+                <a href="remixes/remix-090.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #90</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #90
+                    </p>
+                </a>
+                <a href="remixes/remix-091.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #91</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #91
+                    </p>
+                </a>
+                <a href="remixes/remix-092.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #92</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #92
+                    </p>
+                </a>
+                <a href="remixes/remix-093.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #93</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #93
+                    </p>
+                </a>
+                <a href="remixes/remix-094.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #94</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #94
+                    </p>
+                </a>
+                <a href="remixes/remix-095.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #95</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #95
+                    </p>
+                </a>
+                <a href="remixes/remix-096.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #96</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #96
+                    </p>
+                </a>
+                <a href="remixes/remix-097.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #97</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #97
+                    </p>
+                </a>
+                <a href="remixes/remix-098.html" class="remix-card">
+                    <div class="theme-indicator theme-bowie"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #98</h3>
+                            <p class="card-subtitle">Tema: David Bowie</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #98
+                    </p>
+                </a>
+                <a href="remixes/remix-099.html" class="remix-card">
+                    <div class="theme-indicator theme-queen"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #99</h3>
+                            <p class="card-subtitle">Tema: Queen</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #99
+                    </p>
+                </a>
+                <a href="remixes/remix-100.html" class="remix-card">
+                    <div class="theme-indicator theme-gaga"></div>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Remix #100</h3>
+                            <p class="card-subtitle">Tema: Lady Gaga</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Chromatic Heroes (Demo Mix) #100
+                    </p>
+                </a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p style="color: var(--text-secondary);">
+                Web App de Remixes Épicos - 100 páginas geradas automaticamente
+            </p>
+            <div class="footer-links">
+                <a href="../index.md" class="footer-link">
+                    <i class="fas fa-home"></i> Dashboard Principal
+                </a>
+                <a href="remixes/remix-001.html" class="footer-link">
+                    <i class="fas fa-play"></i> Primeiro Remix
+                </a>
+                <a href="remixes/remix-100.html" class="footer-link">
+                    <i class="fas fa-flag-checkered"></i> Último Remix
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Add some interactive functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add hover effect to cards
+            const cards = document.querySelectorAll('.remix-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add loading indicator for external links
+            const externalLinks = document.querySelectorAll('a[href^="http"]');
+            externalLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.className = 'fas fa-spinner fa-spin';
+                        setTimeout(() => {
+                            icon.className = icon.getAttribute('data-original-class') || 'fas fa-external-link-alt';
+                        }, 2000);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
