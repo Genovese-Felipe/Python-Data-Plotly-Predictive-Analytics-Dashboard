@@ -1,67 +1,86 @@
 #!/usr/bin/env python3
 """
-Notebook Error Cleanup Script
+A script to clean up specific error outputs from Jupyter notebooks.
 
-This script removes error outputs from Jupyter notebooks that contain
-the old update_xaxis errors.
+This utility scans specified Jupyter notebook files and removes any output cells
+that contain errors related to the deprecated `update_xaxis` method, which helps
+in maintaining clean and error-free notebooks in the repository.
 """
 
 import json
-import re
 import os
 
 def clean_notebook_errors(notebook_path):
-    """Clean error outputs from a Jupyter notebook"""
+    """
+    Cleans `update_xaxis` error outputs from a single Jupyter notebook file.
+
+    This function reads a notebook, iterates through its cells, and removes any
+    output that contains the specified error text. The cleaned notebook is then
+    written back to the original file.
+
+    Args:
+        notebook_path (str): The full path to the Jupyter notebook file.
+
+    Returns:
+        bool: True if any errors were cleaned, False otherwise.
+    """
     print(f"Cleaning errors from {notebook_path}...")
     
-    with open(notebook_path, 'r', encoding='utf-8') as f:
-        notebook = json.load(f)
-    
-    cleaned_cells = 0
+    try:
+        with open(notebook_path, 'r', encoding='utf-8') as f:
+            notebook = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"  Error reading notebook: {e}")
+        return False
+
+    cleaned_cells_count = 0
     
     for cell in notebook.get('cells', []):
         if cell.get('cell_type') == 'code' and 'outputs' in cell:
-            # Filter out outputs that contain the old API errors
-            original_count = len(cell['outputs'])
+            original_output_count = len(cell['outputs'])
+            # Filter out outputs containing the specific error message
             cell['outputs'] = [
                 output for output in cell['outputs']
-                if not any(
-                    'update_xaxis' in str(output.get('text', '')) or
-                    'update_xaxis' in str(output.get('traceback', []))
-                    for text_part in output.get('text', [])
-                )
+                if 'update_xaxis' not in str(output.get('traceback', []))
             ]
             
-            new_count = len(cell['outputs'])
-            if new_count < original_count:
-                cleaned_cells += 1
-                print(f"  Removed {original_count - new_count} error outputs from a cell")
+            if len(cell['outputs']) < original_output_count:
+                cleaned_cells_count += 1
+                print(f"  Removed {original_output_count - len(cell['outputs'])} error outputs from a cell.")
     
-    # Write back the cleaned notebook
+    # Write the cleaned content back to the file
     with open(notebook_path, 'w', encoding='utf-8') as f:
         json.dump(notebook, f, indent=1, ensure_ascii=False)
     
-    print(f"  Cleaned {cleaned_cells} cells in {notebook_path}")
-    return cleaned_cells > 0
+    if cleaned_cells_count > 0:
+        print(f"  Cleaned {cleaned_cells_count} cells in {notebook_path}.")
+        return True
+    return False
 
 def main():
-    """Main cleanup function"""
+    """
+    Main function to orchestrate the cleanup of specified notebooks.
+
+    This function defines a list of notebooks to be cleaned, iterates through them,
+    and calls the `clean_notebook_errors` function for each one. It provides a
+    summary of the cleanup process.
+    """
     repo_root = os.path.dirname(os.path.abspath(__file__))
-    notebooks = [
+    notebooks_to_clean = [
         'Dashboard_Working.ipynb',
         'versao_finalizada_almost_there/Dashboard_Working.ipynb'
     ]
     
-    total_cleaned = 0
-    for notebook in notebooks:
-        notebook_path = os.path.join(repo_root, notebook)
+    total_cleaned_notebooks = 0
+    for notebook_name in notebooks_to_clean:
+        notebook_path = os.path.join(repo_root, notebook_name)
         if os.path.exists(notebook_path):
             if clean_notebook_errors(notebook_path):
-                total_cleaned += 1
+                total_cleaned_notebooks += 1
         else:
             print(f"Notebook not found: {notebook_path}")
     
-    print(f"\n✅ Cleaned {total_cleaned} notebooks")
+    print(f"\n✅ Cleaned {total_cleaned_notebooks} notebooks.")
 
 if __name__ == '__main__':
     main()

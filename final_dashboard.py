@@ -1,3 +1,11 @@
+"""
+A complete project management dashboard built with Plotly and Dash.
+
+This script generates a professional dashboard with interactive visualizations
+for project analytics, including project status, completion progress, and budget analysis.
+It features multiple interconnected components, such as filters, charts, and a data table,
+that update dynamically based on user input.
+"""
 import dash
 from dash import dcc, html, Input, Output, dash_table
 import plotly.express as px
@@ -94,7 +102,6 @@ app.layout = html.Div([
     ], style={'marginTop': '30px'})
 ])
 
-# Callback
 @app.callback(
     [Output('status-pie', 'figure'),
      Output('completion-bar', 'figure'),
@@ -105,16 +112,29 @@ app.layout = html.Div([
      Input('manager-filter', 'value')]
 )
 def update_dashboard(selected_types, selected_managers):
-    # Filter data
+    """
+    Update the dashboard components based on user-selected filters.
+
+    This callback function is triggered when the user changes the values in the
+    project type or manager dropdowns. It filters the main DataFrame and
+    regenerates all the charts and the data table.
+
+    Args:
+        selected_types (list): A list of project types selected by the user.
+        selected_managers (list): A list of project managers selected by the user.
+
+    Returns:
+        tuple: A tuple containing the updated figures for the charts and the
+               data for the projects table.
+    """
     filtered_df = df[
         (df['type'].isin(selected_types)) & 
         (df['manager'].isin(selected_managers))
     ]
     
     if filtered_df.empty:
-        filtered_df = df  # Show all if no filters match
-    
-    # 1. Status Pie Chart
+        filtered_df = df.copy()
+
     status_counts = filtered_df['status'].value_counts()
     pie_fig = px.pie(
         values=status_counts.values,
@@ -122,7 +142,6 @@ def update_dashboard(selected_types, selected_managers):
         title="Project Status Distribution"
     )
     
-    # 2. Completion Bar Chart
     bar_fig = px.bar(
         filtered_df.head(10),
         x='project_id',
@@ -131,7 +150,6 @@ def update_dashboard(selected_types, selected_managers):
         title="Project Completion Progress"
     )
     
-    # 3. Budget Scatter
     scatter_fig = px.scatter(
         filtered_df,
         x='completion',
@@ -140,13 +158,15 @@ def update_dashboard(selected_types, selected_managers):
         title="Budget vs Completion"
     )
     
-    # 4. Sunburst Chart
     sunburst_fig = go.Figure(go.Sunburst(
         labels=['All Projects'] + filtered_df['type'].unique().tolist() + filtered_df['project_name'].tolist(),
         parents=[''] + ['All Projects'] * len(filtered_df['type'].unique()) + filtered_df['type'].tolist(),
-        values=[1] + [1] * len(filtered_df['type'].unique()) + filtered_df['completion'].tolist(),
+        values=np.ones(len(filtered_df['type'].unique()) + len(filtered_df['project_name']) + 1),
         branchvalues="total",
     ))
     sunburst_fig.update_layout(title="Project Hierarchy - Sunburst")
     
     return pie_fig, bar_fig, scatter_fig, sunburst_fig, filtered_df.to_dict('records')
+
+if __name__ == '__main__':
+    app.run_server(debug=True)

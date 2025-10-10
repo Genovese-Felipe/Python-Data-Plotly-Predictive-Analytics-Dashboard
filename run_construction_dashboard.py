@@ -1,42 +1,35 @@
 #!/usr/bin/env python3
 """
-🏗️ Construction Project Monitoring Dashboard
-Professional Dash Application for Construction Analytics
+A professional and interactive dashboard for monitoring construction projects.
 
-Created following official Python Data Visualization guidelines.
-Implements all Dash fundamentals and professional best practices.
+This script creates a comprehensive web-based dashboard using Plotly and Dash,
+designed to provide real-time analytics and insights into construction project
+management. It features a variety of visualizations, including KPIs, charts,
+and timelines, all of which are dynamically updated based on user-selected
+filters.
 
-Author: GitHub Copilot Development Agent
-Project: Python-Data-Plotly-Predictive-Analytics-Dashboard
+The dashboard adheres to professional design principles, with a clean layout,
+a consistent color scheme, and responsive components.
 """
 
-# Core imports
 import dash
-from dash import dcc, html, Input, Output, callback
+from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
 import numpy as np
-from datetime import datetime, timedelta
-from functools import lru_cache
-import time
-
-# ============================================================================
-# PROFESSIONAL CONFIGURATION AND STYLING
-# Following Tip 8: Color Science and Professional Design
-# ============================================================================
 
 # Professional color palette
 COLORS = {
-    'primary': '#2563eb',    # Professional blue
-    'secondary': '#64748b',  # Professional gray
-    'success': '#059669',    # Professional green
-    'warning': '#d97706',    # Professional orange
-    'danger': '#dc2626',     # Professional red
-    'info': '#0891b2',       # Professional cyan
-    'light': '#f1f5f9',      # Light gray
-    'dark': '#1e293b',       # Dark gray
+    'primary': '#2563eb',
+    'secondary': '#64748b',
+    'success': '#059669',
+    'warning': '#d97706',
+    'danger': '#dc2626',
+    'info': '#0891b2',
+    'light': '#f1f5f9',
+    'dark': '#1e293b',
 }
 
 # Layout configuration
@@ -47,46 +40,50 @@ LAYOUT_CONFIG = {
     'spacing': '24px'
 }
 
-# ============================================================================
-# DATA GENERATION FUNCTIONS
-# ============================================================================
 
 def generate_construction_data():
-    """Generate realistic construction project data for dashboard demonstration."""
-    np.random.seed(42)  # For consistent demo data
-    
+    """
+    Generates a sample DataFrame of construction project data.
+
+    This function creates a realistic dataset for demonstration purposes,
+    including project details such as type, budget, duration, and status.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the generated project data.
+    """
+    np.random.seed(42)
     n_projects = 25
     project_types = ['Residential', 'Commercial', 'Infrastructure', 'Industrial']
     work_statuses = ['In Progress', 'Completed', 'Not Started']
     project_stages = ['Design', 'Plan', 'Pre-construction']
-    
+
     data = {
         'project_id': [f'Project_{i+1}' for i in range(n_projects)],
         'project_name': [f'Construction Project {i+1}' for i in range(n_projects)],
         'project_type': np.random.choice(project_types, n_projects),
         'project_head': [f'Manager {chr(65+i%26)}' for i in range(n_projects)],
-        'start_date': pd.date_range('2024-01-01', periods=n_projects, freq='W'),
+        'start_date': pd.to_datetime(pd.date_range('2024-01-01', periods=n_projects, freq='W')),
         'total_budget': np.random.randint(100000, 1000000, n_projects),
         'planned_duration': np.random.randint(180, 1100, n_projects),
         'current_completion': np.random.randint(20, 100, n_projects),
         'work_status': np.random.choice(work_statuses, n_projects),
         'current_stage': np.random.choice(project_stages, n_projects)
     }
-    
-    df = pd.DataFrame(data)
-    print("✅ Core project data generated!")
-    print(f"📊 Total projects: {len(df)}")
-    print(f"💰 Budget range: ${df['total_budget'].min():,} - ${df['total_budget'].max():,}")
-    print(f"📅 Duration range: {df['planned_duration'].min()} - {df['planned_duration'].max()} days")
-    
-    return df
+    return pd.DataFrame(data)
 
-# ============================================================================
-# LAYOUT COMPONENTS - FOLLOWING TIP 1: LAYOUT FUNDAMENTALS
-# ============================================================================
 
 def create_professional_card(title, content, icon="📊"):
-    """Create professional card component with consistent styling."""
+    """
+    Creates a styled card component for the dashboard layout.
+
+    Args:
+        title (str): The title of the card.
+        content (dash.development.base_component.Component): The content of the card.
+        icon (str, optional): The icon to display next to the title. Defaults to "📊".
+
+    Returns:
+        dbc.Card: A styled card component.
+    """
     return dbc.Card([
         dbc.CardHeader([
             html.H5([
@@ -102,35 +99,29 @@ def create_professional_card(title, content, icon="📊"):
         'marginBottom': '20px'
     })
 
+
 def create_kpi_card(title, value, icon, color_type):
-    """Create KPI card with dynamic color coding."""
+    """
+    Creates a Key Performance Indicator (KPI) card.
+
+    Args:
+        title (str): The title of the KPI.
+        value (str): The value of the KPI.
+        icon (str): The icon for the KPI.
+        color_type (str): The color type to use for styling.
+
+    Returns:
+        dbc.Card: A styled KPI card.
+    """
     color = COLORS.get(color_type, COLORS['primary'])
-    
     return dbc.Card([
         dbc.CardBody([
             html.Div([
-                html.Div([
-                    html.H2(icon, style={
-                        'fontSize': '2rem',
-                        'margin': '0',
-                        'color': color
-                    })
-                ], style={'textAlign': 'center', 'marginBottom': '10px'}),
-                html.Div([
-                    html.H3(value, style={
-                        'fontSize': '1.8rem',
-                        'fontWeight': 'bold',
-                        'margin': '0',
-                        'color': COLORS['dark']
-                    }),
-                    html.P(title, style={
-                        'fontSize': '0.9rem',
-                        'margin': '0',
-                        'color': COLORS['secondary']
-                    })
-                ], style={'textAlign': 'center'})
-            ])
-        ], style={'padding': '20px'})
+                html.H2(icon, style={'fontSize': '2rem', 'color': color}),
+                html.H3(value, style={'fontWeight': 'bold', 'color': COLORS['dark']}),
+                html.P(title, style={'color': COLORS['secondary']})
+            ], style={'textAlign': 'center'})
+        ])
     ], style={
         'boxShadow': LAYOUT_CONFIG['card_shadow'],
         'borderRadius': LAYOUT_CONFIG['border_radius'],
@@ -138,54 +129,39 @@ def create_kpi_card(title, value, icon, color_type):
         'height': '150px'
     })
 
-def create_filter_section():
-    """Create interactive filter section."""
+
+def create_filter_section(df):
+    """
+    Creates the filter section of the dashboard.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to use for populating filter options.
+
+    Returns:
+        html.Div: A Div component containing all the filters.
+    """
     return html.Div([
         dbc.Row([
-            dbc.Col([
-                html.Label("Project Filter:", style={'fontWeight': 'bold', 'marginBottom': '5px'}),
-                dcc.Dropdown(
-                    id='project-filter',
-                    options=[
-                        {'label': 'All Projects', 'value': 'All'},
-                        {'label': 'Residential', 'value': 'Residential'},
-                        {'label': 'Commercial', 'value': 'Commercial'},
-                        {'label': 'Infrastructure', 'value': 'Infrastructure'}
-                    ],
-                    value='All',
-                    style={'marginBottom': '10px'}
-                )
-            ], width=3),
-            dbc.Col([
-                html.Label("Status Filter:", style={'fontWeight': 'bold', 'marginBottom': '5px'}),
-                dcc.Dropdown(
-                    id='status-filter',
-                    options=[
-                        {'label': 'All Status', 'value': 'All'},
-                        {'label': 'In Progress', 'value': 'In Progress'},
-                        {'label': 'Completed', 'value': 'Completed'},
-                        {'label': 'Not Started', 'value': 'Not Started'}
-                    ],
-                    value='All',
-                    style={'marginBottom': '10px'}
-                )
-            ], width=3),
-            dbc.Col([
-                html.Label("Date Range:", style={'fontWeight': 'bold', 'marginBottom': '5px'}),
-                dcc.DatePickerRange(
-                    id='date-range-picker',
-                    start_date='2024-01-01',
-                    end_date='2024-12-31',
-                    display_format='YYYY-MM-DD',
-                    style={'marginBottom': '10px'}
-                )
-            ], width=4),
-            dbc.Col([
-                html.Div([
-                    dbc.Button("🔄 Refresh", id="refresh-button", color="primary", size="sm"),
-                    html.Div(id="refresh-trigger", style={'display': 'none'})
-                ], style={'paddingTop': '25px'})
-            ], width=2)
+            dbc.Col(dcc.Dropdown(
+                id='project-filter',
+                options=[{'label': 'All Projects', 'value': 'All'}] +
+                        [{'label': p_type, 'value': p_type} for p_type in df['project_type'].unique()],
+                value='All',
+                placeholder="Filter by Project Type"
+            ), width=3),
+            dbc.Col(dcc.Dropdown(
+                id='status-filter',
+                options=[{'label': 'All Status', 'value': 'All'}] +
+                        [{'label': status, 'value': status} for status in df['work_status'].unique()],
+                value='All',
+                placeholder="Filter by Status"
+            ), width=3),
+            dbc.Col(dcc.DatePickerRange(
+                id='date-range-picker',
+                start_date=df['start_date'].min().date(),
+                end_date=df['start_date'].max().date(),
+                display_format='YYYY-MM-DD'
+            ), width=4),
         ])
     ], style={
         'backgroundColor': '#ffffff',
@@ -195,482 +171,226 @@ def create_filter_section():
         'marginBottom': '30px'
     })
 
-# ============================================================================
-# VISUALIZATION FUNCTIONS - FOLLOWING PLOTLY BEST PRACTICES
-# ============================================================================
 
-@lru_cache(maxsize=128)
-def create_work_status_donut(data_json):
-    """Create professional donut chart for work status distribution."""
-    data = pd.read_json(data_json)
-    status_counts = data['work_status'].value_counts()
-    
-    fig = go.Figure(data=[go.Pie(
-        labels=status_counts.index,
+def create_work_status_donut(df):
+    """
+    Creates a donut chart for work status distribution.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing project data.
+
+    Returns:
+        go.Figure: A Plotly figure object.
+    """
+    status_counts = df['work_status'].value_counts()
+    fig = px.pie(
+        status_counts,
         values=status_counts.values,
+        names=status_counts.index,
         hole=0.4,
-        marker=dict(
-            colors=[COLORS['success'], COLORS['primary'], COLORS['warning']],
-            line=dict(color='white', width=2)
-        ),
-        textinfo='label+percent',
-        textposition='outside',
-        hovertemplate='<b>%{label}</b><br>Count: %{value}<br>Percentage: %{percent}<br><extra></extra>'
-    )])
-    
-    fig.update_layout(
-        title=dict(text="<b>Project Work Status</b>", font=dict(size=16, color=COLORS['dark']), x=0.5),
-        showlegend=True,
-        height=300,
-        margin=dict(l=20, r=80, t=60, b=20),
-        font=dict(family=LAYOUT_CONFIG['font_family'], size=12)
+        title="Project Work Status",
+        color_discrete_sequence=[COLORS['success'], COLORS['primary'], COLORS['warning']]
     )
-    
+    fig.update_layout(showlegend=True, font_family=LAYOUT_CONFIG['font_family'])
     return fig
 
-def create_stage_pie_chart(data_json):
-    """Create professional pie chart for project stages."""
-    data = pd.read_json(data_json)
-    stage_counts = data['current_stage'].value_counts()
-    
-    fig = go.Figure(data=[go.Pie(
-        labels=stage_counts.index,
+
+def create_stage_pie_chart(df):
+    """
+    Creates a pie chart for project stages.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing project data.
+
+    Returns:
+        go.Figure: A Plotly figure object.
+    """
+    stage_counts = df['current_stage'].value_counts()
+    fig = px.pie(
+        stage_counts,
         values=stage_counts.values,
-        marker=dict(
-            colors=[COLORS['primary'], COLORS['success'], COLORS['info']],
-            line=dict(color='white', width=2)
-        ),
-        textinfo='label+percent',
-        textposition='outside',
-        hovertemplate='<b>%{label}</b><br>Projects: %{value}<br>Percentage: %{percent}<br><extra></extra>'
-    )])
-    
-    fig.update_layout(
-        title=dict(text="<b>Projects by Stage</b>", font=dict(size=16, color=COLORS['dark']), x=0.5),
-        showlegend=True,
-        height=300,
-        margin=dict(l=20, r=80, t=60, b=20),
-        font=dict(family=LAYOUT_CONFIG['font_family'], size=12)
+        names=stage_counts.index,
+        title="Projects by Stage",
+        color_discrete_sequence=[COLORS['primary'], COLORS['success'], COLORS['info']]
     )
-    
+    fig.update_layout(showlegend=True, font_family=LAYOUT_CONFIG['font_family'])
     return fig
+
 
 def create_completion_gauge(completion_percent, title="Project Completion"):
-    """Create professional gauge chart for completion metrics."""
-    # Dynamic color based on completion
-    if completion_percent >= 80:
-        gauge_color = COLORS['success']
-    elif completion_percent >= 50:
-        gauge_color = COLORS['warning']
-    else:
-        gauge_color = COLORS['danger']
-    
+    """
+    Creates a gauge chart for completion metrics.
+
+    Args:
+        completion_percent (float): The overall completion percentage.
+        title (str, optional): The title of the gauge. Defaults to "Project Completion".
+
+    Returns:
+        go.Figure: A Plotly figure object.
+    """
+    gauge_color = COLORS['success'] if completion_percent >= 80 else COLORS['warning'] if completion_percent >= 50 else COLORS['danger']
     fig = go.Figure(go.Indicator(
-        mode="gauge+number+delta",
+        mode="gauge+number",
         value=completion_percent,
-        domain={'x': [0, 1], 'y': [0, 1]},
-        title={'text': f"<b>{title}</b>", 'font': {'size': 16}},
-        delta={'reference': 100, 'suffix': '%'},
-        gauge={
-            'axis': {'range': [None, 100], 'ticksuffix': '%'},
-            'bar': {'color': gauge_color, 'thickness': 0.75},
-            'steps': [
-                {'range': [0, 50], 'color': 'rgba(244, 67, 54, 0.2)'},
-                {'range': [50, 80], 'color': 'rgba(255, 193, 7, 0.2)'},
-                {'range': [80, 100], 'color': 'rgba(76, 175, 80, 0.2)'}
-            ],
-            'threshold': {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': 90}
-        }
+        title={'text': title},
+        gauge={'axis': {'range': [None, 100]}, 'bar': {'color': gauge_color}}
     ))
-    
-    fig.update_layout(
-        height=300,
-        margin=dict(l=20, r=20, t=60, b=20),
-        font=dict(family=LAYOUT_CONFIG['font_family'])
-    )
-    
+    fig.update_layout(font_family=LAYOUT_CONFIG['font_family'])
     return fig
 
-def create_performance_bar_chart(data_json):
-    """Create performance analysis bar chart with conditional formatting."""
-    data = pd.read_json(data_json)
-    
-    # Calculate performance metrics by project
-    performance_data = data.groupby('project_name').agg({
-        'current_completion': 'mean',
-        'total_budget': 'sum'
-    }).reset_index()
-    
-    # Sort by completion percentage
-    performance_data = performance_data.sort_values('current_completion', ascending=True)
-    
-    # Color coding based on performance
-    colors = []
-    for completion in performance_data['current_completion']:
-        if completion >= 80:
-            colors.append(COLORS['success'])
-        elif completion >= 60:
-            colors.append(COLORS['warning'])
-        else:
-            colors.append(COLORS['danger'])
-    
-    fig = go.Figure()
-    
-    fig.add_trace(go.Bar(
-        x=performance_data['current_completion'],
-        y=performance_data['project_name'],
+
+def create_performance_bar_chart(df):
+    """
+    Creates a bar chart to analyze project performance.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing project data.
+
+    Returns:
+        go.Figure: A Plotly figure object.
+    """
+    performance_data = df.groupby('project_name')['current_completion'].mean().sort_values()
+    fig = px.bar(
+        performance_data,
+        x=performance_data.values,
+        y=performance_data.index,
         orientation='h',
-        marker=dict(color=colors, line=dict(color='white', width=1)),
-        text=[f"{val:.1f}%" for val in performance_data['current_completion']],
-        textposition='outside',
-        hovertemplate='<b>%{y}</b><br>Completion: %{x:.1f}%<br><extra></extra>'
-    ))
-    
-    fig.update_layout(
-        title=dict(text="<b>Project Performance Analysis</b>", font=dict(size=16, color=COLORS['dark']), x=0.5),
-        xaxis=dict(title='Completion Percentage (%)', range=[0, 100], ticksuffix='%'),
-        yaxis=dict(title='Projects'),
-        height=350,
-        margin=dict(l=150, r=60, t=80, b=60),
-        font=dict(family=LAYOUT_CONFIG['font_family'])
+        title="Project Performance Analysis",
+        labels={'x': 'Completion Percentage (%)', 'y': 'Projects'},
+        color=performance_data.values,
+        color_continuous_scale='Viridis'
     )
-    
+    fig.update_layout(font_family=LAYOUT_CONFIG['font_family'])
     return fig
 
-def create_budget_variance_combo():
-    """Create combo chart for budget variance analysis."""
-    # Generate sample variance data
-    months = pd.date_range('2024-01-01', periods=12, freq='M')
-    actual = np.random.uniform(80000, 120000, 12)
-    planned = np.random.uniform(85000, 115000, 12)
-    variance = actual - planned
+
+def create_budget_variance_combo(df):
+    """
+    Creates a combo chart for budget variance analysis.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to use for the chart.
+
+    Returns:
+        go.Figure: A Plotly figure object.
+    """
+    df['actual_cost'] = df['total_budget'] * (df['current_completion'] / 100.0) * np.random.uniform(0.9, 1.1, len(df))
+    df['variance'] = df['actual_cost'] - df['total_budget']
     
     fig = go.Figure()
-    
-    # Add actual vs planned bars
-    fig.add_trace(go.Bar(x=months, y=actual, name='Actual', marker_color=COLORS['primary'], yaxis='y', opacity=0.8))
-    fig.add_trace(go.Bar(x=months, y=planned, name='Planned', marker_color=COLORS['info'], yaxis='y', opacity=0.8))
-    
-    # Add variance line
-    fig.add_trace(go.Scatter(
-        x=months, y=variance, mode='lines+markers', name='Variance',
-        line=dict(color=COLORS['danger'], width=3), yaxis='y2'
-    ))
+    fig.add_trace(go.Bar(x=df['project_name'], y=df['total_budget'], name='Budget', marker_color=COLORS['primary']))
+    fig.add_trace(go.Bar(x=df['project_name'], y=df['actual_cost'], name='Actual Cost', marker_color=COLORS['info']))
+    fig.add_trace(go.Scatter(x=df['project_name'], y=df['variance'], name='Variance', yaxis='y2', line=dict(color=COLORS['danger'])))
     
     fig.update_layout(
-        title=dict(text="<b>Budget Variance - Actual vs Planned</b>", font=dict(size=16, color=COLORS['dark']), x=0.5),
-        yaxis=dict(title='Budget Amount ($)', side='left', tickformat='$,.0f'),
-        yaxis2=dict(title='Variance ($)', overlaying='y', side='right', tickformat='$,.0f'),
-        xaxis=dict(title='Period'),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        height=350,
-        margin=dict(l=60, r=60, t=80, b=60),
-        font=dict(family=LAYOUT_CONFIG['font_family'])
+        title="Budget Variance - Actual vs Planned",
+        yaxis={'title': 'Amount ($)'},
+        yaxis2={'title': 'Variance ($)', 'overlaying': 'y', 'side': 'right'},
+        font_family=LAYOUT_CONFIG['font_family']
     )
-    
     return fig
 
-def create_workload_timeline():
-    """Create workload timeline visualization for resource management."""
-    # Generate sample timeline data
-    dates = pd.date_range('2024-01-01', periods=30, freq='D')
-    workload_data = []
-    
-    for i, date in enumerate(dates):
-        daily_workload = {
-            'date': date,
-            'planned_hours': np.random.uniform(6, 10),
-            'actual_hours': np.random.uniform(5, 11),
-            'overtime': max(0, np.random.uniform(-1, 3))
-        }
-        workload_data.append(daily_workload)
-    
-    workload_df = pd.DataFrame(workload_data)
-    
-    fig = go.Figure()
-    
-    # Planned hours
-    fig.add_trace(go.Scatter(
-        x=workload_df['date'], y=workload_df['planned_hours'],
-        mode='lines', name='Planned Hours',
-        line=dict(color=COLORS['primary'], width=2, dash='dash'), fill=None
-    ))
-    
-    # Actual hours
-    fig.add_trace(go.Scatter(
-        x=workload_df['date'], y=workload_df['actual_hours'],
-        mode='lines', name='Actual Hours',
-        line=dict(color=COLORS['success'], width=3),
-        fill='tonexty', fillcolor='rgba(76, 175, 80, 0.1)'
-    ))
-    
-    # Overtime indicators
-    overtime_dates = workload_df[workload_df['overtime'] > 0]['date']
-    overtime_hours = workload_df[workload_df['overtime'] > 0]['actual_hours']
-    
-    fig.add_trace(go.Scatter(
-        x=overtime_dates, y=overtime_hours, mode='markers', name='Overtime',
-        marker=dict(color=COLORS['danger'], size=8, symbol='triangle-up')
-    ))
-    
-    fig.update_layout(
-        title=dict(text="<b>Workload Timeline - Last 30 Days</b>", font=dict(size=16, color=COLORS['dark']), x=0.5),
-        xaxis=dict(title='Date', tickformat='%b %d'),
-        yaxis=dict(title='Hours', range=[0, 12]),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        height=350,
-        margin=dict(l=60, r=60, t=80, b=60),
-        font=dict(family=LAYOUT_CONFIG['font_family'])
-    )
-    
-    return fig
 
-def create_kpi_summary_cards(data_json):
-    """Create multiple KPI cards for dashboard header."""
-    data = pd.read_json(data_json)
-    
-    # Calculate KPIs
-    total_projects = len(data)
-    avg_completion = data['current_completion'].mean()
-    total_budget = data['total_budget'].sum()
-    active_projects = len(data[data['work_status'] == 'In Progress'])
-    
+def create_kpi_summary_cards(df):
+    """
+    Creates a list of KPI card data for the dashboard header.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate KPIs from.
+
+    Returns:
+        list: A list of dictionaries, where each dictionary represents a KPI card.
+    """
+    total_projects = len(df)
+    avg_completion = df['current_completion'].mean()
+    total_budget = df['total_budget'].sum()
+    active_projects = len(df[df['work_status'] == 'In Progress'])
+
     kpis = [
         {'title': 'Total Projects', 'value': str(total_projects), 'icon': '📊', 'color': 'primary'},
         {'title': 'Avg Completion', 'value': f"{avg_completion:.1f}%", 'icon': '📈', 'color': 'success'},
         {'title': 'Total Budget', 'value': f"${total_budget/1000000:.1f}M", 'icon': '💰', 'color': 'info'},
         {'title': 'Active Projects', 'value': str(active_projects), 'icon': '🔥', 'color': 'warning'}
     ]
-    
     return kpis
 
-# ============================================================================
-# MAIN DASHBOARD LAYOUT
-# ============================================================================
-
-def create_construction_dashboard():
-    """Create the complete Construction Project Monitoring Dashboard."""
-    
-    # Generate sample data for demonstration
-    sample_data = generate_construction_data()
-    data_json = sample_data.to_json(date_format='iso')
-    
-    # Get KPI summary data
-    kpi_data = create_kpi_summary_cards(data_json)
-    
-    # Create the main dashboard layout
-    layout = html.Div([
-        
-        # HEADER SECTION
-        html.Div([
-            html.H1(
-                "🏗️ Construction Project Monitoring Dashboard",
-                className="dashboard-title",
-                style={
-                    'textAlign': 'center',
-                    'color': COLORS['dark'],
-                    'fontFamily': LAYOUT_CONFIG['font_family'],
-                    'fontSize': '2.5rem',
-                    'fontWeight': 'bold',
-                    'marginBottom': '10px'
-                }
-            ),
-            html.P(
-                "Professional Analytics for Construction Project Management",
-                style={
-                    'textAlign': 'center',
-                    'color': COLORS['secondary'],
-                    'fontSize': '1.2rem',
-                    'marginBottom': '30px'
-                }
-            )
-        ], style={'marginBottom': '40px'}),
-        
-        # KPI CARDS SECTION
-        html.Div([
-            dbc.Row([
-                dbc.Col([
-                    create_kpi_card(kpi['title'], kpi['value'], kpi['icon'], kpi['color'])
-                ], width=3) for kpi in kpi_data
-            ], className="mb-4")
-        ]),
-        
-        # FILTER SECTION
-        create_filter_section(),
-        
-        # MAIN VISUALIZATIONS GRID
-        html.Div([
-            
-            # Row 1: Status and Performance Overview
-            dbc.Row([
-                dbc.Col([
-                    create_professional_card(
-                        "Work Status Distribution",
-                        dcc.Graph(
-                            id='work-status-donut',
-                            figure=create_work_status_donut(data_json),
-                            config={'displayModeBar': False}
-                        )
-                    )
-                ], width=6),
-                dbc.Col([
-                    create_professional_card(
-                        "Project Stages",
-                        dcc.Graph(
-                            id='project-stages-pie',
-                            figure=create_stage_pie_chart(data_json),
-                            config={'displayModeBar': False}
-                        )
-                    )
-                ], width=6)
-            ], className="mb-4"),
-            
-            # Row 2: Performance Metrics
-            dbc.Row([
-                dbc.Col([
-                    create_professional_card(
-                        "Overall Completion",
-                        dcc.Graph(
-                            id='completion-gauge',
-                            figure=create_completion_gauge(
-                                sample_data['current_completion'].mean(),
-                                "Average Project Completion"
-                            ),
-                            config={'displayModeBar': False}
-                        )
-                    )
-                ], width=4),
-                dbc.Col([
-                    create_professional_card(
-                        "Project Performance",
-                        dcc.Graph(
-                            id='performance-bar',
-                            figure=create_performance_bar_chart(data_json),
-                            config={'displayModeBar': False}
-                        )
-                    )
-                ], width=8)
-            ], className="mb-4"),
-            
-            # Row 3: Financial and Timeline Analysis
-            dbc.Row([
-                dbc.Col([
-                    create_professional_card(
-                        "Budget Variance Analysis",
-                        dcc.Graph(
-                            id='budget-variance-combo',
-                            figure=create_budget_variance_combo(),
-                            config={'displayModeBar': False}
-                        )
-                    )
-                ], width=8),
-                dbc.Col([
-                    create_professional_card(
-                        "Resource Efficiency",
-                        dcc.Graph(
-                            id='resource-gauge',
-                            figure=create_completion_gauge(85, "Resource Efficiency"),
-                            config={'displayModeBar': False}
-                        )
-                    )
-                ], width=4)
-            ], className="mb-4"),
-            
-            # Row 4: Timeline and Workload
-            dbc.Row([
-                dbc.Col([
-                    create_professional_card(
-                        "Workload Timeline",
-                        dcc.Graph(
-                            id='workload-timeline',
-                            figure=create_workload_timeline(),
-                            config={'displayModeBar': False}
-                        )
-                    )
-                ], width=12)
-            ], className="mb-4")
-        ]),
-        
-        # FOOTER SECTION
-        html.Div([
-            html.Hr(style={'borderColor': COLORS['light']}),
-            html.P(
-                "📊 Professional Construction Dashboard | Built with Plotly Dash | Real-time Analytics",
-                style={
-                    'textAlign': 'center',
-                    'color': COLORS['secondary'],
-                    'fontSize': '0.9rem',
-                    'marginTop': '20px'
-                }
-            )
-        ])
-        
-    ], style={
-        'backgroundColor': '#f8f9fa',
-        'minHeight': '100vh',
-        'padding': '20px',
-        'fontFamily': LAYOUT_CONFIG['font_family']
-    })
-    
-    return layout
-
-# ============================================================================
-# INITIALIZE DASH APPLICATION
-# ============================================================================
 
 # Initialize the Dash application
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "Construction Project Monitoring Dashboard"
 
-# Set the layout
-app.layout = create_construction_dashboard()
+# Generate data and create the layout
+df_initial = generate_construction_data()
+app.layout = html.Div([
+    html.H1("🏗️ Construction Project Monitoring Dashboard", style={'textAlign': 'center', 'color': COLORS['dark']}),
+    html.P("Professional Analytics for Construction Project Management", style={'textAlign': 'center', 'color': COLORS['secondary']}),
+    dbc.Row([dbc.Col(create_kpi_card(kpi['title'], kpi['value'], kpi['icon'], kpi['color']), width=3) for kpi in create_kpi_summary_cards(df_initial)]),
+    create_filter_section(df_initial),
+    dbc.Row([
+        dbc.Col(create_professional_card("Work Status Distribution", dcc.Graph(id='work-status-donut')), width=6),
+        dbc.Col(create_professional_card("Project Stages", dcc.Graph(id='project-stages-pie')), width=6),
+    ]),
+    dbc.Row([
+        dbc.Col(create_professional_card("Overall Completion", dcc.Graph(id='completion-gauge')), width=4),
+        dbc.Col(create_professional_card("Project Performance", dcc.Graph(id='performance-bar')), width=8),
+    ]),
+    dbc.Row([
+        dbc.Col(create_professional_card("Budget Variance Analysis", dcc.Graph(id='budget-variance-combo')), width=12),
+    ]),
+], style={'backgroundColor': '#f8f9fa', 'padding': '20px', 'fontFamily': LAYOUT_CONFIG['font_family']})
 
-# ============================================================================
-# INTERACTIVE CALLBACKS
-# ============================================================================
 
 @app.callback(
     [Output('work-status-donut', 'figure'),
      Output('project-stages-pie', 'figure'),
-     Output('performance-bar', 'figure')],
+     Output('performance-bar', 'figure'),
+     Output('completion-gauge', 'figure'),
+     Output('budget-variance-combo', 'figure')],
     [Input('project-filter', 'value'),
      Input('status-filter', 'value'),
      Input('date-range-picker', 'start_date'),
      Input('date-range-picker', 'end_date')]
 )
-def update_charts(selected_projects, selected_status, start_date, end_date):
-    """Update multiple charts based on filter selections."""
-    # Generate filtered data based on selections
-    filtered_data = generate_construction_data()
-    
-    # Apply filters if selections exist
-    if selected_projects and selected_projects != 'All':
-        filtered_data = filtered_data[filtered_data['project_type'] == selected_projects]
+def update_charts(selected_project, selected_status, start_date, end_date):
+    """
+    Updates the dashboard charts based on the selected filters.
+
+    This callback is triggered when any of the filter values change. It filters
+    the data and regenerates all the charts in the dashboard.
+
+    Args:
+        selected_project (str): The selected project type.
+        selected_status (str): The selected work status.
+        start_date (str): The start date of the date range.
+        end_date (str): The end date of the date range.
+
+    Returns:
+        tuple: A tuple of updated Plotly figure objects for all the charts.
+    """
+    filtered_df = df_initial.copy()
+
+    if selected_project and selected_project != 'All':
+        filtered_df = filtered_df[filtered_df['project_type'] == selected_project]
     
     if selected_status and selected_status != 'All':
-        filtered_data = filtered_data[filtered_data['work_status'] == selected_status]
-    
-    # Convert to JSON for visualization functions
-    data_json = filtered_data.to_json(date_format='iso')
-    
-    # Update visualizations
-    donut_fig = create_work_status_donut(data_json)
-    pie_fig = create_stage_pie_chart(data_json)
-    bar_fig = create_performance_bar_chart(data_json)
-    
-    return donut_fig, pie_fig, bar_fig
+        filtered_df = filtered_df[filtered_df['work_status'] == selected_status]
 
-# ============================================================================
-# MAIN EXECUTION
-# ============================================================================
+    if start_date and end_date:
+        filtered_df = filtered_df[
+            (filtered_df['start_date'] >= pd.to_datetime(start_date)) &
+            (filtered_df['start_date'] <= pd.to_datetime(end_date))
+        ]
+
+    donut_fig = create_work_status_donut(filtered_df)
+    pie_fig = create_stage_pie_chart(filtered_df)
+    bar_fig = create_performance_bar_chart(filtered_df)
+    gauge_fig = create_completion_gauge(filtered_df['current_completion'].mean())
+    budget_fig = create_budget_variance_combo(filtered_df)
+
+    return donut_fig, pie_fig, bar_fig, gauge_fig, budget_fig
+
 
 if __name__ == '__main__':
     print("🚀 Starting Construction Project Monitoring Dashboard...")
-    print("📊 Dashboard will be available at: http://localhost:8050")
-    print("✅ All components loaded successfully!")
-    print("✅ Professional styling applied!")
-    print("✅ Interactive features enabled!")
-    print("🔧 Running in DEBUG mode for development...")
-    
-    # Run the Dash application
-    app.run(debug=True, port=8050, host='0.0.0.0')
+    print("📊 Dashboard available at: http://localhost:8050")
+    app.run_server(debug=True)
