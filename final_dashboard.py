@@ -1,3 +1,18 @@
+"""A professional project management dashboard using Plotly Dash.
+
+This script creates and runs a standalone Dash web application that provides an
+interactive dashboard for monitoring project status, budget, and other key
+metrics. The dashboard features multiple interconnected charts, filtering
+capabilities, and a data table.
+
+The data is synthetically generated for demonstration purposes.
+
+To run the dashboard, execute this script from the command line:
+    $ python final_dashboard.py
+
+The dashboard will be available at http://127.0.0.1:8050/ by default.
+"""
+
 import dash
 from dash import dcc, html, Input, Output, dash_table
 import plotly.express as px
@@ -5,7 +20,9 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 
-# Generate simple data
+# --- Data Generation ---
+# In a real-world application, this data would be loaded from a database,
+# API, or file. For this demo, we generate a synthetic dataset.
 np.random.seed(42)
 projects = []
 for i in range(1, 21):
@@ -105,10 +122,24 @@ app.layout = html.Div([
      Input('manager-filter', 'value')]
 )
 def update_dashboard(selected_types, selected_managers):
+    """Updates all dashboard components in response to filter changes.
+
+    This callback function is triggered whenever the user changes the
+    selection in the 'Project Type' or 'Manager' dropdowns. It filters the
+    main DataFrame and regenerates all the charts and the data table.
+
+    Args:
+        selected_types (list): A list of project types selected by the user.
+        selected_managers (list): A list of managers selected by the user.
+
+    Returns:
+        tuple: A tuple containing the updated figures for the pie chart,
+        bar chart, scatter plot, sunburst chart, and the data for the
+        projects table.
+    """
     # Filter data
     filtered_df = df[
-        (df['type'].isin(selected_types)) & 
-        (df['manager'].isin(selected_managers))
+        (df["type"].isin(selected_types)) & (df["manager"].isin(selected_managers))
     ]
     
     if filtered_df.empty:

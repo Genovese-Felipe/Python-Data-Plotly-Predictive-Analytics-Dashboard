@@ -11,25 +11,40 @@ from urllib.parse import quote_plus
 import re
 
 class WebSearchProcessor:
+    """Handles web search operations to augment the local knowledge base.
+
+    This class provides functionality to perform web searches using the
+    DuckDuckGo API, process multiple queries, and synthesize the results with
+    existing local knowledge. It includes caching to improve performance and
+    reduce redundant API calls.
+
+    Attributes:
+        search_history (list): A list to log all search queries made.
+        cache (dict): A dictionary to cache search results for given queries.
     """
-    Processes web search queries to enhance knowledge base information
-    Integrates external knowledge with local Knowledge-Base content
-    """
-    
+
     def __init__(self):
+        """Initializes the WebSearchProcessor."""
         self.search_history = []
         self.cache = {}
-        
-    def search_duckduckgo(self, query: str, num_results: int = 5) -> List[Dict[str, Any]]:
-        """
-        Perform web search using DuckDuckGo Instant Answer API
-        
+
+    def search_duckduckgo(
+        self, query: str, num_results: int = 5
+    ) -> List[Dict[str, Any]]:
+        """Performs a web search using the DuckDuckGo Instant Answer API.
+
+        This method sends a query to DuckDuckGo, parses the JSON response,
+        and returns a structured list of results. It prioritizes direct
+        answers and related topics.
+
         Args:
-            query: Search query string
-            num_results: Number of results to return
-            
+            query: The search term to query.
+            num_results: The maximum number of results to return.
+
         Returns:
-            List of search results with title, snippet, and URL
+            A list of dictionaries, where each dictionary represents a search
+            result with a title, snippet, and URL. Returns an empty list
+            if the search fails.
         """
         try:
             # Check cache first
@@ -93,16 +108,22 @@ class WebSearchProcessor:
             
         return []
     
-    def search_multiple_queries(self, queries: List[str], max_results_per_query: int = 3) -> Dict[str, List[Dict[str, Any]]]:
-        """
-        Perform multiple web searches and aggregate results
-        
+    def search_multiple_queries(
+        self, queries: List[str], max_results_per_query: int = 3
+    ) -> Dict[str, List[Dict[str, Any]]]:
+        """Performs a series of web searches for a list of queries.
+
+        This method iterates through a list of queries, performs a search for
+        each one, and aggregates the results into a single dictionary.
+
         Args:
-            queries: List of search query strings
-            max_results_per_query: Maximum results per query
-            
+            queries: A list of search query strings.
+            max_results_per_query: The maximum number of results to fetch for
+                each query.
+
         Returns:
-            Dictionary mapping queries to their search results
+            A dictionary where keys are the original queries and values are
+            lists of their corresponding search results.
         """
         all_results = {}
         
@@ -116,15 +137,20 @@ class WebSearchProcessor:
             
         return all_results
     
-    def extract_ai_knowledge_queries(self, domain: str = "artificial intelligence") -> List[str]:
-        """
-        Generate relevant AI knowledge queries based on domain
-        
+    def extract_ai_knowledge_queries(
+        self, domain: str = "artificial intelligence"
+    ) -> List[str]:
+        """Generates a list of relevant search queries for a given AI domain.
+
+        This method creates a set of predefined search queries tailored to a
+        specific domain, such as data visualization or machine learning, to
+        facilitate targeted knowledge extraction.
+
         Args:
-            domain: The domain to focus on
-            
+            domain: The AI-related domain to generate queries for.
+
         Returns:
-            List of AI-related search queries
+            A list of generated search query strings.
         """
         base_queries = [
             f"{domain} best practices",
@@ -150,16 +176,25 @@ class WebSearchProcessor:
         
         return base_queries
     
-    def synthesize_knowledge(self, local_knowledge: Dict[str, Any], web_results: Dict[str, List[Dict[str, Any]]]) -> Dict[str, Any]:
-        """
-        Synthesize local knowledge base information with web search results
-        
+    def synthesize_knowledge(
+        self,
+        local_knowledge: Dict[str, Any],
+        web_results: Dict[str, List[Dict[str, Any]]],
+    ) -> Dict[str, Any]:
+        """Synthesizes local knowledge with web search results.
+
+        This method combines information from the local knowledge base with
+        results from web searches to create a more comprehensive and enriched
+        knowledge structure.
+
         Args:
-            local_knowledge: Knowledge extracted from local Knowledge-Base
-            web_results: Results from web searches
-            
+            local_knowledge: A dictionary containing data from the local
+                knowledge base.
+            web_results: A dictionary of web search results, keyed by query.
+
         Returns:
-            Synthesized comprehensive knowledge structure
+            A dictionary containing the synthesized knowledge, including
+            cross-references and generated insights.
         """
         synthesis = {
             'overview': {
@@ -276,10 +311,26 @@ class WebSearchProcessor:
         return insights
     
     def get_search_summary(self) -> Dict[str, Any]:
-        """Get summary of all search activities"""
+        """Returns a summary of all search activities.
+
+        This method provides metadata about the search history, cache usage,
+        and query frequency.
+
+        Returns:
+            A dictionary containing a summary of search-related activities.
+        """
         return {
-            'total_searches': len(self.search_history),
-            'cache_size': len(self.cache),
-            'recent_queries': [h['query'] for h in self.search_history[-5:]],
-            'search_frequency': len(self.search_history) / max(1, (time.time() - self.search_history[0]['timestamp'] if self.search_history else 1) / 3600)
+            "total_searches": len(self.search_history),
+            "cache_size": len(self.cache),
+            "recent_queries": [h["query"] for h in self.search_history[-5:]],
+            "search_frequency": len(self.search_history)
+            / max(
+                1,
+                (
+                    (time.time() - self.search_history[0]["timestamp"])
+                    if self.search_history
+                    else 1
+                )
+                / 3600
+            ),
         }

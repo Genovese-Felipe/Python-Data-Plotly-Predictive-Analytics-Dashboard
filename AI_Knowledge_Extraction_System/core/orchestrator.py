@@ -25,33 +25,60 @@ from processors.semantic_processor import SemanticProcessor
 from config.config import config
 
 class KnowledgeExtractionOrchestrator:
+    """Orchestrates the entire knowledge extraction and processing pipeline.
+
+    This class serves as the main coordinator for the system, managing the
+    workflow from file discovery and content extraction to semantic analysis,
+    knowledge graph construction, and final output generation.
+
+    Attributes:
+        knowledge_base_path (Path): The file path to the root directory of the
+            knowledge base.
+        output_dir (Path): The file path to the directory where all processed
+            outputs will be saved.
+        content_extractor (ContentExtractor): An instance of the content
+            extractor.
+        semantic_processor (SemanticProcessor): An instance of the semantic
+            processor.
+        extracted_documents (list): A list to store the dictionaries of
+            processed document data.
+        processing_log (list): A log of processing steps and events.
+        start_time (datetime): The timestamp when the extraction process began.
     """
-    Main orchestrator for the knowledge extraction system
-    Coordinates content extraction, semantic processing, and output generation
-    """
-    
+
     def __init__(self, knowledge_base_path: Optional[Path] = None):
+        """Initializes the KnowledgeExtractionOrchestrator.
+
+        Args:
+            knowledge_base_path: An optional path to the knowledge base. If not
+                provided, it defaults to the path specified in the config.
+        """
         self.knowledge_base_path = knowledge_base_path or config.KNOWLEDGE_BASE_DIR
         self.output_dir = config.OUTPUT_DIR
-        
+
         # Initialize processors
         self.content_extractor = ContentExtractor()
         self.semantic_processor = SemanticProcessor()
-        
+
         # Processing state
         self.extracted_documents = []
         self.processing_log = []
         self.start_time = None
-        
+
         # Ensure output directories exist
         self._setup_output_directories()
-    
+
     def run_full_extraction(self) -> Dict[str, Any]:
-        """
-        Run the complete knowledge extraction pipeline
-        
+        """Runs the complete end-to-end knowledge extraction pipeline.
+
+        This is the main public method that executes the entire workflow,
+        including file discovery, content extraction, semantic processing,
+        and output generation.
+
         Returns:
-            Summary of extraction results
+            A dictionary containing a summary of the extraction results.
+            If the process fails, it returns a dictionary with a 'status'
+            of 'failed' and an 'error' message.
         """
         
         print("🚀 Starting Knowledge Extraction System...")

@@ -31,26 +31,43 @@ sys.path.append(str(Path(__file__).parent.parent))
 from config.config import config
 
 class ContentExtractor:
-    """Main content extraction class supporting multiple file formats"""
-    
+    """A robust class for extracting content from various file formats.
+
+    This class provides a centralized interface to handle file reading, content
+    extraction, and metadata analysis for a wide range of file types, including
+    PDFs, source code, Markdown, and more. It is designed to be extensible
+    and resilient to errors.
+
+    Attributes:
+        processed_files (dict): A dictionary to cache processed file data.
+        extraction_stats (dict): A dictionary to maintain statistics about the
+            extraction process, including success and failure counts.
+    """
+
     def __init__(self):
+        """Initializes the ContentExtractor and its statistics."""
         self.processed_files = {}
         self.extraction_stats = {
             "total_files": 0,
             "successful_extractions": 0,
             "failed_extractions": 0,
-            "total_content_size": 0
+            "total_content_size": 0,
         }
-    
+
     def extract_from_file(self, file_path: Path) -> Dict[str, Any]:
-        """
-        Extract content from a single file with comprehensive metadata
-        
+        """Extracts content and metadata from a given file.
+
+        This is the main public method of the class. It takes a file path,
+        determines the file type, and routes it to the appropriate specialized
+        extraction method. It also performs post-extraction content analysis.
+
         Args:
-            file_path: Path to the file to process
-            
+            file_path: The `Path` object pointing to the file to be processed.
+
         Returns:
-            Dictionary containing extracted content and metadata
+            A dictionary containing the extracted content, metadata, and
+            analysis results. If extraction fails, it returns a dictionary
+            with an 'error' key.
         """
         try:
             file_info = self._get_file_info(file_path)
@@ -432,5 +449,12 @@ class ContentExtractor:
             return {"type": type(data).__name__, "sample_value": str(data)[:100]}
     
     def get_extraction_stats(self) -> Dict[str, Any]:
-        """Return extraction statistics"""
+        """Returns a copy of the extraction statistics.
+
+        Provides a safe way to access the statistics dictionary without
+        allowing external modification of the internal state.
+
+        Returns:
+            A dictionary containing the current extraction statistics.
+        """
         return self.extraction_stats.copy()

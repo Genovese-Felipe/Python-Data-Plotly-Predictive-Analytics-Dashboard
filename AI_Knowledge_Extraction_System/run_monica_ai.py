@@ -22,6 +22,15 @@ sys.path.insert(0, str(current_dir))
 from monica_ai_interface import MonicaAIInterface
 
 def main():
+    """Parses command-line arguments and runs the Monica AI system.
+
+    This function serves as the main entry point for the command-line script.
+    It handles argument parsing for different modes of operation, such as
+    running with default queries, custom queries, or in test mode.
+
+    Returns:
+        An integer status code (0 for success, 1 for failure).
+    """
     parser = argparse.ArgumentParser(
         description="Monica AI - Enhanced AI Knowledge Processing System",
         formatter_class=argparse.RawDescriptionHelpFormatter,

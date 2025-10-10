@@ -10,27 +10,54 @@ from pathlib import Path
 import re
 
 class MultiQueryHandler:
+    """Handles the processing of multiple queries against various knowledge sources.
+
+    This class is responsible for taking a list of user queries, processing
+    each one against the local knowledge base and optional web search,
+    and then synthesizing the results into a comprehensive, actionable response.
+    It maintains a context memory to improve understanding across related
+    queries.
+
+    Attributes:
+        knowledge_base_data (dict): A dictionary containing the processed data
+            from the local knowledge base.
+        query_history (list): A log of past query sessions.
+        response_cache (dict): A cache to store responses for previously seen
+            queries to improve performance.
+        context_memory (list): A short-term memory to maintain context across
+            a series of related queries.
     """
-    Handles multiple queries and coordinates responses from various knowledge sources
-    Implements Monica AI-like comprehensive query processing
-    """
-    
+
     def __init__(self, knowledge_base_data: Optional[Dict[str, Any]] = None):
+        """Initializes the MultiQueryHandler.
+
+        Args:
+            knowledge_base_data: An optional dictionary containing the
+                pre-processed knowledge base data.
+        """
         self.knowledge_base_data = knowledge_base_data or {}
         self.query_history = []
         self.response_cache = {}
         self.context_memory = []
-        
-    def process_multiple_queries(self, queries: List[str], include_web_search: bool = True) -> Dict[str, Any]:
-        """
-        Process multiple queries and provide comprehensive responses
-        
+
+    def process_multiple_queries(
+        self, queries: List[str], include_web_search: bool = True
+    ) -> Dict[str, Any]:
+        """Processes a list of queries and returns a synthesized response.
+
+        This is the main public method of the class. It orchestrates the
+        processing of individual queries, synthesizes the results, and
+        generates actionable insights and next-step recommendations.
+
         Args:
-            queries: List of query strings to process
-            include_web_search: Whether to include web search results
-            
+            queries: A list of query strings to process.
+            include_web_search: If True, the handler will augment local
+                knowledge with results from a web search.
+
         Returns:
-            Comprehensive response combining all query results
+            A dictionary containing a comprehensive, multi-layered response
+            that includes individual query results, a synthesis, and
+            actionable insights.
         """
         print(f"🤖 Processing {len(queries)} queries with Monica AI-like comprehensive analysis...")
         
@@ -78,16 +105,22 @@ class MultiQueryHandler:
         
         return comprehensive_response
     
-    def process_single_query(self, query: str, include_web_search: bool = True) -> Dict[str, Any]:
-        """
-        Process a single query against local knowledge base and optionally web sources
-        
+    def process_single_query(
+        self, query: str, include_web_search: bool = True
+    ) -> Dict[str, Any]:
+        """Processes a single query and returns a detailed response.
+
+        This method coordinates the search for a single query against the local
+        knowledge base and, if enabled, web sources. It analyzes the query,
+        calculates a confidence score, and caches the response.
+
         Args:
-            query: Query string to process
-            include_web_search: Whether to include web search
-            
+            query: The query string to process.
+            include_web_search: If True, enables web search integration.
+
         Returns:
-            Comprehensive response for the single query
+            A dictionary containing the detailed results for the query,
+            including local and web findings, and a confidence score.
         """
         start_time = time.time()
         
@@ -418,12 +451,21 @@ class MultiQueryHandler:
         return next_steps
     
     def get_query_history_summary(self) -> Dict[str, Any]:
-        """Get summary of all query processing history"""
+        """Returns a summary of the query processing history.
+
+        This method provides metadata about the handler's activity, including
+        the number of query sessions, cache size, and recent themes.
+
+        Returns:
+            A dictionary containing a summary of query history and usage.
+        """
         return {
-            'total_query_sessions': len(self.query_history),
-            'cache_size': len(self.response_cache),
-            'context_memory_size': len(self.context_memory),
-            'recent_themes': [
-                entry['key_concepts'][:2] for entry in self.context_memory[-3:]
-            ] if self.context_memory else []
+            "total_query_sessions": len(self.query_history),
+            "cache_size": len(self.response_cache),
+            "context_memory_size": len(self.context_memory),
+            "recent_themes": [
+                entry["key_concepts"][:2] for entry in self.context_memory[-3:]
+            ]
+            if self.context_memory
+            else [],
         }
