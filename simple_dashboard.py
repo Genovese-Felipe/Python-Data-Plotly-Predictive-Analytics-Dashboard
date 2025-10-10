@@ -1,3 +1,18 @@
+"""A simple, standalone sales dashboard using Plotly Dash.
+
+This script creates and runs a Dash web application that visualizes a
+synthetically generated sales dataset. The dashboard includes KPI cards,
+dropdown filters for product and region, and several charts that update
+interactively.
+
+The text and comments in the original script are in Portuguese.
+
+To run the dashboard, execute this script from the command line:
+    $ python simple_dashboard.py
+
+The dashboard will be available at http://127.0.0.1:8050/ by default.
+"""
+
 import dash
 from dash import dcc, html, Input, Output
 import plotly.express as px
@@ -6,7 +21,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 
-# Gerar dados de exemplo
+# --- Data Generation (in Portuguese: Gerar dados de exemplo) ---
 np.random.seed(42)
 n_samples = 1000
 
@@ -130,14 +145,29 @@ app.layout = html.Div([
      Input('regiao-dropdown', 'value')]
 )
 def update_graphs(produto_selecionado, regiao_selecionada):
+    """Updates the dashboard's charts based on filter selections.
+
+    This callback function is triggered by changes in the product and region
+    dropdowns. It filters the DataFrame and regenerates the four main charts:
+    sales over time, sales by product, sales by region, and sales by seller.
+
+    Args:
+        produto_selecionado (str): The selected product from the dropdown.
+            'todos' means no filter is applied.
+        regiao_selecionada (str): The selected region from the dropdown.
+            'todas' means no filter is applied.
+
+    Returns:
+        tuple: A tuple containing the updated figures for the four charts.
+    """
     # Filtrar dados
     df_filtrado = df.copy()
-    
-    if produto_selecionado != 'todos':
-        df_filtrado = df_filtrado[df_filtrado['produto'] == produto_selecionado]
-    
-    if regiao_selecionada != 'todas':
-        df_filtrado = df_filtrado[df_filtrado['regiao'] == regiao_selecionada]
+
+    if produto_selecionado != "todos":
+        df_filtrado = df_filtrado[df_filtrado["produto"] == produto_selecionado]
+
+    if regiao_selecionada != "todas":
+        df_filtrado = df_filtrado[df_filtrado["regiao"] == regiao_selecionada]
     
     # Gráfico de vendas ao longo do tempo
     vendas_tempo = df_filtrado.groupby('data')['vendas'].sum().reset_index()

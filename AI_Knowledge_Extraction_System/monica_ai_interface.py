@@ -19,34 +19,55 @@ from core.multi_query_handler import MultiQueryHandler
 from processors.web_search_processor import WebSearchProcessor
 
 class MonicaAIInterface:
+    """Provides a high-level interface to the Monica AI system.
+
+    This class serves as the main entry point for interacting with the Monica
+    AI, orchestrating the various components like knowledge extraction, web
+    search, and multi-query handling to deliver comprehensive analysis. It is
+    designed to be the primary API for programmatic use.
+
+    Attributes:
+        orchestrator (KnowledgeExtractionOrchestrator): An instance of the
+            knowledge extraction orchestrator.
+        web_processor (WebSearchProcessor): An instance of the web search
+            processor.
+        multi_query_handler (MultiQueryHandler): An instance of the multi-query
+            handler.
+        session_data (dict): A dictionary to store metadata about the current
+            session.
     """
-    Monica AI-style comprehensive interface for knowledge processing
-    Combines local knowledge extraction with web search and multi-query processing
-    """
-    
+
     def __init__(self):
+        """Initializes the MonicaAIInterface and its components."""
         self.orchestrator = KnowledgeExtractionOrchestrator()
         self.web_processor = WebSearchProcessor()
         self.multi_query_handler = None
         self.session_data = {
-            'start_time': time.time(),
-            'queries_processed': 0,
-            'knowledge_base_loaded': False,
-            'session_id': f"monica_ai_{int(time.time())}"
+            "start_time": time.time(),
+            "queries_processed": 0,
+            "knowledge_base_loaded": False,
+            "session_id": f"monica_ai_{int(time.time())}",
         }
-        
+
         print("🤖 Monica AI Interface Initialized")
         print("Comprehensive AI knowledge processing with web integration")
-        
-    def run_comprehensive_analysis(self, custom_queries: Optional[List[str]] = None) -> Dict[str, Any]:
-        """
-        Run comprehensive AI knowledge analysis
-        
+
+    def run_comprehensive_analysis(
+        self, custom_queries: Optional[List[str]] = None
+    ) -> Dict[str, Any]:
+        """Runs a comprehensive analysis using local and web knowledge.
+
+        This is the main public method of the interface. It executes the full
+        analysis pipeline, including processing the local knowledge base,
+        handling queries, generating insights, and creating recommendations.
+
         Args:
-            custom_queries: Optional custom queries to process
-            
+            custom_queries: An optional list of custom query strings. If not
+                provided, a default set of AI-focused queries will be used.
+
         Returns:
-            Comprehensive analysis results
+            A dictionary containing the complete, structured results of the
+            comprehensive analysis.
         """
         print("\n" + "="*80)
         print("🚀 MONICA AI - COMPREHENSIVE KNOWLEDGE ANALYSIS")

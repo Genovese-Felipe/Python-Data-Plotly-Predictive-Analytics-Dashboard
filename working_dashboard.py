@@ -1,3 +1,16 @@
+"""A functional, work-in-progress project dashboard using Plotly Dash.
+
+This script creates and runs a standalone Dash web application that serves as
+an intermediate version of the project dashboard. It visualizes synthetically
+generated project data and includes a dropdown filter for project type, along
+with several interactive charts.
+
+To run the dashboard, execute this script from the command line:
+    $ python working_dashboard.py
+
+The dashboard will be available at http://127.0.0.1:8050/ by default.
+"""
+
 import dash
 from dash import dcc, html, Input, Output
 import plotly.express as px
@@ -5,7 +18,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 
-# Simple data generation
+# --- Data Generation ---
 np.random.seed(42)
 n_projects = 20
 
@@ -52,17 +65,30 @@ app.layout = html.Div([
     [Input('type-dropdown', 'value')]
 )
 def update_charts(selected_types):
-    filtered_df = df[df['type'].isin(selected_types)]
-    
+    """Updates the dashboard charts based on the selected project types.
+
+    This callback function is triggered when the user changes the selection
+    in the project type dropdown. It filters the DataFrame and regenerates
+    the four charts on the dashboard.
+
+    Args:
+        selected_types (list): A list of project types selected by the user.
+
+    Returns:
+        tuple: A tuple containing the updated figures for the pie chart,
+        bar chart, scatter plot, and sunburst chart.
+    """
+    filtered_df = df[df["type"].isin(selected_types)]
+
     # Status Pie Chart
-    status_counts = filtered_df['status'].value_counts()
+    status_counts = filtered_df["status"].value_counts()
     pie_fig = px.pie(values=status_counts.values, names=status_counts.index, 
                      title="Project Status Distribution")
     
     # Completion Bar Chart
     bar_fig = px.bar(filtered_df, x='project_id', y='completion', 
                      title="Project Completion %", color='status')
-    bar_fig.update_xaxis(tickangle=45)
+    bar_fig.update_xaxes(tickangle=45)
     
     # Budget Scatter
     scatter_fig = px.scatter(filtered_df, x='completion', y='budget', 
@@ -103,4 +129,4 @@ def update_charts(selected_types):
 
 if __name__ == '__main__':
     print("🚀 Dashboard starting at http://localhost:8050")
-    app.run_server(debug=True, host='0.0.0.0', port=8050)
+    app.run(debug=True, host='0.0.0.0', port=8050)

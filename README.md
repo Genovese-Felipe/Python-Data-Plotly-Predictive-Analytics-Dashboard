@@ -1,82 +1,159 @@
 # Python-Data-Plotly-Predictive-Analytics-Dashboard
 
-## 🤖 NEW: Monica AI - Enhanced Knowledge Processing System
+This repository contains a multifaceted project that combines a professional, interactive construction project management dashboard with a sophisticated AI-powered knowledge processing system named Monica AI.
 
-**Latest Enhancement**: The repository now includes Monica AI, a comprehensive AI-powered knowledge processing system that combines local documentation with web search capabilities for intelligent analysis and recommendations.
+## Table of Contents
 
-### Quick Start with Monica AI
-```bash
-cd AI_Knowledge_Extraction_System
-python run_monica_ai.py --test  # Test functionality
-python run_monica_ai.py         # Run comprehensive analysis
+- [Key Features](#-key-features)
+- [Project Structure](#-project-structure)
+- [Setup and Installation](#-setup-and-installation)
+- [Usage](#-usage)
+  - [Construction Dashboard](#-construction-dashboard)
+  - [Monica AI System](#-monica-ai-system)
+- [Documentation](#-documentation)
+
+## ✨ Key Features
+
+### Construction Dashboard
+- **Interactive Visualizations**: Dynamic and responsive charts built with Plotly and Dash.
+- **Comprehensive Filtering**: Filter projects by type, manager, and other attributes.
+- **Key Performance Indicators (KPIs)**: At-a-glance metrics for budget utilization, project duration, and status.
+- **Professional Design**: A clean, well-organized layout suitable for professional presentations.
+
+### Monica AI System
+- **Advanced Knowledge Extraction**: Processes documents from a local knowledge base to extract semantic information.
+- **Web Search Integration**: Augments local knowledge with real-time web search results from DuckDuckGo.
+- **Multi-Query Processing**: Handles multiple user queries simultaneously, maintaining context for more accurate responses.
+- **Comprehensive Analysis**: Synthesizes information from all sources to provide actionable insights and recommendations.
+
+## 📂 Project Structure
+
+The repository is organized into two main parts: the AI system and the dashboard scripts.
+
+```
+/
+├── AI_Knowledge_Extraction_System/   # The Monica AI System
+│   ├── core/                         # Core logic for orchestration and query handling
+│   ├── processors/                   # Modules for content, semantic, and web processing
+│   ├── config/                       # Configuration files
+│   ├── monica_ai_interface.py        # Main API for the AI system
+│   └── run_monica_ai.py              # Script to run the AI system
+│
+├── scripts/                          # Scripts for the dashboard
+│   ├── viz_new.py                    # Main construction dashboard visualization script
+│   └── ...
+│
+├── final_dashboard.py                # A complete, standalone dashboard example
+├── run_dashboard.py                  # Runner script for the construction dashboard
+├── requirements.txt                  # Python dependencies
+└── README.md                         # This file
 ```
 
-**Features**: Multi-query processing, web search integration, comprehensive knowledge synthesis, and actionable insights generation. [See detailed documentation](AI_Knowledge_Extraction_System/MONICA_AI_README.md)
+## 셋업 및 설치
 
----
-🌐 **Live Site**: [View on GitHub Pages](https://genovese-felipe.github.io/Python-Data-Plotly-Predictive-Analytics-Dashboard/)
+To get started with this project, you'll need to have Python 3.8 or higher installed.
 
-## 📊 Professional Construction Project Management Dashboard
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/Python-Data-Plotly-Predictive-Analytics-Dashboard.git
+    cd Python-Data-Plotly-Predictive-Analytics-Dashboard
+    ```
 
-This repository contains a professional construction project management dashboard built with Python, Plotly, and modern web technologies. The dashboard is automatically deployed via GitHub Pages and provides interactive visualizations for project analytics.
+2.  **Create a virtual environment (recommended):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
 
-### ✨ Key Features
+3.  **Install the required dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-- 📈 **Interactive Visualizations**: Dynamic charts built with Plotly
-- 🎨 **Professional Design**: Modern UI with responsive layout
-- 📱 **Mobile Responsive**: Works perfectly on all devices  
-- ⚡ **Real-time Analytics**: Live data visualization
-- 🏗️ **Construction-focused**: Tailored for project management needs
+## 사용법
 
-## Find and Analyze the Dashboard/Graph
-Python & Plotly Data Visualization and storytelling: given a type of plot (dashboard, Sankey diagram, etc.), Recreate a similar visual that tells the same story using a dummy dataset, Python scripts for data generation and visualization that would naturally produce the visual you created.
+This project has two main components that can be run independently: the Construction Dashboard and the Monica AI System.
 
-The data row begins with searching the web for a reference image of a business-related dashboard or graph that matches the chart description you are given. For example, it may search for something such as “dashboard for business software”.
+### 🏗️ Construction Dashboard
 
-Obtaining a reference image, Carefully inspect.
-The main objective is to creatively expand on this reference image, capturing the core features while developing datasets and visualizations that reflect real-world situations.
+The primary construction dashboard provides a detailed, interactive view of project management data.
 
-## Generate a Prompt for it
-This reference image might Write a simple user-style question or instruction that the reference image would answer. So, this should prompt frames the data story and helps guide your synthetic data generation:
- - The prompt should not be very specific and can be open-ended.
- - The prompt should not specify a lot of formatting requirements.
- - The prompt must be natural and practical, reflecting the kind of questions a user might realistically ask in a real-world scenario.
+**To run the main dashboard:**
+```bash
+python run_dashboard.py
+```
+The dashboard will be available at `http://127.0.0.1:8050/`.
 
-## Generate Data To Tell the Business Story
-Write a data creation script within the scripts folder (../scripts/data_gen.py) that:
- - Uses only pandas and numpy.
- - Generates at least two datasets (as DataFrames or Numpy arrays) into the data folder, such as (../data/sales_data.csv and ../data/local_sales_data.csv)
- - Tells a similar story based on your reference image, reflects real-world situations, and contains enough detail to fully recreate the image.
+#### Other Dashboards
 
-## Recreate the Visualization
-Write a visualization script within the scripts folder (../scripts/viz.py) that:
- - Uses only pandas, numpy, and plotly (library is known as dash)
-   - You can use the pip install dash command to install Plotly Dash.
- - Reads the generated files from your data creation script.
- - Generates one HTML file of an interactive dashboard into the outputs folder (../outputs/dashboard.html) using Plotly's HTML export method. It may be helpful to also reference the “Inserting Plotly Output into HTML” section on that page.
- - Works and can be interacted with properly.
- - Contains visuals that adhere to the following style guidelines:
-Typography: Titles MUST be bold, and properly formatted legends and labels.
-Aesthetics: Organize layout using visual containers (e.g., cards, sections). Use depth thoughtfully via shadows or gradients to create visual hierarchy. We do not want flat images.
-Storytelling: Establish a clear narrative flow: start with high-level KPIs, then drill into details. Data elements should feel connected and purposeful, not isolated or random.
-Complexity: Dashboards must follow the level of complexity found here. Dashboard complexity should match the visual density and insight variety shown in the provided reference. Avoid oversimplification.
-Layout: No overlapping elements or cut-off text. Ensure consistent padding, margin, and spacing between plots.
-Legends: If a legend is present, ensure it is clearly displayed and boxed if appropriate. Use well-organized legend placement with appropriate spacing.
-Color Palette: Use a professional and aesthetically pleasing color scheme. The color palette should complement the data and enhance readability.
-Overall Quality: The final plot should be polished and suitable for a presentation or publication.
+This repository also contains other standalone dashboard examples:
+-   `final_dashboard.py`: A complete, professional dashboard with a different design.
+-   `simple_dashboard.py`: A basic sales dashboard with KPI cards and filters.
+-   `working_dashboard.py`: An intermediate version of the project dashboard.
 
-## Upload Files
-This step is very important to save your work. On the left side panel on the Labelbox platform, you will be copy pasting the contents of the data generation script, visualization script, and generated HTML file. Note that you may want to open the HTML file in your code editor in order to be able to copy paste the actual contents of the file. You will not need to upload the generated .csv/.npy files, as these can be generated from your data generation script.
-Folder Structure Overview
-<data_row_id>/
-├── data/
-│   ├── sample.npy
-│   ├── dataframe2.csv
-│   └── dataframe.csv          # Generated .csv and/or npy files
-│
-├── scripts/
-│   ├── data_gen.py            # Data generation script
-│   └── viz.py                 # Visualization script
-│
-├── outputs/
-│   └── dashboard.html         # Interactive html generated using viz.py
+To run any of these, simply execute the script directly:
+```bash
+python simple_dashboard.py
+```
+
+### 🤖 Monica AI System
+
+The Monica AI System is a powerful tool for knowledge extraction and analysis. It can be run from the command line or used as a Python module.
+
+#### Command-Line Usage
+
+Navigate to the `AI_Knowledge_Extraction_System` directory to run the following commands:
+```bash
+cd AI_Knowledge_Extraction_System
+```
+
+-   **Run a comprehensive analysis with default queries:**
+    ```bash
+    python run_monica_ai.py
+    ```
+
+-   **Run in interactive mode to enter your own queries:**
+    ```bash
+    python run_monica_ai.py --custom
+    ```
+
+-   **Run with specific, one-off queries:**
+    ```bash
+    python run_monica_ai.py --queries "AI in construction" "data visualization trends"
+    ```
+
+-   **Run a basic functionality test:**
+    ```bash
+    python run_monica_ai.py --test
+    ```
+
+Analysis results, including a summary report and detailed JSON output, will be saved in the `AI_Knowledge_Extraction_System/outputs/monica_ai_results/` directory.
+
+#### Programmatic Usage
+
+You can also integrate the Monica AI system into your own Python scripts by using the `MonicaAIInterface`.
+
+```python
+from AI_Knowledge_Extraction_System.monica_ai_interface import MonicaAIInterface
+
+# Initialize the interface
+monica_ai = MonicaAIInterface()
+
+# Define your queries
+my_queries = [
+    "How to integrate AI with Plotly Dash?",
+    "Best practices for predictive analytics dashboards"
+]
+
+# Run the analysis
+results = monica_ai.run_comprehensive_analysis(custom_queries=my_queries)
+
+# Print the top-level recommendations
+recommendations = results['monica_ai_analysis']['actionable_recommendations']
+for rec in recommendations:
+    print(f"- {rec['action']} (Priority: {rec['priority']})")
+```
+
+## 📄 Documentation
+
+The codebase is thoroughly documented with Google-style Python docstrings. For a deeper understanding of any module, class, or function, please refer directly to the source code.

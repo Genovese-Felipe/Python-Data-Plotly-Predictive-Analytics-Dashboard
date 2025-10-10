@@ -30,30 +30,55 @@ sys.path.append(str(Path(__file__).parent.parent))
 from config.config import config
 
 class SemanticProcessor:
-    """Advanced semantic processing for extracted content"""
-    
+    """Performs advanced semantic analysis on textual content.
+
+    This class orchestrates a suite of NLP and machine learning techniques to
+    extract meaningful semantic information from documents. Its capabilities
+    include keyword extraction, topic modeling, document clustering, and the
+    construction of a knowledge graph.
+
+    Attributes:
+        vectorizer (TfidfVectorizer): A scikit-learn TF-IDF vectorizer for
+            transforming text into a feature matrix.
+        knowledge_graph (nx.Graph): A NetworkX graph representing the
+            relationships between documents and concepts.
+        document_embeddings (dict): A dictionary mapping document IDs to their
+            vector embeddings.
+        semantic_clusters (dict): A dictionary holding the results of document
+            clustering.
+        topic_model: The trained topic model (e.g., LDA).
+    """
+
     def __init__(self):
+        """Initializes the SemanticProcessor with its components."""
         self.vectorizer = TfidfVectorizer(
             max_features=1000,
-            stop_words='english',
+            stop_words="english",
             ngram_range=(1, 2),
             min_df=2,
-            max_df=0.8
+            max_df=0.8,
         )
         self.knowledge_graph = nx.Graph()
         self.document_embeddings = {}
         self.semantic_clusters = {}
         self.topic_model = None
-        
-    def process_document_semantics(self, content_data: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Process a single document for semantic understanding
-        
+
+    def process_document_semantics(
+        self, content_data: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """Processes a single document to extract semantic features.
+
+        This method takes the raw content data, preprocesses the text, and
+        applies a series of analysis functions to generate a rich set of
+        semantic metadata.
+
         Args:
-            content_data: Extracted content data from ContentExtractor
-            
+            content_data: A dictionary containing the extracted content from
+                the ContentExtractor.
+
         Returns:
-            Enhanced content data with semantic analysis
+            The input dictionary enhanced with a 'semantic_analysis' key,
+            containing the extracted features.
         """
         
         content = content_data.get("content", "")
@@ -81,10 +106,25 @@ class SemanticProcessor:
         
         return content_data
     
-    def generate_embeddings(self, documents: List[Dict[str, Any]]) -> Dict[str, np.ndarray]:
-        """
-        Generate vector embeddings for documents using TF-IDF
-        In a full implementation, this would use sentence-transformers
+    def generate_embeddings(
+        self, documents: List[Dict[str, Any]]
+    ) -> Dict[str, np.ndarray]:
+        """Generates TF-IDF vector embeddings for a list of documents.
+
+        This method uses the class's TF-IDF vectorizer to transform the text
+        content of each document into a numerical vector. These embeddings are
+        stored in the `document_embeddings` attribute.
+
+        Note:
+            For higher-quality semantic embeddings, this could be replaced with
+            a more advanced model like Sentence-BERT.
+
+        Args:
+            documents: A list of document data dictionaries.
+
+        Returns:
+            A dictionary mapping document IDs to their numpy array embeddings.
+            Returns an empty dictionary if embedding generation fails.
         """
         
         # Extract clean content from documents
@@ -117,8 +157,18 @@ class SemanticProcessor:
             return {}
     
     def build_knowledge_graph(self, documents: List[Dict[str, Any]]) -> nx.Graph:
-        """
-        Build a knowledge graph from processed documents
+        """Constructs a knowledge graph from a collection of documents.
+
+        This method builds a graph where nodes represent documents and concepts
+        (e.g., keywords), and edges represent the relationships between them.
+        It also adds similarity edges between related documents.
+
+        Args:
+            documents: A list of document data dictionaries that have already
+                been processed for semantic features.
+
+        Returns:
+            A NetworkX Graph object representing the knowledge graph.
         """
         
         # Clear existing graph
@@ -174,9 +224,21 @@ class SemanticProcessor:
         
         return self.knowledge_graph
     
-    def perform_clustering(self, documents: List[Dict[str, Any]], n_clusters: int = 5) -> Dict[str, Any]:
-        """
-        Cluster documents based on semantic similarity
+    def perform_clustering(
+        self, documents: List[Dict[str, Any]], n_clusters: int = 5
+    ) -> Dict[str, Any]:
+        """Performs K-Means clustering on documents.
+
+        This method groups documents into a specified number of clusters based
+        on the cosine similarity of their TF-IDF embeddings.
+
+        Args:
+            documents: A list of document data dictionaries.
+            n_clusters: The number of clusters to create.
+
+        Returns:
+            A dictionary containing the cluster assignments and a summary for
+            each cluster. Returns an empty dictionary if clustering fails.
         """
         
         if not self.document_embeddings:
@@ -238,9 +300,22 @@ class SemanticProcessor:
             print(f"Error in clustering: {e}")
             return {}
     
-    def extract_topics(self, documents: List[Dict[str, Any]], n_topics: int = 10) -> Dict[str, Any]:
-        """
-        Extract topics using Latent Dirichlet Allocation
+    def extract_topics(
+        self, documents: List[Dict[str, Any]], n_topics: int = 10
+    ) -> Dict[str, Any]:
+        """Extracts topics from documents using Latent Dirichlet Allocation (LDA).
+
+        This method identifies a specified number of topics from the document
+        corpus and assigns a topic distribution to each document.
+
+        Args:
+            documents: A list of document data dictionaries.
+            n_topics: The number of topics to discover.
+
+        Returns:
+            A dictionary containing the discovered topics, their word
+            distributions, and the topic assignments for each document.
+            Returns an empty dictionary if topic modeling fails.
         """
         
         # Prepare text data
@@ -535,16 +610,27 @@ class SemanticProcessor:
         return f"Topic related to {', '.join(primary_words)}"
     
     def get_semantic_summary(self) -> Dict[str, Any]:
-        """Get a summary of all semantic processing results"""
-        
+        """Returns a summary of all semantic processing results.
+
+        This method compiles statistics from the knowledge graph, clustering,
+        and topic modeling results into a single summary dictionary.
+
+        Returns:
+            A dictionary containing a high-level summary of the semantic
+            analysis performed.
+        """
         return {
             "total_documents_processed": len(self.document_embeddings),
             "knowledge_graph_stats": {
                 "nodes": self.knowledge_graph.number_of_nodes(),
                 "edges": self.knowledge_graph.number_of_edges(),
-                "density": nx.density(self.knowledge_graph) if self.knowledge_graph.number_of_nodes() > 0 else 0
+                "density": (
+                    nx.density(self.knowledge_graph)
+                    if self.knowledge_graph.number_of_nodes() > 0
+                    else 0
+                ),
             },
             "clustering_stats": self.semantic_clusters,
             "topic_modeling_stats": self.topic_model if self.topic_model else {},
-            "processing_timestamp": datetime.now().isoformat()
+            "processing_timestamp": datetime.now().isoformat(),
         }
