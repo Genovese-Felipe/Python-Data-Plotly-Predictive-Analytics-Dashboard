@@ -1,27 +1,42 @@
 #!/usr/bin/env python3
 """
-Run Monica AI - Enhanced AI Knowledge Processing System
+A command-line interface to run the Monica AI knowledge processing system.
 
-This script provides easy access to the Monica AI interface for comprehensive
-knowledge analysis combining local Knowledge-Base with web search capabilities.
+This script provides a user-friendly way to interact with the Monica AI system,
+offering several modes of operation:
+- Running with default, predefined queries.
+- Running with custom queries provided as command-line arguments.
+- An interactive mode for entering multiple custom queries.
+- A test mode to verify basic functionality.
 
-Usage:
-    python run_monica_ai.py                          # Run with default AI queries
-    python run_monica_ai.py --custom                 # Run with custom queries
-    python run_monica_ai.py --queries "AI help" "ML" # Run with specific queries
+Usage examples:
+    - `python run_monica_ai.py`
+    - `python run_monica_ai.py --custom`
+    - `python run_monica_ai.py --queries "AI in data visualization" "Dash best practices"`
+    - `python run_monica_ai.py --test`
 """
 
 import sys
 import argparse
 from pathlib import Path
 
-# Add the current directory to the Python path
+# Ensure the parent directory is in the Python path to resolve local imports
 current_dir = Path(__file__).parent
 sys.path.insert(0, str(current_dir))
 
 from monica_ai_interface import MonicaAIInterface
 
 def main():
+    """
+    The main function to parse command-line arguments and run the Monica AI system.
+
+    This function sets up an argument parser to handle different user inputs,
+    initializes the Monica AI interface, and triggers the comprehensive analysis
+    based on the selected mode.
+
+    Returns:
+        An integer exit code (0 for success, 1 for failure).
+    """
     parser = argparse.ArgumentParser(
         description="Monica AI - Enhanced AI Knowledge Processing System",
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -34,35 +49,23 @@ Examples:
         """
     )
     
-    parser.add_argument(
-        '--custom', 
-        action='store_true',
-        help='Interactive mode to enter custom queries'
-    )
-    
-    parser.add_argument(
-        '--queries', 
-        nargs='+',
-        help='Specific queries to process'
-    )
-    
-    parser.add_argument(
-        '--test',
-        action='store_true',
-        help='Run basic functionality test'
-    )
+    parser.add_argument('--custom', action='store_true', help='Run in interactive mode to enter custom queries.')
+    parser.add_argument('--queries', nargs='+', help='Provide specific queries to process.')
+    parser.add_argument('--test', action='store_true', help='Run a basic functionality test.')
     
     args = parser.parse_args()
     
     if args.test:
         print("🧪 Running Monica AI Test Suite...")
-        from test_monica_ai import test_monica_ai_basic
-        success = test_monica_ai_basic()
-        sys.exit(0 if success else 1)
+        try:
+            from test_monica_ai import test_monica_ai_basic
+            success = test_monica_ai_basic()
+            sys.exit(0 if success else 1)
+        except ImportError:
+            print("❌ Test file not found. Could not run tests.")
+            sys.exit(1)
     
-    # Initialize Monica AI
     monica_ai = MonicaAIInterface()
-    
     custom_queries = None
     
     if args.custom:
@@ -76,8 +79,7 @@ Examples:
             custom_queries.append(query)
         
         if not custom_queries:
-            print("No queries entered. Using default AI queries.")
-            custom_queries = None
+            print("No queries entered. Using default queries.")
     
     elif args.queries:
         custom_queries = args.queries
@@ -85,17 +87,13 @@ Examples:
         for i, query in enumerate(custom_queries, 1):
             print(f"  {i}. {query}")
     
-    # Run comprehensive analysis
     try:
-        results = monica_ai.run_comprehensive_analysis(custom_queries)
-        
+        monica_ai.run_comprehensive_analysis(custom_queries)
         print(f"\n✅ Monica AI analysis completed successfully!")
-        print(f"📄 Results saved to: AI_Knowledge_Extraction_System/outputs/monica_ai_results/")
-        
+        print(f"📄 Results saved to: {monica_ai.output_dir / 'monica_ai_results'}")
         return 0
-        
     except Exception as e:
-        print(f"\n❌ Error running Monica AI: {str(e)}")
+        print(f"\n❌ An error occurred while running Monica AI: {e}")
         import traceback
         traceback.print_exc()
         return 1
