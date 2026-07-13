@@ -37,6 +37,7 @@ jobs:
       - name: Generate canonical dashboard
         run: python -m dashboard_app --export docs/assets/dashboards/construction.html
       - uses: actions/configure-pages@v5
+        id: pages
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
@@ -61,4 +62,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
