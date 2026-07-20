@@ -1,37 +1,37 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
 *.so
+*.egg-info/
+build/
+dist/
 
-# Generated outputs (large files)
+# Environments and secrets
+.env
+.env.*
+.venv/
+env/
+venv/
+
+# Tests and tools
+.coverage
+htmlcov/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+
+# Generated data, models and dashboards
+outputs/*.html
+outputs/*.json
+models/
+*.joblib
+*.pkl
 AI_Knowledge_Extraction_System/outputs/
 AI_Knowledge_Extraction_System/AI_Knowledge_Extraction_System/outputs/
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache/
-.models_cache/
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Virtual environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# Notebooks
+.ipynb_checkpoints/
 
 # Jekyll
 docs/_site/
@@ -40,23 +40,18 @@ docs/.jekyll-cache/
 docs/.jekyll-metadata
 docs/Gemfile.lock
 
-# IDE files
+# Editors and operating systems
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS files
 .DS_Store
 Thumbs.db
 
-# Log files
+# Temporary files and logs
 *.log
-
-# Temporary files
 *.tmp
 *.temp
 *~
-
-# Node modules if using any JS tools
 node_modules/
+

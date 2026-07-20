@@ -1,14 +1,3 @@
-# Core Dashboard Dependencies
-dash>=3.0.0
-plotly>=6.0.0
-dash-bootstrap-components>=2.0.0
+# Compatibility alias. New users should prefer requirements-dashboard.txt.
+-r requirements-dashboard.txt
 
-# Data Processing
-pandas>=2.0.0
-numpy>=1.24.0
-
-# Machine Learning
-scikit-learn>=1.3.0
-
-# Web Framework (included with Dash)
-flask>=3.0.0
