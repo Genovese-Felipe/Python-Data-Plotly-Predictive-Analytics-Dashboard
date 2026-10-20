@@ -178,7 +178,7 @@ def create_app(csv_path: str | Path | None = None) -> Dash:
         Output("delay-chart", "figure"),
         Output("budget-chart", "figure"),
         Output("progress-chart", "figure"),
-        Output("project-table", "data"),
+        Output("project-table", "children"),
         Input("type-filter", "value"),
         Input("risk-filter", "value"),
     )
